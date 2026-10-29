@@ -1,0 +1,12 @@
+{
+  "provenance": {
+    "kind": "Original local empty-body transactions before storage parsing across twelve code inputs",
+    "probe": "empty-funding.test.tolk",
+    "log_sha256": "f61b0e52902d72f387a6e95af1ba9225c8908c78e5ef03153516af7df0f82ac1"
+  },
+  "cases": 12,
+  "body_bits": 0,
+  "body_refs": 0,
+  "compute_exit": 0,
+  "empty_cell_hash_hex": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+}

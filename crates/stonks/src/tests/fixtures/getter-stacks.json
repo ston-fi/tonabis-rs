@@ -1,0 +1,416 @@
+[
+  {
+    "id": "minter-ExtendedBondingData",
+    "rust_type": "minter::ExtendedBondingData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "-1"
+      },
+      {
+        "type": "int",
+        "value": "2000000000000"
+      },
+      {
+        "type": "int",
+        "value": "1992015968068"
+      },
+      {
+        "type": "int",
+        "value": "149700598802325000"
+      },
+      {
+        "type": "int",
+        "value": "6"
+      },
+      {
+        "type": "int",
+        "value": "100"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bbedefacfcfd187540b0208c0af642d52c47312cfae738b24afd3e03a6d9ca970"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "ston-ExtendedData",
+    "rust_type": "ston::ExtendedData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "-1"
+      },
+      {
+        "type": "int",
+        "value": "2000000000000"
+      },
+      {
+        "type": "int",
+        "value": "1992015968068"
+      },
+      {
+        "type": "int",
+        "value": "149700598802325000"
+      },
+      {
+        "type": "int",
+        "value": "6"
+      },
+      {
+        "type": "int",
+        "value": "100"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bbedefacfcfd187540b0208c0af642d52c47312cfae738b24afd3e03a6d9ca970"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800225246d4dd55dcf659f1a19d96e89c7d12d8650f2ab1e1de87cf17171060bdd10"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bc3589c8836570dca0efe1e5b6c4b0d436cbdbb823fa438bf028097e1d35f5890"
+      },
+      {
+        "type": "int",
+        "value": "1"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "ston-ProtocolAddresses",
+    "rust_type": "ston::ProtocolAddresses",
+    "stack": [
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800f07c63b93028b35508ec5309407d1aeb864086b80158b6cd67b6c967766e38e30"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bbedefacfcfd187540b0208c0af642d52c47312cfae738b24afd3e03a6d9ca970"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "dedust_v12-FeeData",
+    "rust_type": "dedust_v12::FeeData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "100"
+      },
+      {
+        "type": "int",
+        "value": "140"
+      },
+      {
+        "type": "int",
+        "value": "5000"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800784bac1e47de475d9c8e85c68c283f44c0ed1c66d6d5d4df8073d1c9d0774a2f0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "dedust_v12-ExtendedBondingData",
+    "rust_type": "dedust_v12::ExtendedBondingData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "-1"
+      },
+      {
+        "type": "int",
+        "value": "2000000000000"
+      },
+      {
+        "type": "int",
+        "value": "2015248252255"
+      },
+      {
+        "type": "int",
+        "value": "147974812983962265"
+      },
+      {
+        "type": "int",
+        "value": "23232284193"
+      },
+      {
+        "type": "int",
+        "value": "100"
+      },
+      {
+        "type": "int",
+        "value": "1725785818362735"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800fd9afa7e7cabc367f5cd33c3ecd3683362e7f68f1b010683007fd9cc377c2c8f0"
+      },
+      {
+        "type": "int",
+        "value": "5000"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "int",
+        "value": "100"
+      },
+      {
+        "type": "int",
+        "value": "140"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800784bac1e47de475d9c8e85c68c283f44c0ed1c66d6d5d4df8073d1c9d0774a2f0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "minter-JettonData",
+    "rust_type": "minter::JettonData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "100000000000000000"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000010"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "launch_wallet-WalletData",
+    "rust_type": "launch_wallet::WalletData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800a16ba52d30805a2855bcc3cb014ae00e759cc9ec2e239d51b765d83c3f765ed50"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043801641f972b43ab15313ae972b778b62938c3727a679d3a27812bc3283f6b173a4d0"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "launch_wallet-ExtendedWalletData",
+    "rust_type": "launch_wallet::ExtendedWalletData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000010"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000010"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800a16ba52d30805a2855bcc3cb014ae00e759cc9ec2e239d51b765d83c3f765ed50"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043801641f972b43ab15313ae972b778b62938c3727a679d3a27812bc3283f6b173a4d0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "ston-ExtendedWalletData",
+    "rust_type": "ston::ExtendedWalletData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "0"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bbedefacfcfd187540b0208c0af642d52c47312cfae738b24afd3e03a6d9ca970"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000010"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000010"
+      },
+      {
+        "type": "int",
+        "value": "1"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800a16ba52d30805a2855bcc3cb014ae00e759cc9ec2e239d51b765d83c3f765ed50"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bc76c468913c4a292c5a7d35fd28fc854a6dd53ba7211ef14fdb39293d0c1dab0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "factory-VirtualFactoryStonfiData",
+    "rust_type": "factory::VirtualFactoryStonfiData",
+    "stack": [
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043800bc3589c8836570dca0efe1e5b6c4b0d436cbdbb823fa438bf028097e1d35f5890"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "factory-VirtualFactoryDedustData",
+    "rust_type": "factory::VirtualFactoryDedustData",
+    "stack": [
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      },
+      {
+        "type": "int",
+        "value": "0"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "custom_wallet-JettonTaxRates",
+    "rust_type": "custom_wallet::JettonTaxRates",
+    "stack": [
+      {
+        "type": "int",
+        "value": "290"
+      },
+      {
+        "type": "int",
+        "value": "290"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "custom_wallet-CustomJettonWalletData",
+    "rust_type": "custom_wallet::CustomJettonWalletData",
+    "stack": [
+      {
+        "type": "int",
+        "value": "85207471148995122"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c72010101010024000043801cc984f30b4a91b9e547cd5ba172af7ccce4aa50a12827d26bc539708bdf255930"
+      },
+      {
+        "type": "slice",
+        "value": "b5ee9c7201010101002400004380054be8c7b4bb4866eeda1a12828ca675db24db81749c5dee1ea5bca82bbec7f850"
+      },
+      {
+        "type": "cell",
+        "value": "b5ee9c72010101010002000000"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  },
+  {
+    "id": "generation-Version",
+    "rust_type": "generation::Version",
+    "stack": [
+      {
+        "type": "int",
+        "value": "11"
+      }
+    ],
+    "provenance": "Independent structural stack: observed scalar/address values, synthetic empty cells replace all executable/template cells; original captured stack retained in local sidecar."
+  }
+]

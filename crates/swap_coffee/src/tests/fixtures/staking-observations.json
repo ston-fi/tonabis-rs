@@ -1,0 +1,322 @@
+{
+  "origin": "Original numeric expected values from local captured-code experiments. No executable cells embedded.",
+  "code_cell_hash": "f627c60142e8c2911a4ef99a0830c47ec7e0071b3599e575a483fbbc0c2c6df7",
+  "vm_time": 1700000000,
+  "points": [
+    [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      50,
+      2
+    ],
+    [
+      2,
+      1,
+      1,
+      10,
+      1
+    ],
+    [
+      3,
+      5,
+      1,
+      10,
+      6
+    ],
+    [
+      4,
+      15,
+      1,
+      10,
+      17
+    ],
+    [
+      5,
+      13,
+      37,
+      20,
+      577
+    ],
+    [
+      6,
+      50,
+      1,
+      1,
+      51
+    ],
+    [
+      7,
+      51,
+      1,
+      1,
+      52
+    ],
+    [
+      8,
+      99,
+      1,
+      101,
+      199
+    ],
+    [
+      9,
+      100,
+      1,
+      10,
+      110
+    ]
+  ],
+  "item_init": [
+    [
+      0,
+      1,
+      0,
+      1700012345,
+      7
+    ],
+    [
+      1,
+      1,
+      1,
+      1700012345,
+      7
+    ],
+    [
+      2,
+      1,
+      0,
+      1700012345,
+      7
+    ],
+    [
+      3,
+      5,
+      1,
+      1700012345,
+      7
+    ],
+    [
+      4,
+      15,
+      2,
+      1700012345,
+      7
+    ],
+    [
+      5,
+      481,
+      96,
+      1700012345,
+      7
+    ],
+    [
+      6,
+      50,
+      1,
+      1700012345,
+      7
+    ],
+    [
+      7,
+      51,
+      1,
+      1700012345,
+      7
+    ],
+    [
+      8,
+      99,
+      100,
+      1700012345,
+      7
+    ],
+    [
+      9,
+      100,
+      10,
+      1700012345,
+      7
+    ]
+  ],
+  "rewards": [
+    {
+      "id": 0,
+      "exists": false,
+      "old_duration": 0,
+      "old_finish": 0,
+      "old_rate": 0,
+      "added": 105,
+      "duration": 10,
+      "accepted": true,
+      "result": [
+        10,
+        1700000010,
+        10
+      ]
+    },
+    {
+      "id": 1,
+      "exists": false,
+      "old_duration": 0,
+      "old_finish": 0,
+      "old_rate": 0,
+      "added": 5,
+      "duration": 10,
+      "accepted": false,
+      "result": null
+    },
+    {
+      "id": 2,
+      "exists": true,
+      "old_duration": 100,
+      "old_finish": 1700000010,
+      "old_rate": 13,
+      "added": 20,
+      "duration": 100,
+      "accepted": true,
+      "result": [
+        100,
+        1700000100,
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "exists": true,
+      "old_duration": 100,
+      "old_finish": 1700000010,
+      "old_rate": 13,
+      "added": 20,
+      "duration": 200,
+      "accepted": false,
+      "result": [
+        100,
+        1700000010,
+        13
+      ]
+    },
+    {
+      "id": 4,
+      "exists": true,
+      "old_duration": 100,
+      "old_finish": 1699999999,
+      "old_rate": 13,
+      "added": 105,
+      "duration": 10,
+      "accepted": true,
+      "result": [
+        10,
+        1700000010,
+        10
+      ]
+    },
+    {
+      "id": 5,
+      "exists": true,
+      "old_duration": 100,
+      "old_finish": 1700000000,
+      "old_rate": 13,
+      "added": 5,
+      "duration": 10,
+      "accepted": false,
+      "result": [
+        100,
+        1700000000,
+        13
+      ]
+    },
+    {
+      "id": 6,
+      "exists": true,
+      "old_duration": 100,
+      "old_finish": 1700000000,
+      "old_rate": 13,
+      "added": 5,
+      "duration": 100,
+      "accepted": false,
+      "result": [
+        100,
+        1700000000,
+        13
+      ]
+    },
+    {
+      "id": 7,
+      "exists": true,
+      "old_duration": 100,
+      "old_finish": 1700000001,
+      "old_rate": 13,
+      "added": 37,
+      "duration": 100,
+      "accepted": true,
+      "result": [
+        100,
+        1700000100,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "exists": false,
+      "old_duration": 0,
+      "old_finish": 0,
+      "old_rate": 0,
+      "added": 100,
+      "duration": 0,
+      "accepted": false,
+      "result": null
+    }
+  ],
+  "deposit_log_hashes": [
+    {
+      "id": 0,
+      "hash_hex": "d3560cd1a8a6875848c38bae559ae0481706e92990858dcb52599a6c7e822e66"
+    },
+    {
+      "id": 1,
+      "hash_hex": "f5317b5367bfd8bf6cea5dff0c144ca6e227091db8ade5bea5a4e382897196fe"
+    },
+    {
+      "id": 2,
+      "hash_hex": "790dd000fea35d1143420dc856fd52b0ed9b0136e7f83b0ebc97ec86eebcafe4"
+    },
+    {
+      "id": 3,
+      "hash_hex": "b55587a1745b2b88632eff2859493a4554685b14e3900f235a3dcb1fdb42212c"
+    },
+    {
+      "id": 4,
+      "hash_hex": "60d310a3c37869259438c857edb7549c1deefe7f63c680f5a6732bf5986c3151"
+    },
+    {
+      "id": 5,
+      "hash_hex": "46c9297ad002965a1e378e1be29b1206b824a113e14949c885c1883084a7cb35"
+    },
+    {
+      "id": 6,
+      "hash_hex": "78f018989588782c83bb5b7873f48b6e85408789ba99b3136f572d410294cb2a"
+    },
+    {
+      "id": 7,
+      "hash_hex": "4233b14c0830591f3a92b3dac80a3bdf9c51204892d64f43b8e06ee3a59f837f"
+    },
+    {
+      "id": 8,
+      "hash_hex": "0ff48c5546c469bc6cbd645efdfd8cbda981967a844ca56ea5d9d728ff842327"
+    },
+    {
+      "id": 9,
+      "hash_hex": "1a2bd65139734b127e94e74fb358879e1ef560200e403f086dab46d2b97651f3"
+    }
+  ],
+  "deposit_log_owner": "kQAVWLc1hjMqgTuQkgCopnTtN5ewy2WsbjwuxpZ3BUzYc0dF",
+  "deposit_log_source_sha256": "58b4120e61d63352c26ed8ccd6fb1e440e0f37091545fd5e4f83b6a0f817f275"
+}

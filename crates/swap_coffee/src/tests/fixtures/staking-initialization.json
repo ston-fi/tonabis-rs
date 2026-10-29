@@ -1,0 +1,66 @@
+{
+  "origin": "Original synthetic master-created pre-initialization data hashes, no code.",
+  "log_sha256": "1ca20ac00c8b82fcbf186e02b1a38be31f9f16ddfd031194f9744fceff9dc10c",
+  "vectors": [
+    {
+      "id": 0,
+      "nft_id": 0,
+      "master": "kQBo5Z8P0w3H4HYhGvSI0XU7g-_PVGrGba5_DbeRKRdGOM9Y",
+      "data_hash_hex": "3115504e1048b197ef7442a6623e93557a39a6dafb9875487309d17b83fb10ef"
+    },
+    {
+      "id": 1,
+      "nft_id": 0,
+      "master": "kQAPLdMhiOoPpMEBCmjVP8vRKsLumcj9e7Ydq4l4Vit3Wv0E",
+      "data_hash_hex": "3b870244d3006f855077079570657f657fce70e2947fcbbde26d4eee887af885"
+    },
+    {
+      "id": 2,
+      "nft_id": 0,
+      "master": "kQBYwQSOHOfShFZ_jKCIsUAeMDuzjcupuVM4O-T1cly1jSbM",
+      "data_hash_hex": "22da7f625974a6013885007c6530a389c51a939d5e8f9e0eff7f4bd6a22d7292"
+    },
+    {
+      "id": 3,
+      "nft_id": 0,
+      "master": "kQCS2Tgfk9sg81bTKdItHkKxwOca6Ky-YdLruGsvISnNk2_e",
+      "data_hash_hex": "5da2624b32f15123678eb607c8e18f0f4ead844749729d4e6c01f24d392ad7d2"
+    },
+    {
+      "id": 4,
+      "nft_id": 0,
+      "master": "kQB66tKtT3ujlklB1OoOwUP4qpuERQsvz3sZButdjzvqOnq2",
+      "data_hash_hex": "3a5f01e044894ada78a9ac58a6a94e74721d599d1d8c09880414e73a53ac4484"
+    },
+    {
+      "id": 5,
+      "nft_id": 0,
+      "master": "kQDhStVZcC8Zd7_oTqTBkI-mN4P4cXjSfIShphqjxrZIAXjR",
+      "data_hash_hex": "b9079d42d2e8ab67ca898603886a79b378cbbe84d1d56e2c1e226e43a78bfee2"
+    },
+    {
+      "id": 6,
+      "nft_id": 0,
+      "master": "kQDngcvN1Y49COkFyuWXdKTbxuKOsGixA5tOr0PRK8pkU1YV",
+      "data_hash_hex": "2f2fbe4874f02d5a008837e1e1079ea502363ed87de1110daaafc2bb5e41b7c8"
+    },
+    {
+      "id": 7,
+      "nft_id": 0,
+      "master": "kQDbAEPxL8gmC5DkMGySi-8YyrMGUWAcudC6YffvjLLCY9Dx",
+      "data_hash_hex": "157d5bcb48e4851bda6b7d0fd6fcc0176ba4bd362eb724a3bdabbbc0a6877f0d"
+    },
+    {
+      "id": 8,
+      "nft_id": 0,
+      "master": "kQC7KugW8wzhMvojvVZR4W-mAZrgjJKLMvKGMkvWGEpoVvnC",
+      "data_hash_hex": "568ba6d7a2b97ed823bb1ac8c6d16e69baf63a14b23e0d5d5e122a08b0b00f7f"
+    },
+    {
+      "id": 9,
+      "nft_id": 0,
+      "master": "kQDKK7JQ4bhKgI_aTuRCLI5J3nqdfqLOlahoIXqHMOmtERHk",
+      "data_hash_hex": "f8d4cee5f3d7b0b993ee304fa80ccb2383c9b661648b2d9a449092f08d870639"
+    }
+  ]
+}

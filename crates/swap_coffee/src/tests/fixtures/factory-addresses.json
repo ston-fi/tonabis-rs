@@ -1,0 +1,38 @@
+{
+  "origin": "Original captured factory-code getter observations with independently synthetic empty Init code; no executable cells.",
+  "factory": "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef",
+  "owner_hash": 123,
+  "log_sha256": "78e032985e8897d52883a8ddb503a555062a85b343ba8f8008bbc7ed5dec3c7a",
+  "pairs": [
+    {
+      "id": 0,
+      "pool": "kQAq06caNzor5tIq8CglnGoGoe-Osc8dn5msBmrIbG0Zrv5L",
+      "creator": "kQC_ck6O5Jro_oTBBcd6rfzLbhSbl6veLljY8KE6ooqxxrBt",
+      "depository": "kQALoUrSOwkwvr0kMOiiIMgFU1fQl8jdKj-32KrweV_t_0m_"
+    },
+    {
+      "id": 1,
+      "pool": "kQAFJFfF1Ms1OvLIns2m-mQ5-Jbpj-3COySkvkup01-1p2w7",
+      "creator": "kQDofQSWkVzw7pn6Ls2_usz4Zdp-LoCw3DXL1rlnrjPrUYb6",
+      "depository": "kQAR2Bj2eqVFaGcayCW1j-Fkvu6Iwp0n6g9qNFkcHRXhA9ZT"
+    },
+    {
+      "id": 2,
+      "pool": "kQAdc3wp94xcQUt7blaxprL9Tpk9iuRE8pTSHvpq6xb4AFyl",
+      "creator": "kQB3XTaUNwCivxQHhnPgsLFdce3gqr5ArhzUAWbPMABeTbOw",
+      "depository": "kQC3P0zhiNvffgdHw7EoNSUWtb1OTOMvqIjn094NulbG15BC"
+    },
+    {
+      "id": 3,
+      "pool": "kQB2sOuXLoTruxWLBsorgkHxwkKBwTlM87R_er32j7TqXFG7",
+      "creator": "kQA71QOKzNRMkMUs7WPb-Dgwmhx6SsOXCpyWUWP6uXvjHYHs",
+      "depository": "kQATKPDSh_09UtbRFDyp3t3gTNfnW59NCKJo46UobMy1wd5t"
+    },
+    {
+      "id": 4,
+      "pool": "kQCBVa3hjflxwoz7BlGYglWvjJDwlNlP-R2HRbI5ealqfZsk",
+      "creator": "kQBvke2q4SJYr9isFIVDiGAsLFd7nf_cYFIuWkwAWZtBvY3N",
+      "depository": "kQCeP-JWOyHMr1haBC3fWW6ILW0TEoJ_IsQ_uIud85PCSvfE"
+    }
+  ]
+}

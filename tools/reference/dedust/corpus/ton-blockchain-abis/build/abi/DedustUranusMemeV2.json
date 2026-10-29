@@ -1,0 +1,1098 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustUranusMemeV2",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust Uranus Meme V2 is a launchpad meme-token market with the pre-V3 storage and getter surface.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2InitMeme"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2PartnerConfig"
+    },
+    {
+      "kind": "uintN",
+      "n": 256
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 13,
+      "stack_type_id": 129,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2ReferrerConfig"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 17,
+      "stack_type_id": 130,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2BuyMessage"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 13
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 20
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 17
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 22
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2SellMessage"
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2BurnNotification"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2ProvideWalletAddress"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2ClaimCreatorFee"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2OpcodeF14b54f3"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2Excesses"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2CpmmInitResult"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2BuyEvent"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2TradeFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2SellEvent"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2Opcode66c8ad72"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2TakeWalletAddress"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 7
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 38
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "DedustUranusMemeV2Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2Storage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2Config"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2Metadata"
+    },
+    {
+      "kind": "string"
+    },
+    {
+      "kind": "uintN",
+      "n": 128
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 42
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2BondingCurve"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2GetMemeDataReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeV2JettonDataReply"
+    },
+    {
+      "kind": "addressAny"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2Metadata",
+      "ty_idx": 43,
+      "fields": [
+        {
+          "name": "uri",
+          "ty_idx": 44,
+          "description": "Token metadata URI encoded as a Tolk string."
+        }
+      ],
+      "description": "Metadata URI referenced by the immutable Meme configuration."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2PartnerConfig",
+      "ty_idx": 13,
+      "fields": [
+        {
+          "name": "partnerId",
+          "ty_idx": 14,
+          "description": "Partner identifier."
+        },
+        {
+          "name": "partnerFeeBps",
+          "ty_idx": 15,
+          "description": "Partner fee share in basis points."
+        }
+      ],
+      "description": "Affiliate partner configuration carried by initialization and trades."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2ReferrerConfig",
+      "ty_idx": 17,
+      "fields": [
+        {
+          "name": "referrerId",
+          "ty_idx": 14,
+          "description": "Referrer identifier."
+        },
+        {
+          "name": "referrerFeeBps",
+          "ty_idx": 15,
+          "description": "Referrer fee share in basis points."
+        }
+      ],
+      "description": "Affiliate referrer configuration carried by initialization and trades."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2Config",
+      "ty_idx": 42,
+      "fields": [
+        {
+          "name": "creatorAddress",
+          "ty_idx": 7,
+          "description": "Meme creator address."
+        },
+        {
+          "name": "controllerAddress",
+          "ty_idx": 7,
+          "description": "Uranus controller address."
+        },
+        {
+          "name": "metadata",
+          "ty_idx": 43,
+          "description": "Referenced token metadata URI."
+        },
+        {
+          "name": "raisingFunds",
+          "ty_idx": 6,
+          "description": "Graduation fundraising target."
+        },
+        {
+          "name": "liquidityTokens",
+          "ty_idx": 6,
+          "description": "Token amount reserved for post-graduation liquidity."
+        },
+        {
+          "name": "seed",
+          "ty_idx": 45,
+          "description": "Deterministic seed used for child addresses and token identity."
+        }
+      ],
+      "description": "Referenced immutable configuration of one Uranus Meme V2 instance."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2BondingCurve",
+      "ty_idx": 47,
+      "fields": [
+        {
+          "name": "graduated",
+          "ty_idx": 5,
+          "description": "Whether the token has reached graduation."
+        },
+        {
+          "name": "alpha",
+          "ty_idx": 6,
+          "description": "Bonding-curve alpha parameter."
+        },
+        {
+          "name": "beta",
+          "ty_idx": 6,
+          "description": "Bonding-curve beta parameter."
+        },
+        {
+          "name": "onSellSupply",
+          "ty_idx": 6,
+          "description": "Supply amount allocated for curve sells."
+        },
+        {
+          "name": "raisedFunds",
+          "ty_idx": 6,
+          "description": "GRAM raised so far."
+        },
+        {
+          "name": "currentSupply",
+          "ty_idx": 6,
+          "description": "Current circulating supply."
+        }
+      ],
+      "description": "Mutable bonding-curve state stored in the Meme V2 root cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2Storage",
+      "ty_idx": 41,
+      "fields": [
+        {
+          "name": "initialized",
+          "ty_idx": 5,
+          "description": "Whether the Meme has been initialized by the Factory."
+        },
+        {
+          "name": "migrated",
+          "ty_idx": 5,
+          "description": "Whether liquidity has migrated to CPMM."
+        },
+        {
+          "name": "config",
+          "ty_idx": 46,
+          "description": "Referenced immutable configuration cell."
+        },
+        {
+          "name": "baseFeeBps",
+          "ty_idx": 15,
+          "description": "Bonding-curve base trading fee in basis points."
+        },
+        {
+          "name": "curve",
+          "ty_idx": 47,
+          "description": "Current bonding-curve state."
+        },
+        {
+          "name": "totalSupply",
+          "ty_idx": 6,
+          "description": "Maximum token supply."
+        },
+        {
+          "name": "creatorFee",
+          "ty_idx": 6,
+          "description": "Accumulated creator fee."
+        }
+      ],
+      "description": "Complete runtime storage of the Uranus Meme V2 revision."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2TradeFees",
+      "ty_idx": 34,
+      "fields": [
+        {
+          "name": "creatorFee",
+          "ty_idx": 6,
+          "description": "Creator fee charged on the trade."
+        },
+        {
+          "name": "protocolFee",
+          "ty_idx": 6,
+          "description": "Protocol fee charged on the trade."
+        },
+        {
+          "name": "partnerFee",
+          "ty_idx": 6,
+          "description": "Partner fee charged on the trade."
+        },
+        {
+          "name": "referrerFee",
+          "ty_idx": 6,
+          "description": "Referrer fee charged on the trade."
+        }
+      ],
+      "description": "Fee breakdown emitted by Uranus Meme V2 trade events."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2InitMeme",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 2037340684,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Deployment query id copied from the Factory request."
+        },
+        {
+          "name": "initialBuy",
+          "ty_idx": 6,
+          "description": "Initial GRAM amount used for the creator buy."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 16,
+          "description": "Optional inline partner attribution."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 18,
+          "description": "Optional inline referrer attribution."
+        }
+      ],
+      "description": "Factory-to-Meme initialization body."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2BuyMessage",
+      "ty_idx": 19,
+      "prefix": {
+        "prefix_num": 2491573591,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected tracing id."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "GRAM input amount accounted by the bonding curve."
+        },
+        {
+          "name": "minimalAmountOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable token output."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Address receiving excess GRAM and callbacks."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 21,
+          "description": "Optional ref-backed partner attribution."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 23,
+          "description": "Optional ref-backed referrer attribution."
+        }
+      ],
+      "description": "User buy request accepted by the Meme contract."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2SellMessage",
+      "ty_idx": 24,
+      "prefix": {
+        "prefix_num": 1684722724,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the wallet sell request."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Token amount sold into the curve."
+        },
+        {
+          "name": "minimalAmountOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable GRAM output."
+        },
+        {
+          "name": "from",
+          "ty_idx": 7,
+          "description": "Owner address that initiated the sell."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 25,
+          "description": "Optional address receiving excess GRAM and callbacks."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 21,
+          "description": "Optional ref-backed partner attribution."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 23,
+          "description": "Optional ref-backed referrer attribution."
+        }
+      ],
+      "description": "Wallet-to-Meme sell request emitted by Uranus Meme Wallet."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2BurnNotification",
+      "ty_idx": 26,
+      "prefix": {
+        "prefix_num": 2078119902,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the wallet burn request."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Burned token amount."
+        },
+        {
+          "name": "sender",
+          "ty_idx": 7,
+          "description": "Owner address whose wallet burned tokens."
+        },
+        {
+          "name": "responseDestination",
+          "ty_idx": 25,
+          "description": "Optional excess receiver."
+        }
+      ],
+      "description": "Standard Jetton burn notification accepted from deterministic Meme wallets."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2ProvideWalletAddress",
+      "ty_idx": 27,
+      "prefix": {
+        "prefix_num": 745978227,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 25,
+          "description": "Owner address whose deterministic wallet is requested."
+        },
+        {
+          "name": "includeAddress",
+          "ty_idx": 5,
+          "description": "Whether the response should include the owner address."
+        }
+      ],
+      "description": "TEP-89 wallet discovery request accepted by the Meme minter."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2ClaimCreatorFee",
+      "ty_idx": 28,
+      "prefix": {
+        "prefix_num": 2909956520,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "to",
+          "ty_idx": 25,
+          "description": "Optional payout address."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 25,
+          "description": "Optional excess receiver."
+        }
+      ],
+      "description": "Claim accumulated creator fees."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2OpcodeF14b54f3",
+      "ty_idx": 29,
+      "prefix": {
+        "prefix_num": 4048246003,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "to",
+          "ty_idx": 25,
+          "description": "Optional payout or excess receiver address."
+        }
+      ],
+      "description": "Unnamed fee-claim request with one optional payout address."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2Excesses",
+      "ty_idx": 30,
+      "prefix": {
+        "prefix_num": 3576854235,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the request."
+        }
+      ],
+      "description": "Standard excess-value response accepted during callback handling."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2CpmmInitResult",
+      "ty_idx": 31,
+      "prefix": {
+        "prefix_num": 3457702871,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the migration request."
+        },
+        {
+          "name": "exitCode",
+          "ty_idx": 8,
+          "description": "Signed exit code returned by the initialized pool."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 32,
+          "description": "Optional callback payload tail."
+        }
+      ],
+      "description": "CPMM initialization result callback consumed after migration."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2BuyEvent",
+      "ty_idx": 33,
+      "prefix": {
+        "prefix_num": 2695523266,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "traderAddress",
+          "ty_idx": 7,
+          "description": "Trader address."
+        },
+        {
+          "name": "amountIn",
+          "ty_idx": 6,
+          "description": "GRAM input amount."
+        },
+        {
+          "name": "amountOut",
+          "ty_idx": 6,
+          "description": "Token output amount."
+        },
+        {
+          "name": "fees",
+          "ty_idx": 34,
+          "description": "Trade fee breakdown."
+        },
+        {
+          "name": "currentSupply",
+          "ty_idx": 6,
+          "description": "Current circulating supply after the buy."
+        },
+        {
+          "name": "raisedFunds",
+          "ty_idx": 6,
+          "description": "Raised GRAM after the buy."
+        },
+        {
+          "name": "isGraduated",
+          "ty_idx": 5,
+          "description": "Whether the token is graduated after the buy."
+        }
+      ],
+      "description": "External-out event emitted after a successful buy."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2SellEvent",
+      "ty_idx": 35,
+      "prefix": {
+        "prefix_num": 984677580,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "traderAddress",
+          "ty_idx": 7,
+          "description": "Trader address."
+        },
+        {
+          "name": "amountIn",
+          "ty_idx": 6,
+          "description": "Token input amount."
+        },
+        {
+          "name": "amountOut",
+          "ty_idx": 6,
+          "description": "GRAM output amount."
+        },
+        {
+          "name": "fees",
+          "ty_idx": 34,
+          "description": "Trade fee breakdown."
+        },
+        {
+          "name": "currentSupply",
+          "ty_idx": 6,
+          "description": "Current circulating supply after the sell."
+        },
+        {
+          "name": "raisedFunds",
+          "ty_idx": 6,
+          "description": "Raised GRAM after the sell."
+        }
+      ],
+      "description": "External-out event emitted after a successful sell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2Opcode66c8ad72",
+      "ty_idx": 36,
+      "prefix": {
+        "prefix_num": 1724427634,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the buy request."
+        }
+      ],
+      "description": "Compact successful-buy callback emitted to the excess receiver."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2TakeWalletAddress",
+      "ty_idx": 37,
+      "prefix": {
+        "prefix_num": 3513996288,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the wallet discovery request."
+        },
+        {
+          "name": "walletAddress",
+          "ty_idx": 25,
+          "description": "Deterministic wallet address, or `addr_none` when unresolved."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 39,
+          "description": "Optional referenced owner address."
+        }
+      ],
+      "description": "TEP-89 wallet discovery response emitted by the Meme minter."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2GetMemeDataReply",
+      "ty_idx": 48,
+      "fields": [
+        {
+          "name": "initialized",
+          "ty_idx": 5,
+          "description": "Whether the Meme has been initialized."
+        },
+        {
+          "name": "migrated",
+          "ty_idx": 5,
+          "description": "Whether liquidity has migrated to CPMM."
+        },
+        {
+          "name": "controllerAddress",
+          "ty_idx": 7,
+          "description": "Controller address."
+        },
+        {
+          "name": "creatorAddress",
+          "ty_idx": 7,
+          "description": "Creator address."
+        },
+        {
+          "name": "creatorFee",
+          "ty_idx": 1,
+          "description": "Accumulated creator fee."
+        },
+        {
+          "name": "seed",
+          "ty_idx": 45,
+          "description": "Deterministic seed."
+        },
+        {
+          "name": "isGraduated",
+          "ty_idx": 5,
+          "description": "Whether the Meme is graduated."
+        },
+        {
+          "name": "alpha",
+          "ty_idx": 1,
+          "description": "Bonding-curve alpha parameter."
+        },
+        {
+          "name": "beta",
+          "ty_idx": 1,
+          "description": "Bonding-curve beta parameter."
+        },
+        {
+          "name": "onSellSupply",
+          "ty_idx": 1,
+          "description": "Supply amount allocated for curve sells."
+        },
+        {
+          "name": "tradeFeeBps",
+          "ty_idx": 15,
+          "description": "Trading fee in basis points."
+        },
+        {
+          "name": "raisedFunds",
+          "ty_idx": 1,
+          "description": "GRAM raised so far."
+        },
+        {
+          "name": "currentSupply",
+          "ty_idx": 1,
+          "description": "Current circulating supply."
+        }
+      ],
+      "description": "Structured result returned by `get_meme_data`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeV2JettonDataReply",
+      "ty_idx": 49,
+      "fields": [
+        {
+          "name": "totalSupply",
+          "ty_idx": 1,
+          "description": "Total issued token supply."
+        },
+        {
+          "name": "mintable",
+          "ty_idx": 5,
+          "description": "Whether additional tokens can be minted."
+        },
+        {
+          "name": "adminAddress",
+          "ty_idx": 50,
+          "description": "Admin stack address; Uranus Meme V2 returns `addr_none`."
+        },
+        {
+          "name": "jettonContent",
+          "ty_idx": 3,
+          "description": "Token metadata content cell."
+        },
+        {
+          "name": "jettonWalletCode",
+          "ty_idx": 3,
+          "description": "Meme V2 wallet code cell."
+        }
+      ],
+      "description": "Structured result returned by Jetton minter `get_jetton_data`."
+    },
+    {
+      "kind": "enum",
+      "name": "DedustUranusMemeV2Errors",
+      "ty_idx": 40,
+      "encoded_as_ty_idx": 15,
+      "members": [
+        {
+          "name": "SlippageExceeded",
+          "value": "21",
+          "description": "Output amount is below the supplied slippage limit."
+        },
+        {
+          "name": "MessageValueTooLow",
+          "value": "23",
+          "description": "Attached GRAM value is not enough for the requested operation."
+        },
+        {
+          "name": "AlreadyInitialized",
+          "value": "24",
+          "description": "Meme state was already initialized."
+        },
+        {
+          "name": "SenderUnauthorized",
+          "value": "25",
+          "description": "Sender is not authorized for the operation."
+        },
+        {
+          "name": "NotInitialized",
+          "value": "28",
+          "description": "Meme state has not been initialized yet."
+        },
+        {
+          "name": "AlreadyGraduated",
+          "value": "29",
+          "description": "Meme already graduated and no longer accepts curve trading."
+        },
+        {
+          "name": "MigrationStateRequired",
+          "value": "32",
+          "description": "Required migration-state data is absent or invalid."
+        },
+        {
+          "name": "UnknownOperation",
+          "value": "65535",
+          "description": "Incoming message body tag is unknown."
+        }
+      ],
+      "description": "Exit codes used by the Uranus Meme V2 implementation."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 19
+    },
+    {
+      "body_ty_idx": 24
+    },
+    {
+      "body_ty_idx": 26
+    },
+    {
+      "body_ty_idx": 27
+    },
+    {
+      "body_ty_idx": 28
+    },
+    {
+      "body_ty_idx": 29
+    },
+    {
+      "body_ty_idx": 30
+    },
+    {
+      "body_ty_idx": 31
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 33
+    },
+    {
+      "body_ty_idx": 35
+    },
+    {
+      "body_ty_idx": 36
+    },
+    {
+      "body_ty_idx": 30
+    },
+    {
+      "body_ty_idx": 37
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 41
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 101289,
+      "name": "get_meme_data",
+      "parameters": [],
+      "return_ty_idx": 48,
+      "description": "Return the current Meme bonding-curve and fee state."
+    },
+    {
+      "tvm_method_id": 103289,
+      "name": "get_wallet_address",
+      "parameters": [
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7
+        }
+      ],
+      "return_ty_idx": 7,
+      "description": "Return the deterministic Meme V2 Wallet address for `ownerAddress`."
+    },
+    {
+      "tvm_method_id": 106029,
+      "name": "get_jetton_data",
+      "parameters": [],
+      "return_ty_idx": 49,
+      "description": "Return Jetton minter data for the Meme token."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.SlippageExceeded",
+      "description": "Output amount is below the supplied slippage limit.",
+      "err_code": 21
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.MessageValueTooLow",
+      "description": "Attached GRAM value is not enough for the requested operation.",
+      "err_code": 23
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.AlreadyInitialized",
+      "description": "Meme state was already initialized.",
+      "err_code": 24
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.SenderUnauthorized",
+      "description": "Sender is not authorized for the operation.",
+      "err_code": 25
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.NotInitialized",
+      "description": "Meme state has not been initialized yet.",
+      "err_code": 28
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.AlreadyGraduated",
+      "description": "Meme already graduated and no longer accepts curve trading.",
+      "err_code": 29
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.MigrationStateRequired",
+      "description": "Required migration-state data is absent or invalid.",
+      "err_code": 32
+    },
+    {
+      "kind": "enum_member",
+      "name": "DedustUranusMemeV2Errors.UnknownOperation",
+      "description": "Incoming message body tag is unknown.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

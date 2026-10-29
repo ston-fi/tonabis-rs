@@ -1,0 +1,3115 @@
+{
+  "scope": "Public Rust type renames only. Separate contract entities and all wire layouts are retained. Source names and fixture IDs are unchanged.",
+  "renames": [
+    {
+      "file": "crates/dedust/src/contracts/classic/common/method_results.rs",
+      "old": "VersionedCode",
+      "new": "DedustClassicVersionedCode"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common/method_results.rs",
+      "old": "NullableVersionedCode",
+      "new": "DedustClassicNullableVersionedCode"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "OperatorCode",
+      "new": "DedustClassicOperatorCode"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "PoolParameters",
+      "new": "DedustClassicPoolParameters"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "DepositParameters",
+      "new": "DedustClassicDepositParameters"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "NativeVaultParameters",
+      "new": "DedustClassicNativeVaultParameters"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "JettonVaultParameters",
+      "new": "DedustClassicJettonVaultParameters"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "OperatorParameters",
+      "new": "DedustClassicOperatorParameters"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/common.rs",
+      "old": "OperatorProof",
+      "new": "DedustClassicOperatorProof"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v1/method_results.rs",
+      "old": "GetOwnershipResult",
+      "new": "DedustFactoryV1GetOwnershipResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v1/storage.rs",
+      "old": "Errors",
+      "new": "DedustFactoryV1Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v2/method_results.rs",
+      "old": "GetOwnershipResult",
+      "new": "DedustFactoryV2GetOwnershipResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v2/storage.rs",
+      "old": "Errors",
+      "new": "DedustFactoryV2Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/method_results.rs",
+      "old": "GetPoolParamsResult",
+      "new": "DedustLiquidityDepositV1GetPoolParamsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/method_results.rs",
+      "old": "GetTargetBalancesResult",
+      "new": "DedustLiquidityDepositV1GetTargetBalancesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/method_results.rs",
+      "old": "GetBalancesResult",
+      "new": "DedustLiquidityDepositV1GetBalancesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustLiquidityDepositInstallMsg",
+      "new": "DedustLiquidityDepositV1InstallMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustDepositAssetMsg",
+      "new": "DedustLiquidityDepositV1DepositAssetMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustFulfillDepositMsg",
+      "new": "DedustLiquidityDepositV1FulfillDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustRejectDepositMsg",
+      "new": "DedustLiquidityDepositV1RejectDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustCancelDepositMsg",
+      "new": "DedustLiquidityDepositV1CancelDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustDepositLiquidityAllMsg",
+      "new": "DedustLiquidityDepositV1DepositLiquidityAllMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/msgs.rs",
+      "old": "DedustPayOutFromDepositMsg",
+      "new": "DedustLiquidityDepositV1PayOutFromDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/storage.rs",
+      "old": "DedustPoolParams",
+      "new": "DedustLiquidityDepositV1PoolParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/storage.rs",
+      "old": "DedustLiquidityDepositProofParams",
+      "new": "DedustLiquidityDepositV1ProofParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/storage.rs",
+      "old": "DedustLiquidityDepositProof",
+      "new": "DedustLiquidityDepositV1Proof"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/storage.rs",
+      "old": "DedustPoolProof",
+      "new": "DedustLiquidityDepositV1PoolProof"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/storage.rs",
+      "old": "DedustDepositLiquidityAllAssets",
+      "new": "DedustLiquidityDepositV1DepositLiquidityAllAssets"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1/storage.rs",
+      "old": "Errors",
+      "new": "DedustLiquidityDepositV1Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/method_results.rs",
+      "old": "GetPoolParamsResult",
+      "new": "DedustLiquidityDepositV2GetPoolParamsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/method_results.rs",
+      "old": "GetTargetBalancesResult",
+      "new": "DedustLiquidityDepositV2GetTargetBalancesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/method_results.rs",
+      "old": "GetBalancesResult",
+      "new": "DedustLiquidityDepositV2GetBalancesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustLiquidityDepositInstallMsg",
+      "new": "DedustLiquidityDepositV2InstallMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustDepositAssetMsg",
+      "new": "DedustLiquidityDepositV2DepositAssetMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustFulfillDepositMsg",
+      "new": "DedustLiquidityDepositV2FulfillDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustRejectDepositMsg",
+      "new": "DedustLiquidityDepositV2RejectDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustCancelDepositMsg",
+      "new": "DedustLiquidityDepositV2CancelDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustDepositLiquidityAllMsg",
+      "new": "DedustLiquidityDepositV2DepositLiquidityAllMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/msgs.rs",
+      "old": "DedustPayOutFromDepositMsg",
+      "new": "DedustLiquidityDepositV2PayOutFromDepositMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/storage.rs",
+      "old": "DedustPoolParams",
+      "new": "DedustLiquidityDepositV2PoolParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/storage.rs",
+      "old": "DedustLiquidityDepositProofParams",
+      "new": "DedustLiquidityDepositV2ProofParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/storage.rs",
+      "old": "DedustLiquidityDepositProof",
+      "new": "DedustLiquidityDepositV2Proof"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/storage.rs",
+      "old": "DedustPoolProof",
+      "new": "DedustLiquidityDepositV2PoolProof"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/storage.rs",
+      "old": "DedustDepositLiquidityAllAssets",
+      "new": "DedustLiquidityDepositV2DepositLiquidityAllAssets"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2/storage.rs",
+      "old": "Errors",
+      "new": "DedustLiquidityDepositV2Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/lp_wallet/method_results.rs",
+      "old": "WalletData",
+      "new": "DedustClassicLpWalletWalletData"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/lp_wallet/msgs.rs",
+      "old": "BurnMsg",
+      "new": "DedustClassicLpWalletBurnMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/lp_wallet/msgs.rs",
+      "old": "TransferMsg",
+      "new": "DedustClassicLpWalletTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/lp_wallet/msgs.rs",
+      "old": "InternalTransferMsg",
+      "new": "DedustClassicLpWalletInternalTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/lp_wallet/msgs.rs",
+      "old": "ExcessMsg",
+      "new": "DedustClassicLpWalletExcessMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/lp_wallet/msgs.rs",
+      "old": "TransferNotificationMsg",
+      "new": "DedustClassicLpWalletTransferNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/operator_pool/msgs.rs",
+      "old": "ConfigureSwapActivationMsg",
+      "new": "DedustOperatorPoolConfigureSwapActivationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "GetTradeFeeResult",
+      "new": "DedustPoolV1GetTradeFeeResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "GetReservesResult",
+      "new": "DedustPoolV1GetReservesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "GetProtocolFeesResult",
+      "new": "DedustPoolV1GetProtocolFeesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "GetAssetsResult",
+      "new": "DedustPoolV1GetAssetsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "EstimateSwapOutResult",
+      "new": "DedustPoolV1EstimateSwapOutResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "EstimateDepositOutResult",
+      "new": "DedustPoolV1EstimateDepositOutResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "DedustPoolV1GetJettonDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/method_results.rs",
+      "old": "GetDecimalsResult",
+      "new": "DedustPoolV1GetDecimalsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1/storage.rs",
+      "old": "Errors",
+      "new": "DedustPoolV1Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetTradeFeeResult",
+      "new": "DedustPoolV2GetTradeFeeResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetReservesResult",
+      "new": "DedustPoolV2GetReservesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetProtocolFeesResult",
+      "new": "DedustPoolV2GetProtocolFeesResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetAssetsResult",
+      "new": "DedustPoolV2GetAssetsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "EstimateSwapOutResult",
+      "new": "DedustPoolV2EstimateSwapOutResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "EstimateDepositOutResult",
+      "new": "DedustPoolV2EstimateDepositOutResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "DedustPoolV2GetJettonDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetQuoteProvidersResult",
+      "new": "DedustPoolV2GetQuoteProvidersResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetDecimalsResult",
+      "new": "DedustPoolV2GetDecimalsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/method_results.rs",
+      "old": "GetScalingFactorsResult",
+      "new": "DedustPoolV2GetScalingFactorsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2/storage.rs",
+      "old": "Errors",
+      "new": "DedustPoolV2Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v1/storage.rs",
+      "old": "Errors",
+      "new": "DedustVaultJettonV1Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v2/storage.rs",
+      "old": "DedustCreateLiquidityDepositParams",
+      "new": "DedustVaultJettonV2CreateLiquidityDepositParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v2/storage.rs",
+      "old": "Errors",
+      "new": "DedustVaultJettonV2Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_native_v1/storage.rs",
+      "old": "Errors",
+      "new": "DedustVaultNativeV1Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_native_v2/storage.rs",
+      "old": "DedustPoolParams",
+      "new": "DedustVaultNativeV2PoolParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_native_v2/storage.rs",
+      "old": "DedustCreateLiquidityDepositParams",
+      "new": "DedustVaultNativeV2CreateLiquidityDepositParams"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_native_v2/storage.rs",
+      "old": "Errors",
+      "new": "DedustVaultNativeV2Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/deployment.rs",
+      "old": "Revision",
+      "new": "DedustV2CpmmRevision"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/deposit/method_results.rs",
+      "old": "DepositData",
+      "new": "DedustV2CpmmDepositDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/deposit/msgs.rs",
+      "old": "CreditMsg",
+      "new": "DedustV2CpmmDepositCreditMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/deposit/msgs.rs",
+      "old": "RefundMsg",
+      "new": "DedustV2CpmmDepositRefundMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/pool/method_results.rs",
+      "old": "GetPoolDataResult",
+      "new": "DedustV2CpmmPoolGetPoolDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/pool/method_results.rs",
+      "old": "GetLiquidityAmountsResult",
+      "new": "DedustV2CpmmPoolGetLiquidityAmountsResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/pool/msgs.rs",
+      "old": "PayloadMsg",
+      "new": "DedustV2CpmmPoolPayloadMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/pool/msgs.rs",
+      "old": "JettonPayloadMsg",
+      "new": "DedustV2CpmmPoolJettonPayloadMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/pool/storage.rs",
+      "old": "Errors",
+      "new": "DedustV2CpmmPoolErrors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/position/method_results.rs",
+      "old": "PositionData",
+      "new": "DedustV2CpmmPositionDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/position/method_results.rs",
+      "old": "AvailableFees",
+      "new": "DedustV2CpmmPositionAvailableFees"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/position/msgs.rs",
+      "old": "ProvidePositionStateMsg",
+      "new": "DedustV2CpmmPositionProvidePositionStateMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/position/msgs.rs",
+      "old": "StateReplyMsg",
+      "new": "DedustV2CpmmPositionStateReplyMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/position/msgs.rs",
+      "old": "DepositNotificationMsg",
+      "new": "DedustV2CpmmPositionDepositNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "DelegationEnvelopeMsg",
+      "new": "DedustX1000WalletV1DelegationEnvelopeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "DelegatedKey",
+      "new": "DedustX1000WalletV1DelegatedKey"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "Authorization",
+      "new": "DedustX1000WalletV1Authorization"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "SignedCommandMsg",
+      "new": "DedustX1000WalletV1SignedCommandMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "ExecuteMsg",
+      "new": "DedustX1000WalletV1ExecuteMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "RevokeKeyMsg",
+      "new": "DedustX1000WalletV1RevokeKeyMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "PruneExpiredKeysMsg",
+      "new": "DedustX1000WalletV1PruneExpiredKeysMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "SendActions",
+      "new": "DedustX1000WalletV1SendActions"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "SendAction",
+      "new": "DedustX1000WalletV1SendAction"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "Callback01f3835dMsg",
+      "new": "DedustX1000WalletV1Callback01f3835dMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "Callback6edd65f0Msg",
+      "new": "DedustX1000WalletV1Callback6edd65f0Msg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "Callback474f86cfMsg",
+      "new": "DedustX1000WalletV1Callback474f86cfMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "CallbackC0ffee36Msg",
+      "new": "DedustX1000WalletV1CallbackC0ffee36Msg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "CallbackB39f717eMsg",
+      "new": "DedustX1000WalletV1CallbackB39f717eMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v1/msgs.rs",
+      "old": "Callback476adc0cMsg",
+      "new": "DedustX1000WalletV1Callback476adc0cMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "CallbackPayloadMsg",
+      "new": "DedustX1000WalletV2CallbackPayloadMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "JettonNotificationMsg",
+      "new": "DedustX1000WalletV2JettonNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "JettonExcessesMsg",
+      "new": "DedustX1000WalletV2JettonExcessesMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "ClassicNativePayoutMsg",
+      "new": "DedustX1000WalletV2ClassicNativePayoutMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "CoffeePayoutMsg",
+      "new": "DedustX1000WalletV2CoffeePayoutMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "PtonTransferMsg",
+      "new": "DedustX1000WalletV2PtonTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "BidaskLegacyNotificationMsg",
+      "new": "DedustX1000WalletV2BidaskLegacyNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "BidaskFlaggedNotificationMsg",
+      "new": "DedustX1000WalletV2BidaskFlaggedNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "BidaskNotificationMsg",
+      "new": "DedustX1000WalletV2BidaskNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "MoonClmmNativeResultMsg",
+      "new": "DedustX1000WalletV2MoonClmmNativeResultMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "MoonClmmNativeRefundMsg",
+      "new": "DedustX1000WalletV2MoonClmmNativeRefundMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "MoonClmmJettonResultPayloadMsg",
+      "new": "DedustX1000WalletV2MoonClmmJettonResultPayloadMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "SignedPayloadMsg",
+      "new": "DedustX1000WalletV2SignedPayloadMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "Action",
+      "new": "DedustX1000WalletV2Action"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/msgs.rs",
+      "old": "BodyReference",
+      "new": "DedustX1000WalletV2BodyReference"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "RuntimeState",
+      "new": "DedustX1000WalletV2RuntimeState"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "ExecutionEntry",
+      "new": "DedustX1000WalletV2ExecutionEntry"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "PendingContinuation",
+      "new": "DedustX1000WalletV2PendingContinuation"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "AddressPair",
+      "new": "DedustX1000WalletV2AddressPair"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "Address",
+      "new": "DedustX1000WalletV2Address"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "AddressAndWord",
+      "new": "DedustX1000WalletV2AddressAndWord"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "CoinAndPair",
+      "new": "DedustX1000WalletV2CoinAndPair"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "CoinAndTwoPairs",
+      "new": "DedustX1000WalletV2CoinAndTwoPairs"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "CoinAndPairAndAddress",
+      "new": "DedustX1000WalletV2CoinAndPairAndAddress"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "CoinAndPairAndWord",
+      "new": "DedustX1000WalletV2CoinAndPairAndWord"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "WordAndPairAndAddress",
+      "new": "DedustX1000WalletV2WordAndPairAndAddress"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "Context",
+      "new": "DedustX1000WalletV2Context"
+    },
+    {
+      "file": "crates/dedust/src/contracts/custom_wallet/v2/storage.rs",
+      "old": "ContextRecord",
+      "new": "DedustX1000WalletV2ContextRecord"
+    },
+    {
+      "file": "crates/dedust/src/contracts/operator/v2/method_results.rs",
+      "old": "GetOperatorDataResult",
+      "new": "DedustOperatorV2GetOperatorDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/signature_ref.rs",
+      "old": "SignatureRef",
+      "new": "DedustSignatureRef"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/deployment.rs",
+      "old": "Revision",
+      "new": "DedustUranusRevision"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/msgs.rs",
+      "old": "DedustUranusDeployMemeMsg",
+      "new": "DedustUranusFactoryV3DeployMemeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/msgs.rs",
+      "old": "DedustUranusDeployCustomizedMemeMsg",
+      "new": "DedustUranusFactoryV3DeployCustomizedMemeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/msgs.rs",
+      "old": "DedustUranusInitMemeMsg",
+      "new": "DedustUranusFactoryV3InitMemeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/storage.rs",
+      "old": "DedustUranusMemeMetadata",
+      "new": "DedustUranusFactoryV3MemeMetadata"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/storage.rs",
+      "old": "DedustUranusPartnerConfig",
+      "new": "DedustUranusFactoryV3PartnerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/storage.rs",
+      "old": "DedustUranusReferrerConfig",
+      "new": "DedustUranusFactoryV3ReferrerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/factory_v3/storage.rs",
+      "old": "Errors",
+      "new": "DedustUranusFactoryV3Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v2/method_results.rs",
+      "old": "GetMemeDataResult",
+      "new": "DedustUranusMemeV2GetMemeDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v2/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "DedustUranusMemeV2GetJettonDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/method_results.rs",
+      "old": "GetMemeDataResult",
+      "new": "DedustUranusMemeV3GetMemeDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/method_results.rs",
+      "old": "GetBondingCurveDataResult",
+      "new": "DedustUranusMemeV3GetBondingCurveDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/method_results.rs",
+      "old": "GetPartnerDataResult",
+      "new": "DedustUranusMemeV3GetPartnerDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "DedustUranusMemeV3GetJettonDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusInitMemeMsg",
+      "new": "DedustUranusMemeV3InitMemeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusBuyMsg",
+      "new": "DedustUranusMemeV3BuyMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusSellMsg",
+      "new": "DedustUranusMemeV3SellMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusBurnNotificationMsg",
+      "new": "DedustUranusMemeV3BurnNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusProvideWalletAddressMsg",
+      "new": "DedustUranusMemeV3ProvideWalletAddressMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusClaimCreatorFeeMsg",
+      "new": "DedustUranusMemeV3ClaimCreatorFeeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusClaimPartnerFeeMsg",
+      "new": "DedustUranusMemeV3ClaimPartnerFeeMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusOpcodeF14b54f3Msg",
+      "new": "DedustUranusMemeV3OpcodeF14b54f3Msg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusExcessesMsg",
+      "new": "DedustUranusMemeV3ExcessesMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusCpmmInitResultMsg",
+      "new": "DedustUranusMemeV3CpmmInitResultMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusBuyEventMsg",
+      "new": "DedustUranusMemeV3BuyEventMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusSellEventMsg",
+      "new": "DedustUranusMemeV3SellEventMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusOpcode66c8ad72Msg",
+      "new": "DedustUranusMemeV3Opcode66c8ad72Msg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/msgs.rs",
+      "old": "DedustUranusTakeWalletAddressMsg",
+      "new": "DedustUranusMemeV3TakeWalletAddressMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusMemeMetadata",
+      "new": "DedustUranusMemeV3Metadata"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusPartnerConfig",
+      "new": "DedustUranusMemeV3PartnerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusReferrerConfig",
+      "new": "DedustUranusMemeV3ReferrerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusMemeConfig",
+      "new": "DedustUranusMemeV3Config"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusBondingCurve",
+      "new": "DedustUranusMemeV3BondingCurve"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusTradeFees",
+      "new": "DedustUranusMemeV3TradeFees"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "Errors",
+      "new": "DedustUranusMemeV3Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3/storage.rs",
+      "old": "DedustUranusMigrationConfig",
+      "new": "DedustUranusMemeV3MigrationConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_msgs.rs",
+      "old": "RestoredOperation",
+      "new": "DedustUranusWalletRestoredOperation"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/method_results.rs",
+      "old": "GetWalletDataResult",
+      "new": "DedustUranusMemeWalletV2GetWalletDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusJettonTransferMsg",
+      "new": "DedustUranusMemeWalletV2JettonTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusJettonInternalTransferMsg",
+      "new": "DedustUranusMemeWalletV2JettonInternalTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusJettonBurnMsg",
+      "new": "DedustUranusMemeWalletV2JettonBurnMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusSellTokensMsg",
+      "new": "DedustUranusMemeWalletV2SellTokensMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusSellMsg",
+      "new": "DedustUranusMemeWalletV2SellMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusBurnNotificationMsg",
+      "new": "DedustUranusMemeWalletV2BurnNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusTransferNotificationMsg",
+      "new": "DedustUranusMemeWalletV2TransferNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/msgs.rs",
+      "old": "DedustUranusExcessesMsg",
+      "new": "DedustUranusMemeWalletV2ExcessesMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/storage.rs",
+      "old": "DedustUranusPartnerConfig",
+      "new": "DedustUranusMemeWalletV2PartnerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/storage.rs",
+      "old": "DedustUranusReferrerConfig",
+      "new": "DedustUranusMemeWalletV2ReferrerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v2/storage.rs",
+      "old": "Errors",
+      "new": "DedustUranusMemeWalletV2Errors"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/method_results.rs",
+      "old": "GetWalletDataResult",
+      "new": "DedustUranusMemeWalletV3GetWalletDataResult"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusJettonTransferMsg",
+      "new": "DedustUranusMemeWalletV3JettonTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusJettonInternalTransferMsg",
+      "new": "DedustUranusMemeWalletV3JettonInternalTransferMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusJettonBurnMsg",
+      "new": "DedustUranusMemeWalletV3JettonBurnMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusSellTokensMsg",
+      "new": "DedustUranusMemeWalletV3SellTokensMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusSellMsg",
+      "new": "DedustUranusMemeWalletV3SellMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusBurnNotificationMsg",
+      "new": "DedustUranusMemeWalletV3BurnNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusTransferNotificationMsg",
+      "new": "DedustUranusMemeWalletV3TransferNotificationMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/msgs.rs",
+      "old": "DedustUranusExcessesMsg",
+      "new": "DedustUranusMemeWalletV3ExcessesMsg"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/storage.rs",
+      "old": "DedustUranusPartnerConfig",
+      "new": "DedustUranusMemeWalletV3PartnerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/storage.rs",
+      "old": "DedustUranusReferrerConfig",
+      "new": "DedustUranusMemeWalletV3ReferrerConfig"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/wallet_v3/storage.rs",
+      "old": "Errors",
+      "new": "DedustUranusMemeWalletV3Errors"
+    },
+    {
+      "file": "crates/moon/src/contracts/address.rs",
+      "old": "ReferencedAddress",
+      "new": "MoonReferencedAddress"
+    },
+    {
+      "file": "crates/moon/src/contracts/booster/msgs.rs",
+      "old": "ExternalBoostTriggerMsg",
+      "new": "MoonBoosterExternalBoostTriggerMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeSwapMsg",
+      "new": "MoonCatalogClmmRangeSwapMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeWrappedSwapMsg",
+      "new": "MoonCatalogClmmRangeWrappedSwapMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeDepositLiquidityMsg",
+      "new": "MoonCatalogClmmRangeDepositLiquidityMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeJettonTransferNotificationMsg",
+      "new": "MoonCatalogClmmRangeJettonTransferNotificationMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeSwapForwardPayloadMsg",
+      "new": "MoonCatalogClmmRangeSwapForwardPayloadMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeDepositLiquidityForwardPayloadMsg",
+      "new": "MoonCatalogClmmRangeDepositLiquidityForwardPayloadMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeNativeSwapResultMsg",
+      "new": "MoonCatalogClmmRangeNativeSwapResultMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeJettonSwapResultPayloadMsg",
+      "new": "MoonCatalogClmmRangeJettonSwapResultPayloadMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeNativeSwapRefundMsg",
+      "new": "MoonCatalogClmmRangeNativeSwapRefundMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonClmmRangeJettonTransferMsg",
+      "new": "MoonCatalogClmmRangeJettonTransferMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonCatalogRangeIncomingMsg",
+      "new": "MoonCatalogClmmRangeIncomingMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/msgs.rs",
+      "old": "MoonCatalogRangeOutgoingMsg",
+      "new": "MoonCatalogClmmRangeOutgoingMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/storage.rs",
+      "old": "MoonClmmRangeStorage",
+      "new": "MoonCatalogClmmRangeStorage"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/storage.rs",
+      "old": "MoonClmmRangeState",
+      "new": "MoonCatalogClmmRangeState"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/storage.rs",
+      "old": "MoonClmmRangeCallback",
+      "new": "MoonCatalogClmmRangeCallback"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/storage.rs",
+      "old": "MoonClmmRangeSwapPayload",
+      "new": "MoonCatalogClmmRangeSwapPayload"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range/storage.rs",
+      "old": "MoonClmmRangeDepositBin",
+      "new": "MoonCatalogClmmRangeDepositBin"
+    },
+    {
+      "file": "crates/moon/src/contracts/clmm/pool/method_results.rs",
+      "old": "RangesResult",
+      "new": "MoonClmmPoolRangesResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetReservesResult",
+      "new": "MoonLegacyPoolGetReservesResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetAssetsResult",
+      "new": "MoonLegacyPoolGetAssetsResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetWalletsResult",
+      "new": "MoonLegacyPoolGetWalletsResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetFeesResult",
+      "new": "MoonLegacyPoolGetFeesResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetCollectedFeesResult",
+      "new": "MoonLegacyPoolGetCollectedFeesResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetEstimatedLpBurnResult",
+      "new": "MoonLegacyPoolGetEstimatedLpBurnResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetEstimatedSwapOutResult",
+      "new": "MoonLegacyPoolGetEstimatedSwapOutResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "MoonLegacyPoolGetJettonDataResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolJettonForwardPayloadInlineMsg",
+      "new": "MoonLegacyPoolJettonForwardPayloadInlineMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolJettonForwardPayloadInRefMsg",
+      "new": "MoonLegacyPoolJettonForwardPayloadInRefMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolInitializeMsg",
+      "new": "MoonLegacyPoolInitializeMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolSwapMsg",
+      "new": "MoonLegacyPoolSwapMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolSwapForwardPayloadMsg",
+      "new": "MoonLegacyPoolSwapForwardPayloadMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolDepositLiquidityMsg",
+      "new": "MoonLegacyPoolDepositLiquidityMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolDepositLiquidityForwardPayloadMsg",
+      "new": "MoonLegacyPoolDepositLiquidityForwardPayloadMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolBoostMsg",
+      "new": "MoonLegacyPoolBoostMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolBoostForwardPayloadMsg",
+      "new": "MoonLegacyPoolBoostForwardPayloadMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolProvideLiquidityMsg",
+      "new": "MoonLegacyPoolProvideLiquidityMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolCancelDepositMsg",
+      "new": "MoonLegacyPoolCancelDepositMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolLpBurnNotificationMsg",
+      "new": "MoonLegacyPoolLpBurnNotificationMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolJettonTransferNotificationMsg",
+      "new": "MoonLegacyPoolJettonTransferNotificationMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolCollectFeesMsg",
+      "new": "MoonLegacyPoolCollectFeesMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolCollectFeesPayoutMsg",
+      "new": "MoonLegacyPoolCollectFeesPayoutMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolSetFeesMsg",
+      "new": "MoonLegacyPoolSetFeesMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolSetContentMsg",
+      "new": "MoonLegacyPoolSetContentMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolUpgradeCodeMsg",
+      "new": "MoonLegacyPoolUpgradeCodeMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolExcessMsg",
+      "new": "MoonLegacyPoolExcessMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolJettonInternalTransferMsg",
+      "new": "MoonLegacyPoolJettonInternalTransferMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolJettonTransferMsg",
+      "new": "MoonLegacyPoolJettonTransferMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolSwapSucceedMsg",
+      "new": "MoonLegacyPoolSwapSucceedMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolSwapFailedMsg",
+      "new": "MoonLegacyPoolSwapFailedMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolProvideLiquiditySucceedMsg",
+      "new": "MoonLegacyPoolProvideLiquiditySucceedMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolProvideLiquidityFailedMsg",
+      "new": "MoonLegacyPoolProvideLiquidityFailedMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolDepositRecordMsg",
+      "new": "MoonLegacyPoolDepositRecordMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolWithdrawLiquidityPayoutMsg",
+      "new": "MoonLegacyPoolWithdrawLiquidityPayoutMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolWithdrawLiquidityNotifyMsg",
+      "new": "MoonLegacyPoolWithdrawLiquidityNotifyMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolCancelDepositPayoutMsg",
+      "new": "MoonLegacyPoolCancelDepositPayoutMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/msgs.rs",
+      "old": "MoonPoolReferralPayoutMsg",
+      "new": "MoonLegacyPoolReferralPayoutMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolDeploymentStorage",
+      "new": "MoonLegacyPoolDeploymentStorage"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolStorage",
+      "new": "MoonLegacyPoolStorage"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolBalances",
+      "new": "MoonLegacyPoolBalances"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolAssetsAndContent",
+      "new": "MoonLegacyPoolAssetsAndContent"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolAssetAmount",
+      "new": "MoonLegacyPoolAssetAmount"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolNextPayload",
+      "new": "MoonLegacyPoolNextPayload"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolSwapParams",
+      "new": "MoonLegacyPoolSwapParams"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolReservesReply",
+      "new": "MoonLegacyPoolReservesReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolAssetsReply",
+      "new": "MoonLegacyPoolAssetsReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolWalletsReply",
+      "new": "MoonLegacyPoolWalletsReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolFeesReply",
+      "new": "MoonLegacyPoolFeesReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolCollectedFeesReply",
+      "new": "MoonLegacyPoolCollectedFeesReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolEstimatedLpBurnReply",
+      "new": "MoonLegacyPoolEstimatedLpBurnReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolEstimatedSwapOutReply",
+      "new": "MoonLegacyPoolEstimatedSwapOutReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool/storage.rs",
+      "old": "MoonPoolJettonDataReply",
+      "new": "MoonLegacyPoolJettonDataReply"
+    },
+    {
+      "file": "crates/moon/src/contracts/mempad/curve/method_results.rs",
+      "old": "JettonDataResult",
+      "new": "MoonMempadCurveJettonDataResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/mempad/curve/method_results.rs",
+      "old": "NullResult",
+      "new": "MoonMempadCurveNullResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/mempad/wallet/method_results.rs",
+      "old": "WalletDataResult",
+      "new": "MoonMempadWalletWalletDataResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/metadata.rs",
+      "old": "PrefixedString",
+      "new": "MoonPrefixedString"
+    },
+    {
+      "file": "crates/moon/src/contracts/msgs.rs",
+      "old": "JettonTransferMsg",
+      "new": "MoonJettonTransferMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/msgs.rs",
+      "old": "BounceMsg",
+      "new": "MoonBounceMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/msgs.rs",
+      "old": "ReferencedBounceMsg",
+      "new": "MoonReferencedBounceMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/order_new/method_results.rs",
+      "old": "GetVestingDataResult",
+      "new": "MoonOrderNewGetVestingDataResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/order_new/msgs.rs",
+      "old": "ExternalVestingReleaseMsg",
+      "new": "MoonOrderNewExternalVestingReleaseMsg"
+    },
+    {
+      "file": "crates/moon/src/contracts/order_old/method_results.rs",
+      "old": "GetVestingDataResult",
+      "new": "MoonOrderOldGetVestingDataResult"
+    },
+    {
+      "file": "crates/moon/src/contracts/order_old/msgs.rs",
+      "old": "ExternalVestingReleaseMsg",
+      "new": "MoonOrderOldExternalVestingReleaseMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/method_results.rs",
+      "old": "GetTaxResult",
+      "new": "StonksCustomWalletGetTaxResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/method_results.rs",
+      "old": "GetWalletDataResult",
+      "new": "StonksCustomWalletGetWalletDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "JettonTransferMsg",
+      "new": "StonksCustomWalletJettonTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "JettonInternalTransferMsg",
+      "new": "StonksCustomWalletJettonInternalTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "JettonBurnMsg",
+      "new": "StonksCustomWalletJettonBurnMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "JettonTaxTransferMsg",
+      "new": "StonksCustomWalletJettonTaxTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "CustomJettonWalletBouncedKnownBodyMsg",
+      "new": "StonksCustomWalletBouncedKnownBodyMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "JettonTransferNotificationMsg",
+      "new": "StonksCustomWalletJettonTransferNotificationMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/msgs.rs",
+      "old": "Message",
+      "new": "StonksCustomWalletMessage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/custom_wallet/storage.rs",
+      "old": "JettonTransferContext",
+      "new": "StonksCustomWalletJettonTransferContext"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_factory/method_results.rs",
+      "old": "GetFactoryDataResult",
+      "new": "StonksDedustFactoryGetFactoryDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_factory/msgs.rs",
+      "old": "CreateVirtualLiquidityJettonMsg",
+      "new": "StonksDedustFactoryCreateVirtualLiquidityJettonMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v12/method_results.rs",
+      "old": "GetBondingDataResult",
+      "new": "StonksDedustMinterV12GetBondingDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v12/method_results.rs",
+      "old": "GetFeeDataResult",
+      "new": "StonksDedustMinterV12GetFeeDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v12/method_results.rs",
+      "old": "GetExtendedDataResult",
+      "new": "StonksDedustMinterV12GetExtendedDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v12/msgs.rs",
+      "old": "Message",
+      "new": "StonksDedustMinterV12Message"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v12/storage.rs",
+      "old": "MigrationConfig",
+      "new": "StonksDedustMinterV12MigrationConfig"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7/msgs.rs",
+      "old": "MigrationParametersMsg",
+      "new": "StonksDedustMinterV7MigrationParametersMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7/msgs.rs",
+      "old": "MigrationRequestMsg",
+      "new": "StonksDedustMinterV7MigrationRequestMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7/msgs.rs",
+      "old": "MigrationCallbackMsg",
+      "new": "StonksDedustMinterV7MigrationCallbackMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7/msgs.rs",
+      "old": "Message",
+      "new": "StonksDedustMinterV7Message"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7/storage.rs",
+      "old": "LaunchState",
+      "new": "StonksDedustMinterV7LaunchState"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7/storage.rs",
+      "old": "MigrationConfig",
+      "new": "StonksDedustMinterV7MigrationConfig"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/method_results.rs",
+      "old": "GetWalletDataResult",
+      "new": "StonksDedustWalletGetWalletDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/method_results.rs",
+      "old": "GetExtendedDataResult",
+      "new": "StonksDedustWalletGetExtendedDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/msgs.rs",
+      "old": "InternalTransferMsg",
+      "new": "StonksDedustWalletInternalTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/msgs.rs",
+      "old": "SetFlagMsg",
+      "new": "StonksDedustWalletSetFlagMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/msgs.rs",
+      "old": "BouncedTransferMsg",
+      "new": "StonksDedustWalletBouncedTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/msgs.rs",
+      "old": "Message",
+      "new": "StonksDedustWalletMessage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_wallet/storage.rs",
+      "old": "WalletContext",
+      "new": "StonksDedustWalletContext"
+    },
+    {
+      "file": "crates/stonks/src/contracts/generation.rs",
+      "old": "Generation",
+      "new": "StonksGeneration"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_factory/method_results.rs",
+      "old": "GetFactoryDataResult",
+      "new": "StonksStonFactoryGetFactoryDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_factory/msgs.rs",
+      "old": "CreateVirtualLiquidityJettonMsg",
+      "new": "StonksStonFactoryCreateVirtualLiquidityJettonMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_factory/msgs.rs",
+      "old": "VirtualFactoryWithdrawTonMsg",
+      "new": "StonksStonFactoryWithdrawTonMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_factory/msgs.rs",
+      "old": "VirtualFactorySetDisabledMsg",
+      "new": "StonksStonFactorySetDisabledMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_factory/msgs.rs",
+      "old": "Message",
+      "new": "StonksStonFactoryMessage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/method_results.rs",
+      "old": "GetBondingDataResult",
+      "new": "StonksStonMinterGetBondingDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "StonksStonMinterGetJettonDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/method_results.rs",
+      "old": "GetExtendedDataResult",
+      "new": "StonksStonMinterGetExtendedDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/method_results.rs",
+      "old": "GetStonDataResult",
+      "new": "StonksStonMinterGetStonDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/method_results.rs",
+      "old": "GetProtocolAddressesResult",
+      "new": "StonksStonMinterGetProtocolAddressesResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "VirtualDevBuyMsg",
+      "new": "StonksStonMinterVirtualDevBuyMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "JettonMintMsg",
+      "new": "StonksStonMinterJettonMintMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "JettonBurnNotificationMsg",
+      "new": "StonksStonMinterJettonBurnNotificationMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "ProvideWalletAddressMsg",
+      "new": "StonksStonMinterProvideWalletAddressMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "ChangeAdminMsg",
+      "new": "StonksStonMinterChangeAdminMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "ChangeContentMsg",
+      "new": "StonksStonMinterChangeContentMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "VirtualMinterInitMsg",
+      "new": "StonksStonMinterVirtualMinterInitMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "BuyFromPresaleMsg",
+      "new": "StonksStonMinterBuyFromPresaleMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "PresaleSellNotificationForMinterMsg",
+      "new": "StonksStonMinterPresaleSellNotificationForMinterMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "AskToPresaleSellMsg",
+      "new": "StonksStonMinterAskToPresaleSellMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "JettonInternalTransferMsg",
+      "new": "StonksStonMinterJettonInternalTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "JettonExcessesMsg",
+      "new": "StonksStonMinterJettonExcessesMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "TakeWalletAddressMsg",
+      "new": "StonksStonMinterTakeWalletAddressMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "PresaleTradeEventMsg",
+      "new": "StonksStonMinterPresaleTradeEventMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "Message",
+      "new": "StonksStonMinterLegacyMessage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "ControllerInitMsg",
+      "new": "StonksStonMinterControllerInitMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "WalletStatusRequestMsg",
+      "new": "StonksStonMinterWalletStatusRequestMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "WithdrawTonMsg",
+      "new": "StonksStonMinterWithdrawTonMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "RetryMigrationMsg",
+      "new": "StonksStonMinterRetryMigrationMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "StonSellNotificationMsg",
+      "new": "StonksStonMinterCurrentSellNotificationMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "StonMessage",
+      "new": "StonksStonMinterCurrentMessage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "BuyMsg",
+      "new": "StonksStonMinterBuyMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "SellWithPayloadMsg",
+      "new": "StonksStonMinterSellWithPayloadMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "SellNotificationMsg",
+      "new": "StonksStonMinterSellNotificationMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/msgs.rs",
+      "old": "SellMsg",
+      "new": "StonksStonMinterSellMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/storage.rs",
+      "old": "VirtualMinterStorage",
+      "new": "StonksVirtualMinterStorage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/storage.rs",
+      "old": "VirtualMinterBondingState",
+      "new": "StonksVirtualMinterBondingState"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/storage.rs",
+      "old": "LaunchState",
+      "new": "StonksStonMinterLaunchState"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter/storage.rs",
+      "old": "MigrationConfig",
+      "new": "StonksStonMinterMigrationConfig"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_wallet/method_results.rs",
+      "old": "GetExtendedDataResult",
+      "new": "StonksStonWalletGetExtendedDataResult"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_wallet/msgs.rs",
+      "old": "InternalTransferMsg",
+      "new": "StonksStonWalletInternalTransferMsg"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_wallet/msgs.rs",
+      "old": "Message",
+      "new": "StonksStonWalletMessage"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_wallet/storage.rs",
+      "old": "WalletContext",
+      "new": "StonksStonWalletContext"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/cross_dex.rs",
+      "old": "Errors",
+      "new": "CoffeeCrossDexErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory/method_results.rs",
+      "old": "AddressWithHashResult",
+      "new": "CoffeeFactoryAddressWithHashResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory/method_results.rs",
+      "old": "GetCodeResult",
+      "new": "CoffeeFactoryGetCodeResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory.rs",
+      "old": "FactoryErrors",
+      "new": "CoffeeFactoryErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/init.rs",
+      "old": "Errors",
+      "new": "CoffeeInitErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/liquidity_depository.rs",
+      "old": "DepositoryErrors",
+      "new": "CoffeeLiquidityDepositoryErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/lp_wallet/method_results.rs",
+      "old": "GetWalletDataResult",
+      "new": "CoffeeLpWalletGetWalletDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/lp_wallet/msgs.rs",
+      "old": "BounceOpcode",
+      "new": "CoffeeLpWalletBounceOpcode"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/lp_wallet/msgs.rs",
+      "old": "BounceMessage",
+      "new": "CoffeeLpWalletBounceMessage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/lp_wallet.rs",
+      "old": "LpWalletErrors",
+      "new": "CoffeeLpWalletErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/mev.rs",
+      "old": "ReplayMarker",
+      "new": "CoffeeMevReplayMarker"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/mev_protector.rs",
+      "old": "Errors",
+      "new": "CoffeeMevProtectorErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/method_results.rs",
+      "old": "EstimateSwapAmountResult",
+      "new": "CoffeeConstantProductPoolEstimateSwapAmountResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/method_results.rs",
+      "old": "EstimateLiquidityWithdrawAmountResult",
+      "new": "CoffeeConstantProductPoolEstimateLiquidityWithdrawAmountResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "CoffeeConstantProductPoolGetJettonDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/method_results.rs",
+      "old": "EstimateLiquidityDepositAmountResult",
+      "new": "CoffeeConstantProductPoolEstimateLiquidityDepositAmountResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/method_results.rs",
+      "old": "GetPoolDataResult",
+      "new": "CoffeeConstantProductPoolGetPoolDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductSwapInternalMsg",
+      "new": "CoffeeConstantProductPoolSwapInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductDepositLiquidityInternalMsg",
+      "new": "CoffeeConstantProductPoolDepositLiquidityInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductJettonBurnNotificationMsg",
+      "new": "CoffeeConstantProductPoolJettonBurnNotificationMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductProvideWalletAddressMsg",
+      "new": "CoffeeConstantProductPoolProvideWalletAddressMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductWithdrawInternalMsg",
+      "new": "CoffeeConstantProductPoolWithdrawInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductUpdatePoolInternalMsg",
+      "new": "CoffeeConstantProductPoolUpdatePoolInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductUpdateContractInternalMsg",
+      "new": "CoffeeConstantProductPoolUpdateContractInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductCreatePoolInternalMsg",
+      "new": "CoffeeConstantProductPoolCreatePoolInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductDeployMsg",
+      "new": "CoffeeConstantProductPoolDeployMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductPayoutInternalMsg",
+      "new": "CoffeeConstantProductPoolPayoutInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductSwapInternalOutMsg",
+      "new": "CoffeeConstantProductPoolSwapInternalOutMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductNotificationMsg",
+      "new": "CoffeeConstantProductPoolNotificationMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductSwapSucceededMsg",
+      "new": "CoffeeConstantProductPoolSwapSucceededMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductSwapFailedMsg",
+      "new": "CoffeeConstantProductPoolSwapFailedMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductDepositLiquiditySucceededMsg",
+      "new": "CoffeeConstantProductPoolDepositLiquiditySucceededMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductDepositLiquidityFailedMsg",
+      "new": "CoffeeConstantProductPoolDepositLiquidityFailedMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductWithdrawLiquiditySucceededMsg",
+      "new": "CoffeeConstantProductPoolWithdrawLiquiditySucceededMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductTakeWalletAddressMsg",
+      "new": "CoffeeConstantProductPoolTakeWalletAddressMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductExcessesMsg",
+      "new": "CoffeeConstantProductPoolExcessesMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductLpWalletInternalTransferMsg",
+      "new": "CoffeeConstantProductPoolLpWalletInternalTransferMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductIncomingMessage",
+      "new": "CoffeeConstantProductPoolIncomingMessage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/msgs.rs",
+      "old": "CoffeePoolConstantProductOutgoingMessage",
+      "new": "CoffeeConstantProductPoolOutgoingMessage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolConstantProductStorage",
+      "new": "CoffeeConstantProductPoolStorage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolDoubleAssetParams",
+      "new": "CoffeeConstantProductPoolDoubleAssetParams"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolPoolProofBody",
+      "new": "CoffeeConstantProductPoolSourcePoolProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolLiquidityDepositoryProofBody",
+      "new": "CoffeeConstantProductPoolLiquidityDepositoryProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolCreatorProofBody",
+      "new": "CoffeeConstantProductPoolCreatorProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolProof",
+      "new": "CoffeeConstantProductPoolProof"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product/storage.rs",
+      "old": "CoffeePoolProofBody",
+      "new": "CoffeeConstantProductPoolProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product.rs",
+      "old": "PoolErrors",
+      "new": "CoffeeConstantProductPoolErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_creator.rs",
+      "old": "PoolCreatorErrors",
+      "new": "CoffeePoolCreatorErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/method_results.rs",
+      "old": "EstimateSwapAmountResult",
+      "new": "CoffeeCurveFiStablePoolEstimateSwapAmountResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/method_results.rs",
+      "old": "EstimateLiquidityWithdrawAmountResult",
+      "new": "CoffeeCurveFiStablePoolEstimateLiquidityWithdrawAmountResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/method_results.rs",
+      "old": "EstimateLiquidityDepositAmountResult",
+      "new": "CoffeeCurveFiStablePoolEstimateLiquidityDepositAmountResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "CoffeeCurveFiStablePoolGetJettonDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/method_results.rs",
+      "old": "GetPoolDataResult",
+      "new": "CoffeeCurveFiStablePoolGetPoolDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableSwapInternalMsg",
+      "new": "CoffeeCurveFiStablePoolSwapInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableDepositLiquidityInternalMsg",
+      "new": "CoffeeCurveFiStablePoolDepositLiquidityInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableJettonBurnNotificationMsg",
+      "new": "CoffeeCurveFiStablePoolJettonBurnNotificationMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableProvideWalletAddressMsg",
+      "new": "CoffeeCurveFiStablePoolProvideWalletAddressMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableWithdrawInternalMsg",
+      "new": "CoffeeCurveFiStablePoolWithdrawInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableUpdatePoolInternalMsg",
+      "new": "CoffeeCurveFiStablePoolUpdatePoolInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableUpdateContractInternalMsg",
+      "new": "CoffeeCurveFiStablePoolUpdateContractInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableCreatePoolInternalMsg",
+      "new": "CoffeeCurveFiStablePoolCreatePoolInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableDeployMsg",
+      "new": "CoffeeCurveFiStablePoolDeployMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStablePayoutInternalMsg",
+      "new": "CoffeeCurveFiStablePoolPayoutInternalMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableSwapInternalOutMsg",
+      "new": "CoffeeCurveFiStablePoolSwapInternalOutMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableNotificationMsg",
+      "new": "CoffeeCurveFiStablePoolNotificationMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableSwapSucceededMsg",
+      "new": "CoffeeCurveFiStablePoolSwapSucceededMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableSwapFailedMsg",
+      "new": "CoffeeCurveFiStablePoolSwapFailedMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableDepositLiquiditySucceededMsg",
+      "new": "CoffeeCurveFiStablePoolDepositLiquiditySucceededMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableDepositLiquidityFailedMsg",
+      "new": "CoffeeCurveFiStablePoolDepositLiquidityFailedMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableWithdrawLiquiditySucceededMsg",
+      "new": "CoffeeCurveFiStablePoolWithdrawLiquiditySucceededMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableTakeWalletAddressMsg",
+      "new": "CoffeeCurveFiStablePoolTakeWalletAddressMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableExcessesMsg",
+      "new": "CoffeeCurveFiStablePoolExcessesMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableLpWalletInternalTransferMsg",
+      "new": "CoffeeCurveFiStablePoolLpWalletInternalTransferMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableIncomingMessage",
+      "new": "CoffeeCurveFiStablePoolIncomingMessage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/msgs.rs",
+      "old": "CoffeePoolCurveFiStableOutgoingMessage",
+      "new": "CoffeeCurveFiStablePoolOutgoingMessage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolCurveFiStableStorage",
+      "new": "CoffeeCurveFiStablePoolStorage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolCurveFiStableAmmSettings",
+      "new": "CoffeeCurveFiStablePoolAmmSettings"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolDoubleAssetParams",
+      "new": "CoffeeCurveFiStablePoolDoubleAssetParams"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolPoolProofBody",
+      "new": "CoffeeCurveFiStablePoolSourcePoolProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolLiquidityDepositoryProofBody",
+      "new": "CoffeeCurveFiStablePoolLiquidityDepositoryProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolCreatorProofBody",
+      "new": "CoffeeCurveFiStablePoolCreatorProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolProof",
+      "new": "CoffeeCurveFiStablePoolProof"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable/storage.rs",
+      "old": "CoffeePoolProofBody",
+      "new": "CoffeeCurveFiStablePoolProofBody"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable.rs",
+      "old": "Errors",
+      "new": "CoffeeCurveFiStablePoolErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking.rs",
+      "old": "Period",
+      "new": "CoffeeStakingPeriod"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking.rs",
+      "old": "JettonConfiguration",
+      "new": "CoffeeStakingJettonConfiguration"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking.rs",
+      "old": "RewardSchedule",
+      "new": "CoffeeStakingRewardSchedule"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_item/method_results.rs",
+      "old": "GetNftDataResult",
+      "new": "CoffeeStakingItemGetNftDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_item/method_results.rs",
+      "old": "GetStoredDataResult",
+      "new": "CoffeeStakingItemGetStoredDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_item.rs",
+      "old": "Errors",
+      "new": "CoffeeStakingItemErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/method_results.rs",
+      "old": "GetStoredDataResult",
+      "new": "CoffeeStakingMasterGetStoredDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/method_results.rs",
+      "old": "GetCollectionDataResult",
+      "new": "CoffeeStakingMasterGetCollectionDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/msgs.rs",
+      "old": "DepositSummary",
+      "new": "CoffeeStakingMasterDepositSummary"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/msgs.rs",
+      "old": "DepositLogMsg",
+      "new": "CoffeeStakingMasterDepositLogMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/msgs.rs",
+      "old": "InternalMessage",
+      "new": "CoffeeStakingMasterInternalMessage"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/msgs.rs",
+      "old": "UnlockToVaultMsg",
+      "new": "CoffeeStakingMasterUnlockToVaultMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/msgs.rs",
+      "old": "ExcessesMsg",
+      "new": "CoffeeStakingMasterExcessesMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/msgs.rs",
+      "old": "JettonTransferMsg",
+      "new": "CoffeeStakingMasterJettonTransferMsg"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master.rs",
+      "old": "Errors",
+      "new": "CoffeeStakingMasterErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_vault/method_results.rs",
+      "old": "GetStoredDataResult",
+      "new": "CoffeeStakingVaultGetStoredDataResult"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_vault.rs",
+      "old": "Errors",
+      "new": "CoffeeStakingVaultErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_extra.rs",
+      "old": "Errors",
+      "new": "CoffeeVaultExtraErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_jetton/msgs.rs",
+      "old": "OwnerResponse",
+      "new": "CoffeeVaultJettonOwnerResponse"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_jetton.rs",
+      "old": "Errors",
+      "new": "CoffeeVaultJettonErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_native.rs",
+      "old": "Errors",
+      "new": "CoffeeVaultNativeErrors"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_proof.rs",
+      "old": "PoolIdentity",
+      "new": "CoffeeVaultPoolIdentity"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_proof.rs",
+      "old": "Identity",
+      "new": "CoffeeVaultSenderIdentity"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/vault_proof.rs",
+      "old": "ContractProof",
+      "new": "CoffeeVaultContractProof"
+    },
+    {
+      "file": "crates/tonco/src/contracts/farming/distributor/storage.rs",
+      "old": "MerkleRoots",
+      "new": "ToncoFarmingDistributorMerkleRoots"
+    },
+    {
+      "file": "crates/tonco/src/contracts/farming/msgs.rs",
+      "old": "Entry",
+      "new": "ToncoFarmingEntry"
+    },
+    {
+      "file": "crates/tonco/src/contracts/farming/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoFarmingIncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/farming/msgs.rs",
+      "old": "LegacyIndex",
+      "new": "ToncoFarmingLegacyIndex"
+    },
+    {
+      "file": "crates/tonco/src/contracts/farming/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoFarmingOutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/minter/method_results.rs",
+      "old": "GetJettonDataResult",
+      "new": "ToncoNativeMinterGetJettonDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/minter/method_results.rs",
+      "old": "GetVersionResult",
+      "new": "ToncoNativeMinterGetVersionResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/minter/msgs.rs",
+      "old": "Owner",
+      "new": "ToncoNativeMinterOwner"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/minter/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoNativeMinterIncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/wallet/method_results.rs",
+      "old": "GetWalletDataResult",
+      "new": "ToncoNativeWalletGetWalletDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/wallet/msgs.rs",
+      "old": "V1Message",
+      "new": "ToncoNativeWalletV1Message"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/wallet/msgs.rs",
+      "old": "V2Message",
+      "new": "ToncoNativeWalletV2Message"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/wallet/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoNativeWalletOutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/account/method_results.rs",
+      "old": "GetAccountDataResult",
+      "new": "ToncoAccountV1GetAccountDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/account/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoAccountV1IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/account/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoAccountV1OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/account/storage.rs",
+      "old": "Balances",
+      "new": "ToncoAccountV1Balances"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/factory/method_results.rs",
+      "old": "GetPoolFactoryDataResult",
+      "new": "ToncoFactoryV1GetPoolFactoryDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/factory/msgs.rs",
+      "old": "Wallets",
+      "new": "ToncoFactoryV1Wallets"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/factory/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoFactoryV1IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/factory/msgs.rs",
+      "old": "Minters",
+      "new": "ToncoFactoryV1Minters"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/factory/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoFactoryV1OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/order/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoOrderV1IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/order/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoOrderV1OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/order/storage.rs",
+      "old": "Pair",
+      "new": "ToncoOrderV1Pair"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "TickRecord",
+      "new": "ToncoPoolTickRecord"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "TickPage",
+      "new": "ToncoPoolTickPage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetPoolStateAndConfigurationResult",
+      "new": "ToncoPoolV1GetPoolStateAndConfigurationResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetChildContractsResult",
+      "new": "ToncoPoolV1GetChildContractsResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetCollectedFeesResult",
+      "new": "ToncoPoolV1GetCollectedFeesResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetMintEstimateResult",
+      "new": "ToncoPoolV1GetMintEstimateResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetSwapEstimateResult",
+      "new": "ToncoPoolV1GetSwapEstimateResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetFeeGrowthInsideResult",
+      "new": "ToncoPoolV1GetFeeGrowthInsideResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/method_results.rs",
+      "old": "GetCollectionDataResult",
+      "new": "ToncoPoolV1GetCollectionDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "PoolInitMinterCell",
+      "new": "ToncoPoolV1InitMinterCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "PoolBurnOldFeeCell",
+      "new": "ToncoPoolV1BurnOldFeeCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "PoolBurnNewFeeCell",
+      "new": "ToncoPoolV1BurnNewFeeCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "PoolSwapParamsCell",
+      "new": "ToncoPoolV1SwapParamsCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "PoolSwapPayloadsCell",
+      "new": "ToncoPoolV1SwapPayloadsCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoPoolV1IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoPoolV1OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/storage.rs",
+      "old": "FeesAndReserves",
+      "new": "ToncoPoolV1FeesAndReserves"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/storage.rs",
+      "old": "State",
+      "new": "ToncoPoolV1State"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/storage.rs",
+      "old": "Minters",
+      "new": "ToncoPoolV1Minters"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/storage.rs",
+      "old": "Ticks",
+      "new": "ToncoPoolV1Ticks"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/storage.rs",
+      "old": "TickInfo",
+      "new": "ToncoPoolV1TickInfo"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool/storage.rs",
+      "old": "ChildContracts",
+      "new": "ToncoPoolV1ChildContracts"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/method_results.rs",
+      "old": "GetPositionInfoResult",
+      "new": "ToncoPositionNftV1GetPositionInfoResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/method_results.rs",
+      "old": "GetNftDataResult",
+      "new": "ToncoPositionNftV1GetNftDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/msgs.rs",
+      "old": "PositionInitOldFeeCell",
+      "new": "ToncoPositionNftV1PositionInitOldFeeCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/msgs.rs",
+      "old": "PositionBurnOldFeeCell",
+      "new": "ToncoPositionNftV1PositionBurnOldFeeCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoPositionNftV1IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoPositionNftV1OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft/storage.rs",
+      "old": "FeeGrowth",
+      "new": "ToncoPositionNftV1FeeGrowth"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/method_results.rs",
+      "old": "GetRouterStateResult",
+      "new": "ToncoRouterV1GetRouterStateResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/method_results.rs",
+      "old": "GetChildContractsResult",
+      "new": "ToncoRouterV1GetChildContractsResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "RouterCreatePoolMinterCell",
+      "new": "ToncoRouterV1CreatePoolMinterCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "PayToCoinsinfoCell",
+      "new": "ToncoRouterV1PayToCoinsinfoCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "PayToPayloadCell",
+      "new": "ToncoRouterV1PayToPayloadCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "PayToIndexerSwapInfoCell",
+      "new": "ToncoRouterV1PayToIndexerSwapInfoCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "PayToIndexerBurnInfoCell",
+      "new": "ToncoRouterV1PayToIndexerBurnInfoCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "SwapForwardPayloadMultihopCell",
+      "new": "ToncoRouterV1SwapForwardPayloadMultihopCell"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "JettonForwardPayload",
+      "new": "ToncoRouterV1JettonForwardPayload"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoRouterV1IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoRouterV1OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/msgs.rs",
+      "old": "PayloadSuffix",
+      "new": "ToncoRouterV1PayloadSuffix"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/storage.rs",
+      "old": "ChildContracts",
+      "new": "ToncoRouterV1ChildContracts"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/storage.rs",
+      "old": "Timelocks",
+      "new": "ToncoRouterV1Timelocks"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/storage.rs",
+      "old": "CodeUpdate",
+      "new": "ToncoRouterV1CodeUpdate"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/storage.rs",
+      "old": "AddressUpdate",
+      "new": "ToncoRouterV1AddressUpdate"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router/storage.rs",
+      "old": "FlagsUpdate",
+      "new": "ToncoRouterV1FlagsUpdate"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/account/method_results.rs",
+      "old": "GetAccountDataResult",
+      "new": "ToncoAccountV2GetAccountDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/account/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoAccountV2IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/account/msgs.rs",
+      "old": "FundingOrderSuffix",
+      "new": "ToncoAccountV2FundingOrderSuffix"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/account/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoAccountV2OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/method_results.rs",
+      "old": "GetPoolFactoryDataResult",
+      "new": "ToncoFactoryV2GetPoolFactoryDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/msgs.rs",
+      "old": "Wallets",
+      "new": "ToncoFactoryV2Wallets"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/msgs.rs",
+      "old": "CreateSettings",
+      "new": "ToncoFactoryV2CreateSettings"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoFactoryV2IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/msgs.rs",
+      "old": "Minters",
+      "new": "ToncoFactoryV2Minters"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/msgs.rs",
+      "old": "ExtraSettingsSuffix",
+      "new": "ToncoFactoryV2ExtraSettingsSuffix"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoFactoryV2OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory/storage.rs",
+      "old": "WhitelistEntry",
+      "new": "ToncoFactoryV2WhitelistEntry"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "PayoutPayloads",
+      "new": "ToncoV2PayoutPayloads"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "Amounts",
+      "new": "ToncoV2Amounts"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "SwapLog",
+      "new": "ToncoV2SwapLog"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "Fees",
+      "new": "ToncoV2Fees"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "BurnOrder",
+      "new": "ToncoV2BurnOrder"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "MintOrder",
+      "new": "ToncoV2MintOrder"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "BurnOrders",
+      "new": "ToncoV2BurnOrders"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "MintOrders",
+      "new": "ToncoV2MintOrders"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "ReforgePayloads",
+      "new": "ToncoV2ReforgePayloads"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "Actions",
+      "new": "ToncoV2Actions"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/msgs.rs",
+      "old": "OrderBody",
+      "new": "ToncoV2OrderBody"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/order/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoOrderV2IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/order/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoOrderV2OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/order/storage.rs",
+      "old": "Pair",
+      "new": "ToncoOrderV2Pair"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "GetPendingTimelocksResult",
+      "new": "ToncoPoolV2GetPendingTimelocksResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "AmountsResult",
+      "new": "ToncoPoolV2AmountsResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "GetMintEstimateResult",
+      "new": "ToncoPoolV2GetMintEstimateResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "FeeGrowthResult",
+      "new": "ToncoPoolV2FeeGrowthResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "GetPoolStateAndConfigurationResult",
+      "new": "ToncoPoolV2GetPoolStateAndConfigurationResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "GetChildContractsResult",
+      "new": "ToncoPoolV2GetChildContractsResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/method_results.rs",
+      "old": "GetCollectionDataResult",
+      "new": "ToncoPoolV2GetCollectionDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "SwapParams",
+      "new": "ToncoPoolV2SwapParams"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "SwapPayloads",
+      "new": "ToncoPoolV2SwapPayloads"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "BurnPayloads",
+      "new": "ToncoPoolV2BurnPayloads"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "BurnActions",
+      "new": "ToncoPoolV2BurnActions"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "CollectProtocolTarget",
+      "new": "ToncoPoolV2CollectProtocolTarget"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoPoolV2IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "CollectProtocolSuffix",
+      "new": "ToncoPoolV2CollectProtocolSuffix"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "ReplacementCode",
+      "new": "ToncoPoolV2ReplacementCode"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoPoolV2OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "FundingParams",
+      "new": "ToncoPoolV2FundingParams"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/msgs.rs",
+      "old": "RolesUpdate",
+      "new": "ToncoPoolV2RolesUpdate"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "TickInfo",
+      "new": "ToncoPoolV2TickInfo"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "Accounting",
+      "new": "ToncoPoolV2Accounting"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "Minters",
+      "new": "ToncoPoolV2Minters"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "Roles",
+      "new": "ToncoPoolV2Roles"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "Oracle",
+      "new": "ToncoPoolV2Oracle"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "State",
+      "new": "ToncoPoolV2State"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "ChildContracts",
+      "new": "ToncoPoolV2ChildContracts"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "Timelock",
+      "new": "ToncoPoolV2Timelock"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "PendingUpdates",
+      "new": "ToncoPoolV2PendingUpdates"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool/storage.rs",
+      "old": "Helper",
+      "new": "ToncoPoolV2Helper"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/method_results.rs",
+      "old": "GetPositionInfoResult",
+      "new": "ToncoPositionNftV2GetPositionInfoResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/method_results.rs",
+      "old": "GetNftDataResult",
+      "new": "ToncoPositionNftV2GetNftDataResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/msgs.rs",
+      "old": "OriginalInfo",
+      "new": "ToncoPositionNftV2OriginalInfo"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/msgs.rs",
+      "old": "ComputeInfo",
+      "new": "ToncoPositionNftV2ComputeInfo"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoPositionNftV2IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/msgs.rs",
+      "old": "InitLog",
+      "new": "ToncoPositionNftV2InitLog"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/msgs.rs",
+      "old": "InitLogSuffix",
+      "new": "ToncoPositionNftV2InitLogSuffix"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoPositionNftV2OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft/storage.rs",
+      "old": "PositionState",
+      "new": "ToncoPositionNftV2PositionState"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/method_results.rs",
+      "old": "GetRouterStateResult",
+      "new": "ToncoRouterV2GetRouterStateResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/method_results.rs",
+      "old": "GetChildContractsResult",
+      "new": "ToncoRouterV2GetChildContractsResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/method_results.rs",
+      "old": "GetPendingTimelocksResult",
+      "new": "ToncoRouterV2GetPendingTimelocksResult"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "SecondaryRoles",
+      "new": "ToncoRouterV2SecondaryRoles"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "OracleRole",
+      "new": "ToncoRouterV2OracleRole"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "Roles",
+      "new": "ToncoRouterV2Roles"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "RoleRefs",
+      "new": "ToncoRouterV2RoleRefs"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "Contents",
+      "new": "ToncoRouterV2Contents"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "Minters",
+      "new": "ToncoRouterV2Minters"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "SwapPayloads",
+      "new": "ToncoRouterV2SwapPayloads"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "Referral",
+      "new": "ToncoRouterV2Referral"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "IncomingMessage",
+      "new": "ToncoRouterV2IncomingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "ChildCommand",
+      "new": "ToncoRouterV2ChildCommand"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "ForwardPayload",
+      "new": "ToncoRouterV2ForwardPayload"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/msgs.rs",
+      "old": "OutgoingMessage",
+      "new": "ToncoRouterV2OutgoingMessage"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/storage.rs",
+      "old": "OptionalU64",
+      "new": "ToncoRouterV2OptionalU64"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/storage.rs",
+      "old": "ChildContracts",
+      "new": "ToncoRouterV2ChildContracts"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/storage.rs",
+      "old": "PendingUpdates",
+      "new": "ToncoRouterV2PendingUpdates"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router/storage.rs",
+      "old": "Timelock",
+      "new": "ToncoRouterV2Timelock"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range.rs",
+      "old": "MoonClmmRangeContract",
+      "new": "MoonCatalogClmmRangeContract"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool.rs",
+      "old": "MoonPoolContract",
+      "new": "MoonLegacyPoolContract"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product.rs",
+      "old": "CoffeePoolConstantProductContract",
+      "new": "CoffeeConstantProductPoolContract"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable.rs",
+      "old": "CoffeePoolCurveFiStableContract",
+      "new": "CoffeeCurveFiStablePoolContract"
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "scope": "Ordinary fields, getters, StateInit and address-ordering APIs across all five protocols; historical DeDust X1000 records are the explicit raw-field exception.",
+  "methods": [
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "method": "get_liquidity_deposit_address",
+      "arguments": "&self, owner_address: TonAddress, is_stable: bool, asset0: DedustClassicAsset, asset1: DedustClassicAsset,",
+      "result": "TonAddress",
+      "selector": "84481i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "method": "get_pool_address",
+      "arguments": "&self, is_stable: bool, asset0: DedustClassicAsset, asset1: DedustClassicAsset,",
+      "result": "TonAddress",
+      "selector": "get_pool_address"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "method": "get_vault_address",
+      "arguments": "&self, asset: DedustClassicAsset",
+      "result": "TonAddress",
+      "selector": "get_vault_address"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "method": "get_liquidity_deposit_address",
+      "arguments": "&self, owner_address: TonAddress, is_stable: bool, asset0: DedustClassicAsset, asset1: DedustClassicAsset,",
+      "result": "TonAddress",
+      "selector": "84481i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "method": "get_operator_address",
+      "arguments": "&self, role: u8",
+      "result": "TonAddress",
+      "selector": "get_operator_address"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "method": "get_pool_address",
+      "arguments": "&self, is_stable: bool, asset0: DedustClassicAsset, asset1: DedustClassicAsset,",
+      "result": "TonAddress",
+      "selector": "get_pool_address"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "method": "get_vault_address",
+      "arguments": "&self, asset: DedustClassicAsset",
+      "result": "TonAddress",
+      "selector": "get_vault_address"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "method": "get_factory_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_factory_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "method": "get_owner_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_owner_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "method": "get_pool_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_pool_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "method": "get_factory_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_factory_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "method": "get_owner_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_owner_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "method": "get_pool_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_pool_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/operator_pool.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: TonAddress",
+      "result": "TonAddress",
+      "selector": "103289i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: TonAddress",
+      "result": "TonAddress",
+      "selector": "103289i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: TonAddress",
+      "result": "TonAddress",
+      "selector": "103289i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "method": "get_factory_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_factory_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "method": "get_wallet_addr",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_wallet_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "method": "get_factory_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_factory_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "method": "get_wallet_addr",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_wallet_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_native_v1.rs",
+      "method": "get_factory_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_factory_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "method": "get_factory_addr",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_factory_addr"
+    },
+    {
+      "file": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "method": "get_position_address",
+      "arguments": "&self, owner_address: TonAddress",
+      "result": "TonAddress",
+      "selector": "72157i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v2.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: TonAddress",
+      "result": "TonAddress",
+      "selector": "103289i32"
+    },
+    {
+      "file": "crates/dedust/src/contracts/uranus/meme_v3.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: TonAddress",
+      "result": "TonAddress",
+      "selector": "103289i32"
+    },
+    {
+      "file": "crates/moon/src/contracts/booster.rs",
+      "method": "get_pool",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_pool"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range.rs",
+      "method": "get_lp_account",
+      "arguments": "&self, owner_address: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_lp_account"
+    },
+    {
+      "file": "crates/moon/src/contracts/catalog_range.rs",
+      "method": "get_nft_address_by_index",
+      "arguments": "&self, index: I512",
+      "result": "Option<TonAddress>",
+      "selector": "get_nft_address_by_index"
+    },
+    {
+      "file": "crates/moon/src/contracts/clmm/factory.rs",
+      "method": "get_pool_address",
+      "arguments": "&self, x_master: Option<TonAddress>, y_master: Option<TonAddress>, bin_step: i64,",
+      "result": "Option<TonAddress>",
+      "selector": "getPoolAddress"
+    },
+    {
+      "file": "crates/moon/src/contracts/clmm/pool.rs",
+      "method": "get_range_by_num",
+      "arguments": "&self, range_num: i64",
+      "result": "Option<TonAddress>",
+      "selector": "getRangeByNum"
+    },
+    {
+      "file": "crates/moon/src/contracts/clmm/range.rs",
+      "method": "get_account_address",
+      "arguments": "&self, owner: &TonAddress",
+      "result": "TonAddress",
+      "selector": "112561"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool.rs",
+      "method": "get_lp_account",
+      "arguments": "&self, user_address: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_lp_account"
+    },
+    {
+      "file": "crates/moon/src/contracts/legacy_pool.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/moon/src/contracts/mempad/curve.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/moon/src/contracts/order_factory.rs",
+      "method": "get_pipe",
+      "arguments": "&self, asset: Option<TonAddress>",
+      "result": "TonAddress",
+      "selector": "get_pipe"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v12.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: Option<TonAddress>",
+      "result": "Option<TonAddress>",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/stonks/src/contracts/dedust_minter_v7.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: Option<TonAddress>",
+      "result": "Option<TonAddress>",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/stonks/src/contracts/ston_minter.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: Option<TonAddress>",
+      "result": "Option<TonAddress>",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/cross_dex.rs",
+      "method": "get_admin",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_admin"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/cross_dex_bidask.rs",
+      "method": "get_admin",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_admin"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory.rs",
+      "method": "get_admin_address",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_admin_address"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory.rs",
+      "method": "get_liquidity_depository_address",
+      "arguments": "&self, owner: &TonAddress, asset1: &CoffeeFactoryAsset, asset2: &CoffeeFactoryAsset, amm: &I512, amm_settings: &TonCell,",
+      "result": "CoffeeFactoryAddressWithHashResult",
+      "selector": "get_liquidity_depository_address"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory.rs",
+      "method": "get_liquidity_depository_address_no_settings",
+      "arguments": "&self, owner: &TonAddress, asset1: &CoffeeFactoryAsset, asset2: &CoffeeFactoryAsset, amm: &I512,",
+      "result": "CoffeeFactoryAddressWithHashResult",
+      "selector": "get_liquidity_depository_address_no_settings"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory.rs",
+      "method": "get_pool_creator_address",
+      "arguments": "&self, owner: &TonAddress, asset1: &CoffeeFactoryAsset, asset2: &CoffeeFactoryAsset, amm: &I512, amm_settings: &TonCell,",
+      "result": "CoffeeFactoryAddressWithHashResult",
+      "selector": "get_pool_creator_address"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/factory.rs",
+      "method": "get_pool_creator_address_no_settings",
+      "arguments": "&self, owner: &TonAddress, asset1: &CoffeeFactoryAsset, asset2: &CoffeeFactoryAsset, amm: &I512,",
+      "result": "CoffeeFactoryAddressWithHashResult",
+      "selector": "get_pool_creator_address_no_settings"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_constant_product.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/pool_curve_fi_stable.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master.rs",
+      "method": "get_nft_address_by_index",
+      "arguments": "&self, item_index: &I512",
+      "result": "TonAddress",
+      "selector": "get_nft_address_by_index"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_master/single_item.rs",
+      "method": "get_nft_address_by_index",
+      "arguments": "&self, item_index: &I512",
+      "result": "TonAddress",
+      "selector": "get_nft_address_by_index"
+    },
+    {
+      "file": "crates/swap_coffee/src/contracts/staking_vault.rs",
+      "method": "get_master_address",
+      "arguments": "&self",
+      "result": "TonAddress",
+      "selector": "get_master_address"
+    },
+    {
+      "file": "crates/tonco/src/contracts/farming/distributor.rs",
+      "method": "get_admin",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "get_admin"
+    },
+    {
+      "file": "crates/tonco/src/contracts/native/minter.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner: &TonAddress",
+      "result": "TonAddress",
+      "selector": "get_wallet_address"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/factory.rs",
+      "method": "get_order_address",
+      "arguments": "&self, minter0: &TonAddress, minter1: &TonAddress",
+      "result": "TonAddress",
+      "selector": "getOrderAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool.rs",
+      "method": "get_nft_address_by_index",
+      "arguments": "&self, index: I512",
+      "result": "Option<TonAddress>",
+      "selector": "get_nft_address_by_index"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/pool.rs",
+      "method": "get_user_account_address",
+      "arguments": "&self, user_address: &TonAddress",
+      "result": "TonAddress",
+      "selector": "getUserAccountAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft.rs",
+      "method": "get_pool_address",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "getPoolAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/position_nft.rs",
+      "method": "get_user_address",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "getUserAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router.rs",
+      "method": "get_pool_address",
+      "arguments": "&self, jetton_wallet0: &TonAddress, jetton_wallet1: &TonAddress,",
+      "result": "TonAddress",
+      "selector": "getPoolAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router.rs",
+      "method": "get_pool_initial_data",
+      "arguments": "&self, jetton_wallet0: &TonAddress, jetton_wallet1: &TonAddress,",
+      "result": "TonCell",
+      "selector": "getPoolInitialData"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v1/router.rs",
+      "method": "get_pool_state_init",
+      "arguments": "&self, jetton_wallet0: &TonAddress, jetton_wallet1: &TonAddress,",
+      "result": "TonCell",
+      "selector": "getPoolStateInit"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/factory.rs",
+      "method": "get_order_address",
+      "arguments": "&self, minter0: &TonAddress, minter1: &TonAddress",
+      "result": "TonAddress",
+      "selector": "getOrderAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool.rs",
+      "method": "get_nft_address_by_index",
+      "arguments": "&self, index: I512",
+      "result": "Option<TonAddress>",
+      "selector": "get_nft_address_by_index"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/pool.rs",
+      "method": "get_user_account_address",
+      "arguments": "&self, owner: &TonAddress",
+      "result": "TonAddress",
+      "selector": "getUserAccountAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft.rs",
+      "method": "get_pool_address",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "getPoolAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/position_nft.rs",
+      "method": "get_user_address",
+      "arguments": "&self",
+      "result": "Option<TonAddress>",
+      "selector": "getUserAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router.rs",
+      "method": "get_pool_address",
+      "arguments": "&self, wallet0: &TonAddress, wallet1: &TonAddress",
+      "result": "TonAddress",
+      "selector": "getPoolAddress"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router.rs",
+      "method": "get_pool_initial_data",
+      "arguments": "&self, wallet0: &TonAddress, wallet1: &TonAddress",
+      "result": "TonCell",
+      "selector": "getPoolInitialData"
+    },
+    {
+      "file": "crates/tonco/src/contracts/v2/router.rs",
+      "method": "get_pool_state_init",
+      "arguments": "&self, wallet0: &TonAddress, wallet1: &TonAddress",
+      "result": "TonCell",
+      "selector": "getPoolStateInit"
+    }
+  ],
+  "helper": "TONCO ordered_wallets uses Option<TonAddress> and complete nullable-address cell hashes; whitelist_key takes &TonAddress. DeDust/STONks construction helpers use TonAddress-based inputs.",
+  "policy": "Required identities use TonAddress/InternalAddress; nullable encoded identities use Option<TonAddress>/NullableAddress. Ordinary structured nullable fields derive FromTVMStack with NullableInternalAddress (Cell/Slice only, rejecting TVM NULL). Explicit optional nullable stacks retain Option<Option<TonAddress>> and protocol NULL behavior. Scalar normalization and Maybe/reference layouts are unchanged.",
+  "manual_result_decoders": [
+    "crates/moon/src/contracts/mempad/curve/method_results.rs",
+    "crates/tonco/src/contracts/v2/router/method_results.rs"
+  ],
+  "manual_result_reason": "Manual result decoding remains for explicit NULL-returning address fields, dictionary roots (including NULL empty dictionaries), nested tuples or typed-reference layouts. Ordinary nullable fields use the released FromTVMStack field adapter.",
+  "raw_field_exceptions": [
+    "dedust::contracts::custom_wallet::v1::msgs: historical payload identities",
+    "dedust::contracts::custom_wallet::v2::msgs: signed/opaque contexts and message forms",
+    "dedust::contracts::custom_wallet::v2::storage: bare MsgAddressIntStd context records (no outer address tag)"
+  ],
+  "shared_adapters": [
+    "core::adapters::nullable_internal_address::NullableInternalAddress",
+    "core::adapters::maybe_address::MaybeAddress",
+    "core::adapters::maybe_ref_address::MaybeRefAddress",
+    "core::adapters::maybe_ref_nullable_address::MaybeRefNullableAddress"
+  ],
+  "dictionary_exception": "DeDust utils::DictValueInternalAddress implements ton-owned dictionary traits locally; core remains ton_core-only. Required dictionary values preserve internal zero instead of default TonAddress addr_none normalization.",
+  "ordinary_nullable_result_policy": "FromTVMStack derive with NullableInternalAddress; accepts addr_none Cell/Slice as None and internal zero as Some(ZERO), rejects TVM NULL, checks exact structured arity."
+}

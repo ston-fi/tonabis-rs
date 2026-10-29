@@ -1,0 +1,217 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustOperatorV2",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust Operator is a role-bound relay deployed by the Factory; its user forwards arbitrary bodies through it so pools and vaults see the operator as the sender.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustOperatorV2Forward"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustOperatorV2SetUserAddress"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustOperatorV2CollectFees"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustOperatorV2ConfigureStartTime"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustOperatorV2Forward",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 4053307989,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id of the command."
+        },
+        {
+          "name": "destination",
+          "ty_idx": 7,
+          "description": "Contract that receives the forwarded body."
+        },
+        {
+          "name": "body",
+          "ty_idx": 3,
+          "description": "Body forwarded as-is."
+        }
+      ],
+      "description": "Command from the operator's user: the body is forwarded verbatim to the destination."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustOperatorV2SetUserAddress",
+      "ty_idx": 13,
+      "prefix": {
+        "prefix_num": 1223010653,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id of the command."
+        },
+        {
+          "name": "userAddress",
+          "ty_idx": 7,
+          "description": "New user address."
+        }
+      ],
+      "description": "Factory command replacing the user allowed to forward through the operator."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustOperatorV2CollectFees",
+      "ty_idx": 14,
+      "prefix": {
+        "prefix_num": 188915538,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the forward."
+        },
+        {
+          "name": "asset0Amount",
+          "ty_idx": 6,
+          "description": "Amount of the first asset to withdraw."
+        },
+        {
+          "name": "asset0Destination",
+          "ty_idx": 7,
+          "description": "Recipient of the first asset."
+        },
+        {
+          "name": "asset0Payload",
+          "ty_idx": 15,
+          "description": "Optional payload attached to the first payout."
+        },
+        {
+          "name": "asset1Amount",
+          "ty_idx": 6,
+          "description": "Amount of the second asset to withdraw."
+        },
+        {
+          "name": "asset1Destination",
+          "ty_idx": 16,
+          "description": "Recipient of the second asset."
+        },
+        {
+          "name": "asset1Payload",
+          "ty_idx": 15,
+          "description": "Optional payload attached to the second payout."
+        }
+      ],
+      "description": "Fee collection forwarded to a pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustOperatorV2ConfigureStartTime",
+      "ty_idx": 17,
+      "prefix": {
+        "prefix_num": 2128082638,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the forward."
+        },
+        {
+          "name": "startAt",
+          "ty_idx": 9,
+          "description": "Unix time after which swaps are accepted."
+        }
+      ],
+      "description": "Trading start time forwarded to a pool."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 13
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 14
+    },
+    {
+      "body_ty_idx": 17
+    }
+  ],
+  "emitted_events": [],
+  "storage": {},
+  "get_methods": [],
+  "thrown_errors": [],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

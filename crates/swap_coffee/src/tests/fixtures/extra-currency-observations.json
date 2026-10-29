@@ -1,0 +1,60 @@
+{
+  "provenance": {
+    "kind": "original local synthetic observations; no executable cells",
+    "code_source": "func-reference/compilation-all-manifest.json target vault_extra",
+    "probe": "extra-currency.test.tolk",
+    "log_sha256": "51f091bb9c9e9b19fecd56a7309fba669b52a0be791717ee6ab9ed2fb1b7bf48",
+    "context": "Acton global version15, config43 limit0 vs explicit synthetic limit2; no network admission claim"
+  },
+  "grams": 0,
+  "vectors": [
+    {
+      "id": 4294967295,
+      "amount": 5,
+      "currency_hash_hex": "560c6a8b1c8961c82c43d80cb134915163ac5f16da6e353fc30cac22864837ad",
+      "context": "original_limit_zero",
+      "action_exit": 44,
+      "completed_outputs": 0
+    },
+    {
+      "id": 2147483648,
+      "amount": 5,
+      "currency_hash_hex": "309478001f24d941ff7e95a59f792e7da5e290576b1c7c5745fd054697cd9ab0",
+      "context": "original_limit_zero",
+      "action_exit": 44,
+      "completed_outputs": 0
+    },
+    {
+      "id": 0,
+      "amount": 5,
+      "currency_hash_hex": "073358faa3ab412a8f3fb3720e60f685061bda43711fdb507eaea6a43cdc1652",
+      "context": "original_limit_zero",
+      "action_exit": 44,
+      "completed_outputs": 0
+    },
+    {
+      "id": 4294967295,
+      "amount": 5,
+      "currency_hash_hex": "560c6a8b1c8961c82c43d80cb134915163ac5f16da6e353fc30cac22864837ad",
+      "context": "synthetic_limit_two",
+      "action_exit": 0,
+      "completed_outputs": 1
+    },
+    {
+      "id": 2147483648,
+      "amount": 5,
+      "currency_hash_hex": "309478001f24d941ff7e95a59f792e7da5e290576b1c7c5745fd054697cd9ab0",
+      "context": "synthetic_limit_two",
+      "action_exit": 0,
+      "completed_outputs": 1
+    },
+    {
+      "id": 0,
+      "amount": 5,
+      "currency_hash_hex": "073358faa3ab412a8f3fb3720e60f685061bda43711fdb507eaea6a43cdc1652",
+      "context": "synthetic_limit_two",
+      "action_exit": 0,
+      "completed_outputs": 1
+    }
+  ]
+}

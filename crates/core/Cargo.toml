@@ -1,0 +1,19 @@
+[package]
+name = "tonabis_core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Shared TON wire adapters, address helpers and checked arithmetic"
+readme = "README.md"
+
+[dependencies]
+ton_core.workspace = true
+fastnum.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+anyhow.workspace = true
+num-bigint.workspace = true

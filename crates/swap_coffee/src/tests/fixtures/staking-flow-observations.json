@@ -1,0 +1,66 @@
+{
+  "origin": "Original local synthetic transaction outputs; no executable cells.",
+  "master_initial": {
+    "vault": "kQDO-lMavgVubaC9demHtKD0ghimHMCVgXiLCZSutQ6UUA__",
+    "master_address": "kQAxM8papzyToDzr43ZYQr7WjCwZxU9GMCV5IjJoH7g7lgo2",
+    "data_hash_hex": "3a41e153330a7cc54c68dc3dd9ca7d207699e9c9c19e14e0abea2904643494d3"
+  },
+  "internal_emissions": [
+    {
+      "log": "probe-staking-master-flow-final.log",
+      "sha256": "4e5e03927aab9967b0e1598a89d087ddcfc9c54436edf8b4070fe51538650cdf",
+      "hashes": [
+        {
+          "id": 0,
+          "hash_hex": "e8e121c459f5ab6455baf56260a2d6cebfd09db75c6620593c915f8e8894dc46"
+        },
+        {
+          "id": 1,
+          "hash_hex": "0e77f5432ceecf93289d12ccb72af63857c694cf016a6932c581a373f7974708"
+        },
+        {
+          "id": 2,
+          "hash_hex": "df2ac881332c4971145b30a5788c37c2575088e73af780a0449e8fdc4a47a51a"
+        }
+      ]
+    },
+    {
+      "log": "probe-single-item-master-final.log",
+      "sha256": "e263bc6ce648447567ab3222307ce6744871467f2d1e70377cfacdec0f495301",
+      "hashes": [
+        {
+          "id": 0,
+          "hash_hex": "e8e121c459f5ab6455baf56260a2d6cebfd09db75c6620593c915f8e8894dc46"
+        },
+        {
+          "id": 1,
+          "hash_hex": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+        },
+        {
+          "id": 2,
+          "hash_hex": "df2ac881332c4971145b30a5788c37c2575088e73af780a0449e8fdc4a47a51a"
+        }
+      ]
+    },
+    {
+      "log": "probe-xrock-master.log",
+      "sha256": "c158a89b61716b79b2949cd143107493fedda962c1f8ddf9400529bcd486f998",
+      "hashes": [
+        {
+          "id": 0,
+          "hash_hex": "e8e121c459f5ab6455baf56260a2d6cebfd09db75c6620593c915f8e8894dc46"
+        },
+        {
+          "id": 1,
+          "hash_hex": "0e77f5432ceecf93289d12ccb72af63857c694cf016a6932c581a373f7974708"
+        },
+        {
+          "id": 2,
+          "hash_hex": "df2ac881332c4971145b30a5788c37c2575088e73af780a0449e8fdc4a47a51a"
+        }
+      ]
+    }
+  ],
+  "flow_owner": "kQDgki-4i_jKIRu0OekLjgo7pFLQsBLwl6cIpiWo33nY7TLh",
+  "vault_log_sha256": "b146a8baaf994edea343c30d69d7a9294f9744576ce8c3b8c90e471c56dfbad4"
+}

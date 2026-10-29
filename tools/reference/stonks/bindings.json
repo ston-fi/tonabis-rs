@@ -1,0 +1,1840 @@
+{
+  "format": "STONks contract binding inventory v1",
+  "source_file_sha256": {
+    "AGENTS.md": "ab26db8640ccfcf1152baa6e38974b916f16f3b389ab1e0fbc8987bfe2cdd6ca",
+    "Cargo.lock": "222a79d0fe7ab6c1682bfa720d00475139e228967f7f241e41fb85264df41a1b",
+    "Cargo.toml": "e754d4a02a88118437197359a2ee6169c19271fff11ddefb1c973a8faaa3fdeb",
+    "crates/stonks/AGENTS.md": "9b2ee7b626c7db4f27ab92198a272cd5c6fcf2537f0feb8afac3017c629fdfd2",
+    "crates/stonks/Cargo.toml": "47f0dd8d8287c5f9cd149017c11112628157b6bf37136035912a1379ef3891c3",
+    "crates/stonks/README.md": "80958122b0c35bce4d5d9aa222c398ecd6a7e942232a70768ae955f67cae6b36",
+    "crates/stonks/src/contracts/custom_wallet.rs": "f8ff660c82d1f3baef057ccb9f5ae4ad3ee2368ae051c603fcb27a5bb33b8f59",
+    "crates/stonks/src/contracts/dedust.rs": "e5ab91f3a98e7cd49565ab7c7f3a65db66e757094ee742873cd17adcb90eed22",
+    "crates/stonks/src/contracts/dedust_v12.rs": "aa5f5706575c8ca9d5311a7de42924c9fdbf90ba412b9059efca1cc2e1688728",
+    "crates/stonks/src/contracts/dedust_v7.rs": "9132bc99949f94494d406d6b4e0d22a39e33a6fd135e49b12e46f2211283b4f7",
+    "crates/stonks/src/contracts/factory.rs": "9b6f46f3b3957decd6c18644d4b660f6b9092d98aee7b9d4c3e7c6e76eb3d9d7",
+    "crates/stonks/src/contracts/forwarded.rs": "f7d2c0eea450fcbc47810cc12f706146c161226704b254f7c3ba3f7e61121225",
+    "crates/stonks/src/contracts/generation.rs": "bbadd2e55d9837ee06369d95616e1e3b0736c0534ee3140d65559d3009bee14d",
+    "crates/stonks/src/contracts/launch_wallet.rs": "98e5007692bff6c820fd631c936decb2bbd13ce317e6520b08ab1f75c97be437",
+    "crates/stonks/src/contracts/minter.rs": "5dc26fb941b56941ebb4583ca8daa6357a563a285c823a720de6a39afeb4d2b8",
+    "crates/stonks/src/contracts/stack.rs": "0b76d4cd010da696bc2ed0cb0cd5236d013eaa1d74b9ba12b69246c3e8843b4a",
+    "crates/stonks/src/contracts/ston.rs": "d1d3750a0b9239012968ff3969a432bd0d2e6ef35cc81e7634b6fab2024b6575",
+    "crates/stonks/src/contracts.rs": "b12c8f7354f6ba3ae8622475670ec4affe387ec8755a468bf703f4feef7c9b9e",
+    "crates/stonks/src/tests/test_catalog_wire.rs": "8604dd3aeb4c2c9be43993a4ed5a14fa2ab767503b0c52948c56ce93a33c579e",
+    "crates/stonks/src/tests/test_getter_address_boundaries.rs": "109d706736af10494460c5810e67c9210dc3f6a09a5e99b832080acdb8231aa5",
+    "crates/stonks/src/tests/test_getter_cell_kinds.rs": "266680ee656c5c7c800f7a8e12014cf0a33caeb7b25f7b8ff31beca54497c9d2",
+    "crates/stonks/src/tests/test_getters.rs": "084f5a2fbadd222fae5ce75ddb653f8b7d9d0993cc3fc7defaebf457f6b705d2",
+    "crates/stonks/src/tests/test_math.rs": "658f8a66f097222027e9a6f37cbe35ec3d5583b5039d47fc9d54b74976fd9165",
+    "crates/stonks/src/tests/test_schema_custom_wallet.rs": "64ecebe7d119a1bcb76e465c712c91c764207cd464629d128a8c988d1fad9fab",
+    "crates/stonks/src/tests/test_schema_factory.rs": "77b9658c22cedfee04ca4e64bff164d7aec43bc72330f51dadc59781ba78e9be",
+    "crates/stonks/src/tests/test_schema_minter.rs": "7384fd25a7d1cc19de10e66050580810dd39c68b92f0cb421da615d72c4e2226",
+    "crates/stonks/src/tests/test_sidecar.rs": "307139b29ea5f160ec2955c994d8a48a1df8b9e5f4d7b821746e37d411fa577b",
+    "crates/stonks/src/tests/test_wire.rs": "7f2f121a759519fe2eaf2060100194e56227ad0a33dc7afafa0939e64b8bdc6f",
+    "crates/stonks/src/tests.rs": "21e75b353776354d7bcd654f0478d36e73747825c064bf25f6b50138df78ef09",
+    "docs/coverage/stonks.json": "5e1c61faebca7abbb4540f0f1f9364f1bcd31f24be475955c3ad53c19c5ea5b7",
+    "docs/sources/stonks.json": "861414cd03f281b873ac9e8b8342e1e6254ae1b12df4ef2a188dd98c3d780d8a",
+    "docs/specs/stonks.md": "d10c35fff9e5fcf493e3d7d212cdf3b57ccb5df05523733f63e83a25bb09d7d7",
+    "tools/reference/stonks/upstream/CATALOG_LICENSE": "f668e6538d3e3bddf985af87f9b74fd6da1784115395157ea2f70d6c7aab439d",
+    "tools/reference/stonks/upstream/catalog/custom_jetton_wallet/types/stonkspump_custom_jetton_wallet.types.tolk": "a8e6e0572f0ee762fa36a5cd31ca5cfae345141b719ee869100f2386a68fc54c",
+    "tools/reference/stonks/upstream/catalog/info.toml": "7b62d8427d57303b35b40f8efe97ee814b068701696398eae8b39c7d9e87ec47",
+    "tools/reference/stonks/upstream/catalog/virtual_factory/types/stonkspump_virtual_factory.types.tolk": "4b656efc10f9a273d5d69cbb1592d4e1c804b84174c1344369f090073fb68c3a",
+    "tools/reference/stonks/upstream/catalog/virtual_minter/types/stonkspump_virtual_minter.types.tolk": "7b02e49a810e1c19d00d5970fba26303472d63681cccc17cd435187aa2e97a98"
+  },
+  "public_symbols": [
+    {
+      "source": "contracts::custom_wallet::CustomJettonWalletBouncedKnownBody",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletBouncedKnownBodyMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::CustomJettonWalletData",
+      "destination": "tonabis_stonks::contracts::custom_wallet::method_results::StonksCustomWalletGetWalletDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::CustomJettonWalletEmptyBody",
+      "destination": "tonabis_core::msgs::EmptyBodyMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::CustomJettonWalletStorage",
+      "destination": "tonabis_stonks::contracts::custom_wallet::storage::StonksCustomWalletStorage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::CustomWalletContract",
+      "destination": "tonabis_stonks::contracts::custom_wallet::StonksCustomWalletContract",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonBurn",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletJettonBurnMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonBurnNotification",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterJettonBurnNotificationMsg",
+      "disposition": "share standard burn acknowledgement; sender_owner field is named owner in canonical minter record",
+      "field_renames": {
+        "sender_owner": "owner",
+        "response_destination": "response_address"
+      }
+    },
+    {
+      "source": "contracts::custom_wallet::JettonExcess",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterJettonExcessesMsg",
+      "disposition": "share identical standard excess acknowledgement with minter"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonInternalTransfer",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletJettonInternalTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonTaxRates",
+      "destination": "tonabis_stonks::contracts::custom_wallet::method_results::StonksCustomWalletGetTaxResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonTaxTransfer",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletJettonTaxTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonTransfer",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletJettonTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonTransferContext",
+      "destination": "tonabis_stonks::contracts::custom_wallet::storage::StonksCustomWalletJettonTransferContext",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::JettonTransferNotification",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletJettonTransferNotificationMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::Message",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletMessage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::custom_wallet::initial_state",
+      "destination": "tonabis_stonks::contracts::custom_wallet::StonksCustomWalletContract::initial_state",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust::LaunchState",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::storage::StonksDedustMinterV7LaunchState",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust::MigrationCallback",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::msgs::StonksDedustMinterV7MigrationCallbackMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust::MigrationParameters",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::msgs::StonksDedustMinterV7MigrationParametersMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust::MigrationRequest",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::msgs::StonksDedustMinterV7MigrationRequestMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::BondingData",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetBondingDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::CreateVirtualLiquidityJetton",
+      "destination": "tonabis_stonks::contracts::dedust_factory::msgs::StonksDedustFactoryCreateVirtualLiquidityJettonMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::ExtendedBondingData",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetExtendedDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::FeeData",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetFeeDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::Message",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::msgs::StonksDedustMinterV12Message",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::MigrationConfig",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::storage::StonksDedustMinterV12MigrationConfig",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v12::MinterContract",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::StonksDedustMinterV12Contract",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v7::Message",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::msgs::StonksDedustMinterV7Message",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::dedust_v7::MigrationConfig",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::storage::StonksDedustMinterV7MigrationConfig",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::CreateVirtualLiquidityJetton",
+      "destination": "tonabis_stonks::contracts::ston_factory::msgs::StonksStonFactoryCreateVirtualLiquidityJettonMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::DeDustFactoryContract",
+      "destination": "tonabis_stonks::contracts::dedust_factory::StonksDedustFactoryContract",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::Message",
+      "destination": "tonabis_stonks::contracts::ston_factory::msgs::StonksStonFactoryMessage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::StonFactoryContract",
+      "destination": "tonabis_stonks::contracts::ston_factory::StonksStonFactoryContract",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactoryDedustData",
+      "destination": "tonabis_stonks::contracts::dedust_factory::method_results::StonksDedustFactoryGetFactoryDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactoryDedustStorage",
+      "destination": "tonabis_stonks::contracts::dedust_factory::storage::StonksDedustFactoryStorage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactoryDevBuy",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterVirtualDevBuyMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactorySetDisabled",
+      "destination": "tonabis_stonks::contracts::ston_factory::msgs::StonksStonFactorySetDisabledMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactoryStonfiData",
+      "destination": "tonabis_stonks::contracts::ston_factory::method_results::StonksStonFactoryGetFactoryDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactoryStonfiStorage",
+      "destination": "tonabis_stonks::contracts::ston_factory::storage::StonksStonFactoryStorage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualFactoryWithdrawTon",
+      "destination": "tonabis_stonks::contracts::ston_factory::msgs::StonksStonFactoryWithdrawTonMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::factory::VirtualMinterFactoryInit",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterVirtualMinterInitMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::forwarded::Buy",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterBuyMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::forwarded::Sell",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterSellMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::forwarded::SellNotification",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterSellNotificationMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::forwarded::SellWithPayload",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterSellWithPayloadMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::forwarded::validate_tail",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::validate_tail",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::generation::Generation",
+      "destination": "tonabis_stonks::contracts::generation::StonksGeneration",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::generation::Version",
+      "destination": "u32",
+      "disposition": "remove scalar DTO; return native value directly"
+    },
+    {
+      "source": "contracts::generation::WalletAddress",
+      "destination": "Option<ton::ton_core::types::TonAddress>",
+      "disposition": "remove scalar DTO; preserve absence versus internal zero"
+    },
+    {
+      "source": "contracts::launch_wallet::BouncedTransfer",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::msgs::StonksDedustWalletBouncedTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::Context",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::storage::StonksDedustWalletContext",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::ExtendedWalletData",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::method_results::StonksDedustWalletGetExtendedDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::InternalTransfer",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::msgs::StonksDedustWalletInternalTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::Message",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::msgs::StonksDedustWalletMessage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::SetFlag",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::msgs::StonksDedustWalletSetFlagMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::Storage",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::storage::StonksDedustWalletStorage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::WalletContract",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::StonksDedustWalletContract",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::WalletData",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::method_results::StonksDedustWalletGetWalletDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::launch_wallet::initial_state",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::StonksDedustWalletContract::initial_state",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::AskToPresaleSell",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterAskToPresaleSellMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::BondingData",
+      "destination": "tonabis_stonks::contracts::ston_minter::method_results::StonksStonMinterGetBondingDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::BuyFromPresale",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterBuyFromPresaleMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::ChangeAdmin",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterChangeAdminMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::ChangeContent",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterChangeContentMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::ControllerInit",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterControllerInitMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::ExtendedBondingData",
+      "destination": "tonabis_stonks::contracts::ston_minter::method_results::StonksStonMinterGetExtendedDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::JettonBurnNotification",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterJettonBurnNotificationMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::JettonData",
+      "destination": "tonabis_stonks::contracts::ston_minter::method_results::StonksStonMinterGetJettonDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::JettonExcesses",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterJettonExcessesMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::JettonInternalTransfer",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterJettonInternalTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::JettonMint",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterJettonMintMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::Message",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterLegacyMessage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::MinterContract",
+      "destination": "tonabis_stonks::contracts::ston_minter::StonksStonMinterContract",
+      "disposition": "retain with canonical ownership and native parsing policy",
+      "also_expanded_as": "tonabis_stonks::contracts::dedust_minter_v7::StonksDedustMinterV7Contract"
+    },
+    {
+      "source": "contracts::minter::PresaleSellNotificationForMinter",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterPresaleSellNotificationForMinterMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::PresaleTradeEvent",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterPresaleTradeEventMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::ProvideWalletAddress",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterProvideWalletAddressMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::RetryMigration",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterRetryMigrationMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::TakeWalletAddress",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterTakeWalletAddressMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::VirtualDevBuy",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterVirtualDevBuyMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::VirtualMinterBondingState",
+      "destination": "tonabis_stonks::contracts::ston_minter::storage::StonksVirtualMinterBondingState",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::VirtualMinterInit",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterVirtualMinterInitMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::VirtualMinterStorage",
+      "destination": "tonabis_stonks::contracts::ston_minter::storage::StonksVirtualMinterStorage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::WalletStatusRequest",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterWalletStatusRequestMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::WithdrawTon",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterWithdrawTonMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::minter::initial_state",
+      "destination": "tonabis_stonks::contracts::ston_minter::storage::StonksVirtualMinterStorage::initial_state",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::ExtendedData",
+      "destination": "tonabis_stonks::contracts::ston_minter::method_results::StonksStonMinterGetStonDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::ExtendedWalletData",
+      "destination": "tonabis_stonks::contracts::ston_wallet::method_results::StonksStonWalletGetExtendedDataResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::InternalTransfer",
+      "destination": "tonabis_stonks::contracts::ston_wallet::msgs::StonksStonWalletInternalTransferMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::LaunchState",
+      "destination": "tonabis_stonks::contracts::ston_minter::storage::StonksStonMinterLaunchState",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::Message",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterCurrentMessage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::MigrationConfig",
+      "destination": "tonabis_stonks::contracts::ston_minter::storage::StonksStonMinterMigrationConfig",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::ProtocolAddresses",
+      "destination": "tonabis_stonks::contracts::ston_minter::method_results::StonksStonMinterGetProtocolAddressesResult",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::SellNotification",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterCurrentSellNotificationMsg",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::WalletContext",
+      "destination": "tonabis_stonks::contracts::ston_wallet::storage::StonksStonWalletContext",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::WalletContract",
+      "destination": "tonabis_stonks::contracts::ston_wallet::StonksStonWalletContract",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::WalletMessage",
+      "destination": "tonabis_stonks::contracts::ston_wallet::msgs::StonksStonWalletMessage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::WalletStorage",
+      "destination": "tonabis_stonks::contracts::ston_wallet::storage::StonksStonWalletStorage",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    },
+    {
+      "source": "contracts::ston::wallet_initial_state",
+      "destination": "tonabis_stonks::contracts::ston_wallet::StonksStonWalletContract::initial_state",
+      "disposition": "retain with canonical ownership and native parsing policy"
+    }
+  ],
+  "public_helper_methods": [
+    {
+      "source": "factory::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::ston_factory::msgs::StonksStonFactoryMessage::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "factory::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::ston_factory::msgs::StonksStonFactoryMessage::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "generation::Generation::version",
+      "destination": "tonabis_stonks::contracts::generation::StonksGeneration::version",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "custom_wallet::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletMessage::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "custom_wallet::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::custom_wallet::msgs::StonksCustomWalletMessage::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "dedust_v12::BondingData::curve",
+      "disposition": "exclude local pricing/math bridge"
+    },
+    {
+      "source": "dedust_v12::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::msgs::StonksDedustMinterV12Message::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "dedust_v12::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v12::msgs::StonksDedustMinterV12Message::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "dedust_v7::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::msgs::StonksDedustMinterV7Message::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "dedust_v7::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::dedust_minter_v7::msgs::StonksDedustMinterV7Message::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "minter::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterLegacyMessage::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "minter::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterLegacyMessage::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "minter::BondingData::curve",
+      "disposition": "exclude local pricing/math bridge"
+    },
+    {
+      "source": "launch_wallet::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::msgs::StonksDedustWalletMessage::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "launch_wallet::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::dedust_wallet::msgs::StonksDedustWalletMessage::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "ston::SellNotification::new",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterCurrentSellNotificationMsg::new",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "ston::SellNotification::fields",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterCurrentSellNotificationMsg::fields",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "ston::Message::from_cell",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterCurrentMessage::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "ston::Message::to_cell",
+      "destination": "tonabis_stonks::contracts::ston_minter::msgs::StonksStonMinterCurrentMessage::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "ston::WalletMessage::from_cell",
+      "destination": "tonabis_stonks::contracts::ston_wallet::msgs::StonksStonWalletMessage::from_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    },
+    {
+      "source": "ston::WalletMessage::to_cell",
+      "destination": "tonabis_stonks::contracts::ston_wallet::msgs::StonksStonWalletMessage::to_cell",
+      "disposition": "retain; ordinary dispatch uses native TLB trait APIs where equivalent"
+    }
+  ],
+  "source_getter_declarations": [
+    {
+      "source": "factory::StonFactoryContract::get_factory_data",
+      "destinations": [
+        "ston_factory::StonksStonFactoryContract::get_factory_data"
+      ]
+    },
+    {
+      "source": "factory::DeDustFactoryContract::get_factory_data",
+      "destinations": [
+        "dedust_factory::StonksDedustFactoryContract::get_factory_data"
+      ]
+    },
+    {
+      "source": "custom_wallet::CustomWalletContract::get_tax",
+      "destinations": [
+        "custom_wallet::StonksCustomWalletContract::get_tax"
+      ]
+    },
+    {
+      "source": "custom_wallet::CustomWalletContract::get_wallet_data",
+      "destinations": [
+        "custom_wallet::StonksCustomWalletContract::get_wallet_data"
+      ]
+    },
+    {
+      "source": "dedust_v12::MinterContract::get_bonding_data",
+      "destinations": [
+        "dedust_minter_v12::StonksDedustMinterV12Contract::get_bonding_data"
+      ]
+    },
+    {
+      "source": "dedust_v12::MinterContract::get_jetton_data",
+      "destinations": [
+        "dedust_minter_v12::StonksDedustMinterV12Contract::get_jetton_data"
+      ]
+    },
+    {
+      "source": "dedust_v12::MinterContract::get_version",
+      "destinations": [
+        "dedust_minter_v12::StonksDedustMinterV12Contract::get_version"
+      ]
+    },
+    {
+      "source": "dedust_v12::MinterContract::get_wallet_address",
+      "destinations": [
+        "dedust_minter_v12::StonksDedustMinterV12Contract::get_wallet_address"
+      ]
+    },
+    {
+      "source": "dedust_v12::MinterContract::get_fee_data_71772",
+      "destinations": [
+        "dedust_minter_v12::StonksDedustMinterV12Contract::get_fee_data"
+      ]
+    },
+    {
+      "source": "dedust_v12::MinterContract::get_extended_data_82057",
+      "destinations": [
+        "dedust_minter_v12::StonksDedustMinterV12Contract::get_extended_data"
+      ]
+    },
+    {
+      "source": "minter::MinterContract::get_bonding_data",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_bonding_data",
+        "dedust_minter_v7::StonksDedustMinterV7Contract::get_bonding_data"
+      ]
+    },
+    {
+      "source": "minter::MinterContract::get_jetton_data",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_jetton_data",
+        "dedust_minter_v7::StonksDedustMinterV7Contract::get_jetton_data"
+      ]
+    },
+    {
+      "source": "minter::MinterContract::get_version",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_version",
+        "dedust_minter_v7::StonksDedustMinterV7Contract::get_version"
+      ]
+    },
+    {
+      "source": "minter::MinterContract::get_wallet_address",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_wallet_address",
+        "dedust_minter_v7::StonksDedustMinterV7Contract::get_wallet_address"
+      ]
+    },
+    {
+      "source": "minter::MinterContract::get_extended_data_82057",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_extended_data",
+        "dedust_minter_v7::StonksDedustMinterV7Contract::get_extended_data"
+      ]
+    },
+    {
+      "source": "launch_wallet::WalletContract::get_wallet_data",
+      "destinations": [
+        "dedust_wallet::StonksDedustWalletContract::get_wallet_data"
+      ]
+    },
+    {
+      "source": "launch_wallet::WalletContract::get_extended_data_84724",
+      "destinations": [
+        "dedust_wallet::StonksDedustWalletContract::get_extended_data"
+      ]
+    },
+    {
+      "source": "ston::super::minter::MinterContract::get_ston_data_68631",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_ston_data"
+      ]
+    },
+    {
+      "source": "ston::super::minter::MinterContract::get_protocol_addresses_95602",
+      "destinations": [
+        "ston_minter::StonksStonMinterContract::get_protocol_addresses"
+      ]
+    },
+    {
+      "source": "ston::WalletContract::get_wallet_data",
+      "destinations": [
+        "ston_wallet::StonksStonWalletContract::get_wallet_data"
+      ]
+    },
+    {
+      "source": "ston::WalletContract::get_extended_data_74038",
+      "destinations": [
+        "ston_wallet::StonksStonWalletContract::get_extended_data"
+      ]
+    }
+  ],
+  "callable_getters": [
+    {
+      "wrapper": "ston_factory::StonksStonFactoryContract",
+      "method": "get_factory_data",
+      "selector": 76063,
+      "arguments": [],
+      "result": "crate::contracts::ston_factory::method_results::StonksStonFactoryGetFactoryDataResult",
+      "recording_test": "test_ston_factory_get_factory_data",
+      "fixture_row": 9
+    },
+    {
+      "wrapper": "dedust_factory::StonksDedustFactoryContract",
+      "method": "get_factory_data",
+      "selector": 76063,
+      "arguments": [],
+      "result": "crate::contracts::dedust_factory::method_results::StonksDedustFactoryGetFactoryDataResult",
+      "recording_test": "test_dedust_factory_get_factory_data",
+      "fixture_row": 10
+    },
+    {
+      "wrapper": "custom_wallet::StonksCustomWalletContract",
+      "method": "get_tax",
+      "selector": 82014,
+      "arguments": [],
+      "result": "crate::contracts::custom_wallet::method_results::StonksCustomWalletGetTaxResult",
+      "recording_test": "test_custom_wallet_get_tax",
+      "fixture_row": 11
+    },
+    {
+      "wrapper": "custom_wallet::StonksCustomWalletContract",
+      "method": "get_wallet_data",
+      "selector": 97026,
+      "arguments": [],
+      "result": "crate::contracts::custom_wallet::method_results::StonksCustomWalletGetWalletDataResult",
+      "recording_test": "test_custom_wallet_get_wallet_data",
+      "fixture_row": 12
+    },
+    {
+      "wrapper": "dedust_wallet::StonksDedustWalletContract",
+      "method": "get_wallet_data",
+      "selector": 97026,
+      "arguments": [],
+      "result": "crate::contracts::dedust_wallet::method_results::StonksDedustWalletGetWalletDataResult",
+      "recording_test": "test_dedust_wallet_get_wallet_data",
+      "fixture_row": 6
+    },
+    {
+      "wrapper": "dedust_wallet::StonksDedustWalletContract",
+      "method": "get_extended_data",
+      "selector": 84724,
+      "arguments": [],
+      "result": "crate::contracts::dedust_wallet::method_results::StonksDedustWalletGetExtendedDataResult",
+      "recording_test": "test_dedust_wallet_get_extended_data",
+      "fixture_row": 7
+    },
+    {
+      "wrapper": "ston_wallet::StonksStonWalletContract",
+      "method": "get_wallet_data",
+      "selector": 97026,
+      "arguments": [],
+      "result": "crate::contracts::dedust_wallet::method_results::StonksDedustWalletGetWalletDataResult",
+      "recording_test": "test_ston_wallet_get_wallet_data",
+      "fixture_row": 6
+    },
+    {
+      "wrapper": "ston_wallet::StonksStonWalletContract",
+      "method": "get_extended_data",
+      "selector": 74038,
+      "arguments": [],
+      "result": "crate::contracts::ston_wallet::method_results::StonksStonWalletGetExtendedDataResult",
+      "recording_test": "test_ston_wallet_get_extended_data",
+      "fixture_row": 8
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_bonding_data",
+      "selector": 119688,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetBondingDataResult",
+      "recording_test": "test_ston_minter_get_bonding_data",
+      "fixture_row": null
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_jetton_data",
+      "selector": 106029,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetJettonDataResult",
+      "recording_test": "test_ston_minter_get_jetton_data",
+      "fixture_row": 5
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_version",
+      "selector": 82320,
+      "arguments": [],
+      "result": "u32",
+      "recording_test": "test_ston_minter_get_version",
+      "fixture_row": 13
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_wallet_address",
+      "selector": 103289,
+      "arguments": [
+        "Slice(NullableAddress<Option<TonAddress>>)"
+      ],
+      "result": "Option<TonAddress>",
+      "recording_test": "test_ston_minter_get_wallet_address",
+      "fixture_row": null,
+      "consumer_signature": "(owner_address: Option<TonAddress>) -> TonResult<Option<TonAddress>>"
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_extended_data",
+      "selector": 82057,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetExtendedDataResult",
+      "recording_test": "test_ston_minter_get_extended_data",
+      "fixture_row": 0
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_ston_data",
+      "selector": 68631,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetStonDataResult",
+      "recording_test": "test_ston_minter_get_ston_data",
+      "fixture_row": 1
+    },
+    {
+      "wrapper": "ston_minter::StonksStonMinterContract",
+      "method": "get_protocol_addresses",
+      "selector": 95602,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetProtocolAddressesResult",
+      "recording_test": "test_ston_minter_get_protocol_addresses",
+      "fixture_row": 2
+    },
+    {
+      "wrapper": "dedust_minter_v7::StonksDedustMinterV7Contract",
+      "method": "get_bonding_data",
+      "selector": 119688,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetBondingDataResult",
+      "recording_test": "test_dedust_minter_v7_get_bonding_data",
+      "fixture_row": null
+    },
+    {
+      "wrapper": "dedust_minter_v7::StonksDedustMinterV7Contract",
+      "method": "get_jetton_data",
+      "selector": 106029,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetJettonDataResult",
+      "recording_test": "test_dedust_minter_v7_get_jetton_data",
+      "fixture_row": 5
+    },
+    {
+      "wrapper": "dedust_minter_v7::StonksDedustMinterV7Contract",
+      "method": "get_version",
+      "selector": 82320,
+      "arguments": [],
+      "result": "u32",
+      "recording_test": "test_dedust_minter_v7_get_version",
+      "fixture_row": 13
+    },
+    {
+      "wrapper": "dedust_minter_v7::StonksDedustMinterV7Contract",
+      "method": "get_wallet_address",
+      "selector": 103289,
+      "arguments": [
+        "Slice(NullableAddress<Option<TonAddress>>)"
+      ],
+      "result": "Option<TonAddress>",
+      "recording_test": "test_dedust_minter_v7_get_wallet_address",
+      "fixture_row": null,
+      "consumer_signature": "(owner_address: Option<TonAddress>) -> TonResult<Option<TonAddress>>"
+    },
+    {
+      "wrapper": "dedust_minter_v7::StonksDedustMinterV7Contract",
+      "method": "get_extended_data",
+      "selector": 82057,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetExtendedDataResult",
+      "recording_test": "test_dedust_minter_v7_get_extended_data",
+      "fixture_row": 0
+    },
+    {
+      "wrapper": "dedust_minter_v12::StonksDedustMinterV12Contract",
+      "method": "get_bonding_data",
+      "selector": 119688,
+      "arguments": [],
+      "result": "crate::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetBondingDataResult",
+      "recording_test": "test_dedust_minter_v12_get_bonding_data",
+      "fixture_row": null
+    },
+    {
+      "wrapper": "dedust_minter_v12::StonksDedustMinterV12Contract",
+      "method": "get_jetton_data",
+      "selector": 106029,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetJettonDataResult",
+      "recording_test": "test_dedust_minter_v12_get_jetton_data",
+      "fixture_row": 5
+    },
+    {
+      "wrapper": "dedust_minter_v12::StonksDedustMinterV12Contract",
+      "method": "get_version",
+      "selector": 82320,
+      "arguments": [],
+      "result": "u32",
+      "recording_test": "test_dedust_minter_v12_get_version",
+      "fixture_row": 13
+    },
+    {
+      "wrapper": "dedust_minter_v12::StonksDedustMinterV12Contract",
+      "method": "get_wallet_address",
+      "selector": 103289,
+      "arguments": [
+        "Slice(NullableAddress<Option<TonAddress>>)"
+      ],
+      "result": "Option<TonAddress>",
+      "recording_test": "test_dedust_minter_v12_get_wallet_address",
+      "fixture_row": null,
+      "consumer_signature": "(owner_address: Option<TonAddress>) -> TonResult<Option<TonAddress>>"
+    },
+    {
+      "wrapper": "dedust_minter_v12::StonksDedustMinterV12Contract",
+      "method": "get_extended_data",
+      "selector": 82057,
+      "arguments": [],
+      "result": "crate::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetExtendedDataResult",
+      "recording_test": "test_dedust_minter_v12_get_extended_data",
+      "fixture_row": 4
+    },
+    {
+      "wrapper": "dedust_minter_v12::StonksDedustMinterV12Contract",
+      "method": "get_fee_data",
+      "selector": 71772,
+      "arguments": [],
+      "result": "crate::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetFeeDataResult",
+      "recording_test": "test_dedust_minter_v12_get_fee_data",
+      "fixture_row": 3
+    }
+  ],
+  "counts": {
+    "source_wrapper_declarations": 7,
+    "destination_wrappers": 8,
+    "source_async_declarations": 21,
+    "destination_callable_getters": 26
+  },
+  "shared_ownership": {
+    "shared_minter_storage": "ston_minter::storage::StonksVirtualMinterStorage",
+    "eight_field_and_jetton_results": "ston_minter::method_results",
+    "dedust_continuations": "dedust_minter_v7::{storage,msgs}",
+    "standard_wallet_result": "dedust_wallet::method_results::StonksDedustWalletGetWalletDataResult",
+    "presale_bounce": "dedust_wallet::msgs::StonksDedustWalletBouncedTransferMsg",
+    "factory_initialization_and_dev_buy": "ston_minter::msgs::{StonksStonMinterVirtualMinterInitMsg,StonksStonMinterVirtualDevBuyMsg}",
+    "forwarding": "ston_minter::msgs::forwarded",
+    "legacy_factory_messages": "ston_factory::msgs",
+    "standard_burn_and_excess": "ston_minter::msgs::{StonksStonMinterJettonBurnNotificationMsg,StonksStonMinterJettonExcessesMsg}"
+  },
+  "native_replacements": [
+    "ordinary fixed TLB records and factory/legacy minter dispatch derive TLB",
+    "structured DTOs derive FromTVMStack with exact arity and NullableInternalAddress field adapters",
+    "get_version -> u32; get_wallet_address -> Option<TonAddress>",
+    "TonAddress getter parameters use explicit standard-address Slice packing",
+    "generic stack.rs address/cell readers removed; native Cell/Slice/NULL/tail behavior",
+    "StateInit and local addresses use native TON types"
+  ],
+  "manual_exceptions": [
+    {
+      "source": "ston::InternalTransfer and launch_wallet::InternalTransfer manual TLB",
+      "destination": "ston_wallet::msgs::ReferencedPayload (field adapter used by both derived InternalTransferMsg records)",
+      "required_behavior": "True selector before the payload reference; context is a separate following reference.",
+      "native_limitation": "TLBRef alone writes no selector; an Either would admit the forbidden false branch. A field adapter enforces only this invariant.",
+      "regression_tests": [
+        "test_wire::test_presale_internal_transfer_rejects_false_payload_selector",
+        "test_wire::test_authored_current_migration_and_forwarding",
+        "test_wire::test_current_transfer_context_and_single_wallet_stack"
+      ]
+    },
+    {
+      "source": "forwarded::Buy TLB",
+      "destination": "ston_minter::msgs::StonksStonMinterBuyMsg TLB",
+      "required_behavior": "Preserve omitted versus present untagged recipient/Either suffix and its validated shape.",
+      "native_limitation": "Native Option inserts a presence bit; suffix presence here is determined by actual remaining bits/references.",
+      "regression_tests": [
+        "test_wire::test_authored_current_migration_and_forwarding",
+        "test_forwarding_boundaries::test_untagged_suffix_shapes_and_nested_dispatch"
+      ]
+    },
+    {
+      "source": "ston::SellNotification TLB",
+      "destination": "ston_minter::msgs::StonksStonMinterCurrentSellNotificationMsg TLB",
+      "required_behavior": "Validate current STON standard recipient before exposing immutable logical fields.",
+      "native_limitation": "Nullable address fields admit None; this current-generation message requires a present standard recipient.",
+      "regression_tests": [
+        "test_wire::test_current_ston_null_recipient_is_a_known_invalid_body"
+      ]
+    },
+    {
+      "source": "launch_wallet::BouncedTransfer TLB",
+      "destination": "dedust_wallet::msgs::OriginalOpcode field adapter (StonksDedustWalletBouncedTransferMsg derives TLB)",
+      "required_behavior": "Restrict original opcode to transfer/burn-notification/sell-notification and retain truncated raw tail.",
+      "native_limitation": "Primitive u32 decoding cannot enforce the protocol opcode domain.",
+      "regression_tests": [
+        "test_wire::test_presale_bounce_and_sell_suffix_dispatch"
+      ]
+    },
+    {
+      "source": "custom_wallet::CustomJettonWalletBouncedKnownBody TLB",
+      "destination": "custom_wallet::msgs::OriginalOpcode field adapter (StonksCustomWalletBouncedKnownBodyMsg derives TLB)",
+      "required_behavior": "Restrict tax-wallet bounce domain to transfer/burn-notification; preserve truncated suffix.",
+      "native_limitation": "Tax and presale bounce domains differ; a derive would admit unsupported original opcodes.",
+      "regression_tests": [
+        "test_wire::test_controller_messages_and_bounce_validation"
+      ]
+    },
+    {
+      "source": "custom_wallet::CustomJettonWalletEmptyBody",
+      "destination": "tonabis_core::msgs::EmptyBodyMsg",
+      "required_behavior": "Empty body matches only zero bits and zero refs; nonempty bodies reach Unknown.",
+      "native_limitation": "ton_macros propagates derived ensure_empty errors; a variant-mismatch codec permits fallback.",
+      "regression_tests": [
+        "test_wire::test_tax_wallet_empty_body_and_unknown_short_body"
+      ]
+    },
+    {
+      "source": "wallet transfer dispatch validation",
+      "destination": "custom_wallet::msgs::ForwardPayload field adapter",
+      "required_behavior": "Validate the raw Either tail on decode before exposing a recognized transfer.",
+      "native_limitation": "TonCell alone cannot validate the required selector/reference while preserving the complete raw tail.",
+      "regression_tests": [
+        "test_forwarding_boundaries::test_untagged_suffix_shapes_and_nested_dispatch"
+      ]
+    },
+    {
+      "source": "DeDust callback dispatch",
+      "destination": "dedust_minter_v7::msgs::MigrationPayload field adapter",
+      "required_behavior": "Reject a bad nested continuation opcode as malformed known data.",
+      "native_limitation": "Native enum dispatch treats nested TLBWrongPrefix as an outer variant mismatch.",
+      "regression_tests": [
+        "test_forwarding_boundaries::test_untagged_suffix_shapes_and_nested_dispatch"
+      ]
+    },
+    {
+      "source": "forwarded::Sell and forwarded::SellNotification",
+      "destination": "ston_minter::msgs::PayoutSuffix field adapter",
+      "required_behavior": "Optional untagged Either payout tail, checked to exhaust the containing derived record.",
+      "native_limitation": "Native Option writes a Maybe bit; omission here uses zero bits and references.",
+      "regression_tests": [
+        "test_forwarding_boundaries::test_untagged_suffix_shapes_and_nested_dispatch"
+      ]
+    }
+  ],
+  "excluded_apis": [
+    "minter::BondingData::curve",
+    "dedust_v12::BondingData::curve",
+    "contracts::stack generic strict readers",
+    "math module and all math-only APIs",
+    "generation::Version DTO",
+    "generation::WalletAddress DTO",
+    "executable sidecar, acquisition and replay tooling"
+  ],
+  "test_dispositions": [
+    {
+      "source": "crates/stonks/src/tests/test_catalog_wire.rs",
+      "disposition": "retain wire expectations unchanged; relocate symbol paths and packaged fixture paths",
+      "source_test_functions": [
+        "test_virtual_factory_0",
+        "test_virtual_factory_1",
+        "test_virtual_minter_0",
+        "test_virtual_minter_1",
+        "test_virtual_minter_2",
+        "test_virtual_minter_3",
+        "test_virtual_minter_4",
+        "test_custom_jetton_wallet_0",
+        "test_custom_jetton_wallet_1",
+        "test_custom_jetton_wallet_2",
+        "test_custom_jetton_wallet_3",
+        "test_custom_jetton_wallet_4"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_getter_address_boundaries.rs",
+      "disposition": "rewrite in test_parsing_policy.rs for approved native address-tail/Cell-Slice/NULL semantics",
+      "source_test_functions": [
+        "test_stack_address_getter_rejects_trailing_bits_and_refs"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_getter_cell_kinds.rs",
+      "disposition": "rewrite in test_parsing_policy.rs for approved native address-tail/Cell-Slice/NULL semantics",
+      "source_test_functions": [
+        "test_wallet_code_getter_requires_cell_kind"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_getters.rs",
+      "disposition": "retain structural rows; remove ignored sidecar case; rewrite Version to native u32 consumption",
+      "source_test_functions": [
+        "test_getter_minter_extendedbondingdata",
+        "test_getter_ston_extendeddata",
+        "test_getter_ston_protocoladdresses",
+        "test_getter_dedust_v12_feedata",
+        "test_getter_dedust_v12_extendedbondingdata",
+        "test_getter_minter_jettondata",
+        "test_getter_launch_wallet_walletdata",
+        "test_getter_launch_wallet_extendedwalletdata",
+        "test_getter_ston_extendedwalletdata",
+        "test_getter_factory_virtualfactorystonfidata",
+        "test_getter_factory_virtualfactorydedustdata",
+        "test_getter_custom_wallet_jettontaxrates",
+        "test_getter_custom_wallet_customjettonwalletdata",
+        "test_getter_generation_version",
+        "test_sidecar_captured_getter_stacks"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_math.rs",
+      "disposition": "exclude entire file; math or executable sidecar",
+      "source_test_functions": [
+        "test_captured_generation_buy_sell_post_state",
+        "test_deployed_v12_capacity_cap_graduation_and_closed",
+        "test_fee_inverse_exhaustive_despite_nonmonotone_double_floor",
+        "test_small_domain_inverse_and_independent_bigint_rounding",
+        "test_numerical_domains_and_output_protection",
+        "test_graduation_inventory_all_captured_generations",
+        "test_cumulative_reserves_can_exceed_one_coin_field",
+        "test_sell_uses_physical_ton_cap_and_consumes_all_tokens",
+        "test_fee_payout_thresholds_rounding_and_sell_allocations",
+        "test_captured_revision_clipping_closure_and_output_protection"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_schema_custom_wallet.rs",
+      "disposition": "retain wire expectations unchanged; relocate symbol paths and packaged fixture paths",
+      "source_test_functions": [
+        "test_schema_jetton_transfer_context",
+        "test_schema_custom_jetton_wallet_storage",
+        "test_schema_jetton_transfer",
+        "test_schema_jetton_internal_transfer",
+        "test_schema_jetton_burn",
+        "test_schema_jetton_tax_transfer",
+        "test_schema_custom_jetton_wallet_empty_body",
+        "test_schema_custom_jetton_wallet_bounced_known_body",
+        "test_schema_jetton_transfer_notification",
+        "test_schema_jetton_excess",
+        "test_schema_jetton_burn_notification"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_schema_factory.rs",
+      "disposition": "retain wire expectations unchanged; relocate symbol paths and packaged fixture paths",
+      "source_test_functions": [
+        "test_schema_virtual_factory_stonfi_storage",
+        "test_schema_virtual_factory_dedust_storage",
+        "test_schema_create_virtual_liquidity_jetton",
+        "test_schema_virtual_factory_withdraw_ton",
+        "test_schema_virtual_factory_set_disabled",
+        "test_schema_virtual_factory_dev_buy",
+        "test_schema_virtual_minter_factory_init"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_schema_minter.rs",
+      "disposition": "retain wire expectations unchanged; relocate symbol paths and packaged fixture paths",
+      "source_test_functions": [
+        "test_schema_virtual_minter_storage",
+        "test_schema_virtual_minter_bonding_state",
+        "test_schema_virtual_dev_buy",
+        "test_schema_jetton_mint",
+        "test_schema_jetton_burn_notification",
+        "test_schema_provide_wallet_address",
+        "test_schema_change_admin",
+        "test_schema_change_content",
+        "test_schema_virtual_minter_init",
+        "test_schema_buy_from_presale",
+        "test_schema_presale_sell_notification_for_minter",
+        "test_schema_ask_to_presale_sell",
+        "test_schema_jetton_internal_transfer",
+        "test_schema_jetton_excesses",
+        "test_schema_take_wallet_address",
+        "test_schema_presale_trade_event"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_sidecar.rs",
+      "disposition": "exclude entire file; math or executable sidecar",
+      "source_test_functions": [
+        "test_deployed_storage_and_current_config",
+        "test_current_graduation_request_and_launch_record",
+        "test_factory_state_init_matches_real_deployment_addresses",
+        "test_current_factory_extended_creation_layout",
+        "test_current_forwarding_suffix_and_wallet_context",
+        "test_wallet_derivation_matches_each_captured_generation_getter",
+        "test_migration_config_generation_separation",
+        "test_dedust_continuations_all_captured_generations",
+        "test_custom_wallet_peer_initial_state"
+      ]
+    },
+    {
+      "source": "crates/stonks/src/tests/test_wire.rs",
+      "disposition": "retain protocol constraints; rewrite ordinary suffix and scalar arity expectations; explicit target selection remains required",
+      "source_test_functions": [
+        "test_known_malformed_unknown_and_fixed_layout_suffix",
+        "test_bonding_stack_generation_lengths",
+        "test_current_ston_null_recipient_is_a_known_invalid_body",
+        "test_authored_current_storage_and_variant_layouts",
+        "test_authored_current_migration_and_forwarding",
+        "test_controller_messages_and_bounce_validation",
+        "test_tax_wallet_empty_body_and_unknown_short_body",
+        "test_authored_ston_and_dedust_wallet_contexts_are_distinct",
+        "test_current_transfer_context_and_single_wallet_stack",
+        "test_presale_bounce_and_sell_suffix_dispatch",
+        "test_missing_forward_selector_is_malformed_known_message",
+        "test_legacy_dedust_continuation_and_dispatch",
+        "test_presale_internal_transfer_rejects_false_payload_selector",
+        "test_custom_wallet_initial_context_matches_independent_wire"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "source": "tools/reference/stonks/fixtures/boundaries.log",
+      "sha256": "54fd3c12b9a9ca663d90ec9f712889e087dc11576e73c4a55ef139aaaded5be5",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/code-identities.json",
+      "sha256": "d1776f4506facbb896b354a36b24e0f6e374461f639589bc0fc15f87a8f9742f",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/custom_jetton_wallet-0.boc",
+      "sha256": "94f4b9e7ffbe7f8140e6cbc905924bad5b083adf502a0e554d59353bec3ce792",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/custom_jetton_wallet-0.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/custom_jetton_wallet-1.boc",
+      "sha256": "775feb574be5ec75b73e0785e491216e0879118635cfa76c6b324db85c20aaca",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/custom_jetton_wallet-1.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/custom_jetton_wallet-2.boc",
+      "sha256": "9128db428cdbb8b78451f1620940958a47f8582a01f6232c3f738e205d03c876",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/custom_jetton_wallet-2.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/custom_jetton_wallet-3.boc",
+      "sha256": "bc97418a01a5fe1532628ef5bda04020aca0cab4a045b246a8474fb8edd5b711",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/custom_jetton_wallet-3.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/custom_jetton_wallet-4.boc",
+      "sha256": "a42d1dadce5328b616e0eff8a9b807d669b4b55f923efd1847904beaefd94f52",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/custom_jetton_wallet-4.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/fee-payouts.json",
+      "sha256": "fdb78b0a97877c40859570b4a6d7049abd2caa001aec60725b66d1d70c001483",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/forwarded-buy.boc",
+      "sha256": "6207c3ac578463440606585633bdf9aa1b181f2aef38aea731f3ee699718ec5e",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/forwarded-buy.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/getter-stacks.json",
+      "sha256": "c82c057d04b4e463f6a49662ff2bb7febfb640f65fb2454f26ca1b5c03fc6a3d",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/getter-stacks.json"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/graduation-vectors.json",
+      "sha256": "4c93cfb1d3f38d47b43c533d18aa6a3061d0ca4cf5423c443a9b7a15a5bebf89",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/replay-vectors.json",
+      "sha256": "e6c187c4abe2d33ab2d356ec286c268118e3036ede7d00899a1d4976bd5d5b20",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/revision-boundaries.json",
+      "sha256": "2cb17c0bd1854f328e2c9b3eb322f4faacd21638df44d2a1a65b5222022888c2",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-CustomJettonWalletBouncedKnownBody.boc",
+      "sha256": "cd386221536e183edeeebf326edfd32d412ad639077e1076f70ea393bde4b7b0",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-CustomJettonWalletBouncedKnownBody.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-CustomJettonWalletEmptyBody.boc",
+      "sha256": "f0a62863db479a2c8b5a6fd1da6f2382d145ca7d77067fdadf6a79f4699d4643",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-CustomJettonWalletEmptyBody.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-CustomJettonWalletStorage.boc",
+      "sha256": "4ef83e4b2ffe8fb523f2ab1389077ea16eaca7cfd79c5f038affcd87d2b72499",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-CustomJettonWalletStorage.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonBurn.boc",
+      "sha256": "e8fe27fcc96afef0c9f29071ca828955f5574dceb041fd2d2d674554e687dcdb",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonBurn.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonBurnNotification.boc",
+      "sha256": "16209636aece044981283ab4b99115c78bbecbd853525726dc08eecc382e2af0",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonBurnNotification.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonExcess.boc",
+      "sha256": "bee0c3f3abd1f37976cef0936bab0e28b0eb549035400a39d6c319605774c715",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonExcess.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonInternalTransfer.boc",
+      "sha256": "3cd1671f18142233f6c778372b3d5499d8062bac433ff1d60d7b5a66442200be",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonInternalTransfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonTaxTransfer.boc",
+      "sha256": "875099021468d8547d71713358bfd273f5ba1de12c9db43c17fd8222c702f306",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonTaxTransfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonTransfer.boc",
+      "sha256": "238b21df10e9c4618c9784d90575d71534feda121e9940a91826dac54e1d89d4",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonTransfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonTransferContext.boc",
+      "sha256": "e21dbf907660c22e9a2d459d34b5d7ba7b88984003f6b2d87c770fe84f0d9093",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonTransferContext.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-custom_wallet-JettonTransferNotification.boc",
+      "sha256": "b9739fa849c352e42c402784a7c632a4a2f738386b90d38d838693eaf6618dd8",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-custom_wallet-JettonTransferNotification.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-CreateVirtualLiquidityJetton.boc",
+      "sha256": "3053ca5c5e827bf8438e9cf3b21416e8fd8bdbecad4f09ee7c774d5435b5af55",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-CreateVirtualLiquidityJetton.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-VirtualFactoryDedustStorage.boc",
+      "sha256": "e05ebf95942d0032a8777df8fa7928d97492df4b6b138deb773a825f405fe3c2",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-VirtualFactoryDedustStorage.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-VirtualFactoryDevBuy.boc",
+      "sha256": "9812731e946cd49693dff718305f1a8391cb4024c4d69fcb38dbec385f749312",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-VirtualFactoryDevBuy.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-VirtualFactorySetDisabled.boc",
+      "sha256": "63e42c660d524b91f16861ace0c940dd48699cfa37279aa5fea4594a328b78aa",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-VirtualFactorySetDisabled.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-VirtualFactoryStonfiStorage.boc",
+      "sha256": "05b4797202e2f060642417115929417e9f099d3c5a3359af3e8d69b19f114551",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-VirtualFactoryStonfiStorage.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-VirtualFactoryWithdrawTon.boc",
+      "sha256": "202f4eb7a95cb56777d5d43c3228cb64a0acb1f75e019c1ba93b6142bdeff55f",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-VirtualFactoryWithdrawTon.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-factory-VirtualMinterFactoryInit.boc",
+      "sha256": "b677983f0b31046d95e9c3888b771382dea285d4ecc2857c1a2aa453445df909",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-factory-VirtualMinterFactoryInit.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-AskToPresaleSell.boc",
+      "sha256": "f622bce5a3e53609fccb2cfe639f6c585d76e6b76d7ff1134420f021ac0f38ed",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-AskToPresaleSell.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-BuyFromPresale.boc",
+      "sha256": "c9973aeb221488e768e710ef3126ed4a08920ccf1fc04a80a83e69d75bda52e4",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-BuyFromPresale.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-ChangeAdmin.boc",
+      "sha256": "80e3e606410e2b7be0191f351403dd69e1123ef0fb484b792183ebac22837a3b",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-ChangeAdmin.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-ChangeContent.boc",
+      "sha256": "50cf5486c2ebd919303a0baabdec03ec083da5397f01a687310297edd7550631",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-ChangeContent.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-JettonBurnNotification.boc",
+      "sha256": "16209636aece044981283ab4b99115c78bbecbd853525726dc08eecc382e2af0",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-JettonBurnNotification.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-JettonExcesses.boc",
+      "sha256": "bee0c3f3abd1f37976cef0936bab0e28b0eb549035400a39d6c319605774c715",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-JettonExcesses.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-JettonInternalTransfer.boc",
+      "sha256": "e4c5e7b7aa88fa057c06027cc630bd06daf222873b335f60be2ae73fd814fe9e",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-JettonInternalTransfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-JettonMint.boc",
+      "sha256": "3c6741005bdcb44f4627f20a1874073a398bc0058c5c139751d2f920793159eb",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-JettonMint.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-PresaleSellNotificationForMinter.boc",
+      "sha256": "304c55f0928e0afb81a4f228ba60514de2277e52bb12b5e0e19810aaf61f518a",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-PresaleSellNotificationForMinter.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-PresaleTradeEvent.boc",
+      "sha256": "81a4bfcfdead684ff94498f96a3873dd7b9f5179ccf8fcfbe40ef5b889c63a40",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-PresaleTradeEvent.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-ProvideWalletAddress.boc",
+      "sha256": "95124b3cd4f03082a915f7f91aed6fe8d3a7cd21e5380e5e863d0567be7ea8b5",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-ProvideWalletAddress.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-TakeWalletAddress.boc",
+      "sha256": "aac61ac8bcce1fdf960927c9891a065c147ecccb019fa61060b947a4e948295f",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-TakeWalletAddress.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-VirtualDevBuy.boc",
+      "sha256": "9812731e946cd49693dff718305f1a8391cb4024c4d69fcb38dbec385f749312",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-VirtualDevBuy.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-VirtualMinterBondingState.boc",
+      "sha256": "4edf0be21cf17f5006015ea73933cc2bc853042ab30bfa0cb44c155b0939738a",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-VirtualMinterBondingState.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-VirtualMinterInit.boc",
+      "sha256": "b677983f0b31046d95e9c3888b771382dea285d4ecc2857c1a2aa453445df909",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-VirtualMinterInit.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/schema-minter-VirtualMinterStorage.boc",
+      "sha256": "07ca68f01c5b15c88deb0cefd96400edfe520ee84fbf5c08c13121f21c5b17e2",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/schema-minter-VirtualMinterStorage.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-controller-init.boc",
+      "sha256": "e22bf75d2f4d5b0c3d18a7315e28653719578dcfa75b74cd3e3bc0a996712756",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-controller-init.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-current-config.boc",
+      "sha256": "05f099e21c09d5a43e28b5b8106a4892e0ea1f4c2cad74436e63d9a6a41de901",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-current-create.boc",
+      "sha256": "345f826692e09c1100cbe9c36ea40136abb3c801dfba82dcfa4ea9c252911a20",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-current-create.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-current-storage.boc",
+      "sha256": "0490f4ff2789aaa85a0de82b877e4e157d522c3e0d67c60444515d08696635c1",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-current-storage.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-custom-initial-data.boc",
+      "sha256": "59ac54cb97c9f9eb2e8110ff761f5ca8004235dfad91ea3f0068b8e1130d7d16",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-custom-initial-data.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-dedust-empty-transfer.boc",
+      "sha256": "6a3835ce8a093c01df9ce9256f15b5be242f13b78744b53d331b6c0c8ac92506",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-dedust-empty-transfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-dedust-wallet.boc",
+      "sha256": "b5377f0dbdbe8acb5d8fd085eaaa8b510c1f4c98edf77010ac2dec0258e5e3a0",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-dedust-wallet.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-forward-transfer.boc",
+      "sha256": "e94e479c4bf5facae71f5d68347565c99af7cecb7833da2d1eac1d388f5d197b",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-forward-transfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-launch.boc",
+      "sha256": "2f497a926a115adbecd4abea422ce1078aa4dd8d86085380316cefa3a672b262",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-legacy-callback.boc",
+      "sha256": "9ac42765b47e4fac55867fc9da095797e7b08de5eac3a127fc04ce9efbb42de3",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-legacy-callback.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-legacy-config.boc",
+      "sha256": "84466c7296c401fd002a3cb369f85329868896b4bd06af5dedc69db982bf04f9",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-legacy-config.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-legacy-request.boc",
+      "sha256": "ef36ca62bb67ef1488e1cf8c7158eae8bb7db8ca7df35d36e85034311ca1e444",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-legacy-request.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-migration-callback.boc",
+      "sha256": "06104688e64f883e8f9a45de0ccffd72da51aa5bb38ca0e732a998bbd8f9050b",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-migration-callback.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-migration-request.boc",
+      "sha256": "d3c62c1881a5b8261fe24a9a7e548866c80771e365a9ff2816fa8422cac906ba",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-migration-request.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-presale-bounce.boc",
+      "sha256": "ac73f95cf8fad87252ba25d973a0b20711fc1a4645fdcc6f129483aff746bf5f",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-presale-bounce.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-retry.boc",
+      "sha256": "c44eec56fe883bc04c6b3922b69a384bd055634ca31fb9fedd5012571151f82f",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-retry.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-sell-payload.boc",
+      "sha256": "71d0d52b3667ea59731c24ad85a7707d54bdf8cacde5a75c6172f66d6ab48f64",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-sell-payload.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-set-flag.boc",
+      "sha256": "c43923ee8ba263b9ced1805a8770197f91d108dcf92e655eb74591b0daf10fee",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-set-flag.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-ston-config.boc",
+      "sha256": "a403c69ba74e7b34d89f0bb8f3fdf658a73881da60cf17825b0535afc09042b3",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-ston-config.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-ston-empty-transfer.boc",
+      "sha256": "115d628c5db582f3d67b0719fa113f978698135c99c570eb066016e88095199f",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-ston-empty-transfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-ston-launch.boc",
+      "sha256": "05fab7ced081e8300dad17346545741ff5fe6856e122bc4fbe244067477f6c2e",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-ston-launch.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-ston-transfer.boc",
+      "sha256": "d3d40ceaae6f815be2cc7fdd6c9d68e57d228e2b4b546ae4f76fe04ceaf8787e",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-ston-transfer.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-ston-wallet.boc",
+      "sha256": "1e0d07cf6d0a013ded2b19a588983106b87f0cbea4cd33995ace97b7afc78234",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-ston-wallet.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-wallet-status.boc",
+      "sha256": "27812c9ae399827abf04902d59895fd2e7616277ade4def34b7946d3520e24fb",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-wallet-status.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/synthetic-withdraw.boc",
+      "sha256": "6bc2ed90e39dbc6ba4366e9d14cd2b10c0722e97de0a77b9eae5e9def3a3a345",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/synthetic-withdraw.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_factory-0.boc",
+      "sha256": "a274be8f08f6a9058027e429666d55ecfc4a071e052bf08248e6c007f40c5e7a",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_factory-0.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_factory-1.boc",
+      "sha256": "b6f3ef6ab1cf826b50b4d8f3ee94e9e1428221173e0f120764bed6774bab699d",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_factory-1.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_minter-0.boc",
+      "sha256": "d3af94ffdf54755d1ac1595a06ea974a30701bf59ac223d3a4e83c4abc6b951f",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_minter-0.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_minter-1.boc",
+      "sha256": "379642967ff2c4350ec011a2599f8f4222b2b487e0d383e17ce931d54575bd88",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_minter-1.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_minter-2.boc",
+      "sha256": "0d7d55cae389bc71d3293dcce36dd30359092a13419c8b6a5d137f4f454d4633",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_minter-2.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_minter-3.boc",
+      "sha256": "261a09ceedd1aace03dfbaf7fb35bd02904baf62e31dcf1f12bacb5e9b1376df",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_minter-3.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/virtual_minter-4.boc",
+      "sha256": "08e853fa6333573758cc074ff90074cef71f9c98e6949fc308eab4f6e18b143b",
+      "disposition": "retain unchanged; packaged test fixture",
+      "destination": "crates/stonks/src/tests/fixtures/virtual_minter-4.boc"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/wallet-derivation.json",
+      "sha256": "8d850cc875fff2d3bf7c1d82d10ec48ab55979c494de53ef6f15594feafafa67",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": "tools/reference/stonks/fixtures/wire-index.json",
+      "sha256": "dad0ddeffde2532df103c0131cdbfab18c08398d4ec79f076fccfe55a32fbd1d",
+      "disposition": "exclude; unrelated math/replay/acquisition evidence or redundant metadata"
+    },
+    {
+      "source": null,
+      "destination": "crates/stonks/src/tests/fixtures/initialization.json",
+      "sha256": "7b4d47f49277f926552620c478acb1087408cbfb0530f0c6c8a86f49a8e6a97f",
+      "disposition": "new independent raw-bit/hash vector; empty code, owner 0:11..11, master 0:22..22; no Rust encoder used"
+    }
+  ],
+  "limits": [
+    "No live provider or captured executable replay is part of offline binding validation.",
+    "Independent code-free fixtures establish structure and selectors, not contract authenticity or settlement.",
+    "Allow-dirty package validation is provisional; publishing is unauthorized."
+  ],
+  "new_test_files": {
+    "crates/stonks/src/tests/test_getter_invocations.rs": [
+      "test_ston_factory_get_factory_data",
+      "test_dedust_factory_get_factory_data",
+      "test_custom_wallet_get_tax",
+      "test_custom_wallet_get_wallet_data",
+      "test_dedust_wallet_get_wallet_data",
+      "test_dedust_wallet_get_extended_data",
+      "test_ston_wallet_get_wallet_data",
+      "test_ston_wallet_get_extended_data",
+      "test_ston_minter_get_bonding_data",
+      "test_ston_minter_get_jetton_data",
+      "test_ston_minter_get_version",
+      "test_ston_minter_get_wallet_address",
+      "test_ston_minter_get_extended_data",
+      "test_ston_minter_get_ston_data",
+      "test_ston_minter_get_protocol_addresses",
+      "test_dedust_minter_v7_get_bonding_data",
+      "test_dedust_minter_v7_get_jetton_data",
+      "test_dedust_minter_v7_get_version",
+      "test_dedust_minter_v7_get_wallet_address",
+      "test_dedust_minter_v7_get_extended_data",
+      "test_dedust_minter_v12_get_bonding_data",
+      "test_dedust_minter_v12_get_jetton_data",
+      "test_dedust_minter_v12_get_version",
+      "test_dedust_minter_v12_get_wallet_address",
+      "test_dedust_minter_v12_get_extended_data",
+      "test_dedust_minter_v12_get_fee_data",
+      "test_provider_error_propagates_without_retry",
+      "test_nullable_wallet_arguments_remain_slices_on_all_minters"
+    ],
+    "crates/stonks/src/tests/test_initialization.rs": [
+      "test_independent_initial_data_state_init_and_addresses"
+    ],
+    "crates/stonks/src/tests/test_forwarding_boundaries.rs": [
+      "test_untagged_suffix_shapes_and_nested_dispatch"
+    ],
+    "crates/stonks/src/tests/test_getter_provider.rs": [],
+    "crates/stonks/src/tests/test_parsing_policy.rs": [
+      "test_wallet_result_accepts_cell_slice_and_address_tails",
+      "test_wallet_result_rejects_null_and_distinguishes_addr_none_from_zero",
+      "test_every_structured_result_enforces_arity_and_field_types",
+      "test_wider_wire_address_domain_survives_structured_getters"
+    ]
+  },
+  "generated_files": [],
+  "public_address_api": {
+    "policy": "Required identities use TonAddress/InternalAddress; nullable encoded identities use Option<TonAddress>/NullableAddress. Ordinary structured nullable fields derive FromTVMStack with NullableInternalAddress (Cell/Slice only, rejecting TVM NULL). Explicit optional nullable stacks retain Option<Option<TonAddress>> and protocol NULL behavior. Scalar normalization and Maybe/reference layouts are unchanged.",
+    "inventory": "tools/reference/integration/tonaddress-api.json",
+    "manual_result_reason": "Manual result decoding remains for explicit NULL-returning address fields, dictionary roots (including NULL empty dictionaries), nested tuples or typed-reference layouts. Ordinary nullable fields use the released FromTVMStack field adapter."
+  }
+}

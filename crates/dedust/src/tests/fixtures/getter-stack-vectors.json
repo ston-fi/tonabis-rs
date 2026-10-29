@@ -1,0 +1,3738 @@
+{
+  "origin": "Independent pinned-code raw TVM stacks; named program-code substitutions are explicit.",
+  "log_sha256": "1ad1706a7a95482308a85d4d553646877a33e7fe2d19088cad68478f24d31faa",
+  "cases": [
+    {
+      "contract": "DedustFactoryV1",
+      "selector": 110004,
+      "method": "get_ownership",
+      "result": "GetOwnershipResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "module": "classic/factory_v1",
+      "code_input": "data/dedust/v1/factory/testdata/DedustFactoryV1.boc",
+      "data_input": "factory-1-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000030",
+          "field": "owner_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "pending_owner_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "can_accept_after",
+          "rust_type": "u32"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV1",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "module": "classic/factory_v1",
+      "code_input": "data/dedust/v1/factory/testdata/DedustFactoryV1.boc",
+      "data_input": "factory-1-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV1",
+      "selector": 76695,
+      "method": "get_vault_address",
+      "result": "GetVaultAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "module": "classic/factory_v1",
+      "code_input": "data/dedust/v1/factory/testdata/DedustFactoryV1.boc",
+      "data_input": "factory-1-data.boc",
+      "arguments": [
+        "native"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438008f9ec1b44ebbff9d986adbe511c469d3a6872666cbb43780ee487b1e63db0c190",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV1",
+      "selector": 101789,
+      "method": "get_pool_address",
+      "result": "GetPoolAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "module": "classic/factory_v1",
+      "code_input": "data/dedust/v1/factory/testdata/DedustFactoryV1.boc",
+      "data_input": "factory-1-data.boc",
+      "arguments": [
+        "1",
+        "native",
+        "jetton"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043800b0e90443387f697c59c978c7799af96167a07ff19b5fcaee819eb5308268257f0",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV1",
+      "selector": 84481,
+      "method": "get_liquidity_deposit_address",
+      "result": "GetLiquidityDepositAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v1.rs",
+      "module": "classic/factory_v1",
+      "code_input": "data/dedust/v1/factory/testdata/DedustFactoryV1.boc",
+      "data_input": "factory-1-data.boc",
+      "arguments": [
+        "owner",
+        "1",
+        "native",
+        "jetton"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801bbe325d4b2e09cc7191b5a50105982ebb35319890ef4a172bff66699f6fc570f0",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV2",
+      "selector": 110004,
+      "method": "get_ownership",
+      "result": "GetOwnershipResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "module": "classic/factory_v2",
+      "code_input": "data/dedust/factory/testdata/DedustFactoryV2.boc",
+      "data_input": "factory-2-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380000000000000000000000000000000000000000000000000000000000000000030",
+          "field": "owner_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "pending_owner_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "can_accept_after",
+          "rust_type": "u32"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV2",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "module": "classic/factory_v2",
+      "code_input": "data/dedust/factory/testdata/DedustFactoryV2.boc",
+      "data_input": "factory-2-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV2",
+      "selector": 76695,
+      "method": "get_vault_address",
+      "result": "GetVaultAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "module": "classic/factory_v2",
+      "code_input": "data/dedust/factory/testdata/DedustFactoryV2.boc",
+      "data_input": "factory-2-data.boc",
+      "arguments": [
+        "native"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438011228989ff728cdaca1d41bcece937c85c006e6cf32ebcabe55e39c4b81e3db350",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV2",
+      "selector": 101789,
+      "method": "get_pool_address",
+      "result": "GetPoolAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "module": "classic/factory_v2",
+      "code_input": "data/dedust/factory/testdata/DedustFactoryV2.boc",
+      "data_input": "factory-2-data.boc",
+      "arguments": [
+        "1",
+        "native",
+        "jetton"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043800461066a096b911c77efc4b85e750ba09e4a15de2ba3897c0e68854eed131384f0",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustFactoryV2",
+      "selector": 84481,
+      "method": "get_liquidity_deposit_address",
+      "result": "GetLiquidityDepositAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/factory_v2.rs",
+      "module": "classic/factory_v2",
+      "code_input": "data/dedust/factory/testdata/DedustFactoryV2.boc",
+      "data_input": "factory-2-data.boc",
+      "arguments": [
+        "owner",
+        "1",
+        "native",
+        "jetton"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043800cd5907497a8e57da1b5d582e70ffc93337df2e825f3b2a331abbb0246046935f0",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 103723,
+      "method": "is_stable",
+      "result": "IsStableResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 96780,
+      "method": "get_trade_fee",
+      "result": "GetTradeFeeResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "30",
+          "field": "trade_fee_numerator",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "10000",
+          "field": "trade_fee_denominator",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 65971,
+      "method": "get_reserves",
+      "result": "GetReservesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve0",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve1",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 112792,
+      "method": "get_protocol_fees",
+      "result": "GetProtocolFeesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset0_protocol_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset1_protocol_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 118188,
+      "method": "get_assets",
+      "result": "GetAssetsResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "asset0",
+          "rust_type": "DedustPoolV1Asset"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset1",
+          "rust_type": "DedustPoolV1Asset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 70754,
+      "method": "estimate_swap_out",
+      "result": "EstimateSwapOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "native",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset_out",
+          "rust_type": "DedustPoolV1Asset"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "amount_out",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "3000",
+          "field": "trade_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 119877,
+      "method": "estimate_deposit_out",
+      "result": "EstimateDepositOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "1000000",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset0_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset1_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "fair_supply",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 106029,
+      "method": "get_jetton_data",
+      "result": "GetJettonDataResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "total_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "mintable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "admin_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010901009300010300c00102015804020142bfae80fd2f1e03480e2282363596ee752d7bb27f50776b95086a0279189675923e030004003902012007050141bf6ed4f942a7848ce2cb066b77a1128c6a1ff8c43f438a2dce24612ba9ffab8b03060006004c500141bf4546a6ffe1b79cfdd86bad3db874313dcde2fb05e6a74aa7f3552d9617c79d1308001a004465447573742d76322d4c50",
+          "field": "jetton_content",
+          "rust_type": "TonCell"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "7beaf75b2835a9679387e167fc091fca00102811db62a545ba0cf42d5b2cdb0d",
+          "field": "jetton_wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 103289,
+      "method": "get_wallet_address",
+      "result": "GetWalletAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438002acf894b45f75b7bfff3dd73d25ad98b940a7edc85f21d3a6a6c0ffff8dd015d0",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV1",
+      "selector": 106049,
+      "method": "get_method_106049",
+      "result": "GetMethod106049Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v1.rs",
+      "module": "classic/pool_v1",
+      "code_input": "data/dedust/v1/pool/testdata/DedustPoolV1.boc",
+      "data_input": "pool-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "9",
+          "field": "decimals_x",
+          "rust_type": "u8"
+        },
+        {
+          "kind": "int",
+          "value": "6",
+          "field": "decimals_y",
+          "rust_type": "u8"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 103723,
+      "method": "is_stable",
+      "result": "IsStableResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 96780,
+      "method": "get_trade_fee",
+      "result": "GetTradeFeeResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "30",
+          "field": "trade_fee_numerator",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "10000",
+          "field": "trade_fee_denominator",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 65971,
+      "method": "get_reserves",
+      "result": "GetReservesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve0",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve1",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 112792,
+      "method": "get_protocol_fees",
+      "result": "GetProtocolFeesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset0_protocol_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset1_protocol_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 118188,
+      "method": "get_assets",
+      "result": "GetAssetsResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "asset0",
+          "rust_type": "DedustPoolV2Asset"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset1",
+          "rust_type": "DedustPoolV2Asset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 70754,
+      "method": "estimate_swap_out",
+      "result": "EstimateSwapOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "native",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset_out",
+          "rust_type": "DedustPoolV2Asset"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "amount_out",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "3000",
+          "field": "trade_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 119877,
+      "method": "estimate_deposit_out",
+      "result": "EstimateDepositOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "1000000",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset0_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset1_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "fair_supply",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 106029,
+      "method": "get_jetton_data",
+      "result": "GetJettonDataResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "total_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "mintable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "admin_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c720101090100f200010300c001020120070202012005030142bfae80fd2f1e03480e2282363596ee752d7bb27f50776b95086a0279189675923e04000400390142bfb76a7ca153c24671658335bbd08946350ffc621fa1c516e7123095d4ffd5c581060006004c500143bff872ebdb514d9c97c283b7f0ae5179029e2b6119c39462719e4f46ed8f7413e6400800d60068747470733a2f2f6170692e6465647573742e696f2f76322f706f6f6c732f303a323935346262336163633830333635376334333032373335656334306464663834646134373930336537613765363330306530313538613435616234303565372f6d65746164617461",
+          "field": "jetton_content",
+          "rust_type": "TonCell"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "7beaf75b2835a9679387e167fc091fca00102811db62a545ba0cf42d5b2cdb0d",
+          "field": "jetton_wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 103289,
+      "method": "get_wallet_address",
+      "result": "GetWalletAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043800519982a2c69c09ef53cc5014257dad82bdb334a90a3e46e01213659197cba6670",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 66722,
+      "method": "get_method_66722",
+      "result": "GetMethod66722Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "provider0",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "provider1",
+          "rust_type": "MsgAddress"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 106049,
+      "method": "get_method_106049",
+      "result": "GetMethod106049Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "9",
+          "field": "decimals_x",
+          "rust_type": "u8"
+        },
+        {
+          "kind": "int",
+          "value": "6",
+          "field": "decimals_y",
+          "rust_type": "u8"
+        }
+      ]
+    },
+    {
+      "contract": "DedustPoolV2",
+      "selector": 111021,
+      "method": "get_method_111021",
+      "result": "GetMethod111021Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "data/dedust/pool_v2/testdata/DedustPoolV2.boc",
+      "data_input": "pool-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000000000000000000000000",
+          "field": "factor_x",
+          "rust_type": "u128"
+        },
+        {
+          "kind": "int",
+          "value": "1000000000000000000000000000000",
+          "field": "factor_y",
+          "rust_type": "u128"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV1",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v1.rs",
+      "module": "classic/vault_native_v1",
+      "code_input": "data/dedust/v1/vault_native/testdata/DedustVaultNativeV1.boc",
+      "data_input": "native-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV1",
+      "selector": 89995,
+      "method": "get_factory_addr",
+      "result": "GetFactoryAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v1.rs",
+      "module": "classic/vault_native_v1",
+      "code_input": "data/dedust/v1/vault_native/testdata/DedustVaultNativeV1.boc",
+      "data_input": "native-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801aa47764c63500f555ed5df9d21a8957b6e891d22256f77eb75b916bbd79420870",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV1",
+      "selector": 89352,
+      "method": "get_asset",
+      "result": "GetAssetResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v1.rs",
+      "module": "classic/vault_native_v1",
+      "code_input": "data/dedust/v1/vault_native/testdata/DedustVaultNativeV1.boc",
+      "data_input": "native-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "value",
+          "rust_type": "DedustVaultNativeV1Asset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV1",
+      "selector": 109505,
+      "method": "get_method_109505",
+      "result": "GetMethod109505Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v1.rs",
+      "module": "classic/vault_native_v1",
+      "code_input": "data/dedust/v1/vault_native/testdata/DedustVaultNativeV1.boc",
+      "data_input": "native-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "127250152",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV1",
+      "selector": 117300,
+      "method": "get_method_117300",
+      "result": "GetMethod117300Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v1.rs",
+      "module": "classic/vault_native_v1",
+      "code_input": "data/dedust/v1/vault_native/testdata/DedustVaultNativeV1.boc",
+      "data_input": "native-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "17",
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "543000840",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV2",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "module": "classic/vault_native_v2",
+      "code_input": "data/dedust/vault_native/testdata/DedustVaultNativeV2.boc",
+      "data_input": "native-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV2",
+      "selector": 89995,
+      "method": "get_factory_addr",
+      "result": "GetFactoryAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "module": "classic/vault_native_v2",
+      "code_input": "data/dedust/vault_native/testdata/DedustVaultNativeV2.boc",
+      "data_input": "native-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801aa47764c63500f555ed5df9d21a8957b6e891d22256f77eb75b916bbd79420870",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV2",
+      "selector": 89352,
+      "method": "get_asset",
+      "result": "GetAssetResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "module": "classic/vault_native_v2",
+      "code_input": "data/dedust/vault_native/testdata/DedustVaultNativeV2.boc",
+      "data_input": "native-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "value",
+          "rust_type": "DedustAsset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV2",
+      "selector": 109505,
+      "method": "get_method_109505",
+      "result": "GetMethod109505Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "module": "classic/vault_native_v2",
+      "code_input": "data/dedust/vault_native/testdata/DedustVaultNativeV2.boc",
+      "data_input": "native-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "117420284",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV2",
+      "selector": 117300,
+      "method": "get_method_117300",
+      "result": "GetMethod117300Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "module": "classic/vault_native_v2",
+      "code_input": "data/dedust/vault_native/testdata/DedustVaultNativeV2.boc",
+      "data_input": "native-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "17",
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "92785473",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultNativeV2",
+      "selector": 109867,
+      "method": "get_method_109867",
+      "result": "GetMethod109867Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_native_v2.rs",
+      "module": "classic/vault_native_v2",
+      "code_input": "data/dedust/vault_native/testdata/DedustVaultNativeV2.boc",
+      "data_input": "native-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "native_balance",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 66908,
+      "method": "is_ready",
+      "result": "IsReadyResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 89995,
+      "method": "get_factory_addr",
+      "result": "GetFactoryAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801aa47764c63500f555ed5df9d21a8957b6e891d22256f77eb75b916bbd79420870",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 69014,
+      "method": "get_wallet_addr",
+      "result": "GetWalletAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "value",
+          "rust_type": "MsgAddress"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 89352,
+      "method": "get_asset",
+      "result": "GetAssetResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004310085f0c306bca9cc39e49965963e3b345f76dd99322630bfa6a3a63be6a7fc18788",
+          "field": "value",
+          "rust_type": "DedustVaultJettonV1Asset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 109505,
+      "method": "get_method_109505",
+      "result": "GetMethod109505Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "127250152",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV1",
+      "selector": 117300,
+      "method": "get_method_117300",
+      "result": "GetMethod117300Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v1.rs",
+      "module": "classic/vault_jetton_v1",
+      "code_input": "data/dedust/v1/vault_jetton/testdata/DedustVaultJettonV1.boc",
+      "data_input": "jetton-v1-initializer-post-synthetic.boc",
+      "arguments": [
+        "17",
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "545000340",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 66908,
+      "method": "is_ready",
+      "result": "IsReadyResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 89995,
+      "method": "get_factory_addr",
+      "result": "GetFactoryAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801aa47764c63500f555ed5df9d21a8957b6e891d22256f77eb75b916bbd79420870",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 69014,
+      "method": "get_wallet_addr",
+      "result": "GetWalletAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "value",
+          "rust_type": "MsgAddress"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 89352,
+      "method": "get_asset",
+      "result": "GetAssetResult",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004310085f0c306bca9cc39e49965963e3b345f76dd99322630bfa6a3a63be6a7fc18788",
+          "field": "value",
+          "rust_type": "DedustAsset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 109505,
+      "method": "get_method_109505",
+      "result": "GetMethod109505Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "117413617",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustVaultJettonV2",
+      "selector": 117300,
+      "method": "get_method_117300",
+      "result": "GetMethod117300Result",
+      "rust_path": "crates/dedust/src/contracts/classic/vault_jetton_v2.rs",
+      "module": "classic/vault_jetton_v2",
+      "code_input": "data/dedust/vault_jetton/testdata/DedustVaultJettonV2.boc",
+      "data_input": "jetton-v2-initializer-post-synthetic.boc",
+      "arguments": [
+        "17",
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "92903939",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 89995,
+      "method": "get_factory_addr",
+      "result": "GetFactoryAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801aa47764c63500f555ed5df9d21a8957b6e891d22256f77eb75b916bbd79420870",
+          "field": "addr",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 95132,
+      "method": "get_owner_addr",
+      "result": "GetOwnerAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380019a63639d337df1d035e58d4f455550a3ef7a92cb4441311e8e9642fd771c1970",
+          "field": "addr",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 84365,
+      "method": "get_pool_addr",
+      "result": "GetPoolAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801ecde37b32a6e6aa94d430b57537eb9e34b0956d9e7cc4ab7248511228057760f0",
+          "field": "addr",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 106125,
+      "method": "get_pool_params",
+      "result": "GetPoolParamsResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "is_stable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "asset0",
+          "rust_type": "DedustAsset"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset1",
+          "rust_type": "DedustAsset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 84232,
+      "method": "get_target_balances",
+      "result": "GetTargetBalancesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "100",
+          "field": "asset0_target_balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "200",
+          "field": "asset1_target_balance",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 87878,
+      "method": "get_balances",
+      "result": "GetBalancesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset0_balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset1_balance",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 108752,
+      "method": "is_processing",
+      "result": "IsProcessingResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "status",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV1",
+      "selector": 85296,
+      "method": "get_min_lp_amount",
+      "result": "GetMinLpAmountResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v1.rs",
+      "module": "classic/liquidity_deposit_v1",
+      "code_input": "data/dedust/v1/liquidity_deposit/testdata/DedustLiquidityDepositV1.boc",
+      "data_input": "deposit-v1-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "17",
+          "field": "min_lp_amount",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 89995,
+      "method": "get_factory_addr",
+      "result": "GetFactoryAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801aa47764c63500f555ed5df9d21a8957b6e891d22256f77eb75b916bbd79420870",
+          "field": "addr",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 95132,
+      "method": "get_owner_addr",
+      "result": "GetOwnerAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380019a63639d337df1d035e58d4f455550a3ef7a92cb4441311e8e9642fd771c1970",
+          "field": "addr",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 84365,
+      "method": "get_pool_addr",
+      "result": "GetPoolAddrResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801ecde37b32a6e6aa94d430b57537eb9e34b0956d9e7cc4ab7248511228057760f0",
+          "field": "addr",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 106125,
+      "method": "get_pool_params",
+      "result": "GetPoolParamsResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "is_stable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "asset0",
+          "rust_type": "DedustAsset"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset1",
+          "rust_type": "DedustAsset"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 84232,
+      "method": "get_target_balances",
+      "result": "GetTargetBalancesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "100",
+          "field": "asset0_target_balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "200",
+          "field": "asset1_target_balance",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 87878,
+      "method": "get_balances",
+      "result": "GetBalancesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset0_balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset1_balance",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 108752,
+      "method": "is_processing",
+      "result": "IsProcessingResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "status",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustLiquidityDepositV2",
+      "selector": 85296,
+      "method": "get_min_lp_amount",
+      "result": "GetMinLpAmountResult",
+      "rust_path": "crates/dedust/src/contracts/classic/liquidity_deposit_v2.rs",
+      "module": "classic/liquidity_deposit_v2",
+      "code_input": "data/dedust/liquidity_deposit/testdata/DedustLiquidityDepositV2.boc",
+      "data_input": "deposit-v2-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "17",
+          "field": "min_lp_amount",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustV2Cpmm",
+      "selector": 72157,
+      "method": "get_position_address",
+      "result": "GetPositionAddressResult",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "module": "cpmm_v2/pool",
+      "code_input": "data/dedust/cpmm_v2/testdata/DedustV2Cpmm.boc",
+      "data_input": "cpmm-seed.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438010e6bb68a6a95bcd2a8c2509692ae832155b586a716265e070ca62daca1d171750",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustV2Cpmm",
+      "selector": 81689,
+      "method": "get_pool_data",
+      "result": "GetPoolDataResult",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "module": "cpmm_v2/pool",
+      "code_input": "data/dedust/cpmm_v2/testdata/DedustV2Cpmm.boc",
+      "data_input": "cpmm-seed.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "2",
+          "field": "status",
+          "rust_type": "i8"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "deposit_active",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "swap_active",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "asset_x",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380044444444444444444444444444444444444444444444444444444444444444450",
+          "field": "asset_y",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "null",
+          "field": "wallets_by_assets",
+          "rust_type": "HashMap<TonHash, MsgAddressInt>"
+        },
+        {
+          "kind": "null",
+          "field": "assets_by_wallets",
+          "rust_type": "HashMap<TonHash, DedustV2CpmmAsset>"
+        },
+        {
+          "kind": "null",
+          "field": "wallets_resolutions",
+          "rust_type": "HashMap<TonHash, DedustV2CpmmAsset>"
+        },
+        {
+          "kind": "int",
+          "value": "300",
+          "field": "base_fee_bps",
+          "rust_type": "i32"
+        },
+        {
+          "kind": "int",
+          "value": "2000",
+          "field": "reserve_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "2000",
+          "field": "reserve_y",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000",
+          "field": "liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "protocol_fee_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "protocol_fee_y",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "creator_fee_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "creator_fee_y",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "x_fee_per_liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "y_fee_per_liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "null",
+          "field": "rewards",
+          "rust_type": "HashMap<u8, DedustV2CpmmPoolReward>"
+        }
+      ]
+    },
+    {
+      "contract": "DedustV2Cpmm",
+      "selector": 112421,
+      "method": "get_method_112421",
+      "result": "GetMethod112421Result",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "module": "cpmm_v2/pool",
+      "code_input": "data/dedust/cpmm_v2/testdata/DedustV2Cpmm.boc",
+      "data_input": "cpmm-seed.boc",
+      "arguments": [
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "2000000",
+          "field": "amount_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "2000000",
+          "field": "amount_y",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV2",
+      "selector": 101289,
+      "method": "get_meme_data",
+      "result": "GetMemeDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v2.rs",
+      "module": "uranus/meme_v2",
+      "code_input": "data/dedust/uranus/meme_v2/testdata/DedustUranusMemeV2.boc",
+      "data_input": "data/dedust/uranus/meme_v2/testdata/DedustUranusMemeV2.data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "initialized",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "migrated",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380066cc9f3027c17fb26d626666c5deb7525bf816c02b234ac115d19adf0b601d690",
+          "field": "controller_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801a9404a7a0d11dc9625257e2f6a3f7ff791e1e5600017fd9f3c8eb214bd06f21b0",
+          "field": "creator_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "int",
+          "value": "32030322",
+          "field": "creator_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "227626340246145419163140496618231247965",
+          "field": "seed",
+          "rust_type": "u128"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "is_graduated",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "1084745762711864406",
+          "field": "alpha",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "373728813559",
+          "field": "beta",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "800000000000000000",
+          "field": "on_sell_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "100",
+          "field": "trade_fee_bps",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "487713704",
+          "field": "raised_funds",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1413741325766464",
+          "field": "current_supply",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV2",
+      "selector": 103289,
+      "method": "get_wallet_address",
+      "result": "GetWalletAddressResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v2.rs",
+      "module": "uranus/meme_v2",
+      "code_input": "data/dedust/uranus/meme_v2/testdata/DedustUranusMemeV2.boc",
+      "data_input": "data/dedust/uranus/meme_v2/testdata/DedustUranusMemeV2.data.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801e20987ffb1219f5a13a3d4207539f3862fdfc23743eafdd615ffe3e70d3cd9590",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV2",
+      "selector": 106029,
+      "method": "get_jetton_data",
+      "result": "GetJettonDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v2.rs",
+      "module": "uranus/meme_v2",
+      "code_input": "data/dedust/uranus/meme_v2/testdata/DedustUranusMemeV2.boc",
+      "data_input": "data/dedust/uranus/meme_v2/testdata/DedustUranusMemeV2.data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000000000000000",
+          "field": "total_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "mintable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "admin_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010601009d00010300c00102012004020143bff7407e978f01a40711411b1acb773a96bdd93fa83bb5ca8435013c8c4b3ac91f4003000400390143bff872ebdb514d9c97c283b7f0ae5179029e2b6119c39462719e4f46ed8f7413e64005008600697066733a2f2f6261666b726569626e79733678337779367a6270686a6d7a656e677662646178727874336a63696c3367766e376f616632706b716c7a3573656e61",
+          "field": "jetton_content",
+          "rust_type": "TonCell"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "cec7896f4cb03ef992b8e47eede4fddc1f7788147c35cff3e0a9a641530e200e",
+          "field": "jetton_wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV3",
+      "selector": 101289,
+      "method": "get_meme_data",
+      "result": "GetMemeDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v3.rs",
+      "module": "uranus/meme_v3",
+      "code_input": "data/dedust/uranus/meme/testdata/DedustUranusMemeV3.boc",
+      "data_input": "factory-preset3-meme-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "initialized",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "migrated",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380115df3f2e269ec43d96facb85db2516b9da00b14bd6b09128313866efaf931bfd0",
+          "field": "controller_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438014c3c51fb0443f746dde00caae606a602be4b8d60a5550805741a95a12c99482b0",
+          "field": "creator_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "creator_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "104375050618371659132584428099529751391",
+          "field": "seed",
+          "rust_type": "u128"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "is_graduated",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "1084745762711864406",
+          "field": "alpha",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "373728813559",
+          "field": "beta",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "800000000000000000",
+          "field": "on_sell_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "100",
+          "field": "trade_fee_bps",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "raised_funds",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "current_supply",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV3",
+      "selector": 121862,
+      "method": "get_bonding_curve_data",
+      "result": "GetBondingCurveDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v3.rs",
+      "module": "uranus/meme_v3",
+      "code_input": "data/dedust/uranus/meme/testdata/DedustUranusMemeV3.boc",
+      "data_input": "factory-preset3-meme-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "is_graduated",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "1000000000000000000",
+          "field": "max_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "current_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "800000000000000000",
+          "field": "bonding_curve_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "200000000000000000",
+          "field": "liquidity_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000000000",
+          "field": "raising_funds",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "50000000000",
+          "field": "migration_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "raised_funds",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1084745762711864406",
+          "field": "alpha",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "373728813559",
+          "field": "beta",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV3",
+      "selector": 83180,
+      "method": "get_partner_data",
+      "result": "GetPartnerDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v3.rs",
+      "module": "uranus/meme_v3",
+      "code_input": "data/dedust/uranus/meme/testdata/DedustUranusMemeV3.boc",
+      "data_input": "factory-preset3-meme-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "partner_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "partner_fee_bps",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380115df3f2e269ec43d96facb85db2516b9da00b14bd6b09128313866efaf931bfd0",
+          "field": "partner_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "pool_partner_fee_bps",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV3",
+      "selector": 103289,
+      "method": "get_wallet_address",
+      "result": "GetWalletAddressResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v3.rs",
+      "module": "uranus/meme_v3",
+      "code_input": "data/dedust/uranus/meme/testdata/DedustUranusMemeV3.boc",
+      "data_input": "factory-preset3-meme-data.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801e3220eee1b919dab9a590b1f6b6f5a1f27662eed21f153acbbd3e827e2b2fd1b0",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeV3",
+      "selector": 106029,
+      "method": "get_jetton_data",
+      "result": "GetJettonDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/meme_v3.rs",
+      "module": "uranus/meme_v3",
+      "code_input": "data/dedust/uranus/meme/testdata/DedustUranusMemeV3.boc",
+      "data_input": "factory-preset3-meme-data.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000000000000000",
+          "field": "total_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "mintable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "admin_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010801007a00010300c00102012005020143bff7407e978f01a40711411b1acb773a96bdd93fa83bb5ca8435013c8c4b3ac91f4003010200040002390143bff872ebdb514d9c97c283b7f0ae5179029e2b6119c39462719e4f46ed8f7413e64006010200070032697066733a2f2f6f726967696e616c2d73796e746865746963",
+          "field": "jetton_content",
+          "rust_type": "TonCell"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "912ff2efa9927d9b3f6df6effbe1f2ca768f70900629027e28ed366310d92592",
+          "field": "jetton_wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeWalletV2",
+      "selector": 97026,
+      "method": "get_wallet_data",
+      "result": "GetWalletDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/wallet_v2.rs",
+      "module": "uranus/wallet_v2",
+      "code_input": "../libraries/eefce5ce3d1e555a5010a309348c965dfaf72ebdf3233b4f691fa3d37bdb5605.boc",
+      "data_input": "$wallet",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "123",
+          "field": "balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801e2316e111fbacaa1fd6fdf6206ca96560075cd966f1b31aabf4c49920855dc550",
+          "field": "owner_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801e2316e111fbacaa1fd6fdf6206ca96560075cd966f1b31aabf4c49920855dc550",
+          "field": "meme_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "6235ea6d44b2c0668c7977e74addb7411ee53e8c8b8939e4ec91f8ebe39eb5c8",
+          "field": "wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "DedustUranusMemeWalletV3",
+      "selector": 97026,
+      "method": "get_wallet_data",
+      "result": "GetWalletDataResult",
+      "rust_path": "crates/dedust/src/contracts/uranus/wallet_v3.rs",
+      "module": "uranus/wallet_v3",
+      "code_input": "../libraries/891e5228e4300ae3ff22583163bbd50e3e1e8cd2304c0d57164f5318f9da1266.boc",
+      "data_input": "$wallet",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "123",
+          "field": "balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801e2316e111fbacaa1fd6fdf6206ca96560075cd966f1b31aabf4c49920855dc550",
+          "field": "owner_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801e2316e111fbacaa1fd6fdf6206ca96560075cd966f1b31aabf4c49920855dc550",
+          "field": "meme_address",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "9f10ce15cf10c708d352cfdccc9973bad87c9b20b4400d056c3680a79a0b7b1f",
+          "field": "wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "DedustOperatorV2",
+      "selector": 79987,
+      "method": "get_method_79987",
+      "result": "GetMethod79987Result",
+      "rust_path": "crates/dedust/src/contracts/operator/v2.rs",
+      "module": "operator/v2",
+      "code_input": "data/dedust/operator/testdata/DedustOperatorV2.boc",
+      "data_input": "relay-forward-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380197ef4fdd67ec143058edfb2546e728b01aa6ab55ca5f7f703d6a3836cf8284b30",
+          "field": "factory",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "int",
+          "value": "10",
+          "field": "role",
+          "rust_type": "u8"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438013d8df6116dafe0160c911c8af684cfecf426727f52fc1529daac155a8dae440b0",
+          "field": "user",
+          "rust_type": "MsgAddressInt"
+        },
+        {
+          "kind": "int",
+          "value": "1100",
+          "field": "can_execute_after",
+          "rust_type": "u32"
+        }
+      ]
+    },
+    {
+      "contract": "DedustOperatorV2",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/operator/v2.rs",
+      "module": "operator/v2",
+      "code_input": "data/dedust/operator/testdata/DedustOperatorV2.boc",
+      "data_input": "relay-forward-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 85143,
+      "method": "seqno",
+      "result": "SeqnoResult",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 83648,
+      "method": "get_method_83648_69107",
+      "result": "GetMethod8364869107Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "999938999",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 85802,
+      "method": "get_method_85802_4977",
+      "result": "GetMethod858024977Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 89828,
+      "method": "get_method_89828_151680",
+      "result": "GetMethod89828151680Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "68134197439415885698044414435951397869210496020759160419881882418413283430343",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 91459,
+      "method": "get_method_91459_1072",
+      "result": "GetMethod914591072Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 94056,
+      "method": "get_method_94056_66388",
+      "result": "GetMethod9405666388Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 95507,
+      "method": "storage_version",
+      "result": "StorageVersionResult",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 97027,
+      "method": "get_method_97027_232299",
+      "result": "GetMethod97027232299Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 97376,
+      "method": "get_method_97376_77788",
+      "result": "GetMethod9737677788Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 98121,
+      "method": "get_method_98121_79196",
+      "result": "GetMethod9812179196Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "DedustX1000WalletV2",
+      "selector": 118999,
+      "method": "get_method_118999_18140",
+      "result": "GetMethod11899918140Result",
+      "rust_path": "crates/dedust/src/contracts/custom_wallet/v2.rs",
+      "module": "custom_wallet/v2",
+      "code_input": "data/dedust/x1000_wallet_v2/testdata/DedustX1000WalletV2.boc",
+      "data_input": "x1000-stored-message-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "Position",
+      "selector": 89720,
+      "method": "get_position_data",
+      "result": "PositionData",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/position.rs",
+      "module": "cpmm_v2/position",
+      "code_input": "../libraries/dd82f24db614798ee7c579f8b3f07f0645d06d65cede368d80d0d74b180d2dd6.boc",
+      "data_input": "position-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438014385762595bc875d109933421cda37799d41161709c91f82966711898bb27f2b0",
+          "field": "pool",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801b8d462edb5b65c24cb5e4bfc6236b4347c52154c47c7d990d9501ceabc5309730",
+          "field": "owner",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "int",
+          "value": "19",
+          "field": "total_liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "locked_liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "null",
+          "field": "rewards",
+          "rust_type": "HashMap<u8, PositionReward>"
+        },
+        {
+          "kind": "int",
+          "value": "7",
+          "field": "x_pending",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "11",
+          "field": "y_pending",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1329227995784915872903807060280344576",
+          "field": "x_checkpoint",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "2658455991569831745807614120560689152",
+          "field": "y_checkpoint",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "Position",
+      "selector": 80110,
+      "method": "get_available_fees",
+      "result": "AvailableFees",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/position.rs",
+      "module": "cpmm_v2/position",
+      "code_input": "../libraries/dd82f24db614798ee7c579f8b3f07f0645d06d65cede368d80d0d74b180d2dd6.boc",
+      "data_input": "position-state.boc",
+      "arguments": [
+        "17",
+        "17"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "-12",
+          "field": "x_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "-27",
+          "field": "y_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "Deposit",
+      "selector": 70330,
+      "method": "get_deposit_data",
+      "result": "DepositData",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/deposit.rs",
+      "module": "cpmm_v2/deposit",
+      "code_input": "../libraries/2cac3fddd30969d08df036067108c6e7d69780a9459d931d2eb63d95d5ff6825.boc",
+      "data_input": "deposit-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438014385762595bc875d109933421cda37799d41161709c91f82966711898bb27f2b0",
+          "field": "pool",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801b8d462edb5b65c24cb5e4bfc6236b4347c52154c47c7d990d9501ceabc5309730",
+          "field": "fulfill_destination",
+          "rust_type": "ton::ton_core::types::tlb_core::MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438014385762595bc875d109933421cda37799d41161709c91f82966711898bb27f2b0",
+          "field": "reject_destination",
+          "rust_type": "ton::ton_core::types::tlb_core::MsgAddress"
+        },
+        {
+          "kind": "int",
+          "value": "100",
+          "field": "target_x",
+          "rust_type": "fastnum::I512"
+        },
+        {
+          "kind": "int",
+          "value": "200",
+          "field": "target_y",
+          "rust_type": "fastnum::I512"
+        },
+        {
+          "kind": "int",
+          "value": "5000",
+          "field": "locked_liquidity_share",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "17",
+          "field": "minimal_liquidity",
+          "rust_type": "fastnum::I512"
+        },
+        {
+          "kind": "int",
+          "value": "11",
+          "field": "amount_x",
+          "rust_type": "fastnum::I512"
+        },
+        {
+          "kind": "int",
+          "value": "23",
+          "field": "amount_y",
+          "rust_type": "fastnum::I512"
+        }
+      ]
+    },
+    {
+      "contract": "ClassicLPWallet",
+      "selector": 97026,
+      "method": "get_wallet_data",
+      "result": "WalletData",
+      "rust_path": "crates/dedust/src/contracts/classic/lp_wallet.rs",
+      "module": "classic/lp_wallet",
+      "code_input": "data/dedust/v1/pool/testdata/DedustLpWalletV1.embedded.boc",
+      "data_input": "lp-wallet-state.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "12345",
+          "field": "balance",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801b8d462edb5b65c24cb5e4bfc6236b4347c52154c47c7d990d9501ceabc5309730",
+          "field": "owner",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438014385762595bc875d109933421cda37799d41161709c91f82966711898bb27f2b0",
+          "field": "pool",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "f0a62863db479a2c8b5a6fd1da6f2382d145ca7d77067fdadf6a79f4699d4643",
+          "field": "wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 103723,
+      "method": "is_stable",
+      "result": "IsStableResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 96780,
+      "method": "get_trade_fee",
+      "result": "GetTradeFeeResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "30",
+          "field": "trade_fee_numerator",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "10000",
+          "field": "trade_fee_denominator",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 65971,
+      "method": "get_reserves",
+      "result": "GetReservesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve0",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve1",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 112792,
+      "method": "get_protocol_fees",
+      "result": "GetProtocolFeesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset0_protocol_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset1_protocol_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 118188,
+      "method": "get_assets",
+      "result": "GetAssetsResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "asset0",
+          "rust_type": "DedustPoolV2Asset"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset1",
+          "rust_type": "DedustPoolV2Asset"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 70754,
+      "method": "estimate_swap_out",
+      "result": "EstimateSwapOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [
+        "native",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset_out",
+          "rust_type": "DedustPoolV2Asset"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "amount_out",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "3000",
+          "field": "trade_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 119877,
+      "method": "estimate_deposit_out",
+      "result": "EstimateDepositOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [
+        "1000000",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset0_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset1_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "fair_supply",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 106029,
+      "method": "get_jetton_data",
+      "result": "GetJettonDataResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "total_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "mintable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "admin_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c720101090100f200010300c001020120070202012005030142bfae80fd2f1e03480e2282363596ee752d7bb27f50776b95086a0279189675923e04000400390142bfb76a7ca153c24671658335bbd08946350ffc621fa1c516e7123095d4ffd5c581060006004c500143bff872ebdb514d9c97c283b7f0ae5179029e2b6119c39462719e4f46ed8f7413e6400800d60068747470733a2f2f6170692e6465647573742e696f2f76322f706f6f6c732f303a303339373936376132323238383965663235636334323730333431323232623939363739643766636264633631613435346663656464633732626335303266622f6d65746164617461",
+          "field": "jetton_content",
+          "rust_type": "TonCell"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "7beaf75b2835a9679387e167fc091fca00102811db62a545ba0cf42d5b2cdb0d",
+          "field": "jetton_wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 103289,
+      "method": "get_wallet_address",
+      "result": "GetWalletAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380075d4d3abdd1748f13495f5e2dd8d2fdd7dfcd4963823b92445c92146edec53610",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 66722,
+      "method": "get_method_66722",
+      "result": "GetMethod66722Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "provider0",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "provider1",
+          "rust_type": "MsgAddress"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 106049,
+      "method": "get_method_106049",
+      "result": "GetMethod106049Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "9",
+          "field": "decimals_x",
+          "rust_type": "u8"
+        },
+        {
+          "kind": "int",
+          "value": "6",
+          "field": "decimals_y",
+          "rust_type": "u8"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPool778f",
+      "selector": 111021,
+      "method": "get_method_111021",
+      "result": "GetMethod111021Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-a-code.boc",
+      "data_input": "pool-managed-a-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000000000000000000000000",
+          "field": "factor_x",
+          "rust_type": "u128"
+        },
+        {
+          "kind": "int",
+          "value": "1000000000000000000000000000000",
+          "field": "factor_y",
+          "rust_type": "u128"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 82320,
+      "method": "get_version",
+      "result": "GetVersionResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "5",
+          "field": "value",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 103723,
+      "method": "is_stable",
+      "result": "IsStableResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1",
+          "field": "value",
+          "rust_type": "bool"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 96780,
+      "method": "get_trade_fee",
+      "result": "GetTradeFeeResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "30",
+          "field": "trade_fee_numerator",
+          "rust_type": "u16"
+        },
+        {
+          "kind": "int",
+          "value": "10000",
+          "field": "trade_fee_denominator",
+          "rust_type": "u16"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 65971,
+      "method": "get_reserves",
+      "result": "GetReservesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve0",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "reserve1",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 112792,
+      "method": "get_protocol_fees",
+      "result": "GetProtocolFeesResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset0_protocol_fee",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "asset1_protocol_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 118188,
+      "method": "get_assets",
+      "result": "GetAssetsResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000108",
+          "field": "asset0",
+          "rust_type": "DedustPoolV2Asset"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset1",
+          "rust_type": "DedustPoolV2Asset"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 70754,
+      "method": "estimate_swap_out",
+      "result": "EstimateSwapOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [
+        "native",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043100000000000000000000000000000000000000000000000000000000000000000c8",
+          "field": "asset_out",
+          "rust_type": "DedustPoolV2Asset"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "amount_out",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "3000",
+          "field": "trade_fee",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 119877,
+      "method": "estimate_deposit_out",
+      "result": "EstimateDepositOutResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [
+        "1000000",
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset0_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "asset1_deposit",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000000",
+          "field": "fair_supply",
+          "rust_type": "I512"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 106029,
+      "method": "get_jetton_data",
+      "result": "GetJettonDataResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "total_supply",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "mintable",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "admin_address",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c720101090100f200010300c001020120070202012005030142bfae80fd2f1e03480e2282363596ee752d7bb27f50776b95086a0279189675923e04000400390142bfb76a7ca153c24671658335bbd08946350ffc621fa1c516e7123095d4ffd5c581060006004c500143bff872ebdb514d9c97c283b7f0ae5179029e2b6119c39462719e4f46ed8f7413e6400800d60068747470733a2f2f6170692e6465647573742e696f2f76322f706f6f6c732f303a653631653765613437393465363333653763363261363462306330363666646361376339346334366637613362306339376562306436333564663338376465642f6d65746164617461",
+          "field": "jetton_content",
+          "rust_type": "TonCell"
+        },
+        {
+          "kind": "cell",
+          "boc_hex": "b5ee9c7201010101000600000811223344",
+          "substitution": "Original synthetic32-bit program marker 0x11223344 replaces a returned program CODE field only. Original bytes remain in LOCAL log.",
+          "original_boc_sha256": "7beaf75b2835a9679387e167fc091fca00102811db62a545ba0cf42d5b2cdb0d",
+          "field": "jetton_wallet_code",
+          "rust_type": "TonCell"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 103289,
+      "method": "get_wallet_address",
+      "result": "GetWalletAddressResult",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c720101010100240000438019956fa49f8e43cace2c5ecde4164a12e9ba4f27bddc0250fa35aa8264add93670",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 66722,
+      "method": "get_method_66722",
+      "result": "GetMethod66722Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "provider0",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "provider1",
+          "rust_type": "MsgAddress"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 106049,
+      "method": "get_method_106049",
+      "result": "GetMethod106049Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "9",
+          "field": "decimals_x",
+          "rust_type": "u8"
+        },
+        {
+          "kind": "int",
+          "value": "6",
+          "field": "decimals_y",
+          "rust_type": "u8"
+        }
+      ]
+    },
+    {
+      "contract": "OperatorManagedPoolC0f9",
+      "selector": 111021,
+      "method": "get_method_111021",
+      "result": "GetMethod111021Result",
+      "rust_path": "crates/dedust/src/contracts/classic/pool_v2.rs",
+      "module": "classic/pool_v2",
+      "code_input": "operator-pool-b-code.boc",
+      "data_input": "pool-managed-b-initializer-post-synthetic.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "1000000000000000000000000000",
+          "field": "factor_x",
+          "rust_type": "u128"
+        },
+        {
+          "kind": "int",
+          "value": "1000000000000000000000000000000",
+          "field": "factor_y",
+          "rust_type": "u128"
+        }
+      ]
+    },
+    {
+      "contract": "CpmmPoolV1",
+      "selector": 72157,
+      "method": "get_position_address",
+      "result": "GetPositionAddressResult",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "module": "cpmm_v2/pool",
+      "code_input": "../libraries/87b566c019a1c6fc691dcc5042559368db755428ef8e0f45eb23ade0118c4c36.boc",
+      "data_input": "cpmm-seed.boc",
+      "arguments": [
+        "owner"
+      ],
+      "values": [
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c72010101010024000043801948dab07ac6fcca9102f97ed3cc68950d169468adba5e8bf22a69df52f7821830",
+          "field": "value",
+          "rust_type": "MsgAddressInt"
+        }
+      ]
+    },
+    {
+      "contract": "CpmmPoolV1",
+      "selector": 81689,
+      "method": "get_pool_data",
+      "result": "GetPoolDataResult",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "module": "cpmm_v2/pool",
+      "code_input": "../libraries/87b566c019a1c6fc691dcc5042559368db755428ef8e0f45eb23ade0118c4c36.boc",
+      "data_input": "cpmm-seed.boc",
+      "arguments": [],
+      "values": [
+        {
+          "kind": "int",
+          "value": "2",
+          "field": "status",
+          "rust_type": "i8"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "deposit_active",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "int",
+          "value": "-1",
+          "field": "swap_active",
+          "rust_type": "bool"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101000300000120",
+          "field": "asset_x",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "slice",
+          "boc_hex": "b5ee9c7201010101002400004380044444444444444444444444444444444444444444444444444444444444444450",
+          "field": "asset_y",
+          "rust_type": "MsgAddress"
+        },
+        {
+          "kind": "null",
+          "field": "wallets_by_assets",
+          "rust_type": "HashMap<TonHash, MsgAddressInt>"
+        },
+        {
+          "kind": "null",
+          "field": "assets_by_wallets",
+          "rust_type": "HashMap<TonHash, DedustV2CpmmAsset>"
+        },
+        {
+          "kind": "null",
+          "field": "wallets_resolutions",
+          "rust_type": "HashMap<TonHash, DedustV2CpmmAsset>"
+        },
+        {
+          "kind": "int",
+          "value": "300",
+          "field": "base_fee_bps",
+          "rust_type": "i32"
+        },
+        {
+          "kind": "int",
+          "value": "2000",
+          "field": "reserve_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "2000",
+          "field": "reserve_y",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "1000",
+          "field": "liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "protocol_fee_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "protocol_fee_y",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "creator_fee_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "creator_fee_y",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "x_fee_per_liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "0",
+          "field": "y_fee_per_liquidity",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "null",
+          "field": "rewards",
+          "rust_type": "HashMap<u8, DedustV2CpmmPoolReward>"
+        }
+      ]
+    },
+    {
+      "contract": "CpmmPoolV1",
+      "selector": 112421,
+      "method": "get_method_112421",
+      "result": "GetMethod112421Result",
+      "rust_path": "crates/dedust/src/contracts/cpmm_v2/pool.rs",
+      "module": "cpmm_v2/pool",
+      "code_input": "../libraries/87b566c019a1c6fc691dcc5042559368db755428ef8e0f45eb23ade0118c4c36.boc",
+      "data_input": "cpmm-seed.boc",
+      "arguments": [
+        "1000000"
+      ],
+      "values": [
+        {
+          "kind": "int",
+          "value": "2000000",
+          "field": "amount_x",
+          "rust_type": "I512"
+        },
+        {
+          "kind": "int",
+          "value": "2000000",
+          "field": "amount_y",
+          "rust_type": "I512"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1336 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustFactoryV2",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust Factory V2 is the registry and deployment hub that creates and discovers DeDust v2 vaults, pools, operators, and deposit helpers.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2TransferOwnership"
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2AcceptOwnership"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CancelOwnershipTransfer"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2InstallVaultCode"
+    },
+    {
+      "kind": "uintN",
+      "n": 4
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CreateVault"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustFactoryV2Asset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2NativeAsset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2JettonAsset"
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    },
+    {
+      "kind": "bitsN",
+      "n": 256
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 21,
+          "prefix_num": 0,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 133,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 22,
+          "prefix_num": 1,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 134,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CreateLegacyJettonVault"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2UpgradeVault"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2DestroyNonReadyVault"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2Upgrade"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2ResetGas"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2DeployOperator"
+    },
+    {
+      "kind": "uintN",
+      "n": 8
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2ChangeOperatorUserAddress"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2InstallOperatorCode"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2UpgradeOperator"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2InstallPoolCode"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CreateVolatilePool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CreateStablePool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2UpgradePool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2PoolParams"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2InstallLiquidityDepositCode"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CreateLiquidityDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2VaultProof"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 43
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2CreateLiquidityDepositExtra"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 45
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2Install"
+    },
+    {
+      "kind": "remaining"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2DepositAsset"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2Storage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2Config"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 53
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFactoryV2Ownership"
+    },
+    {
+      "kind": "addressAny"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2Storage",
+      "ty_idx": 52,
+      "fields": [
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7,
+          "description": "Current Factory owner authorized for administrative messages."
+        },
+        {
+          "name": "pendingOwnerAddress",
+          "ty_idx": 13,
+          "description": "Pending owner selected by `transfer_ownership`, or `addr_none`."
+        },
+        {
+          "name": "canAcceptAfter",
+          "ty_idx": 9,
+          "description": "Unix timestamp after which `accept_ownership` can complete."
+        },
+        {
+          "name": "version",
+          "ty_idx": 18,
+          "description": "Factory code/configuration version returned by `get_version`."
+        },
+        {
+          "name": "blankCode",
+          "ty_idx": 3,
+          "description": "Blank contract code used for deterministic child deployments."
+        },
+        {
+          "name": "config",
+          "ty_idx": 54,
+          "description": "Referenced common Factory child-code configuration."
+        },
+        {
+          "name": "operatorCodeVersion",
+          "ty_idx": 18,
+          "description": "Version of the installed Operator implementation code."
+        },
+        {
+          "name": "operatorCode",
+          "ty_idx": 47,
+          "description": "Optional Operator implementation code cell used by deterministic operator deployments."
+        }
+      ],
+      "description": "Runtime Factory storage loaded by the verified v2 code root data cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2Config",
+      "ty_idx": 53,
+      "fields": [
+        {
+          "name": "poolCodeVersion",
+          "ty_idx": 18,
+          "description": "Installed Pool implementation code version."
+        },
+        {
+          "name": "poolCode",
+          "ty_idx": 3,
+          "description": "Installed Pool implementation code cell."
+        },
+        {
+          "name": "liquidityDepositCodeVersion",
+          "ty_idx": 18,
+          "description": "Installed Liquidity Deposit implementation code version."
+        },
+        {
+          "name": "liquidityDepositCode",
+          "ty_idx": 3,
+          "description": "Installed Liquidity Deposit implementation code cell."
+        },
+        {
+          "name": "vaultCodeByAssetType",
+          "ty_idx": 47,
+          "description": "Optional dictionary of Vault implementation `(version, code)` entries by DeDust asset type."
+        },
+        {
+          "name": "lpWalletCode",
+          "ty_idx": 3,
+          "description": "LP Jetton wallet code forwarded into newly installed Pool storage."
+        }
+      ],
+      "description": "Referenced Factory child-code configuration cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2NativeAsset",
+      "ty_idx": 21,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 4
+      },
+      "fields": [],
+      "description": "Native GRAM asset tag accepted by the live factory asset parser."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2JettonAsset",
+      "ty_idx": 22,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 4
+      },
+      "fields": [
+        {
+          "name": "workchainId",
+          "ty_idx": 23,
+          "description": "Jetton master workchain id encoded as signed 8-bit integer."
+        },
+        {
+          "name": "address",
+          "ty_idx": 24,
+          "description": "Jetton master address hash encoded without the standard address tag."
+        }
+      ],
+      "description": "Jetton asset tag accepted by the live factory asset parser."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustFactoryV2Asset",
+      "ty_idx": 20,
+      "target_ty_idx": 25,
+      "description": "Asset variants accepted by Factory asset cells."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2PoolParams",
+      "ty_idx": 40,
+      "fields": [
+        {
+          "name": "isStable",
+          "ty_idx": 5,
+          "description": "False for volatile pools and true for stable pools."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 20,
+          "description": "First sorted pool asset."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 20,
+          "description": "Second sorted pool asset."
+        }
+      ],
+      "description": "Pool identity used in deterministic pool and liquidity-deposit derivation."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2VaultProof",
+      "ty_idx": 43,
+      "fields": [
+        {
+          "name": "factoryAddress",
+          "ty_idx": 7,
+          "description": "Factory address embedded in the generated child StateInit proof."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 32,
+          "description": "Contract type tag; TL-B assigns `1` to Vault proofs."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 20,
+          "description": "Vault asset parameter committed to the proof."
+        }
+      ],
+      "description": "Factory proof for a Vault-derived request."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CreateLiquidityDepositExtra",
+      "ty_idx": 45,
+      "fields": [
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Target balance for pool asset0 after the deposit is fulfilled."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Target balance for pool asset1 after the deposit is fulfilled."
+        },
+        {
+          "name": "depositAsset",
+          "ty_idx": 20,
+          "description": "Asset being deposited by the Vault that requests deposit creation."
+        },
+        {
+          "name": "depositAmount",
+          "ty_idx": 6,
+          "description": "Amount of `depositAsset` forwarded to the Liquidity Deposit."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum LP amount required by the original user request."
+        }
+      ],
+      "description": "Referenced extra values used by `create_liquidity_deposit`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2Install",
+      "ty_idx": 48,
+      "prefix": {
+        "prefix_num": 2604311546,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the factory request that triggered deployment."
+        },
+        {
+          "name": "blankCode",
+          "ty_idx": 3,
+          "description": "Blank contract code used for the deterministic StateInit."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 18,
+          "description": "Version of the contract code installed into the Blank."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "Contract code cell installed into the Blank."
+        },
+        {
+          "name": "extraParams",
+          "ty_idx": 49,
+          "description": "Child-specific initialization tail stored inline by factory send sites."
+        }
+      ],
+      "description": "Install payload sent by the Factory to a Blank contract during child deployment."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2DepositAsset",
+      "ty_idx": 50,
+      "prefix": {
+        "prefix_num": 1411649509,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from `create_liquidity_deposit`."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 20,
+          "description": "Asset deposited into the Liquidity Deposit."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Amount forwarded to the Liquidity Deposit."
+        }
+      ],
+      "description": "Asset deposit forwarded from Factory to the created Liquidity Deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2TransferOwnership",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 3395376462,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id for ownership management traceability."
+        },
+        {
+          "name": "newOwnerAddress",
+          "ty_idx": 13,
+          "description": "New owner address; TL-B allows `addr_none` to be encoded."
+        }
+      ],
+      "description": "Request to transfer Factory ownership to `newOwnerAddress`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2AcceptOwnership",
+      "ty_idx": 14,
+      "prefix": {
+        "prefix_num": 3739616260,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id for ownership management traceability."
+        }
+      ],
+      "description": "Pending owner request to accept ownership after the configured delay."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CancelOwnershipTransfer",
+      "ty_idx": 15,
+      "prefix": {
+        "prefix_num": 382435266,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id for ownership management traceability."
+        }
+      ],
+      "description": "Current owner request to cancel a pending ownership transfer."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2InstallVaultCode",
+      "ty_idx": 16,
+      "prefix": {
+        "prefix_num": 3158255350,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "assetType",
+          "ty_idx": 17,
+          "description": "DeDust asset type tag encoded as four bits; live parser proves native and jetton tags."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 18,
+          "description": "Monotonic Vault code version."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "New Vault code cell."
+        }
+      ],
+      "description": "Owner/operator request to install a Vault implementation for an asset type."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CreateVault",
+      "ty_idx": 19,
+      "prefix": {
+        "prefix_num": 567271467,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 20,
+          "description": "Asset whose deterministic Vault address is deployed."
+        }
+      ],
+      "description": "Public request to deploy the Vault for an asset if it is missing."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CreateLegacyJettonVault",
+      "ty_idx": 26,
+      "prefix": {
+        "prefix_num": 3383063853,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "minterAddress",
+          "ty_idx": 7,
+          "description": "Jetton master address for the legacy Vault."
+        },
+        {
+          "name": "resolverAddress",
+          "ty_idx": 7,
+          "description": "Resolver address used by the legacy deployment path."
+        }
+      ],
+      "description": "Request to deploy a legacy Jetton Vault through a resolver."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2UpgradeVault",
+      "ty_idx": 27,
+      "prefix": {
+        "prefix_num": 634808593,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 20,
+          "description": "Asset whose Vault code should be upgraded."
+        }
+      ],
+      "description": "Request to upgrade the Vault for an existing asset."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2Upgrade",
+      "ty_idx": 29,
+      "prefix": {
+        "prefix_num": 3746178986,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 18,
+          "description": "Monotonic Factory code version."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "Replacement Factory code cell."
+        }
+      ],
+      "description": "Owner request to replace Factory code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2ResetGas",
+      "ty_idx": 30,
+      "prefix": {
+        "prefix_num": 2671708471,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        }
+      ],
+      "description": "Owner request to return Factory excess gas."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2DeployOperator",
+      "ty_idx": 31,
+      "prefix": {
+        "prefix_num": 3117586839,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "role",
+          "ty_idx": 32,
+          "description": "Role tag encoded as uint8 in Factory proofs."
+        },
+        {
+          "name": "userAddress",
+          "ty_idx": 7,
+          "description": "User address assigned to the Operator."
+        }
+      ],
+      "description": "Owner request to deploy an Operator contract for a role and user."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2ChangeOperatorUserAddress",
+      "ty_idx": 33,
+      "prefix": {
+        "prefix_num": 468115347,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "role",
+          "ty_idx": 32,
+          "description": "Role tag encoded as uint8 in Factory proofs."
+        },
+        {
+          "name": "userAddress",
+          "ty_idx": 7,
+          "description": "Replacement user address."
+        }
+      ],
+      "description": "Owner request to change the user address for an existing Operator role."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2InstallOperatorCode",
+      "ty_idx": 34,
+      "prefix": {
+        "prefix_num": 3842363930,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 18,
+          "description": "Monotonic Operator code version."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "New Operator code cell."
+        }
+      ],
+      "description": "Owner request to install Operator contract code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2UpgradeOperator",
+      "ty_idx": 35,
+      "prefix": {
+        "prefix_num": 8779171,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "role",
+          "ty_idx": 32,
+          "description": "Role tag encoded as uint8 in Factory proofs."
+        }
+      ],
+      "description": "Owner request to upgrade an Operator contract for a role."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2InstallPoolCode",
+      "ty_idx": 36,
+      "prefix": {
+        "prefix_num": 2749652465,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 18,
+          "description": "Monotonic Pool code version."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "New Pool code cell."
+        }
+      ],
+      "description": "Owner/operator request to install Pool implementation code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CreateVolatilePool",
+      "ty_idx": 37,
+      "prefix": {
+        "prefix_num": 2547326767,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 20,
+          "description": "First sorted pool asset."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 20,
+          "description": "Second sorted pool asset."
+        }
+      ],
+      "description": "Public request to deploy a volatile Pool for two sorted assets."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CreateStablePool",
+      "ty_idx": 38,
+      "prefix": {
+        "prefix_num": 2084613255,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 20,
+          "description": "First sorted pool asset."
+        },
+        {
+          "name": "asset0Decimals",
+          "ty_idx": 32,
+          "description": "Decimals for `asset0`, encoded as uint8."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 20,
+          "description": "Second sorted pool asset."
+        },
+        {
+          "name": "asset1Decimals",
+          "ty_idx": 32,
+          "description": "Decimals for `asset1`, encoded as uint8."
+        }
+      ],
+      "description": "Stable-pool-factory operator request to deploy a stable Pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2UpgradePool",
+      "ty_idx": 39,
+      "prefix": {
+        "prefix_num": 1407341230,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 40,
+          "description": "Pool identity committed to the deterministic Pool address."
+        }
+      ],
+      "description": "Owner/operator request to upgrade an existing Pool implementation."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2InstallLiquidityDepositCode",
+      "ty_idx": 41,
+      "prefix": {
+        "prefix_num": 2577941265,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 18,
+          "description": "Monotonic Liquidity Deposit code version."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "New Liquidity Deposit code cell."
+        }
+      ],
+      "description": "Owner/operator request to install Liquidity Deposit implementation code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2CreateLiquidityDeposit",
+      "ty_idx": 42,
+      "prefix": {
+        "prefix_num": 4031694118,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the user deposit request."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 44,
+          "description": "Proof that the requesting Vault belongs to this Factory."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7,
+          "description": "Owner whose deterministic Liquidity Deposit is created."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 40,
+          "description": "Pool identity committed to the Liquidity Deposit address."
+        },
+        {
+          "name": "extra",
+          "ty_idx": 46,
+          "description": "Referenced balance and deposit values."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 47,
+          "description": "Optional payload returned when the deposit succeeds."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 47,
+          "description": "Optional payload returned when the deposit is rejected."
+        }
+      ],
+      "description": "Vault request to create a Liquidity Deposit for an owner and pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2DestroyNonReadyVault",
+      "ty_idx": 28,
+      "prefix": {
+        "prefix_num": 2320600333,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected query id."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 20,
+          "description": "Asset whose non-ready Vault should be destroyed."
+        }
+      ],
+      "description": "Owner request to remove a non-ready Vault for an asset."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 51,
+      "encoded_as_ty_idx": 18,
+      "members": [
+        {
+          "name": "InvalidOwnerSender",
+          "value": "256",
+          "description": "Incoming administration message sender is not the current Factory owner."
+        },
+        {
+          "name": "InvalidPendingOwnerSender",
+          "value": "257",
+          "description": "Ownership acceptance sender is not the pending owner."
+        },
+        {
+          "name": "OwnershipDelayNotElapsed",
+          "value": "258",
+          "description": "Ownership acceptance delay has not elapsed."
+        },
+        {
+          "name": "MissingChildCode",
+          "value": "260",
+          "description": "Requested child implementation code is not installed."
+        },
+        {
+          "name": "InvalidAssetOrProof",
+          "value": "261",
+          "description": "Asset tag or proof shape is invalid for this Factory."
+        },
+        {
+          "name": "InvalidAssetOrder",
+          "value": "262",
+          "description": "Pool asset order is invalid."
+        },
+        {
+          "name": "InsufficientValue",
+          "value": "263",
+          "description": "Attached value cannot cover the required deployment budget."
+        },
+        {
+          "name": "InvalidVaultSender",
+          "value": "264",
+          "description": "Liquidity-deposit creation sender is not the authenticated Vault."
+        },
+        {
+          "name": "InvalidCodeVersion",
+          "value": "275",
+          "description": "Replacement code version is not the next version."
+        },
+        {
+          "name": "InvalidOperatorSender",
+          "value": "296",
+          "description": "Operator-only request sender is not the deterministic Operator contract."
+        },
+        {
+          "name": "UnsupportedOperation",
+          "value": "65535",
+          "description": "Incoming internal message opcode is unsupported."
+        }
+      ],
+      "description": "DeDust Factory v2 exit-code catalog."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFactoryV2Ownership",
+      "ty_idx": 55,
+      "fields": [
+        {
+          "name": "ownerAddress",
+          "ty_idx": 56,
+          "description": "Current owner stack address; expected to be an internal address on live mainnet."
+        },
+        {
+          "name": "pendingOwnerAddress",
+          "ty_idx": 56,
+          "description": "Pending owner stack address, or `addr_none` when no transfer is pending."
+        },
+        {
+          "name": "canAcceptAfter",
+          "ty_idx": 9,
+          "description": "Unix timestamp after which the pending owner can accept."
+        }
+      ],
+      "description": "Structured result returned by `get_ownership`."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 14
+    },
+    {
+      "body_ty_idx": 15
+    },
+    {
+      "body_ty_idx": 16
+    },
+    {
+      "body_ty_idx": 19
+    },
+    {
+      "body_ty_idx": 26
+    },
+    {
+      "body_ty_idx": 27
+    },
+    {
+      "body_ty_idx": 28
+    },
+    {
+      "body_ty_idx": 29
+    },
+    {
+      "body_ty_idx": 30
+    },
+    {
+      "body_ty_idx": 31
+    },
+    {
+      "body_ty_idx": 33
+    },
+    {
+      "body_ty_idx": 34
+    },
+    {
+      "body_ty_idx": 35
+    },
+    {
+      "body_ty_idx": 36
+    },
+    {
+      "body_ty_idx": 37
+    },
+    {
+      "body_ty_idx": 38
+    },
+    {
+      "body_ty_idx": 39
+    },
+    {
+      "body_ty_idx": 41
+    },
+    {
+      "body_ty_idx": 42
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 48
+    },
+    {
+      "body_ty_idx": 50
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 52
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 110004,
+      "name": "get_ownership",
+      "parameters": [],
+      "return_ty_idx": 55,
+      "description": "Return current and pending owner addresses plus ownership acceptance timestamp."
+    },
+    {
+      "tvm_method_id": 82320,
+      "name": "get_version",
+      "parameters": [],
+      "return_ty_idx": 18,
+      "description": "Return the live Factory code/storage version."
+    },
+    {
+      "tvm_method_id": 76695,
+      "name": "get_vault_address",
+      "parameters": [
+        {
+          "name": "asset",
+          "ty_idx": 2
+        }
+      ],
+      "return_ty_idx": 7,
+      "description": "Return the deterministic Vault address for `asset`."
+    },
+    {
+      "tvm_method_id": 101789,
+      "name": "get_pool_address",
+      "parameters": [
+        {
+          "name": "poolType",
+          "ty_idx": 1
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 2
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 2
+        }
+      ],
+      "return_ty_idx": 7,
+      "description": "Return the deterministic Pool address for `poolType` (`0` volatile, `1` stable) and assets."
+    },
+    {
+      "tvm_method_id": 84481,
+      "name": "get_liquidity_deposit_address",
+      "parameters": [
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7
+        },
+        {
+          "name": "poolType",
+          "ty_idx": 1
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 2
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 2
+        }
+      ],
+      "return_ty_idx": 7,
+      "description": "Return the deterministic Liquidity Deposit address for owner, pool type, and assets."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidOwnerSender",
+      "description": "Incoming administration message sender is not the current Factory owner.",
+      "err_code": 256
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidPendingOwnerSender",
+      "description": "Ownership acceptance sender is not the pending owner.",
+      "err_code": 257
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.OwnershipDelayNotElapsed",
+      "description": "Ownership acceptance delay has not elapsed.",
+      "err_code": 258
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.MissingChildCode",
+      "description": "Requested child implementation code is not installed.",
+      "err_code": 260
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAssetOrProof",
+      "description": "Asset tag or proof shape is invalid for this Factory.",
+      "err_code": 261
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAssetOrder",
+      "description": "Pool asset order is invalid.",
+      "err_code": 262
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InsufficientValue",
+      "description": "Attached value cannot cover the required deployment budget.",
+      "err_code": 263
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidVaultSender",
+      "description": "Liquidity-deposit creation sender is not the authenticated Vault.",
+      "err_code": 264
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidCodeVersion",
+      "description": "Replacement code version is not the next version.",
+      "err_code": 275
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidOperatorSender",
+      "description": "Operator-only request sender is not the deterministic Operator contract.",
+      "err_code": 296
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnsupportedOperation",
+      "description": "Incoming internal message opcode is unsupported.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

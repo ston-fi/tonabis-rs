@@ -1,0 +1,82 @@
+{
+  "provenance": {
+    "kind": "original local synthetic observations; no executable cells",
+    "code_hashes": [
+      "e5ce6005c0b710d9b2cae507dcaf195df8ace3d6869c7d90b17a7bf5a1bbf858",
+      "d7c38fa994a8282657209f93ebc5dfe908a5f06d2e41f0c085e917bc4f54a2b3"
+    ],
+    "probe": "lp-wallet.test.tolk",
+    "log_sha256": "c4f162cd0d18f212103ecbf0c1c94ca9ecef422efec2c8a97b8d76bc91164d04"
+  },
+  "query_id": 77,
+  "amount": 13,
+  "balance_before": 100,
+  "forward_ton_amount": 1000000,
+  "notification_hash_hex": "374b2bfe5a4dc9607ec19705f8b86f1bc46e58076fe674bdd69e1726335560ab",
+  "vectors": [
+    {
+      "generation": 0,
+      "bounced": false,
+      "original_opcode": 0,
+      "input_hash_hex": "44ceea431105e54918657f24b1772298ae9e8bc7e601cc5176f6cc3bdb781132",
+      "balance_after": 113,
+      "compute_exit": 0
+    },
+    {
+      "generation": 1,
+      "bounced": false,
+      "original_opcode": 0,
+      "input_hash_hex": "44ceea431105e54918657f24b1772298ae9e8bc7e601cc5176f6cc3bdb781132",
+      "balance_after": 113,
+      "compute_exit": 0
+    },
+    {
+      "generation": 0,
+      "bounced": true,
+      "original_opcode": 395134233,
+      "input_hash_hex": "27a7b34954cf59efc793e8b3d57f0589e66d8ddde95ef52ec4cbb7aad12bc399",
+      "balance_after": 113,
+      "compute_exit": 0
+    },
+    {
+      "generation": 1,
+      "bounced": true,
+      "original_opcode": 395134233,
+      "input_hash_hex": "27a7b34954cf59efc793e8b3d57f0589e66d8ddde95ef52ec4cbb7aad12bc399",
+      "balance_after": 113,
+      "compute_exit": 0
+    },
+    {
+      "generation": 0,
+      "bounced": true,
+      "original_opcode": 2078119902,
+      "input_hash_hex": "b40ca57272f645eb0c562c281502a6766c533fbd4542bc1e0a5049745aec5b3e",
+      "balance_after": 113,
+      "compute_exit": 0
+    },
+    {
+      "generation": 1,
+      "bounced": true,
+      "original_opcode": 2078119902,
+      "input_hash_hex": "b40ca57272f645eb0c562c281502a6766c533fbd4542bc1e0a5049745aec5b3e",
+      "balance_after": 113,
+      "compute_exit": 0
+    },
+    {
+      "generation": 0,
+      "bounced": true,
+      "original_opcode": 3735928559,
+      "input_hash_hex": "5a27d15544337fd125aeb66ed3cdac1c20774d31670523b19202ed1e4ab138bf",
+      "balance_after": 100,
+      "compute_exit": 709
+    },
+    {
+      "generation": 1,
+      "bounced": true,
+      "original_opcode": 3735928559,
+      "input_hash_hex": "5a27d15544337fd125aeb66ed3cdac1c20774d31670523b19202ed1e4ab138bf",
+      "balance_after": 100,
+      "compute_exit": 709
+    }
+  ]
+}

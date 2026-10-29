@@ -1,0 +1,104 @@
+{
+  "origin": "Original locally authored external requests executed with zero signature bytes and explicit VM signature-check override. Wire/dispatch/replay evidence ONLY, no cryptographic validity, signing or broadcast.",
+  "recipient": "kQAlMXENwrowb40ipJ1bniK_IgL0PY1yGzlA47OT6il7PZPk",
+  "log_sha256": "f88ba128a6fc554efdd9b64400e6e15c1f74c69e2ae0aee0f2c69a1a008a1ae6",
+  "keys": [
+    [
+      -1,
+      0,
+      1
+    ],
+    [
+      -32768,
+      32767
+    ],
+    [
+      -1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "cases": [
+    {
+      "generation": 0,
+      "id": 0,
+      "hash_hex": "bf84c7e9596547e509170deb03f76480345c2d4356910618cbcd1a044095eb78"
+    },
+    {
+      "generation": 0,
+      "id": 1,
+      "hash_hex": "33cf57b3131163218b32056d70ecaf2837c9ffb56bad999bf34dc3a24e030d23"
+    },
+    {
+      "generation": 0,
+      "id": 2,
+      "hash_hex": "cbd7fac3481dec67669d06acaf226e6ee83667c5f831727d0440dbba41080063"
+    },
+    {
+      "generation": 0,
+      "id": 3,
+      "hash_hex": "5313a381017e58f1c4c06f3130fea98a759d5720286436db248f1bc4a4994ff5"
+    },
+    {
+      "generation": 0,
+      "id": 4,
+      "hash_hex": "6b4f19e5dd01c29c16dc05964d2b908510c7d8abc5ed1ba594d69759c75c5454"
+    },
+    {
+      "generation": 0,
+      "id": 5,
+      "hash_hex": "42cfb650186cff98317444e1805dc1fa2514f3ff60dd6867c4eee99014689bdf"
+    },
+    {
+      "generation": 1,
+      "id": 0,
+      "hash_hex": "bf84c7e9596547e509170deb03f76480345c2d4356910618cbcd1a044095eb78"
+    },
+    {
+      "generation": 1,
+      "id": 1,
+      "hash_hex": "33cf57b3131163218b32056d70ecaf2837c9ffb56bad999bf34dc3a24e030d23"
+    },
+    {
+      "generation": 1,
+      "id": 2,
+      "hash_hex": "cbd7fac3481dec67669d06acaf226e6ee83667c5f831727d0440dbba41080063"
+    },
+    {
+      "generation": 1,
+      "id": 3,
+      "hash_hex": "5313a381017e58f1c4c06f3130fea98a759d5720286436db248f1bc4a4994ff5"
+    },
+    {
+      "generation": 1,
+      "id": 4,
+      "hash_hex": "6b4f19e5dd01c29c16dc05964d2b908510c7d8abc5ed1ba594d69759c75c5454"
+    },
+    {
+      "generation": 1,
+      "id": 5,
+      "hash_hex": "42cfb650186cff98317444e1805dc1fa2514f3ff60dd6867c4eee99014689bdf"
+    }
+  ],
+  "observed_sent_keys": [
+    [
+      0,
+      1
+    ],
+    [
+      32767
+    ],
+    []
+  ],
+  "observed_rejects": {
+    "empty": 100,
+    "wrong_subwallet": 34,
+    "stale_query": 35
+  },
+  "observed_replay": "successful requests mark processed and repeat is rejected; negative-only nonempty dictionary is accepted but sends nothing"
+}

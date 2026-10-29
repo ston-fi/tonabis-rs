@@ -1,0 +1,15 @@
+mod getter_provider;
+mod test_dispatch;
+mod test_empty_funding;
+mod test_factory_addresses;
+mod test_getters;
+mod test_identities;
+mod test_lp_extra_observations;
+mod test_mev_external;
+mod test_original_flow_messages;
+mod test_parsing_policy;
+mod test_schema_vectors;
+mod test_staking_emissions;
+mod test_staking_initial_getters;
+mod test_vault_proofs;
+mod test_wire_boundaries;

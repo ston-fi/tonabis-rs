@@ -1,0 +1,605 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustUranusFactoryV3",
+  "author": "DeDust",
+  "version": "3.0",
+  "description": "DeDust Uranus Factory V3 is the launchpad factory that creates Uranus meme token markets and helps apps find deployed meme contracts.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusDeployMeme"
+    },
+    {
+      "kind": "uintN",
+      "n": 4
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusMemeMetadata"
+    },
+    {
+      "kind": "string"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusPartnerConfig"
+    },
+    {
+      "kind": "uintN",
+      "n": 256
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 16,
+      "stack_type_id": 129,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusReferrerConfig"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 20,
+      "stack_type_id": 130,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusDeployCustomizedMeme"
+    },
+    {
+      "kind": "uintN",
+      "n": 8
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 16
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 25
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 20
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 27
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustUranusFactoryV3OutgoingMessage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusInitMeme"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustUranusFactoryV3Storage"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustUranusFactoryV3Storage",
+      "ty_idx": 32,
+      "fields": [
+        {
+          "name": "controllerAddress",
+          "ty_idx": 7,
+          "description": "Controller or authority address used by the Factory during meme deployment."
+        }
+      ],
+      "description": "Root Factory state; the v3 dispatcher authenticates the controller address from this cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusMemeMetadata",
+      "ty_idx": 14,
+      "fields": [
+        {
+          "name": "uri",
+          "ty_idx": 15,
+          "description": "Token metadata URI encoded as a Tolk string."
+        }
+      ],
+      "description": "Metadata URI wrapper used by factory deployment bodies."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusPartnerConfig",
+      "ty_idx": 16,
+      "fields": [
+        {
+          "name": "partnerId",
+          "ty_idx": 17,
+          "description": "Partner identifier."
+        },
+        {
+          "name": "partnerFeeBps",
+          "ty_idx": 18,
+          "description": "Partner fee share in basis points."
+        }
+      ],
+      "description": "Affiliate partner configuration stored inline or in an optional ref depending on the parent message."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusReferrerConfig",
+      "ty_idx": 20,
+      "fields": [
+        {
+          "name": "referrerId",
+          "ty_idx": 17,
+          "description": "Referrer identifier."
+        },
+        {
+          "name": "referrerFeeBps",
+          "ty_idx": 18,
+          "description": "Referrer fee share in basis points."
+        }
+      ],
+      "description": "Affiliate referrer configuration stored inline or in an optional ref depending on the parent message."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusDeployMeme",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 1878267612,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected tracing id."
+        },
+        {
+          "name": "presetId",
+          "ty_idx": 13,
+          "description": "Uranus preset id."
+        },
+        {
+          "name": "metadata",
+          "ty_idx": 14,
+          "description": "Meme metadata URI."
+        },
+        {
+          "name": "initialBuy",
+          "ty_idx": 6,
+          "description": "Initial GRAM amount used for the creator buy."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 19,
+          "description": "Optional inline partner attribution."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 21,
+          "description": "Optional inline referrer attribution."
+        }
+      ],
+      "description": "Deploy a new meme from a predefined Uranus preset."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusDeployCustomizedMeme",
+      "ty_idx": 22,
+      "prefix": {
+        "prefix_num": 1664048412,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Caller-selected tracing id."
+        },
+        {
+          "name": "totalSupplyPresetId",
+          "ty_idx": 13,
+          "description": "Total-supply preset id."
+        },
+        {
+          "name": "baseFeePresetId",
+          "ty_idx": 13,
+          "description": "Base-fee preset id for bonding-curve trading."
+        },
+        {
+          "name": "raisingFunds",
+          "ty_idx": 6,
+          "description": "Graduation fundraising target."
+        },
+        {
+          "name": "onSellSupplyPercent",
+          "ty_idx": 23,
+          "description": "Percentage of supply allocated for bonding-curve sales."
+        },
+        {
+          "name": "partnerAddress",
+          "ty_idx": 7,
+          "description": "Partner address eligible for bonding-curve and pool fees."
+        },
+        {
+          "name": "partnerFeeBps",
+          "ty_idx": 18,
+          "description": "Partner share of the bonding-curve base fee in basis points."
+        },
+        {
+          "name": "poolPartnerFeeBps",
+          "ty_idx": 18,
+          "description": "Partner share of the migrated CPMM pool base fee in basis points."
+        },
+        {
+          "name": "poolBaseFeePresetId",
+          "ty_idx": 18,
+          "description": "CPMM pool base-fee preset id after migration."
+        },
+        {
+          "name": "poolLiquidityOwnerAddress",
+          "ty_idx": 24,
+          "description": "Optional owner of migrated pool liquidity."
+        },
+        {
+          "name": "metadataUri",
+          "ty_idx": 15,
+          "description": "Metadata URI encoded as a Tolk string."
+        },
+        {
+          "name": "initialBuy",
+          "ty_idx": 6,
+          "description": "Initial GRAM amount used for the creator buy."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 26,
+          "description": "Optional ref-backed partner attribution."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 28,
+          "description": "Optional ref-backed referrer attribution."
+        }
+      ],
+      "description": "Deploy a customized v3 meme with explicit economics and migration settings."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustUranusInitMeme",
+      "ty_idx": 30,
+      "prefix": {
+        "prefix_num": 2037340684,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Deployment query id copied from the Factory request."
+        },
+        {
+          "name": "initialBuy",
+          "ty_idx": 6,
+          "description": "Initial GRAM amount used for the creator buy."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 19,
+          "description": "Optional inline partner attribution."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 21,
+          "description": "Optional inline referrer attribution."
+        }
+      ],
+      "description": "Factory-to-Meme initialization body emitted after deterministic child deployment."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustUranusFactoryV3OutgoingMessage",
+      "ty_idx": 29,
+      "target_ty_idx": 30,
+      "description": "Internal message bodies emitted by Uranus Factory v3."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 31,
+      "encoded_as_ty_idx": 18,
+      "members": [
+        {
+          "name": "BondingCurveParametersMalformed",
+          "value": "20",
+          "description": "Bonding curve parameters are malformed."
+        },
+        {
+          "name": "SlippageExceeded",
+          "value": "21",
+          "description": "Output amount is below the supplied slippage limit."
+        },
+        {
+          "name": "PresetNotExist",
+          "value": "22",
+          "description": "Selected meme preset does not exist."
+        },
+        {
+          "name": "MessageValueTooLow",
+          "value": "23",
+          "description": "Attached GRAM value is not enough for the requested operation."
+        },
+        {
+          "name": "AlreadyInitialized",
+          "value": "24",
+          "description": "Meme state was already initialized."
+        },
+        {
+          "name": "SenderUnauthorized",
+          "value": "25",
+          "description": "Sender is not authorized for the operation."
+        },
+        {
+          "name": "InitialBuyLimitExceeded",
+          "value": "26",
+          "description": "Initial buy exceeds the configured limit."
+        },
+        {
+          "name": "BalanceExceeded",
+          "value": "27",
+          "description": "Requested amount exceeds the available balance."
+        },
+        {
+          "name": "NotInitialized",
+          "value": "28",
+          "description": "Meme state has not been initialized yet."
+        },
+        {
+          "name": "AlreadyGraduated",
+          "value": "29",
+          "description": "Meme already graduated and no longer accepts curve trading."
+        },
+        {
+          "name": "CrossWorkchainTransfer",
+          "value": "30",
+          "description": "Cross-workchain transfer is rejected."
+        },
+        {
+          "name": "IncorrectAddress",
+          "value": "31",
+          "description": "Supplied address is incorrect for the operation."
+        },
+        {
+          "name": "FeePresetNotExist",
+          "value": "34",
+          "description": "Selected fee preset does not exist."
+        },
+        {
+          "name": "TotalSupplyPresetNotExist",
+          "value": "35",
+          "description": "Selected total-supply preset does not exist."
+        },
+        {
+          "name": "RaisingFundsOutOfRange",
+          "value": "36",
+          "description": "Fundraising target is outside the accepted range."
+        },
+        {
+          "name": "PartnerFeeOutOfRange",
+          "value": "37",
+          "description": "Partner fee is outside the accepted range."
+        },
+        {
+          "name": "OnSellSupplyPercentOutOfRange",
+          "value": "38",
+          "description": "On-sell supply percentage is outside the accepted range."
+        },
+        {
+          "name": "PoolPartnerFeeOutOfRange",
+          "value": "39",
+          "description": "Migrated CPMM pool partner fee is outside the accepted range."
+        },
+        {
+          "name": "UnknownOperation",
+          "value": "65535",
+          "description": "Incoming message body tag is unknown."
+        }
+      ],
+      "description": "Uranus exit-code catalog shared by Factory, Meme, and Meme Wallet."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 22
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 29
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 32
+  },
+  "get_methods": [],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.BondingCurveParametersMalformed",
+      "description": "Bonding curve parameters are malformed.",
+      "err_code": 20
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SlippageExceeded",
+      "description": "Output amount is below the supplied slippage limit.",
+      "err_code": 21
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.PresetNotExist",
+      "description": "Selected meme preset does not exist.",
+      "err_code": 22
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.MessageValueTooLow",
+      "description": "Attached GRAM value is not enough for the requested operation.",
+      "err_code": 23
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.AlreadyInitialized",
+      "description": "Meme state was already initialized.",
+      "err_code": 24
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SenderUnauthorized",
+      "description": "Sender is not authorized for the operation.",
+      "err_code": 25
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InitialBuyLimitExceeded",
+      "description": "Initial buy exceeds the configured limit.",
+      "err_code": 26
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.BalanceExceeded",
+      "description": "Requested amount exceeds the available balance.",
+      "err_code": 27
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.NotInitialized",
+      "description": "Meme state has not been initialized yet.",
+      "err_code": 28
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.AlreadyGraduated",
+      "description": "Meme already graduated and no longer accepts curve trading.",
+      "err_code": 29
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.CrossWorkchainTransfer",
+      "description": "Cross-workchain transfer is rejected.",
+      "err_code": 30
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.IncorrectAddress",
+      "description": "Supplied address is incorrect for the operation.",
+      "err_code": 31
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.FeePresetNotExist",
+      "description": "Selected fee preset does not exist.",
+      "err_code": 34
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.TotalSupplyPresetNotExist",
+      "description": "Selected total-supply preset does not exist.",
+      "err_code": 35
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.RaisingFundsOutOfRange",
+      "description": "Fundraising target is outside the accepted range.",
+      "err_code": 36
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.PartnerFeeOutOfRange",
+      "description": "Partner fee is outside the accepted range.",
+      "err_code": 37
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.OnSellSupplyPercentOutOfRange",
+      "description": "On-sell supply percentage is outside the accepted range.",
+      "err_code": 38
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.PoolPartnerFeeOutOfRange",
+      "description": "Migrated CPMM pool partner fee is outside the accepted range.",
+      "err_code": 39
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnknownOperation",
+      "description": "Incoming message body tag is unknown.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

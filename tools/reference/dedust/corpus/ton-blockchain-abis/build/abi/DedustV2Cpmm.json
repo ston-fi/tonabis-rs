@@ -1,0 +1,2758 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustV2Cpmm",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust CPMM v2 Pool is a liquidity pool where users swap an asset pair and LPs provide liquidity for constant-product market making.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmInitPool"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmTakeWalletAddress"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 7
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 15
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPayNative"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmExtendedPayoutConfig"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPayoutOptions"
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 18
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmTransferNotification"
+    },
+    {
+      "kind": "remaining"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmJoinLiquidity"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmRefundDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmClaimPositionFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPayoutPositionFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmClaimProtocolFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmClaimCreatorFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmWithdraw"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmBasicPayoutConfig"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 31
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmExitLiquidity"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmProvidePoolState"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmClaimReward"
+    },
+    {
+      "kind": "uintN",
+      "n": 2
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPayoutReward"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmUpgradePoolCode"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmProvideWalletAddress"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmExcess"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmInitPoolResult"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmCallback3216ca09"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPayoutPayload"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmCreditLiquidity"
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmQ120X120"
+    },
+    {
+      "kind": "varuintN",
+      "n": 32
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolRewards"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolReward"
+    },
+    {
+      "kind": "uintN",
+      "n": 40
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 36,
+      "value_ty_idx": 49
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmClaimAvailableFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmWithdrawLiquidity"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmTakePoolState"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustV2CpmmStatus"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmStatusUninitialized"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmStatusInitializing"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmStatusInitialized"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 56,
+          "prefix_num": 0,
+          "prefix_len": 2,
+          "is_prefix_implicit": null,
+          "stack_type_id": 153,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 57,
+          "prefix_num": 1,
+          "prefix_len": 2,
+          "is_prefix_implicit": null,
+          "stack_type_id": 154,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 58,
+          "prefix_num": 2,
+          "prefix_len": 2,
+          "is_prefix_implicit": null,
+          "stack_type_id": 155,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 2
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolConfig"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmAsset"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustV2CpmmActivation"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmActivationTime"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmActivationInitiator"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 63,
+          "prefix_num": 1,
+          "prefix_len": 8,
+          "is_prefix_implicit": null,
+          "stack_type_id": 156,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 64,
+          "prefix_num": 2,
+          "prefix_len": 8,
+          "is_prefix_implicit": null,
+          "stack_type_id": 157,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 2
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 62
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 66
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "DedustV2CpmmFeeIn"
+    },
+    {
+      "kind": "uintN",
+      "n": 256
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 69,
+      "value_ty_idx": 7
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmRewardConfig"
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 36,
+      "value_ty_idx": 71
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 60
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 73
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolFees"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 75
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 76
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 48,
+      "stack_type_id": 158,
+      "stack_width": 2
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 69
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmClaimPositionReward"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmSwapEvent"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolUpdatedState"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 82
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmSwapFees"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 84
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmDepositEvent"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmWithdrawalEvent"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmStorage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolExtra"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolWallets"
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 69,
+      "value_ty_idx": 61
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 90
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmSwapPayload"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmSwapStep"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 95
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 96
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPartnerConfig"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 98,
+      "stack_type_id": 164,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmReferrerConfig"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 100,
+      "stack_type_id": 165,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmDepositPayload"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmFundRewardPayload"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPayJetton"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustV2CpmmPoolDataReply"
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmStatusUninitialized",
+      "ty_idx": 56,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 2
+      },
+      "fields": [],
+      "description": "Pool has not started initialization."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmStatusInitializing",
+      "ty_idx": 57,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 2
+      },
+      "fields": [
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Address that initiated pool initialization."
+        }
+      ],
+      "description": "Pool is initializing under the specified initiator."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmStatusInitialized",
+      "ty_idx": 58,
+      "prefix": {
+        "prefix_num": 2,
+        "prefix_len": 2
+      },
+      "fields": [],
+      "description": "Pool initialization is complete."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustV2CpmmStatus",
+      "ty_idx": 55,
+      "target_ty_idx": 59,
+      "description": "Persistent pool lifecycle state."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmStorage",
+      "ty_idx": 89,
+      "fields": [
+        {
+          "name": "config",
+          "ty_idx": 73,
+          "description": "Referenced immutable asset, fee, activation, and reward configuration."
+        },
+        {
+          "name": "fees",
+          "ty_idx": 76,
+          "description": "Referenced protocol, creator, and LP fee accumulators."
+        },
+        {
+          "name": "extra",
+          "ty_idx": 93,
+          "description": "Referenced controller and wallet-resolution registries."
+        },
+        {
+          "name": "rewards",
+          "ty_idx": 48,
+          "description": "Active reward programs indexed by a two-bit reward slot."
+        },
+        {
+          "name": "status",
+          "ty_idx": 55,
+          "description": "Inline pool lifecycle state."
+        },
+        {
+          "name": "depositActive",
+          "ty_idx": 5,
+          "description": "Deposit gate flag returned by `get_pool_data`."
+        },
+        {
+          "name": "swapActive",
+          "ty_idx": 5,
+          "description": "Swap gate flag returned by `get_pool_data`."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Current LP liquidity amount."
+        },
+        {
+          "name": "reserveX",
+          "ty_idx": 6,
+          "description": "Current reserve of asset X."
+        },
+        {
+          "name": "reserveY",
+          "ty_idx": 6,
+          "description": "Current reserve of asset Y."
+        }
+      ],
+      "description": "Root persistent storage shared by CPMM v2 PoolV1 and PoolV2."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolDataReply",
+      "ty_idx": 105,
+      "fields": [
+        {
+          "name": "status",
+          "ty_idx": 106,
+          "description": "Pool status enum returned as a signed 8-bit value."
+        },
+        {
+          "name": "depositActive",
+          "ty_idx": 5,
+          "description": "Deposit gate flag."
+        },
+        {
+          "name": "swapActive",
+          "ty_idx": 5,
+          "description": "Swap gate flag."
+        },
+        {
+          "name": "assetX",
+          "ty_idx": 20,
+          "description": "Asset X address; native GRAM is represented by `addr_none`."
+        },
+        {
+          "name": "assetY",
+          "ty_idx": 20,
+          "description": "Asset Y address; native GRAM is represented by `addr_none`."
+        },
+        {
+          "name": "walletsByAssets",
+          "ty_idx": 13,
+          "description": "Optional dictionary cell keyed by asset-address hashes."
+        },
+        {
+          "name": "assetsByWallets",
+          "ty_idx": 13,
+          "description": "Optional dictionary cell keyed by wallet-address hashes."
+        },
+        {
+          "name": "walletsResolutions",
+          "ty_idx": 13,
+          "description": "Optional dictionary cell keyed by wallet-address hashes."
+        },
+        {
+          "name": "baseFeeBps",
+          "ty_idx": 8,
+          "description": "Pool base fee in basis points."
+        },
+        {
+          "name": "reserveX",
+          "ty_idx": 1,
+          "description": "Current reserve of asset X."
+        },
+        {
+          "name": "reserveY",
+          "ty_idx": 1,
+          "description": "Current reserve of asset Y."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 1,
+          "description": "Current LP liquidity amount."
+        },
+        {
+          "name": "protocolFeeX",
+          "ty_idx": 1,
+          "description": "Protocol fee balance for asset X."
+        },
+        {
+          "name": "protocolFeeY",
+          "ty_idx": 1,
+          "description": "Protocol fee balance for asset Y."
+        },
+        {
+          "name": "creatorFeeX",
+          "ty_idx": 1,
+          "description": "Creator fee balance for asset X."
+        },
+        {
+          "name": "creatorFeeY",
+          "ty_idx": 1,
+          "description": "Creator fee balance for asset Y."
+        },
+        {
+          "name": "xFeePerLiquidity",
+          "ty_idx": 1,
+          "description": "Accumulated fee per unit of liquidity for asset X."
+        },
+        {
+          "name": "yFeePerLiquidity",
+          "ty_idx": 1,
+          "description": "Accumulated fee per unit of liquidity for asset Y."
+        },
+        {
+          "name": "rewards",
+          "ty_idx": 13,
+          "description": "Optional dictionary cell keyed by two-bit reward identifiers."
+        }
+      ],
+      "description": "Structured stack reply returned by the deployed `get_pool_data` getter."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmSwapPayload",
+      "ty_idx": 94,
+      "prefix": {
+        "prefix_num": 3292680207,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "minimalAmountOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable output amount."
+        },
+        {
+          "name": "deadline",
+          "ty_idx": 50,
+          "description": "Unix timestamp after which the swap must not execute."
+        },
+        {
+          "name": "next",
+          "ty_idx": 97,
+          "description": "Optional next route step for multi-hop swaps."
+        },
+        {
+          "name": "partnerConfig",
+          "ty_idx": 99,
+          "description": "Optional partner fee configuration."
+        },
+        {
+          "name": "referrerConfig",
+          "ty_idx": 101,
+          "description": "Optional referrer fee configuration."
+        }
+      ],
+      "description": "Payment payload requesting a swap."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmDepositPayload",
+      "ty_idx": 102,
+      "prefix": {
+        "prefix_num": 3382711770,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "amountX",
+          "ty_idx": 6,
+          "description": "Expected total amount of asset X."
+        },
+        {
+          "name": "amountY",
+          "ty_idx": 6,
+          "description": "Expected total amount of asset Y."
+        },
+        {
+          "name": "minimalLiquidity",
+          "ty_idx": 6,
+          "description": "Minimum acceptable minted liquidity."
+        },
+        {
+          "name": "lockedLiquidityShare",
+          "ty_idx": 45,
+          "description": "Share of minted liquidity to lock."
+        }
+      ],
+      "description": "Payment payload requesting a liquidity deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmFundRewardPayload",
+      "ty_idx": 103,
+      "prefix": {
+        "prefix_num": 783842809,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "till",
+          "ty_idx": 50,
+          "description": "Reward distribution end timestamp."
+        }
+      ],
+      "description": "Payment payload funding a reward distribution."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPayJetton",
+      "ty_idx": 104,
+      "prefix": {
+        "prefix_num": 3418569033,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "paymentPayload",
+          "ty_idx": 3,
+          "description": "Operation-specific payment payload."
+        },
+        {
+          "name": "payoutConfig",
+          "ty_idx": 21,
+          "description": "Payout configuration for fulfillment and rejection paths."
+        }
+      ],
+      "description": "Forward payload used by jetton transfer notifications."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmSwapStep",
+      "ty_idx": 95,
+      "fields": [
+        {
+          "name": "pool",
+          "ty_idx": 7,
+          "description": "Pool that executes this route step."
+        },
+        {
+          "name": "minimalAmountOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable output amount for this step."
+        },
+        {
+          "name": "deadline",
+          "ty_idx": 50,
+          "description": "Unix timestamp after which this step must not execute."
+        },
+        {
+          "name": "next",
+          "ty_idx": 97,
+          "description": "Optional next route step."
+        }
+      ],
+      "description": "Single multi-hop swap step."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPartnerConfig",
+      "ty_idx": 98,
+      "fields": [
+        {
+          "name": "partnerId",
+          "ty_idx": 69,
+          "description": "Partner identifier."
+        },
+        {
+          "name": "partnerFeeBPS",
+          "ty_idx": 45,
+          "description": "Partner fee in basis points."
+        }
+      ],
+      "description": "Partner attribution configuration."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmReferrerConfig",
+      "ty_idx": 100,
+      "fields": [
+        {
+          "name": "referrerId",
+          "ty_idx": 69,
+          "description": "Referrer identifier."
+        },
+        {
+          "name": "referrerFeeBPS",
+          "ty_idx": 45,
+          "description": "Referrer fee in basis points."
+        }
+      ],
+      "description": "Referrer attribution configuration."
+    },
+    {
+      "kind": "enum",
+      "name": "DedustV2CpmmFeeIn",
+      "ty_idx": 68,
+      "encoded_as_ty_idx": 36,
+      "members": [
+        {
+          "name": "Both",
+          "value": "0",
+          "description": "Fees are collected in the input asset."
+        },
+        {
+          "name": "AssetX",
+          "value": "1",
+          "description": "Fees are collected in asset X."
+        },
+        {
+          "name": "AssetY",
+          "value": "2",
+          "description": "Fees are collected in asset Y."
+        }
+      ],
+      "description": "Strategy for swap fee collection."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmAsset",
+      "ty_idx": 61,
+      "fields": [
+        {
+          "name": "value",
+          "ty_idx": 20,
+          "description": "Jetton root address, or `addr_none` for the native asset."
+        }
+      ],
+      "description": "Asset identifier used by CPMM v2; `addr_none` denotes native GRAM."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmQ120X120",
+      "ty_idx": 46,
+      "fields": [
+        {
+          "name": "value",
+          "ty_idx": 47,
+          "description": "Raw fixed-point numerator with 120 fractional bits."
+        }
+      ],
+      "description": "Unsigned Q120.120 fixed-point accumulator encoded as `varuint32`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolConfig",
+      "ty_idx": 60,
+      "fields": [
+        {
+          "name": "assetX",
+          "ty_idx": 61,
+          "description": "Asset X identifier."
+        },
+        {
+          "name": "assetY",
+          "ty_idx": 61,
+          "description": "Asset Y identifier."
+        },
+        {
+          "name": "creatorAddress",
+          "ty_idx": 20,
+          "description": "Pool creator address."
+        },
+        {
+          "name": "baseFeeBPS",
+          "ty_idx": 45,
+          "description": "Base swap fee in basis points."
+        },
+        {
+          "name": "creatorFeeBPS",
+          "ty_idx": 45,
+          "description": "Creator fee in basis points."
+        },
+        {
+          "name": "depositActivation",
+          "ty_idx": 67,
+          "description": "Optional deposit activation rule."
+        },
+        {
+          "name": "swapActivation",
+          "ty_idx": 67,
+          "description": "Optional swap activation rule."
+        },
+        {
+          "name": "feeIn",
+          "ty_idx": 68,
+          "description": "Fee collection strategy."
+        },
+        {
+          "name": "customResolvers",
+          "ty_idx": 70,
+          "description": "Custom jetton wallet resolvers."
+        },
+        {
+          "name": "allowedRewards",
+          "ty_idx": 72,
+          "description": "Allowed reward configurations by reward index."
+        }
+      ],
+      "description": "Pool immutable configuration."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmActivationTime",
+      "ty_idx": 63,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 8
+      },
+      "fields": [
+        {
+          "name": "activeSince",
+          "ty_idx": 50,
+          "description": "Unix timestamp from which the operation is active."
+        }
+      ],
+      "description": "Time-based activation rule."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmActivationInitiator",
+      "ty_idx": 64,
+      "prefix": {
+        "prefix_num": 2,
+        "prefix_len": 8
+      },
+      "fields": [
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Address that can trigger activation."
+        }
+      ],
+      "description": "Initiator-based activation rule."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustV2CpmmActivation",
+      "ty_idx": 62,
+      "target_ty_idx": 65,
+      "description": "Pool activation rule."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmRewardConfig",
+      "ty_idx": 71,
+      "fields": [
+        {
+          "name": "asset",
+          "ty_idx": 61,
+          "description": "Reward asset identifier."
+        },
+        {
+          "name": "maxDuration",
+          "ty_idx": 50,
+          "description": "Maximum reward duration in seconds."
+        }
+      ],
+      "description": "Reward program configuration."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolRewards",
+      "ty_idx": 48,
+      "fields": [
+        {
+          "name": "entries",
+          "ty_idx": 51,
+          "description": "Reward state keyed by a two-bit reward slot."
+        }
+      ],
+      "description": "Active reward programs by reward index."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolReward",
+      "ty_idx": 49,
+      "fields": [
+        {
+          "name": "remainingTime",
+          "ty_idx": 50,
+          "description": "Remaining distribution time in seconds."
+        },
+        {
+          "name": "remainingBudget",
+          "ty_idx": 6,
+          "description": "Remaining reward budget."
+        },
+        {
+          "name": "rewardsPerToken",
+          "ty_idx": 46,
+          "description": "Accumulated reward per liquidity token in Q120.120 form."
+        },
+        {
+          "name": "lastUpdate",
+          "ty_idx": 50,
+          "description": "Last reward state update timestamp."
+        }
+      ],
+      "description": "Active reward state."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolFees",
+      "ty_idx": 75,
+      "fields": [
+        {
+          "name": "protocolFeeX",
+          "ty_idx": 6,
+          "description": "Accumulated protocol fees in asset X."
+        },
+        {
+          "name": "protocolFeeY",
+          "ty_idx": 6,
+          "description": "Accumulated protocol fees in asset Y."
+        },
+        {
+          "name": "creatorFeeX",
+          "ty_idx": 6,
+          "description": "Accumulated creator fees in asset X."
+        },
+        {
+          "name": "creatorFeeY",
+          "ty_idx": 6,
+          "description": "Accumulated creator fees in asset Y."
+        },
+        {
+          "name": "xFeePerToken",
+          "ty_idx": 46,
+          "description": "Accumulated LP fee per token in asset X, encoded as Q120.120."
+        },
+        {
+          "name": "yFeePerToken",
+          "ty_idx": 46,
+          "description": "Accumulated LP fee per token in asset Y, encoded as Q120.120."
+        }
+      ],
+      "description": "Accumulated pool fee state."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolWallets",
+      "ty_idx": 91,
+      "fields": [
+        {
+          "name": "walletsByAssets",
+          "ty_idx": 70,
+          "description": "Asset-hash keys mapped to pool-owned jetton wallet addresses."
+        },
+        {
+          "name": "assetsByWallets",
+          "ty_idx": 92,
+          "description": "Wallet-address hashes mapped to their pool asset identifiers."
+        },
+        {
+          "name": "resolutions",
+          "ty_idx": 92,
+          "description": "Resolver-address hashes mapped to the assets they resolve."
+        }
+      ],
+      "description": "Wallet and asset lookup dictionaries maintained by the pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolExtra",
+      "ty_idx": 90,
+      "fields": [
+        {
+          "name": "controller",
+          "ty_idx": 7,
+          "description": "Controller authorized for administrative pool operations."
+        },
+        {
+          "name": "wallets",
+          "ty_idx": 91,
+          "description": "Wallet and asset lookup dictionaries."
+        }
+      ],
+      "description": "Controller and wallet-resolution state referenced by root storage."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPoolUpdatedState",
+      "ty_idx": 82,
+      "fields": [
+        {
+          "name": "reserveX",
+          "ty_idx": 6,
+          "description": "Updated asset X reserve."
+        },
+        {
+          "name": "reserveY",
+          "ty_idx": 6,
+          "description": "Updated asset Y reserve."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Updated total liquidity."
+        },
+        {
+          "name": "fees",
+          "ty_idx": 76,
+          "description": "Updated fee state."
+        }
+      ],
+      "description": "Compact post-operation pool state used in events."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmSwapFees",
+      "ty_idx": 84,
+      "fields": [
+        {
+          "name": "isX",
+          "ty_idx": 5,
+          "description": "Whether fees are denominated in asset X."
+        },
+        {
+          "name": "lpFee",
+          "ty_idx": 6,
+          "description": "Liquidity-provider fee amount."
+        },
+        {
+          "name": "creatorFee",
+          "ty_idx": 6,
+          "description": "Creator fee amount."
+        },
+        {
+          "name": "protocolFee",
+          "ty_idx": 6,
+          "description": "Protocol fee amount."
+        },
+        {
+          "name": "partnerFee",
+          "ty_idx": 6,
+          "description": "Partner fee amount."
+        },
+        {
+          "name": "referrerFee",
+          "ty_idx": 6,
+          "description": "Referrer fee amount."
+        }
+      ],
+      "description": "Fee breakdown emitted with swap events."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmExtendedPayoutConfig",
+      "ty_idx": 18,
+      "fields": [
+        {
+          "name": "fulfill",
+          "ty_idx": 19,
+          "description": "Fulfillment payout options."
+        },
+        {
+          "name": "reject",
+          "ty_idx": 19,
+          "description": "Rejection payout options."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 20,
+          "description": "Excess gas recipient, or `addr_none` to use the operation fallback."
+        }
+      ],
+      "description": "Full payout configuration for fulfillment and rejection paths."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmBasicPayoutConfig",
+      "ty_idx": 31,
+      "fields": [
+        {
+          "name": "options",
+          "ty_idx": 19,
+          "description": "Payout options."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 20,
+          "description": "Excess gas recipient, or `addr_none` to use the operation fallback."
+        }
+      ],
+      "description": "Single-path payout configuration."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPayoutOptions",
+      "ty_idx": 19,
+      "fields": [
+        {
+          "name": "destination",
+          "ty_idx": 20,
+          "description": "Asset recipient, or `addr_none` to use the operation fallback."
+        },
+        {
+          "name": "extraGas",
+          "ty_idx": 6,
+          "description": "Extra gas attached to the downstream notification."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 13,
+          "description": "Optional downstream payload."
+        },
+        {
+          "name": "wrapPayload",
+          "ty_idx": 5,
+          "description": "Whether to wrap the payload into a result envelope."
+        }
+      ],
+      "description": "Payout destination and notification options."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPayNative",
+      "ty_idx": 17,
+      "prefix": {
+        "prefix_num": 2779237368,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied through the swap flow."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount routed into the pool."
+        },
+        {
+          "name": "paymentPayload",
+          "ty_idx": 3,
+          "description": "Operation-specific payment payload."
+        },
+        {
+          "name": "payoutConfig",
+          "ty_idx": 21,
+          "description": "Payout configuration for fulfillment and rejection paths."
+        }
+      ],
+      "description": "Incoming native-asset payment body."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmInitPool",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 3733193422,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "customPayload",
+          "ty_idx": 13,
+          "description": "Optional custom payload included in the init result."
+        }
+      ],
+      "description": "Starts pool initialization."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmTakeWalletAddress",
+      "ty_idx": 14,
+      "prefix": {
+        "prefix_num": 3513996288,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "walletAddress",
+          "ty_idx": 7,
+          "description": "Resolved wallet address."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 16,
+          "description": "Optional owner address cell returned by the resolver."
+        }
+      ],
+      "description": "Wallet-resolution callback used during pool initialization."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmTransferNotification",
+      "ty_idx": 22,
+      "prefix": {
+        "prefix_num": 1935855772,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Jetton amount received by the pool."
+        },
+        {
+          "name": "sender",
+          "ty_idx": 7,
+          "description": "Original jetton transfer sender."
+        },
+        {
+          "name": "isForwardPayloadRef",
+          "ty_idx": 5,
+          "description": "One-bit Either selector for the forward payload."
+        },
+        {
+          "name": "forwardPayload",
+          "ty_idx": 23,
+          "description": "Forward payload, expected to contain `DedustV2CpmmPayJetton`."
+        }
+      ],
+      "description": "TEP-74 transfer notification received from a pool-owned jetton wallet."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmJoinLiquidity",
+      "ty_idx": 24,
+      "prefix": {
+        "prefix_num": 623189728,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "config",
+          "ty_idx": 3,
+          "description": "Deposit configuration cell."
+        },
+        {
+          "name": "amountX",
+          "ty_idx": 6,
+          "description": "Deposited amount of asset X."
+        },
+        {
+          "name": "amountY",
+          "ty_idx": 6,
+          "description": "Deposited amount of asset Y."
+        },
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Original deposit initiator."
+        }
+      ],
+      "description": "Finalizes a two-asset liquidity deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmRefundDeposit",
+      "ty_idx": 25,
+      "prefix": {
+        "prefix_num": 220831250,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "config",
+          "ty_idx": 3,
+          "description": "Deposit configuration cell."
+        },
+        {
+          "name": "amountX",
+          "ty_idx": 6,
+          "description": "Refunded amount of asset X."
+        },
+        {
+          "name": "amountY",
+          "ty_idx": 6,
+          "description": "Refunded amount of asset Y."
+        },
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Original deposit initiator."
+        }
+      ],
+      "description": "Refunds an incomplete two-asset liquidity deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmClaimPositionFees",
+      "ty_idx": 26,
+      "prefix": {
+        "prefix_num": 1448276447,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Excess gas recipient."
+        }
+      ],
+      "description": "Requests synchronization and payout of position fees."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPayoutPositionFees",
+      "ty_idx": 27,
+      "prefix": {
+        "prefix_num": 704584655,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "xFees",
+          "ty_idx": 6,
+          "description": "Accrued fees in asset X."
+        },
+        {
+          "name": "yFees",
+          "ty_idx": 6,
+          "description": "Accrued fees in asset Y."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7,
+          "description": "Position owner address."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Excess gas recipient."
+        }
+      ],
+      "description": "Position callback requesting actual fee payout."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmClaimProtocolFees",
+      "ty_idx": 28,
+      "prefix": {
+        "prefix_num": 1100617651,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "to",
+          "ty_idx": 7,
+          "description": "Fee recipient."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Excess gas recipient."
+        }
+      ],
+      "description": "Requests protocol fee payout."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmClaimCreatorFees",
+      "ty_idx": 29,
+      "prefix": {
+        "prefix_num": 3191746937,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "to",
+          "ty_idx": 7,
+          "description": "Fee recipient."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Excess gas recipient."
+        }
+      ],
+      "description": "Requests creator fee payout."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmWithdraw",
+      "ty_idx": 30,
+      "prefix": {
+        "prefix_num": 548794249,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Liquidity amount to burn."
+        },
+        {
+          "name": "minimalXOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable asset X output."
+        },
+        {
+          "name": "minimalYOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable asset Y output."
+        },
+        {
+          "name": "autoClaimFees",
+          "ty_idx": 5,
+          "description": "Whether to claim accrued fees during withdrawal."
+        },
+        {
+          "name": "payoutConfig",
+          "ty_idx": 32,
+          "description": "Payout configuration for withdrawn assets."
+        }
+      ],
+      "description": "Requests liquidity withdrawal."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmExitLiquidity",
+      "ty_idx": 33,
+      "prefix": {
+        "prefix_num": 4143358890,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Liquidity amount burned."
+        },
+        {
+          "name": "xFees",
+          "ty_idx": 6,
+          "description": "Claimed fees in asset X."
+        },
+        {
+          "name": "yFees",
+          "ty_idx": 6,
+          "description": "Claimed fees in asset Y."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7,
+          "description": "Position owner address."
+        },
+        {
+          "name": "minimalAmountX",
+          "ty_idx": 6,
+          "description": "Minimum acceptable asset X output."
+        },
+        {
+          "name": "minimalAmountY",
+          "ty_idx": 6,
+          "description": "Minimum acceptable asset Y output."
+        },
+        {
+          "name": "payoutConfig",
+          "ty_idx": 32,
+          "description": "Payout configuration for withdrawn assets."
+        }
+      ],
+      "description": "Position callback finalizing liquidity withdrawal."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmProvidePoolState",
+      "ty_idx": 34,
+      "prefix": {
+        "prefix_num": 14209913,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "includeConfig",
+          "ty_idx": 5,
+          "description": "Include pool configuration in the response."
+        },
+        {
+          "name": "includeFees",
+          "ty_idx": 5,
+          "description": "Include pool fees in the response."
+        },
+        {
+          "name": "includeCodeHash",
+          "ty_idx": 5,
+          "description": "Include pool code hash in the response."
+        },
+        {
+          "name": "includeRewards",
+          "ty_idx": 5,
+          "description": "Include reward state in the response."
+        }
+      ],
+      "description": "Requests a pool state snapshot."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmClaimReward",
+      "ty_idx": 35,
+      "prefix": {
+        "prefix_num": 2426395493,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "rewardIndex",
+          "ty_idx": 36,
+          "description": "Reward program index."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Excess gas recipient."
+        }
+      ],
+      "description": "Requests reward payout synchronization."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPayoutReward",
+      "ty_idx": 37,
+      "prefix": {
+        "prefix_num": 2652371902,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Reward amount to pay out."
+        },
+        {
+          "name": "rewardIndex",
+          "ty_idx": 36,
+          "description": "Reward program index."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7,
+          "description": "Position owner address."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 7,
+          "description": "Excess gas recipient."
+        }
+      ],
+      "description": "Position callback requesting actual reward payout."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmUpgradePoolCode",
+      "ty_idx": 38,
+      "prefix": {
+        "prefix_num": 4068991113,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the body."
+        },
+        {
+          "name": "nextCode",
+          "ty_idx": 3,
+          "description": "Referenced next pool code cell."
+        }
+      ],
+      "description": "Administrative request that replaces the pool implementation code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmProvideWalletAddress",
+      "ty_idx": 39,
+      "prefix": {
+        "prefix_num": 745978227,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the callback."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 20,
+          "description": "Owner address whose wallet must be resolved."
+        },
+        {
+          "name": "includeOwnerAddress",
+          "ty_idx": 5,
+          "description": "Whether the response should include the owner address."
+        }
+      ],
+      "description": "Wallet-address request emitted to an asset resolver."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmExcess",
+      "ty_idx": 40,
+      "prefix": {
+        "prefix_num": 3576854235,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the refund."
+        }
+      ],
+      "description": "Standard excess-value response."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmInitPoolResult",
+      "ty_idx": 41,
+      "prefix": {
+        "prefix_num": 3457702871,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the callback."
+        },
+        {
+          "name": "exitCode",
+          "ty_idx": 8,
+          "description": "Initialization exit code."
+        },
+        {
+          "name": "customPayload",
+          "ty_idx": 13,
+          "description": "Optional referenced payload."
+        }
+      ],
+      "description": "Initialization result callback emitted by the pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmCallback3216ca09",
+      "ty_idx": 42,
+      "prefix": {
+        "prefix_num": 840354313,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the callback."
+        },
+        {
+          "name": "amount0",
+          "ty_idx": 6,
+          "description": "Coins value attached to the callback body."
+        },
+        {
+          "name": "code",
+          "ty_idx": 8,
+          "description": "Signed 32-bit status or error code."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 13,
+          "description": "Optional referenced payload."
+        }
+      ],
+      "description": "Payout callback carrying amount, status, and an optional payload."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmWithdrawLiquidity",
+      "ty_idx": 53,
+      "prefix": {
+        "prefix_num": 3155505577,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the position request."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Liquidity amount to withdraw."
+        },
+        {
+          "name": "minimalXOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable asset X output."
+        },
+        {
+          "name": "minimalYOut",
+          "ty_idx": 6,
+          "description": "Minimum acceptable asset Y output."
+        },
+        {
+          "name": "xFeePerToken",
+          "ty_idx": 46,
+          "description": "Position's last asset X fee-per-token checkpoint."
+        },
+        {
+          "name": "yFeePerToken",
+          "ty_idx": 46,
+          "description": "Position's last asset Y fee-per-token checkpoint."
+        },
+        {
+          "name": "rewards",
+          "ty_idx": 48,
+          "description": "Position reward checkpoints keyed by reward slot."
+        },
+        {
+          "name": "autoClaimFees",
+          "ty_idx": 5,
+          "description": "Whether accrued position fees should be claimed automatically."
+        },
+        {
+          "name": "payoutConfig",
+          "ty_idx": 32,
+          "description": "Referenced payout configuration for the withdrawn assets."
+        }
+      ],
+      "description": "Position request to withdraw liquidity and optionally claim fees."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmCreditLiquidity",
+      "ty_idx": 44,
+      "prefix": {
+        "prefix_num": 2237332669,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the position request."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Liquidity amount credited to the position."
+        },
+        {
+          "name": "lockedLiquidityShare",
+          "ty_idx": 45,
+          "description": "Share of the credited liquidity that remains locked."
+        },
+        {
+          "name": "notifyExtraGas",
+          "ty_idx": 6,
+          "description": "Extra GRAM attached to the position notification."
+        },
+        {
+          "name": "notifyPayload",
+          "ty_idx": 13,
+          "description": "Optional notification payload."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 20,
+          "description": "Excess gas recipient, or `addr_none` for the operation fallback."
+        },
+        {
+          "name": "xFeePerToken",
+          "ty_idx": 46,
+          "description": "Current asset X fee-per-token accumulator."
+        },
+        {
+          "name": "yFeePerToken",
+          "ty_idx": 46,
+          "description": "Current asset Y fee-per-token accumulator."
+        },
+        {
+          "name": "rewards",
+          "ty_idx": 48,
+          "description": "Current reward accumulators keyed by reward slot."
+        }
+      ],
+      "description": "Position request crediting newly minted liquidity."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmClaimAvailableFees",
+      "ty_idx": 52,
+      "prefix": {
+        "prefix_num": 636589906,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the position request."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 20,
+          "description": "Excess gas recipient, or `addr_none` for the operation fallback."
+        },
+        {
+          "name": "xFeePerToken",
+          "ty_idx": 46,
+          "description": "Current asset X fee-per-token accumulator."
+        },
+        {
+          "name": "yFeePerToken",
+          "ty_idx": 46,
+          "description": "Current asset Y fee-per-token accumulator."
+        }
+      ],
+      "description": "Position request to claim all currently available fees."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmTakePoolState",
+      "ty_idx": 54,
+      "prefix": {
+        "prefix_num": 2265617785,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the state request."
+        },
+        {
+          "name": "status",
+          "ty_idx": 55,
+          "description": "Current pool lifecycle state."
+        },
+        {
+          "name": "depositActive",
+          "ty_idx": 5,
+          "description": "Whether deposits are active."
+        },
+        {
+          "name": "swapActive",
+          "ty_idx": 5,
+          "description": "Whether swaps are active."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Current LP liquidity amount."
+        },
+        {
+          "name": "reserveX",
+          "ty_idx": 6,
+          "description": "Current reserve of asset X."
+        },
+        {
+          "name": "reserveY",
+          "ty_idx": 6,
+          "description": "Current reserve of asset Y."
+        },
+        {
+          "name": "config",
+          "ty_idx": 74,
+          "description": "Optional referenced pool configuration requested by the caller."
+        },
+        {
+          "name": "fees",
+          "ty_idx": 77,
+          "description": "Optional referenced fee accumulators requested by the caller."
+        },
+        {
+          "name": "rewards",
+          "ty_idx": 78,
+          "description": "Optional inline reward-state section requested by the caller."
+        },
+        {
+          "name": "codeHash",
+          "ty_idx": 79,
+          "description": "Optional current code hash requested by the caller."
+        }
+      ],
+      "description": "Requested snapshot of pool state and selected optional sections."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmClaimPositionReward",
+      "ty_idx": 80,
+      "prefix": {
+        "prefix_num": 772590778,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the position request."
+        },
+        {
+          "name": "rewardIndex",
+          "ty_idx": 36,
+          "description": "Reward program index."
+        },
+        {
+          "name": "reward",
+          "ty_idx": 49,
+          "description": "Current state of the selected reward program."
+        },
+        {
+          "name": "excessesTo",
+          "ty_idx": 20,
+          "description": "Excess gas recipient, or `addr_none` for the operation fallback."
+        }
+      ],
+      "description": "Position request to claim one reward program."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmPayoutPayload",
+      "ty_idx": 43,
+      "prefix": {
+        "prefix_num": 3906684566,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "exitCode",
+          "ty_idx": 8,
+          "description": "Signed 32-bit status or error code."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 13,
+          "description": "Optional referenced payload."
+        }
+      ],
+      "description": "Result envelope emitted according to payout options."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmSwapEvent",
+      "ty_idx": 81,
+      "prefix": {
+        "prefix_num": 2028444580,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "xToY",
+          "ty_idx": 5,
+          "description": "Swap direction: true for X to Y."
+        },
+        {
+          "name": "amountIn",
+          "ty_idx": 6,
+          "description": "Input amount."
+        },
+        {
+          "name": "amountOut",
+          "ty_idx": 6,
+          "description": "Output amount."
+        },
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Swap initiator."
+        },
+        {
+          "name": "recipientAddress",
+          "ty_idx": 7,
+          "description": "Output recipient."
+        },
+        {
+          "name": "nextState",
+          "ty_idx": 83,
+          "description": "Post-swap pool state."
+        },
+        {
+          "name": "fees",
+          "ty_idx": 85,
+          "description": "Swap fee breakdown."
+        }
+      ],
+      "description": "Outgoing swap event."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmDepositEvent",
+      "ty_idx": 86,
+      "prefix": {
+        "prefix_num": 903818770,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "amountXIn",
+          "ty_idx": 6,
+          "description": "Amount of asset X deposited."
+        },
+        {
+          "name": "amountYIn",
+          "ty_idx": 6,
+          "description": "Amount of asset Y deposited."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Minted liquidity amount."
+        },
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Deposit initiator."
+        },
+        {
+          "name": "recipientAddress",
+          "ty_idx": 7,
+          "description": "Liquidity recipient."
+        },
+        {
+          "name": "nextState",
+          "ty_idx": 83,
+          "description": "Post-deposit pool state."
+        }
+      ],
+      "description": "Outgoing liquidity deposit event emitted by the pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustV2CpmmWithdrawalEvent",
+      "ty_idx": 87,
+      "prefix": {
+        "prefix_num": 3235347284,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "Burned liquidity amount."
+        },
+        {
+          "name": "amountXOut",
+          "ty_idx": 6,
+          "description": "Amount of asset X withdrawn."
+        },
+        {
+          "name": "amountYOut",
+          "ty_idx": 6,
+          "description": "Amount of asset Y withdrawn."
+        },
+        {
+          "name": "initiatorAddress",
+          "ty_idx": 7,
+          "description": "Withdrawal initiator."
+        },
+        {
+          "name": "recipientAddress",
+          "ty_idx": 7,
+          "description": "Asset recipient."
+        },
+        {
+          "name": "nextState",
+          "ty_idx": 83,
+          "description": "Post-withdrawal pool state."
+        }
+      ],
+      "description": "Outgoing liquidity withdrawal event emitted by the pool."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 88,
+      "encoded_as_ty_idx": 45,
+      "members": [
+        {
+          "name": "NotUninitialized",
+          "value": "20",
+          "description": "Pool is not in the uninitialized state."
+        },
+        {
+          "name": "NotInitializing",
+          "value": "21",
+          "description": "Pool is not in the initializing state."
+        },
+        {
+          "name": "NotInitialized",
+          "value": "22",
+          "description": "Pool has not completed initialization."
+        },
+        {
+          "name": "SenderUnauthorized",
+          "value": "23",
+          "description": "Sender is not authorized for the requested operation."
+        },
+        {
+          "name": "WalletCannotBeResolved",
+          "value": "24",
+          "description": "Wallet resolver returned an unsupported address."
+        },
+        {
+          "name": "MessageValueTooLow",
+          "value": "25",
+          "description": "Attached message value is too low for gas and forwarding."
+        },
+        {
+          "name": "DuplicateOfAssets",
+          "value": "26",
+          "description": "Pool initialization used duplicate assets."
+        },
+        {
+          "name": "UnrelatedAsset",
+          "value": "28",
+          "description": "Payment asset is unrelated to this pool."
+        },
+        {
+          "name": "ValueTooLow",
+          "value": "29",
+          "description": "Input value is lower than required."
+        },
+        {
+          "name": "SlippageExceeded",
+          "value": "30",
+          "description": "Slippage limit was exceeded."
+        },
+        {
+          "name": "AssetNotSupported",
+          "value": "31",
+          "description": "Asset type is not supported."
+        },
+        {
+          "name": "WrongWorkchain",
+          "value": "32",
+          "description": "Address is in an unexpected workchain."
+        },
+        {
+          "name": "DeadlineExceeded",
+          "value": "33",
+          "description": "Operation deadline has passed."
+        },
+        {
+          "name": "ZeroLiquidity",
+          "value": "34",
+          "description": "Pool has zero liquidity."
+        },
+        {
+          "name": "MaxCreatorFeeExceeded",
+          "value": "35",
+          "description": "Creator fee exceeds the allowed maximum."
+        },
+        {
+          "name": "NotEnoughLiquidity",
+          "value": "36",
+          "description": "Position or pool liquidity is insufficient."
+        },
+        {
+          "name": "SwapNotActive",
+          "value": "37",
+          "description": "Swaps are not active."
+        },
+        {
+          "name": "DepositNotActive",
+          "value": "38",
+          "description": "Deposits are not active."
+        },
+        {
+          "name": "WalletAlreadyRegistered",
+          "value": "39",
+          "description": "Jetton wallet is already registered."
+        },
+        {
+          "name": "WalletNotRegistered",
+          "value": "40",
+          "description": "Jetton wallet is not registered."
+        },
+        {
+          "name": "UnknownResolver",
+          "value": "41",
+          "description": "Wallet-resolution callback came from an unknown resolver."
+        },
+        {
+          "name": "RewardIsNotAllowed",
+          "value": "42",
+          "description": "Reward asset is not allowed."
+        },
+        {
+          "name": "MaxRewardDurationExceeded",
+          "value": "43",
+          "description": "Reward duration exceeds the configured maximum."
+        },
+        {
+          "name": "ZeroDurationReward",
+          "value": "44",
+          "description": "Reward duration is zero."
+        },
+        {
+          "name": "RewardBudgetDilution",
+          "value": "45",
+          "description": "Reward top-up would dilute the current reward rate."
+        },
+        {
+          "name": "RewardIsNotActive",
+          "value": "46",
+          "description": "Reward program is not active."
+        },
+        {
+          "name": "ZeroInputAmount",
+          "value": "47",
+          "description": "Swap or deposit input amount is zero."
+        },
+        {
+          "name": "InvalidTag",
+          "value": "63",
+          "description": "Tagged-union or forwarded-payload layout check failed."
+        },
+        {
+          "name": "UnknownOperation",
+          "value": "65535",
+          "description": "Fallback rejection for unsupported operation codes."
+        }
+      ],
+      "description": "CPMM v2 pool exit codes."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 14
+    },
+    {
+      "body_ty_idx": 17
+    },
+    {
+      "body_ty_idx": 22
+    },
+    {
+      "body_ty_idx": 24
+    },
+    {
+      "body_ty_idx": 25
+    },
+    {
+      "body_ty_idx": 26
+    },
+    {
+      "body_ty_idx": 27
+    },
+    {
+      "body_ty_idx": 28
+    },
+    {
+      "body_ty_idx": 29
+    },
+    {
+      "body_ty_idx": 30
+    },
+    {
+      "body_ty_idx": 33
+    },
+    {
+      "body_ty_idx": 34
+    },
+    {
+      "body_ty_idx": 35
+    },
+    {
+      "body_ty_idx": 37
+    },
+    {
+      "body_ty_idx": 38
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 39
+    },
+    {
+      "body_ty_idx": 40
+    },
+    {
+      "body_ty_idx": 41
+    },
+    {
+      "body_ty_idx": 42
+    },
+    {
+      "body_ty_idx": 43
+    },
+    {
+      "body_ty_idx": 44
+    },
+    {
+      "body_ty_idx": 52
+    },
+    {
+      "body_ty_idx": 53
+    },
+    {
+      "body_ty_idx": 54
+    },
+    {
+      "body_ty_idx": 80
+    },
+    {
+      "body_ty_idx": 81
+    },
+    {
+      "body_ty_idx": 86
+    },
+    {
+      "body_ty_idx": 87
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 89
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 72157,
+      "name": "get_position_address",
+      "parameters": [
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7
+        }
+      ],
+      "return_ty_idx": 7,
+      "description": "Return the deterministic position contract address for `ownerAddress`."
+    },
+    {
+      "tvm_method_id": 81689,
+      "name": "get_pool_data",
+      "parameters": [],
+      "return_ty_idx": 105,
+      "description": "Return pool status, assets, reserves, fee accumulators, and rewards."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.NotUninitialized",
+      "description": "Pool is not in the uninitialized state.",
+      "err_code": 20
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.NotInitializing",
+      "description": "Pool is not in the initializing state.",
+      "err_code": 21
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.NotInitialized",
+      "description": "Pool has not completed initialization.",
+      "err_code": 22
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SenderUnauthorized",
+      "description": "Sender is not authorized for the requested operation.",
+      "err_code": 23
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.WalletCannotBeResolved",
+      "description": "Wallet resolver returned an unsupported address.",
+      "err_code": 24
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.MessageValueTooLow",
+      "description": "Attached message value is too low for gas and forwarding.",
+      "err_code": 25
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.DuplicateOfAssets",
+      "description": "Pool initialization used duplicate assets.",
+      "err_code": 26
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnrelatedAsset",
+      "description": "Payment asset is unrelated to this pool.",
+      "err_code": 28
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.ValueTooLow",
+      "description": "Input value is lower than required.",
+      "err_code": 29
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SlippageExceeded",
+      "description": "Slippage limit was exceeded.",
+      "err_code": 30
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.AssetNotSupported",
+      "description": "Asset type is not supported.",
+      "err_code": 31
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.WrongWorkchain",
+      "description": "Address is in an unexpected workchain.",
+      "err_code": 32
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.DeadlineExceeded",
+      "description": "Operation deadline has passed.",
+      "err_code": 33
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.ZeroLiquidity",
+      "description": "Pool has zero liquidity.",
+      "err_code": 34
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.MaxCreatorFeeExceeded",
+      "description": "Creator fee exceeds the allowed maximum.",
+      "err_code": 35
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.NotEnoughLiquidity",
+      "description": "Position or pool liquidity is insufficient.",
+      "err_code": 36
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SwapNotActive",
+      "description": "Swaps are not active.",
+      "err_code": 37
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.DepositNotActive",
+      "description": "Deposits are not active.",
+      "err_code": 38
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.WalletAlreadyRegistered",
+      "description": "Jetton wallet is already registered.",
+      "err_code": 39
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.WalletNotRegistered",
+      "description": "Jetton wallet is not registered.",
+      "err_code": 40
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnknownResolver",
+      "description": "Wallet-resolution callback came from an unknown resolver.",
+      "err_code": 41
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.RewardIsNotAllowed",
+      "description": "Reward asset is not allowed.",
+      "err_code": 42
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.MaxRewardDurationExceeded",
+      "description": "Reward duration exceeds the configured maximum.",
+      "err_code": 43
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.ZeroDurationReward",
+      "description": "Reward duration is zero.",
+      "err_code": 44
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.RewardBudgetDilution",
+      "description": "Reward top-up would dilute the current reward rate.",
+      "err_code": 45
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.RewardIsNotActive",
+      "description": "Reward program is not active.",
+      "err_code": 46
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.ZeroInputAmount",
+      "description": "Swap or deposit input amount is zero.",
+      "err_code": 47
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidTag",
+      "description": "Tagged-union or forwarded-payload layout check failed.",
+      "err_code": 63
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnknownOperation",
+      "description": "Fallback rejection for unsupported operation codes.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

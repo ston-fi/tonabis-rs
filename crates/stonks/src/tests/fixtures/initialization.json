@@ -1,0 +1,33 @@
+{
+  "provenance": "Independently hand-assembled TL-B bit fields and TON representation hashes using Python hashlib; empty code/metadata, owner 0:11..11 and master 0:22..22. No executable code or Rust encoder used.",
+  "vectors": [
+    {
+      "kind": "minter",
+      "data_hash": "2427dfb3f085d55046b7efafa591eec5d626e7e947eda13bf77ddcbb11039bae",
+      "state_init_hash": "02b3df7536d81df505a9d690d34cac3ad5639354c262a925562b453831190727",
+      "address_workchain": -1,
+      "address_hash": "02b3df7536d81df505a9d690d34cac3ad5639354c262a925562b453831190727"
+    },
+    {
+      "kind": "ston_wallet",
+      "data_hash": "68293846505d46c9024f98a1c24f9d6fb7052a1f4d6ecee26958604d2594db10",
+      "state_init_hash": "5b38f560953932371d9ab62295d7bc7cb1715693fd06006c79a95fe709b25677",
+      "address_workchain": -1,
+      "address_hash": "5b38f560953932371d9ab62295d7bc7cb1715693fd06006c79a95fe709b25677"
+    },
+    {
+      "kind": "dedust_wallet",
+      "data_hash": "dc8f549c753319ef4c4110e88d9db7302d53631496befb919200ab3fe1227500",
+      "state_init_hash": "5bc8d40770eb809b0b82dbf5264dfddd92c72364bece04e85afbb01f85b44143",
+      "address_workchain": -1,
+      "address_hash": "5bc8d40770eb809b0b82dbf5264dfddd92c72364bece04e85afbb01f85b44143"
+    },
+    {
+      "kind": "custom_wallet",
+      "data_hash": "18a9752d942602c0c81d23d37608b330238b15ee4ea41f4beec0a387f21a31a8",
+      "state_init_hash": "e056b988ad0835bff6b9dcb04376a9d37de5318dda5e4c137a58dd69aa2467b1",
+      "address_workchain": -1,
+      "address_hash": "e056b988ad0835bff6b9dcb04376a9d37de5318dda5e4c137a58dd69aa2467b1"
+    }
+  ]
+}

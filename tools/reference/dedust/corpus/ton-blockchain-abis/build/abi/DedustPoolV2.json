@@ -1,0 +1,2093 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustPoolV2",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust Pool V2 is a liquidity pool where users swap an asset pair and LPs provide liquidity for volatile or stable DeDust markets.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapExternal"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2VaultProof"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2VaultContractType"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustPoolV2Asset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2NativeAsset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2JettonAsset"
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    },
+    {
+      "kind": "bitsN",
+      "n": 256
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 16,
+          "prefix_num": 0,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 129,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 17,
+          "prefix_num": 1,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 130,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 13
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapStepParams"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustPoolV2SwapKind"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2GivenIn"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2GivenOut"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 24,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 131,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 25,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 132,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 1
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapStep"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 27
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 28
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapParams"
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 30
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapPeer"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2PoolProof"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2PoolContractType"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2PoolParams"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustPoolV2PoolType"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2VolatilePool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2StablePool"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 39,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 134,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 40,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 135,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 1
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 35
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2DepositLiquidityAll"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2LiquidityDepositProof"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2LiquidityDepositContractType"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2LiquidityDepositProofParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 46
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 44
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2DepositLiquidityAllAmounts"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 49
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2JettonBurnNotification"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2ConfigureQuoteProvider"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SyncAssetQuote"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2ProvidePoolState"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2ConfigureTradeFee"
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2ResetGas"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2CollectFees"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2ConfigureStartTime"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2PayOutFromPool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2TakePoolState"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2PoolStateAssets"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 62
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 63
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2FulfillDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2RejectDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2JettonInternalTransfer"
+    },
+    {
+      "kind": "remaining"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapEvent"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2SwapEventTail"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 70
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2DepositEvent"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2WithdrawalEvent"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2Storage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2Config"
+    },
+    {
+      "kind": "uintN",
+      "n": 8
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 76
+    },
+    {
+      "kind": "uintN",
+      "n": 128
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2GetTradeFeeReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2GetReservesReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2GetProtocolFeesReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2GetAssetsReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2EstimateSwapOutReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2EstimateDepositOutReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolV2JettonDataReply"
+    },
+    {
+      "kind": "addressAny"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2Storage",
+      "ty_idx": 75,
+      "fields": [
+        {
+          "name": "proof",
+          "ty_idx": 42,
+          "description": "Pool proof containing Factory address, contract type, and pair identity."
+        },
+        {
+          "name": "proofCode",
+          "ty_idx": 3,
+          "description": "Code cell used with the proof to authenticate deterministic DeDust child addresses."
+        },
+        {
+          "name": "lpWalletCode",
+          "ty_idx": 3,
+          "description": "LP Jetton wallet code returned by `get_jetton_data` and used by `get_wallet_address`."
+        },
+        {
+          "name": "config",
+          "ty_idx": 78,
+          "description": "Referenced Pool configuration with decimals, Vault addresses, fee receiver, and optional quote-provider data."
+        },
+        {
+          "name": "version",
+          "ty_idx": 56,
+          "description": "Pool implementation version returned by `get_version`."
+        },
+        {
+          "name": "tradeFeeNumerator",
+          "ty_idx": 56,
+          "description": "Trade fee numerator returned by `get_trade_fee`; denominator is fixed at 10000."
+        },
+        {
+          "name": "totalSupply",
+          "ty_idx": 6,
+          "description": "Total LP Jetton supply returned by `get_jetton_data`."
+        },
+        {
+          "name": "reserve0",
+          "ty_idx": 6,
+          "description": "Current asset0 reserve."
+        },
+        {
+          "name": "reserve1",
+          "ty_idx": 6,
+          "description": "Current asset1 reserve."
+        },
+        {
+          "name": "asset0ProtocolFee",
+          "ty_idx": 6,
+          "description": "Accumulated protocol fee in asset0 units."
+        },
+        {
+          "name": "asset1ProtocolFee",
+          "ty_idx": 6,
+          "description": "Accumulated protocol fee in asset1 units."
+        },
+        {
+          "name": "cumulativePrice0",
+          "ty_idx": 79,
+          "description": "Cumulative price accumulator for asset0."
+        },
+        {
+          "name": "cumulativePrice1",
+          "ty_idx": 79,
+          "description": "Cumulative price accumulator for asset1."
+        }
+      ],
+      "description": "Runtime Pool storage encoded in the root persistent-data cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2Config",
+      "ty_idx": 76,
+      "fields": [
+        {
+          "name": "asset0Decimals",
+          "ty_idx": 77,
+          "description": "Asset0 decimals used for stable-pool normalization."
+        },
+        {
+          "name": "asset1Decimals",
+          "ty_idx": 77,
+          "description": "Asset1 decimals used for stable-pool normalization."
+        },
+        {
+          "name": "asset0VaultAddr",
+          "ty_idx": 7,
+          "description": "Vault address for asset0."
+        },
+        {
+          "name": "asset1VaultAddr",
+          "ty_idx": 7,
+          "description": "Vault address for asset1."
+        },
+        {
+          "name": "feeCollectorAddr",
+          "ty_idx": 31,
+          "description": "Optional fee collector address; initial installed storage stores `addr_none`."
+        },
+        {
+          "name": "quoteProviderData",
+          "ty_idx": 32,
+          "description": "Optional extra quote-provider dictionary."
+        }
+      ],
+      "description": "Referenced Pool configuration cell loaded by safe getters."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2NativeAsset",
+      "ty_idx": 16,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 4
+      },
+      "fields": [],
+      "description": "Native GRAM asset tag used in Pool assets and proofs."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2JettonAsset",
+      "ty_idx": 17,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 4
+      },
+      "fields": [
+        {
+          "name": "workchainId",
+          "ty_idx": 18,
+          "description": "Jetton minter workchain id."
+        },
+        {
+          "name": "address",
+          "ty_idx": 19,
+          "description": "Jetton minter account hash."
+        }
+      ],
+      "description": "Jetton asset tag with minter workchain and account hash."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustPoolV2Asset",
+      "ty_idx": 15,
+      "target_ty_idx": 20,
+      "description": "Asset variants accepted by this Pool implementation."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2VolatilePool",
+      "ty_idx": 39,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Volatile curve tag used in pool parameters and proofs."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2StablePool",
+      "ty_idx": 40,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Stable curve tag used in pool parameters and proofs."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustPoolV2PoolType",
+      "ty_idx": 38,
+      "target_ty_idx": 41,
+      "description": "One-bit pool type, represented by docs as volatile/stable and by Toncenter as `is_stable`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2PoolParams",
+      "ty_idx": 37,
+      "fields": [
+        {
+          "name": "poolType",
+          "ty_idx": 38,
+          "description": "Pool curve type for the asset pair."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 15,
+          "description": "First sorted pool asset."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 15,
+          "description": "Second sorted pool asset."
+        }
+      ],
+      "description": "Pool identity tuple embedded in pool proofs and liquidity-deposit requests."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2VaultContractType",
+      "ty_idx": 14,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 8
+      },
+      "fields": [],
+      "description": "Contract-type tag proving a sender is a DeDust Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2PoolContractType",
+      "ty_idx": 36,
+      "prefix": {
+        "prefix_num": 2,
+        "prefix_len": 8
+      },
+      "fields": [],
+      "description": "Contract-type tag proving a sender is a DeDust Pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2LiquidityDepositContractType",
+      "ty_idx": 45,
+      "prefix": {
+        "prefix_num": 3,
+        "prefix_len": 8
+      },
+      "fields": [],
+      "description": "Contract-type tag proving a sender is a DeDust Liquidity Deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2VaultProof",
+      "ty_idx": 13,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "DeDust Factory address committed into the proof."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 14,
+          "description": "Contract-type byte; must be the Vault tag for this proof shape."
+        },
+        {
+          "name": "params",
+          "ty_idx": 15,
+          "description": "Vault asset committed into the proof."
+        }
+      ],
+      "description": "Vault proof body referenced by swap-external messages."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2PoolProof",
+      "ty_idx": 35,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "DeDust Factory address committed into the proof."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 36,
+          "description": "Contract-type byte; must be the Pool tag for this proof shape."
+        },
+        {
+          "name": "params",
+          "ty_idx": 37,
+          "description": "Pool identity committed into the proof."
+        }
+      ],
+      "description": "Pool proof body referenced by peer swaps, pool payouts, and liquidity callbacks."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2LiquidityDepositProofParams",
+      "ty_idx": 46,
+      "fields": [
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "Liquidity provider address that owns the deposit contract."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 37,
+          "description": "Pool identity for which the deposit contract was derived."
+        }
+      ],
+      "description": "Referenced proof parameters for a Liquidity Deposit contract."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2LiquidityDepositProof",
+      "ty_idx": 44,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "DeDust Factory address committed into the proof."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 45,
+          "description": "Contract-type byte; must be the Liquidity Deposit tag for this proof shape."
+        },
+        {
+          "name": "params",
+          "ty_idx": 47,
+          "description": "Referenced owner and pool-params tuple."
+        }
+      ],
+      "description": "Liquidity Deposit proof body referenced by deposit-liquidity-all messages."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2GivenIn",
+      "ty_idx": 24,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Exact-input swap kind that fixes the supplied input amount."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2GivenOut",
+      "ty_idx": 25,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Exact-output swap kind listed in docs but not used by the SDK examples."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustPoolV2SwapKind",
+      "ty_idx": 23,
+      "target_ty_idx": 26,
+      "description": "One-bit swap kind embedded in each swap step."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapStepParams",
+      "ty_idx": 22,
+      "fields": [
+        {
+          "name": "kind",
+          "ty_idx": 23,
+          "description": "Step kind; live public routes use `given_in`."
+        },
+        {
+          "name": "limit",
+          "ty_idx": 6,
+          "description": "Minimum output for `given_in`, or the limit value for the step."
+        },
+        {
+          "name": "next",
+          "ty_idx": 29,
+          "description": "Optional next swap step for multi-hop routes."
+        }
+      ],
+      "description": "Parameters for the current step of a routed swap."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapStep",
+      "ty_idx": 27,
+      "fields": [
+        {
+          "name": "poolAddr",
+          "ty_idx": 7,
+          "description": "Pool address responsible for the next hop."
+        },
+        {
+          "name": "params",
+          "ty_idx": 22,
+          "description": "Step kind, limit, and optional continuation."
+        }
+      ],
+      "description": "Full next-hop swap step referenced from step parameters."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapParams",
+      "ty_idx": 30,
+      "fields": [
+        {
+          "name": "deadline",
+          "ty_idx": 9,
+          "description": "Unix timestamp deadline, or zero when disabled."
+        },
+        {
+          "name": "recipientAddr",
+          "ty_idx": 31,
+          "description": "Final recipient, or `addr_none` to use the default sender path."
+        },
+        {
+          "name": "referralAddr",
+          "ty_idx": 31,
+          "description": "Referral address, or `addr_none` when referral routing is disabled."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 32,
+          "description": "Optional payload attached to successful fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 32,
+          "description": "Optional payload attached to rejection."
+        }
+      ],
+      "description": "Whole-swap options stored in the required referenced swap-params cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2DepositLiquidityAllAmounts",
+      "ty_idx": 49,
+      "fields": [
+        {
+          "name": "asset0",
+          "ty_idx": 15,
+          "description": "Asset0 identity from the Liquidity Deposit contract."
+        },
+        {
+          "name": "asset0Amount",
+          "ty_idx": 6,
+          "description": "Amount of asset0 supplied by the deposit contract."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 15,
+          "description": "Asset1 identity from the Liquidity Deposit contract."
+        },
+        {
+          "name": "asset1Amount",
+          "ty_idx": 6,
+          "description": "Amount of asset1 supplied by the deposit contract."
+        }
+      ],
+      "description": "Referenced amounts cell inside `deposit_liquidity_all`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapExternal",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 1643009069,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the initiating Vault message."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 21,
+          "description": "Referenced Vault proof authenticating the sending Vault and input asset."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Input amount routed from the Vault."
+        },
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "Original user or contract that initiated the swap."
+        },
+        {
+          "name": "current",
+          "ty_idx": 22,
+          "description": "Parameters for this Pool step."
+        },
+        {
+          "name": "swapParams",
+          "ty_idx": 33,
+          "description": "Referenced whole-swap parameter cell."
+        }
+      ],
+      "description": "Vault-to-Pool swap message for the first step of a user swap."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapPeer",
+      "ty_idx": 34,
+      "prefix": {
+        "prefix_num": 1923917994,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the previous swap step."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 42,
+          "description": "Referenced Pool proof authenticating the sending Pool."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 15,
+          "description": "Asset being delivered into this Pool step."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Input amount delivered into this Pool step."
+        },
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "Original user or contract that initiated the routed swap."
+        },
+        {
+          "name": "current",
+          "ty_idx": 22,
+          "description": "Parameters for this Pool step."
+        },
+        {
+          "name": "swapParams",
+          "ty_idx": 33,
+          "description": "Referenced whole-swap parameter cell."
+        }
+      ],
+      "description": "Pool-to-Pool peer swap message for later hops in a multi-hop route."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2DepositLiquidityAll",
+      "ty_idx": 43,
+      "prefix": {
+        "prefix_num": 3043726744,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the Liquidity Deposit flow."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 48,
+          "description": "Referenced Liquidity Deposit proof authenticating the sender."
+        },
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "Liquidity provider owner address."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum acceptable LP amount."
+        },
+        {
+          "name": "depositAmounts",
+          "ty_idx": 50,
+          "description": "Referenced asset and amount tuple for both pool sides."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 32,
+          "description": "Optional payload forwarded after successful deposit fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 32,
+          "description": "Optional payload forwarded after deposit rejection."
+        }
+      ],
+      "description": "Liquidity Deposit-to-Pool callback that supplies both assets and requests LP minting."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2JettonBurnNotification",
+      "ty_idx": 51,
+      "prefix": {
+        "prefix_num": 2078119902,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the LP wallet burn request."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Amount of LP tokens burned."
+        },
+        {
+          "name": "sender",
+          "ty_idx": 7,
+          "description": "LP token owner whose reserves should be released."
+        },
+        {
+          "name": "responseDestination",
+          "ty_idx": 31,
+          "description": "Optional response destination from the burn request."
+        }
+      ],
+      "description": "LP Jetton burn notification accepted by Pool-as-LP-minter to withdraw reserves."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2ConfigureQuoteProvider",
+      "ty_idx": 52,
+      "prefix": {
+        "prefix_num": 2880727869,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Request identifier copied through the control flow."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 15,
+          "description": "Pool asset whose quote provider is updated."
+        },
+        {
+          "name": "quoteProviderAddr",
+          "ty_idx": 31,
+          "description": "Quote-provider address, or `addr_none` to disable the provider."
+        }
+      ],
+      "description": "Authorized update of the quote provider for one Pool asset."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SyncAssetQuote",
+      "ty_idx": 53,
+      "prefix": {
+        "prefix_num": 1752418572,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Request identifier copied through the quote-refresh flow."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 15,
+          "description": "Pool asset whose quote is refreshed."
+        }
+      ],
+      "description": "Quote-provider request to refresh the cached quote for one Pool asset."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2ProvidePoolState",
+      "ty_idx": 54,
+      "prefix": {
+        "prefix_num": 1847882381,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Request identifier copied into the state reply."
+        },
+        {
+          "name": "includeAssets",
+          "ty_idx": 5,
+          "description": "Whether the state reply should include both serialized Pool assets."
+        }
+      ],
+      "description": "Request for the current reserves, LP supply, and optionally both Pool assets."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2ConfigureTradeFee",
+      "ty_idx": 55,
+      "prefix": {
+        "prefix_num": 3222612351,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Request identifier for the configuration operation."
+        },
+        {
+          "name": "tradeFee",
+          "ty_idx": 56,
+          "description": "New trade-fee numerator; the denominator is fixed at 10000."
+        }
+      ],
+      "description": "Authorized update of the Pool trade-fee numerator."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2ResetGas",
+      "ty_idx": 57,
+      "prefix": {
+        "prefix_num": 650525367,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Request identifier for the gas-reset operation."
+        },
+        {
+          "name": "responseDestination",
+          "ty_idx": 7,
+          "description": "Destination that receives the excess balance."
+        }
+      ],
+      "description": "Authorized request to return excess balance to a destination."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2PayOutFromPool",
+      "ty_idx": 60,
+      "prefix": {
+        "prefix_num": 2907617013,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the Pool operation."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 42,
+          "description": "Referenced Pool proof authenticating this Pool to the target Vault."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Asset amount to pay out through the Vault."
+        },
+        {
+          "name": "recipientAddr",
+          "ty_idx": 31,
+          "description": "Final recipient address, or `addr_none` if the downstream Vault applies a default."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 32,
+          "description": "Optional recipient payload forwarded by the Vault payout."
+        }
+      ],
+      "description": "Pool-to-Vault payout request used by swap and withdrawal flows."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2PoolStateAssets",
+      "ty_idx": 62,
+      "fields": [
+        {
+          "name": "asset0",
+          "ty_idx": 15,
+          "description": "First sorted Pool asset."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 15,
+          "description": "Second sorted Pool asset."
+        }
+      ],
+      "description": "Optional Pool asset pair included in a state reply."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2TakePoolState",
+      "ty_idx": 61,
+      "prefix": {
+        "prefix_num": 3185396052,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Request identifier copied from `DedustPoolV2ProvidePoolState`."
+        },
+        {
+          "name": "reserve0",
+          "ty_idx": 6,
+          "description": "Current asset0 reserve."
+        },
+        {
+          "name": "reserve1",
+          "ty_idx": 6,
+          "description": "Current asset1 reserve."
+        },
+        {
+          "name": "totalSupply",
+          "ty_idx": 6,
+          "description": "Current total LP Jetton supply."
+        },
+        {
+          "name": "assets",
+          "ty_idx": 64,
+          "description": "Referenced Pool asset pair when requested by the caller."
+        }
+      ],
+      "description": "Pool-state reply containing current reserves, LP supply, and optional assets."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2FulfillDeposit",
+      "ty_idx": 65,
+      "prefix": {
+        "prefix_num": 2867302998,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the deposit-liquidity-all request."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 42,
+          "description": "Referenced Pool proof authenticating the Pool to the Liquidity Deposit contract."
+        },
+        {
+          "name": "asset0Deposit",
+          "ty_idx": 6,
+          "description": "Accepted asset0 amount."
+        },
+        {
+          "name": "asset1Deposit",
+          "ty_idx": 6,
+          "description": "Accepted asset1 amount."
+        }
+      ],
+      "description": "Pool-to-Liquidity-Deposit success callback after LP accounting succeeds."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2RejectDeposit",
+      "ty_idx": 66,
+      "prefix": {
+        "prefix_num": 3785583828,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the deposit-liquidity-all request."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 42,
+          "description": "Referenced Pool proof authenticating the Pool to the Liquidity Deposit contract."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 32,
+          "description": "Optional payload selected by the original depositor."
+        }
+      ],
+      "description": "Pool-to-Liquidity-Deposit rejection callback when LP minting constraints fail."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2JettonInternalTransfer",
+      "ty_idx": 67,
+      "prefix": {
+        "prefix_num": 395134233,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the deposit-liquidity-all request."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Minted LP token amount."
+        },
+        {
+          "name": "fromAddress",
+          "ty_idx": 7,
+          "description": "Pool address used as the Jetton internal-transfer sender."
+        },
+        {
+          "name": "responseAddress",
+          "ty_idx": 31,
+          "description": "Response address for LP wallet excesses."
+        },
+        {
+          "name": "forwardTonAmount",
+          "ty_idx": 6,
+          "description": "Nanograms forwarded to the LP wallet owner."
+        },
+        {
+          "name": "forwardPayload",
+          "ty_idx": 68,
+          "description": "Raw Jetton `Either Cell ^Cell` forward-payload tail."
+        }
+      ],
+      "description": "LP wallet mint transfer emitted by Pool-as-LP-minter after successful liquidity deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapEventTail",
+      "ty_idx": 70,
+      "fields": [
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "User or contract that initiated the swap."
+        },
+        {
+          "name": "referralAddr",
+          "ty_idx": 31,
+          "description": "Referral address, or `addr_none` when no referral was used."
+        },
+        {
+          "name": "reserve0",
+          "ty_idx": 6,
+          "description": "Asset0 reserve after the swap."
+        },
+        {
+          "name": "reserve1",
+          "ty_idx": 6,
+          "description": "Asset1 reserve after the swap."
+        }
+      ],
+      "description": "Referenced tail for swap external event details."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2SwapEvent",
+      "ty_idx": 69,
+      "prefix": {
+        "prefix_num": 2623606243,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "assetIn",
+          "ty_idx": 15,
+          "description": "Asset supplied to the Pool."
+        },
+        {
+          "name": "assetOut",
+          "ty_idx": 15,
+          "description": "Asset received from the Pool."
+        },
+        {
+          "name": "amountIn",
+          "ty_idx": 6,
+          "description": "Amount supplied by the user."
+        },
+        {
+          "name": "amountOut",
+          "ty_idx": 6,
+          "description": "Amount received by the user."
+        },
+        {
+          "name": "details",
+          "ty_idx": 71,
+          "description": "Referenced sender, referral, and post-swap reserves."
+        }
+      ],
+      "description": "External event emitted after a successful swap."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2DepositEvent",
+      "ty_idx": 72,
+      "prefix": {
+        "prefix_num": 3041195172,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "Liquidity provider owner address."
+        },
+        {
+          "name": "amount0",
+          "ty_idx": 6,
+          "description": "Amount of asset0 accepted."
+        },
+        {
+          "name": "amount1",
+          "ty_idx": 6,
+          "description": "Amount of asset1 accepted."
+        },
+        {
+          "name": "reserve0",
+          "ty_idx": 6,
+          "description": "Asset0 reserve after the deposit."
+        },
+        {
+          "name": "reserve1",
+          "ty_idx": 6,
+          "description": "Asset1 reserve after the deposit."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "LP tokens minted for the deposit."
+        }
+      ],
+      "description": "External event emitted after successful liquidity deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2WithdrawalEvent",
+      "ty_idx": 73,
+      "prefix": {
+        "prefix_num": 984117414,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "LP token owner whose burn released reserves."
+        },
+        {
+          "name": "liquidity",
+          "ty_idx": 6,
+          "description": "LP token amount burned."
+        },
+        {
+          "name": "amount0",
+          "ty_idx": 6,
+          "description": "Asset0 amount released."
+        },
+        {
+          "name": "amount1",
+          "ty_idx": 6,
+          "description": "Asset1 amount released."
+        },
+        {
+          "name": "reserve0",
+          "ty_idx": 6,
+          "description": "Asset0 reserve after withdrawal."
+        },
+        {
+          "name": "reserve1",
+          "ty_idx": 6,
+          "description": "Asset1 reserve after withdrawal."
+        }
+      ],
+      "description": "External event emitted after LP burn withdrawal."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2CollectFees",
+      "ty_idx": 58,
+      "prefix": {
+        "prefix_num": 188915538,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id of the command."
+        },
+        {
+          "name": "asset0Amount",
+          "ty_idx": 6,
+          "description": "Amount of the first asset to withdraw."
+        },
+        {
+          "name": "asset0Destination",
+          "ty_idx": 7,
+          "description": "Recipient of the first asset."
+        },
+        {
+          "name": "asset0Payload",
+          "ty_idx": 32,
+          "description": "Optional payload attached to the first payout."
+        },
+        {
+          "name": "asset1Amount",
+          "ty_idx": 6,
+          "description": "Amount of the second asset to withdraw."
+        },
+        {
+          "name": "asset1Destination",
+          "ty_idx": 31,
+          "description": "Recipient of the second asset."
+        },
+        {
+          "name": "asset1Payload",
+          "ty_idx": 32,
+          "description": "Optional payload attached to the second payout."
+        }
+      ],
+      "description": "Operator command withdrawing accumulated protocol fees to the given recipients."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2ConfigureStartTime",
+      "ty_idx": 59,
+      "prefix": {
+        "prefix_num": 2128082638,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id of the command."
+        },
+        {
+          "name": "startAt",
+          "ty_idx": 9,
+          "description": "Unix time after which swaps are accepted."
+        }
+      ],
+      "description": "Operator command setting the time after which swaps are accepted."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2GetReservesReply",
+      "ty_idx": 81,
+      "fields": [
+        {
+          "name": "reserve0",
+          "ty_idx": 1,
+          "description": "Current asset0 reserve."
+        },
+        {
+          "name": "reserve1",
+          "ty_idx": 1,
+          "description": "Current asset1 reserve."
+        }
+      ],
+      "description": "Stack reply returned by `get_reserves`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2GetAssetsReply",
+      "ty_idx": 83,
+      "fields": [
+        {
+          "name": "asset0",
+          "ty_idx": 2,
+          "description": "Serialized asset0 slice."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 2,
+          "description": "Serialized asset1 slice."
+        }
+      ],
+      "description": "Stack reply returned by `get_assets`; each slice encodes a `DedustPoolV2Asset`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2GetTradeFeeReply",
+      "ty_idx": 80,
+      "fields": [
+        {
+          "name": "tradeFeeNumerator",
+          "ty_idx": 56,
+          "description": "Trade-fee numerator."
+        },
+        {
+          "name": "tradeFeeDenominator",
+          "ty_idx": 56,
+          "description": "Trade-fee denominator, equal to 10000."
+        }
+      ],
+      "description": "Stack reply returned by `get_trade_fee`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2GetProtocolFeesReply",
+      "ty_idx": 82,
+      "fields": [
+        {
+          "name": "asset0ProtocolFee",
+          "ty_idx": 1,
+          "description": "Accumulated protocol fees for asset0."
+        },
+        {
+          "name": "asset1ProtocolFee",
+          "ty_idx": 1,
+          "description": "Accumulated protocol fees for asset1."
+        }
+      ],
+      "description": "Stack reply returned by `get_protocol_fees`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2EstimateSwapOutReply",
+      "ty_idx": 84,
+      "fields": [
+        {
+          "name": "assetOut",
+          "ty_idx": 2,
+          "description": "Serialized output asset slice."
+        },
+        {
+          "name": "amountOut",
+          "ty_idx": 1,
+          "description": "Estimated output amount."
+        },
+        {
+          "name": "tradeFee",
+          "ty_idx": 1,
+          "description": "Estimated trade fee charged in the input asset."
+        }
+      ],
+      "description": "Stack reply returned by `estimate_swap_out`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2EstimateDepositOutReply",
+      "ty_idx": 85,
+      "fields": [
+        {
+          "name": "asset0Deposit",
+          "ty_idx": 1,
+          "description": "Asset0 amount that would be accepted."
+        },
+        {
+          "name": "asset1Deposit",
+          "ty_idx": 1,
+          "description": "Asset1 amount that would be accepted."
+        },
+        {
+          "name": "fairSupply",
+          "ty_idx": 1,
+          "description": "Estimated fair LP supply contribution."
+        }
+      ],
+      "description": "Stack reply returned by SDK getter `estimate_deposit_out`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolV2JettonDataReply",
+      "ty_idx": 86,
+      "fields": [
+        {
+          "name": "totalSupply",
+          "ty_idx": 1,
+          "description": "Total LP token supply."
+        },
+        {
+          "name": "mintable",
+          "ty_idx": 5,
+          "description": "Pool can mint LP tokens through liquidity deposit callbacks."
+        },
+        {
+          "name": "adminAddress",
+          "ty_idx": 87,
+          "description": "Admin stack address; live pools return `addr_none`."
+        },
+        {
+          "name": "jettonContent",
+          "ty_idx": 3,
+          "description": "LP token metadata content cell."
+        },
+        {
+          "name": "jettonWalletCode",
+          "ty_idx": 3,
+          "description": "LP wallet code cell."
+        }
+      ],
+      "description": "Stack reply returned by Pool-as-LP-Jetton-minter `get_jetton_data`."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 74,
+      "encoded_as_ty_idx": 56,
+      "members": [
+        {
+          "name": "InvalidLpWalletSender",
+          "value": "257",
+          "description": "LP burn notification sender is not the deterministic LP wallet."
+        },
+        {
+          "name": "InvalidControlSender",
+          "value": "259",
+          "description": "Control message sender is not the stored Factory/proof address."
+        },
+        {
+          "name": "InvalidAssetOrProof",
+          "value": "261",
+          "description": "Asset tag or proof shape is invalid for this Pool."
+        },
+        {
+          "name": "InsufficientValue",
+          "value": "263",
+          "description": "Attached value cannot cover the required downstream fee budget."
+        },
+        {
+          "name": "InvalidVaultSender",
+          "value": "264",
+          "description": "Swap-external sender is not the authenticated Vault."
+        },
+        {
+          "name": "InvalidPoolSender",
+          "value": "265",
+          "description": "Swap-peer sender is not the authenticated Pool."
+        },
+        {
+          "name": "InvalidLiquidityDepositSender",
+          "value": "272",
+          "description": "Liquidity-deposit callback sender is not the authenticated deposit contract."
+        },
+        {
+          "name": "InvalidTradeFee",
+          "value": "279",
+          "description": "Trade fee is outside the accepted range."
+        },
+        {
+          "name": "InvalidTokenWallet",
+          "value": "288",
+          "description": "Message token wallet does not match either Pool asset wallet."
+        },
+        {
+          "name": "MissingPayoutTarget",
+          "value": "289",
+          "description": "Payout target address is absent."
+        },
+        {
+          "name": "InvalidWithdrawalAsset",
+          "value": "290",
+          "description": "Withdrawal branch does not match the requested asset side."
+        },
+        {
+          "name": "InvalidRequestAsset",
+          "value": "291",
+          "description": "Requested asset does not match either Pool asset."
+        },
+        {
+          "name": "InvalidAmount",
+          "value": "292",
+          "description": "Requested amount must be positive."
+        },
+        {
+          "name": "ProtocolFeeExceeded",
+          "value": "293",
+          "description": "Protocol-fee withdrawal exceeds accumulated fees."
+        },
+        {
+          "name": "EmptyLiquidity",
+          "value": "294",
+          "description": "Pool has no LP supply for swap pricing."
+        },
+        {
+          "name": "InvalidChildSender",
+          "value": "296",
+          "description": "Deterministic child-contract sender does not match the expected address."
+        },
+        {
+          "name": "SlippageExceeded",
+          "value": "304",
+          "description": "Swap output is below the requested minimum."
+        },
+        {
+          "name": "DeadlineExceeded",
+          "value": "305",
+          "description": "Swap deadline has passed."
+        },
+        {
+          "name": "UnsupportedOperation",
+          "value": "65535",
+          "description": "Incoming internal message opcode is unsupported."
+        }
+      ],
+      "description": "DeDust Pool v2 exit-code catalog."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 34
+    },
+    {
+      "body_ty_idx": 43
+    },
+    {
+      "body_ty_idx": 51
+    },
+    {
+      "body_ty_idx": 52
+    },
+    {
+      "body_ty_idx": 53
+    },
+    {
+      "body_ty_idx": 54
+    },
+    {
+      "body_ty_idx": 55
+    },
+    {
+      "body_ty_idx": 57
+    },
+    {
+      "body_ty_idx": 58
+    },
+    {
+      "body_ty_idx": 59
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 60
+    },
+    {
+      "body_ty_idx": 61
+    },
+    {
+      "body_ty_idx": 34
+    },
+    {
+      "body_ty_idx": 65
+    },
+    {
+      "body_ty_idx": 66
+    },
+    {
+      "body_ty_idx": 67
+    },
+    {
+      "body_ty_idx": 69
+    },
+    {
+      "body_ty_idx": 72
+    },
+    {
+      "body_ty_idx": 73
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 75
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 82320,
+      "name": "get_version",
+      "parameters": [],
+      "return_ty_idx": 56,
+      "description": "Return the DeDust Pool code/interface version."
+    },
+    {
+      "tvm_method_id": 103723,
+      "name": "is_stable",
+      "parameters": [],
+      "return_ty_idx": 5,
+      "description": "Return whether this Pool instance is stable-swap."
+    },
+    {
+      "tvm_method_id": 96780,
+      "name": "get_trade_fee",
+      "parameters": [],
+      "return_ty_idx": 80,
+      "description": "Return the current trade-fee numerator and denominator."
+    },
+    {
+      "tvm_method_id": 65971,
+      "name": "get_reserves",
+      "parameters": [],
+      "return_ty_idx": 81,
+      "description": "Return current asset reserves."
+    },
+    {
+      "tvm_method_id": 112792,
+      "name": "get_protocol_fees",
+      "parameters": [],
+      "return_ty_idx": 82,
+      "description": "Return accumulated protocol fees for both assets."
+    },
+    {
+      "tvm_method_id": 118188,
+      "name": "get_assets",
+      "parameters": [],
+      "return_ty_idx": 83,
+      "description": "Return serialized asset identifiers for this Pool."
+    },
+    {
+      "tvm_method_id": 70754,
+      "name": "estimate_swap_out",
+      "parameters": [
+        {
+          "name": "assetIn",
+          "ty_idx": 2
+        },
+        {
+          "name": "amountIn",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 84,
+      "description": "Estimate output amount and fee for a serialized input asset and amount."
+    },
+    {
+      "tvm_method_id": 119877,
+      "name": "estimate_deposit_out",
+      "parameters": [
+        {
+          "name": "amount0",
+          "ty_idx": 1
+        },
+        {
+          "name": "amount1",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 85,
+      "description": "Estimate accepted deposit amounts and fair LP supply for proposed asset amounts."
+    },
+    {
+      "tvm_method_id": 106029,
+      "name": "get_jetton_data",
+      "parameters": [],
+      "return_ty_idx": 86,
+      "description": "Return LP Jetton minter data for the Pool."
+    },
+    {
+      "tvm_method_id": 103289,
+      "name": "get_wallet_address",
+      "parameters": [
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7
+        }
+      ],
+      "return_ty_idx": 7,
+      "description": "Return the deterministic LP wallet address for an owner."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidLpWalletSender",
+      "description": "LP burn notification sender is not the deterministic LP wallet.",
+      "err_code": 257
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidControlSender",
+      "description": "Control message sender is not the stored Factory/proof address.",
+      "err_code": 259
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAssetOrProof",
+      "description": "Asset tag or proof shape is invalid for this Pool.",
+      "err_code": 261
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InsufficientValue",
+      "description": "Attached value cannot cover the required downstream fee budget.",
+      "err_code": 263
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidVaultSender",
+      "description": "Swap-external sender is not the authenticated Vault.",
+      "err_code": 264
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidPoolSender",
+      "description": "Swap-peer sender is not the authenticated Pool.",
+      "err_code": 265
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidLiquidityDepositSender",
+      "description": "Liquidity-deposit callback sender is not the authenticated deposit contract.",
+      "err_code": 272
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidTradeFee",
+      "description": "Trade fee is outside the accepted range.",
+      "err_code": 279
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidTokenWallet",
+      "description": "Message token wallet does not match either Pool asset wallet.",
+      "err_code": 288
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.MissingPayoutTarget",
+      "description": "Payout target address is absent.",
+      "err_code": 289
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidWithdrawalAsset",
+      "description": "Withdrawal branch does not match the requested asset side.",
+      "err_code": 290
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidRequestAsset",
+      "description": "Requested asset does not match either Pool asset.",
+      "err_code": 291
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAmount",
+      "description": "Requested amount must be positive.",
+      "err_code": 292
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.ProtocolFeeExceeded",
+      "description": "Protocol-fee withdrawal exceeds accumulated fees.",
+      "err_code": 293
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.EmptyLiquidity",
+      "description": "Pool has no LP supply for swap pricing.",
+      "err_code": 294
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidChildSender",
+      "description": "Deterministic child-contract sender does not match the expected address.",
+      "err_code": 296
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SlippageExceeded",
+      "description": "Swap output is below the requested minimum.",
+      "err_code": 304
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.DeadlineExceeded",
+      "description": "Swap deadline has passed.",
+      "err_code": 305
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnsupportedOperation",
+      "description": "Incoming internal message opcode is unsupported.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

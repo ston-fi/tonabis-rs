@@ -1,0 +1,9 @@
+{
+  "origin": "Original synthetic initial-state data hashes and four captured-code getter executions. No executable cells.",
+  "log_sha256": "75b7e243adc2d8d2a0368715aa7d1243f737b75c586cc54aee012b6e48e082ab",
+  "nft_data_hash_hex": "616cfb584bf558466deb0bd9dc03c60fae7de21eef2127924ccf1fd3ddf2eed0",
+  "master_data_hash_hex": "d0a29774e25a03258881ce800bc5b9691f88242361d042ff51f6b746e19f92c4",
+  "master_hash": 300,
+  "vault_hash": 302,
+  "observed": "NFT get_nft_data/get_stored_data and master get_stored_data/get_collection_data all exit0; owner addr_none, master distributor addr_none, NFT asset wallet addr_none."
+}

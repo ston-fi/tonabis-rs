@@ -1,0 +1,101 @@
+{
+  "origin": "Synthetic captured-code getter/address observations at VM time1700000000. Code hashes and development inputs in local sidecar. No executable bytes embedded.",
+  "vectors": [
+    {
+      "family": "cpi",
+      "kind": "PROOFADDR",
+      "id": 0,
+      "addresses": [
+        "kQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHTW",
+        "kQBN45LODfkfK4CmYsdvDYIM384K51qZrPD78cbe7Ze7NelI"
+      ]
+    },
+    {
+      "family": "cpi",
+      "kind": "PROOFADDR",
+      "id": 1,
+      "addresses": [
+        "kQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWT3",
+        "kQAUWJJdA7xqMEYxWs9FiBc-lQd1O6KNPtkYttRrQng0ujuB"
+      ]
+    },
+    {
+      "family": "stable",
+      "kind": "PROOFADDR",
+      "id": 0,
+      "addresses": [
+        "kQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHTW",
+        "kQBN45LODfkfK4CmYsdvDYIM384K51qZrPD78cbe7Ze7NelI"
+      ]
+    },
+    {
+      "family": "stable",
+      "kind": "PROOFADDR",
+      "id": 1,
+      "addresses": [
+        "kQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWT3",
+        "kQAUWJJdA7xqMEYxWs9FiBc-lQd1O6KNPtkYttRrQng0ujuB"
+      ]
+    },
+    {
+      "family": "cpi",
+      "kind": "LPADDR",
+      "id": 6,
+      "addresses": [
+        "kQA6YZG5Rb6JU900SMwTRlhL1CL4J3tDFlqw4SNWwjdlEhnt",
+        "kQBqmv9FgdVfP4NOKAdapDhmDYe_S_sjJDfAAzEkUvFE5_w3",
+        "kQDfwtrLldYis4MJVPPXAYCB0wDUhOjN_CiHZRV4rRyzsbJP"
+      ]
+    },
+    {
+      "family": "cpi",
+      "kind": "LPADDR",
+      "id": 7,
+      "addresses": [
+        "kQA6YZG5Rb6JU900SMwTRlhL1CL4J3tDFlqw4SNWwjdlEhnt",
+        "kQC-dufZs5YDQGrmnzDUW0A-1E56uZwan9jEXzU3u9h6gc46",
+        "kQAPY1_BjB1ggkiQC2Y8ks_7BUwIPTzISTV2-2nlogKNvIRu"
+      ]
+    },
+    {
+      "family": "cpi",
+      "kind": "LPADDR",
+      "id": 12,
+      "addresses": [
+        "kQA6YZG5Rb6JU900SMwTRlhL1CL4J3tDFlqw4SNWwjdlEhnt",
+        "kQBpBGOccMNTdiyS7TyMdn1eX5hc-IjtW7vVo1vsiSGjxgV4",
+        "kQCLKKhxqgmiPRSJSMYfFv-jy0uDVWLIwAHpidj19zUKrDiv"
+      ]
+    },
+    {
+      "family": "stable",
+      "kind": "LPADDR",
+      "id": 6,
+      "addresses": [
+        "kQA6YZG5Rb6JU900SMwTRlhL1CL4J3tDFlqw4SNWwjdlEhnt",
+        "kQBMIwRv_VW4ctJJW3GMikzMUtdTV0BwnQVg2KBOoz2ZolMp",
+        "kQCq1utHtR-cCu8pVX3nSwIjEjPJFPisQV7ypuHO_YxOaW6e"
+      ]
+    },
+    {
+      "family": "stable",
+      "kind": "LPADDR",
+      "id": 7,
+      "addresses": [
+        "kQA6YZG5Rb6JU900SMwTRlhL1CL4J3tDFlqw4SNWwjdlEhnt",
+        "kQC0ygF8K9pUYIL5h2wYaXyTJsXwegFW0LIk2njShdb_t_YT",
+        "kQB3VPIBHms3GO7frNT0iAfj9EaCxWm1owlG1r3KcSVZ64S-"
+      ]
+    },
+    {
+      "family": "stable",
+      "kind": "LPADDR",
+      "id": 12,
+      "addresses": [
+        "kQA6YZG5Rb6JU900SMwTRlhL1CL4J3tDFlqw4SNWwjdlEhnt",
+        "kQAF1trybGIyoeG4cnWsd09TxSmjFISB8gTkLufdpHLSKFdl",
+        "kQA66NRw50CYog9eekaZE7ZuS6RWhujHS4P9mwzEv3TBER-k"
+      ]
+    }
+  ]
+}

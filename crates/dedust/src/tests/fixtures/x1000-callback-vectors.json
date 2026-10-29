@@ -1,0 +1,87 @@
+{
+  "callback-bidask-flagged": {
+    "boc_base64": "te6ccgEBAgEAFgABHW7dZfAAAAAAAAAACZCxdgEABJkA",
+    "sha256": "f6fdf9d0b2bd9d114e1043e78f96967d5c8f7e74b8335755a58e1afc76cff856",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-bidask-legacy": {
+    "boc_base64": "te6ccgEBAQEAEQAAHW7dZfAAAAAAAAAACCBNJA==",
+    "sha256": "531e8706ed26220abf4e8ae0ea298208be78da7d8410c9d1fe5647a2ed67142a",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-classic": {
+    "boc_base64": "te6ccgEBAgEAEwABGUdPhs8AAAAAAAAABMABAAJE",
+    "sha256": "a77cd70524360e650b2f92a09f5fc8d01fb8d4d3f83c5719efe5da11141a7cf0",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-clmm-compact": {
+    "boc_base64": "te6ccgEBAQEAJAAAQ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=",
+    "sha256": "242f8fa129bb4a572e8cd79606231ebcd4a8168ad8b3804f2427a3a8043301c3",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-clmm-explicit-none": {
+    "boc_base64": "te6ccgEBAQEAJAAAQ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=",
+    "sha256": "b5e7e2a095d73953095075256c344431068bf96e5b8b7d479fefb1d7bde40660",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-clmm-explicit-some": {
+    "boc_base64": "te6ccgEBAgEAKAABQ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBAAIz",
+    "sha256": "97d68f6395d84f8f97e0735a2572be816d47112744e0751ed76e1823d7b54283",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-clmm-jetton": {
+    "boc_base64": "te6ccgEBAgEADgABCZ0UJkPAAQAIqrvM3Q==",
+    "sha256": "98269ae1ff52bde9b6e365d89973ff715a315209ca4925df8f8a3abb71b6c00e",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-clmm-refund": {
+    "boc_base64": "te6ccgEBAQEAEAAAG/8y2pkAAAAAAAAACxN0",
+    "sha256": "93575c8476d9c9094e5c9b079b2b9b0c28fcdeccc91d5f7de05b44e41ca0fddd",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-clmm-result": {
+    "boc_base64": "te6ccgEBAgEAFwABG50UJkMAAAAAAAAAChLMAQAI3q2+7w==",
+    "sha256": "459dcdad9618d28546d27ba64a67e4a11a0934c1d6e5b06984cb388b72583f2a",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-coffee": {
+    "boc_base64": "te6ccgEBAQEADgAAGMD/7jIAAAAAAAAABQ==",
+    "sha256": "9054160d63b2d5aecc285d55be0cd676388a535dd4a90dbc8283fce464356d93",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-excess": {
+    "boc_base64": "te6ccgEBAQEADgAAGNUydtsAAAAAAAAAAw==",
+    "sha256": "a0fbceecbe9f1855fc0322d473b4677f6026ca954228333fea93fcf6754552b4",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-jetton-null": {
+    "boc_base64": "te6ccgEBAQEAFAAAI3Ni0JwAAAAAAAAAARTQIkRmiQ==",
+    "sha256": "100bfec15d2332fb2e89bb21bc7bd764eb4f94615e83b2ce576faf44d72277e5",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-jetton-zero": {
+    "boc_base64": "te6ccgEBAgEANQABXnNi0JwAAAAAAAAAAhWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQACVQ==",
+    "sha256": "d46ce7af2e293595d005476d316fac64f57518cd6023a0536d27a3551686125d",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-moon-failure": {
+    "boc_base64": "te6ccgEBAQEADgAAGMR8H1cAAAAAAAAADg==",
+    "sha256": "af565227d408ae1ec5c4726b9d9e1f348b9fe75284e96ce8c35d89ce409f969a",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-moon-success": {
+    "boc_base64": "te6ccgEBAQEADgAAGMt/ONYAAAAAAAAADQ==",
+    "sha256": "c218a491cdb2359e80d9edf23d89ebdbb3c7db874ab715e0c73dcd787d777c21",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-pton-inline": {
+    "boc_base64": "te6ccgEBAQEAMgAAYAHzg10AAAAAAAAABhY4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdw==",
+    "sha256": "e6c1db765cc0d92a90c6a91390c2d8da81b98ef38e3f16725399e935ab83683c",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  },
+  "callback-pton-reference": {
+    "boc_base64": "te6ccgEBAgEANQABXgHzg10AAAAAAAAABxWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAQACeA==",
+    "sha256": "36e1556e4cfad7ac5e729ef094e5e3360e4f5e417ff22f70f38c6529e9c194e6",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_callback_wires.test.tolk; no executable cells."
+  }
+}

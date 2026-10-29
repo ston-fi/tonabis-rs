@@ -1,0 +1,11 @@
+mod test_catalog_wire;
+mod test_forwarding_boundaries;
+mod test_getter_invocations;
+mod test_getter_provider;
+mod test_getters;
+mod test_initialization;
+mod test_parsing_policy;
+mod test_schema_custom_wallet;
+mod test_schema_factory;
+mod test_schema_minter;
+mod test_wire;

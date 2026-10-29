@@ -1,0 +1,236 @@
+[
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 65971,
+    "method": "get_reserves"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 118188,
+    "method": "get_assets"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 103071,
+    "method": "get_wallets"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 67344,
+    "method": "get_fees"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 80604,
+    "method": "get_collected_fees"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 73585,
+    "method": "get_lp_total"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 78548,
+    "method": "get_lp_account"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 103289,
+    "method": "get_wallet_address"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 81335,
+    "method": "get_estimated_lp_burn"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 93853,
+    "method": "get_estimated_lp"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 130423,
+    "method": "get_estimated_swap_out"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 106029,
+    "method": "get_jetton_data"
+  },
+  {
+    "module": "legacy_pool",
+    "source_contract": "MoonPool",
+    "selector": 127226,
+    "method": "get_pool"
+  },
+  {
+    "module": "catalog_range",
+    "source_contract": "MoonClmmRange",
+    "selector": 74767,
+    "method": "get_range"
+  },
+  {
+    "module": "catalog_range",
+    "source_contract": "MoonClmmRange",
+    "selector": 91258,
+    "method": "get_bins"
+  },
+  {
+    "module": "catalog_range",
+    "source_contract": "MoonClmmRange",
+    "selector": 78548,
+    "method": "get_lp_account"
+  },
+  {
+    "module": "catalog_range",
+    "source_contract": "MoonClmmRange",
+    "selector": 86620,
+    "method": "get_current_bin"
+  },
+  {
+    "module": "catalog_range",
+    "source_contract": "MoonClmmRange",
+    "selector": 92067,
+    "method": "get_nft_address_by_index"
+  },
+  {
+    "module": "catalog_range",
+    "source_contract": "MoonClmmRange",
+    "selector": 96761,
+    "method": "get_current_sqrt_price"
+  },
+  {
+    "module": "order_factory",
+    "source_contract": "MoonOrderFactory",
+    "selector": 117305,
+    "method": "get_id"
+  },
+  {
+    "module": "order_factory",
+    "source_contract": "MoonOrderFactory",
+    "selector": 114750,
+    "method": "get_pipe"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 100881,
+    "method": "get_status"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 75573,
+    "method": "get_order_amount"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 82465,
+    "method": "get_order"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 103071,
+    "method": "get_wallets"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 107618,
+    "method": "get_vesting_data"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 112212,
+    "method": "get_fill_out"
+  },
+  {
+    "module": "order_old",
+    "source_contract": "MoonOrderOld",
+    "selector": 118188,
+    "method": "get_assets"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 100881,
+    "method": "get_status"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 75573,
+    "method": "get_order_amount"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 82465,
+    "method": "get_order"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 103071,
+    "method": "get_wallets"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 107618,
+    "method": "get_vesting_data"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 112212,
+    "method": "get_fill_out"
+  },
+  {
+    "module": "order_new",
+    "source_contract": "MoonOrderNew",
+    "selector": 118188,
+    "method": "get_assets"
+  },
+  {
+    "module": "booster",
+    "source_contract": "MoonBooster",
+    "selector": 76107,
+    "method": "get_booster"
+  },
+  {
+    "module": "booster",
+    "source_contract": "MoonBooster",
+    "selector": 100881,
+    "method": "get_status"
+  },
+  {
+    "module": "booster",
+    "source_contract": "MoonBooster",
+    "selector": 109406,
+    "method": "get_boost_data"
+  },
+  {
+    "module": "booster",
+    "source_contract": "MoonBooster",
+    "selector": 127226,
+    "method": "get_pool"
+  }
+]

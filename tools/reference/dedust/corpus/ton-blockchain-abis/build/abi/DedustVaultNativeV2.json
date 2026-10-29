@@ -1,0 +1,1112 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustVaultNativeV2",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust Native Vault V2 is the GRAM vault for swaps, liquidity deposits, and native payouts through DeDust v2.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2Swap"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustSwapStep"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustSwapStepParams"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustSwapKind"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustGivenIn"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustGivenOut"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 16,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 129,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 17,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 130,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 1
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 13
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 19
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustSwapParams"
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 21
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2DepositLiquidity"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolParams"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustPoolType"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVolatilePool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustStablePool"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 28,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 132,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 29,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 133,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 1
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustAsset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustNativeAsset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustJettonAsset"
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    },
+    {
+      "kind": "bitsN",
+      "n": 256
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 32,
+          "prefix_num": 0,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 134,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 33,
+          "prefix_num": 1,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 135,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustDepositLiquidityParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 37
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2PayOutFromPool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2PayOutFromDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2ProvideVaultState"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2ResetGas"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2SwapExternal"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2CreateLiquidityDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustCreateLiquidityDepositParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 45
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2Payout"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2TakeVaultState"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2Storage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2ProofData"
+    },
+    {
+      "kind": "uintN",
+      "n": 8
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 52
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultNativeV2InlineDepositLiquidityCandidate"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2Storage",
+      "ty_idx": 51,
+      "fields": [
+        {
+          "name": "cachedProof",
+          "ty_idx": 54,
+          "description": "Cached proof data reference forwarded to Pool and Factory messages."
+        },
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "Factory address authenticated by proof checks and returned by `get_factory_addr`."
+        },
+        {
+          "name": "blankCode",
+          "ty_idx": 3,
+          "description": "Blank code cell used with `cachedProof` for deterministic StateInit derivation."
+        },
+        {
+          "name": "version",
+          "ty_idx": 50,
+          "description": "Code/interface version returned by `get_version`."
+        },
+        {
+          "name": "nativeBalance",
+          "ty_idx": 6,
+          "description": "Native GRAM balance tracked by the vault for routed deposits and payouts."
+        }
+      ],
+      "description": "Runtime storage loaded by the verified native vault code root data cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2ProofData",
+      "ty_idx": 52,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "Factory address committed into the deterministic proof data."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 53,
+          "description": "DeDust contract type tag; live Native Vault storage stores `1` for vault."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 31,
+          "description": "Native asset parameter for this vault."
+        }
+      ],
+      "description": "Cached DeDust proof data stored by the Native Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustNativeAsset",
+      "ty_idx": 32,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 4
+      },
+      "fields": [],
+      "description": "Native asset tag used by DeDust SDK and live `get_asset`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustJettonAsset",
+      "ty_idx": 33,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 4
+      },
+      "fields": [
+        {
+          "name": "workchainId",
+          "ty_idx": 34,
+          "description": "Jetton minter workchain id."
+        },
+        {
+          "name": "address",
+          "ty_idx": 35,
+          "description": "Jetton minter account hash."
+        }
+      ],
+      "description": "Jetton asset tag supported by SDK pool params and factory-derived messages."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustAsset",
+      "ty_idx": 31,
+      "target_ty_idx": 36,
+      "description": "Asset variants proven by SDK/local TL-B for DeDust v2 core messages."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVolatilePool",
+      "ty_idx": 28,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Volatile pool type tag used in PoolParams."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustStablePool",
+      "ty_idx": 29,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Stable pool type tag used in PoolParams."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustPoolType",
+      "ty_idx": 27,
+      "target_ty_idx": 30,
+      "description": "Pool type variants encoded as one bit in DeDust pool parameters."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolParams",
+      "ty_idx": 26,
+      "fields": [
+        {
+          "name": "poolType",
+          "ty_idx": 27,
+          "description": "Pool curve type, volatile or stable."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 31,
+          "description": "First sorted pool asset."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 31,
+          "description": "Second sorted pool asset."
+        }
+      ],
+      "description": "Pool identity tuple used by native deposit liquidity and factory routing."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustGivenIn",
+      "ty_idx": 16,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Swap kind tag for exact-in swaps; SDK currently stores only this value."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustGivenOut",
+      "ty_idx": 17,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Swap kind tag for exact-out swaps; docs say this variant is not implemented."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustSwapKind",
+      "ty_idx": 15,
+      "target_ty_idx": 18,
+      "description": "One-bit swap direction encoded inside a swap step."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustSwapStepParams",
+      "ty_idx": 14,
+      "fields": [
+        {
+          "name": "kind",
+          "ty_idx": 15,
+          "description": "Swap kind; live SDK writes `given_in` and reserves `given_out`."
+        },
+        {
+          "name": "limit",
+          "ty_idx": 6,
+          "description": "Minimum output for `given_in`, or limit value for the step."
+        },
+        {
+          "name": "next",
+          "ty_idx": 20,
+          "description": "Optional next step for multi-hop swaps."
+        }
+      ],
+      "description": "Per-step swap parameters embedded after the Pool address."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustSwapStep",
+      "ty_idx": 13,
+      "fields": [
+        {
+          "name": "poolAddr",
+          "ty_idx": 7,
+          "description": "Pool responsible for this swap step."
+        },
+        {
+          "name": "params",
+          "ty_idx": 14,
+          "description": "Step kind, limit, and optional next-hop reference."
+        }
+      ],
+      "description": "Swap step routed by the Native Vault to a Pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustSwapParams",
+      "ty_idx": 21,
+      "fields": [
+        {
+          "name": "deadline",
+          "ty_idx": 9,
+          "description": "Unix timestamp deadline, or zero when disabled."
+        },
+        {
+          "name": "recipientAddr",
+          "ty_idx": 22,
+          "description": "Optional final recipient; `addr_none` means the default sender/owner path."
+        },
+        {
+          "name": "referralAddr",
+          "ty_idx": 22,
+          "description": "Optional referral address; `addr_none` disables referral routing."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 23,
+          "description": "Optional payload sent on successful fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 23,
+          "description": "Optional payload sent on rejection."
+        }
+      ],
+      "description": "Whole-swap options stored in a required referenced cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustDepositLiquidityParams",
+      "ty_idx": 37,
+      "fields": [
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum acceptable LP amount."
+        },
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Required target balance for pool asset0 after deposit accounting."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Required target balance for pool asset1 after deposit accounting."
+        }
+      ],
+      "description": "Ref-backed Native Vault liquidity-deposit parameters proven by SDK and live code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2InlineDepositLiquidityCandidate",
+      "ty_idx": 55,
+      "fields": [
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Candidate minimum LP amount from the inline documentation variant."
+        },
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Candidate target balance for asset0 from the inline documentation variant."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Candidate target balance for asset1 from the inline documentation variant."
+        }
+      ],
+      "description": "Docs/Toncenter inline candidate kept for ABI diff visibility; live code parses the ref-backed variant instead."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2Swap",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 3926267997,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into Pool routing messages."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount credited into the vault's internal accounting."
+        },
+        {
+          "name": "step",
+          "ty_idx": 13,
+          "description": "First swap step, stored inline after amount."
+        },
+        {
+          "name": "swapParams",
+          "ty_idx": 24,
+          "description": "Required referenced whole-swap parameter cell."
+        }
+      ],
+      "description": "User-originated native GRAM swap accepted by the live Native Vault code."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2DepositLiquidity",
+      "ty_idx": 25,
+      "prefix": {
+        "prefix_num": 3579725446,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the Factory liquidity-deposit deployment request."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount credited into the vault's internal accounting."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 26,
+          "description": "Pool parameters used to derive or create the Liquidity Deposit contract."
+        },
+        {
+          "name": "params",
+          "ty_idx": 38,
+          "description": "Ref-backed deposit constraints; the inline docs variant is not accepted by live code evidence."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 23,
+          "description": "Optional payload forwarded on successful deposit fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 23,
+          "description": "Optional payload forwarded on deposit rejection."
+        }
+      ],
+      "description": "User-originated native GRAM liquidity deposit using the ref-backed params cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2PayOutFromPool",
+      "ty_idx": 39,
+      "prefix": {
+        "prefix_num": 2907617013,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the final payout body."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Pool proof reference checked before payout."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount released from vault accounting."
+        },
+        {
+          "name": "recipientAddr",
+          "ty_idx": 22,
+          "description": "Final recipient address for the outgoing payout."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 23,
+          "description": "Optional payload attached to the outgoing payout."
+        }
+      ],
+      "description": "Pool-authorized payout callback accepted by the Native Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2PayOutFromDeposit",
+      "ty_idx": 40,
+      "prefix": {
+        "prefix_num": 1795913855,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the final payout body."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Liquidity Deposit proof reference checked before payout."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount released from vault accounting."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 23,
+          "description": "Optional payload attached to the outgoing payout."
+        }
+      ],
+      "description": "Liquidity Deposit-authorized payout callback accepted by the Native Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2ProvideVaultState",
+      "ty_idx": 41,
+      "prefix": {
+        "prefix_num": 3912500665,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the state response."
+        }
+      ],
+      "description": "State-probe request accepted by the Native Vault and answered with `take_vault_state`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2ResetGas",
+      "ty_idx": 42,
+      "prefix": {
+        "prefix_num": 650525367,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id carried by the maintenance request."
+        },
+        {
+          "name": "responseDestination",
+          "ty_idx": 7,
+          "description": "Destination receiving remaining gas after reserve."
+        }
+      ],
+      "description": "Common reset-gas request accepted when sent by the authenticated operator address."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2SwapExternal",
+      "ty_idx": 43,
+      "prefix": {
+        "prefix_num": 1643009069,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the incoming native swap."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Vault proof reference proving the sender vault."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount routed into the Pool."
+        },
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "Original user sender address from the inbound internal message envelope."
+        },
+        {
+          "name": "current",
+          "ty_idx": 14,
+          "description": "Current step parameters forwarded to the Pool."
+        },
+        {
+          "name": "swapParams",
+          "ty_idx": 24,
+          "description": "Required referenced whole-swap parameter cell."
+        }
+      ],
+      "description": "Vault-to-Pool swap routing message constructed after a native swap."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2CreateLiquidityDeposit",
+      "ty_idx": 44,
+      "prefix": {
+        "prefix_num": 4031694118,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the incoming native deposit."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Vault proof reference proving the sender vault."
+        },
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "Original user sender address from the inbound internal message envelope."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 26,
+          "description": "Pool parameters used by the Factory to address the Liquidity Deposit contract."
+        },
+        {
+          "name": "depositParams",
+          "ty_idx": 46,
+          "description": "Referenced deposit amount and target-balance cell."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 23,
+          "description": "Optional payload forwarded on successful fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 23,
+          "description": "Optional payload forwarded on rejection."
+        }
+      ],
+      "description": "Vault-to-Factory request constructed after a native liquidity deposit."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustCreateLiquidityDepositParams",
+      "ty_idx": 45,
+      "fields": [
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Target balance for pool asset0."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Target balance for pool asset1."
+        },
+        {
+          "name": "depositAsset",
+          "ty_idx": 31,
+          "description": "Deposit asset; native vault sends the native asset tag."
+        },
+        {
+          "name": "depositAmount",
+          "ty_idx": 6,
+          "description": "Native GRAM amount deposited through this vault."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum acceptable LP amount."
+        }
+      ],
+      "description": "Referenced amount cell inside `create_liquidity_deposit`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2Payout",
+      "ty_idx": 47,
+      "prefix": {
+        "prefix_num": 1196394191,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the Pool or Liquidity Deposit payout callback."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 23,
+          "description": "Optional recipient payload."
+        }
+      ],
+      "description": "Final native payout body emitted by the vault to recipients."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultNativeV2TakeVaultState",
+      "ty_idx": 48,
+      "prefix": {
+        "prefix_num": 2836651021,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the state request."
+        },
+        {
+          "name": "isReady",
+          "ty_idx": 5,
+          "description": "Readiness flag; live Native Vault sends true for the verified account."
+        }
+      ],
+      "description": "State response emitted by the vault to callers of `provide_vault_state`."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 49,
+      "encoded_as_ty_idx": 50,
+      "members": [
+        {
+          "name": "InvalidFactorySender",
+          "value": "259",
+          "description": "Factory message sender is not the stored Factory."
+        },
+        {
+          "name": "InvalidAssetOrPayload",
+          "value": "261",
+          "description": "Asset tag, user payload, or proof shape is invalid for this Vault."
+        },
+        {
+          "name": "InsufficientValue",
+          "value": "263",
+          "description": "Attached value cannot cover the required downstream fee budget."
+        },
+        {
+          "name": "InvalidPoolSender",
+          "value": "265",
+          "description": "Pool payout sender is not the authenticated Pool."
+        },
+        {
+          "name": "InvalidLiquidityDepositSender",
+          "value": "272",
+          "description": "Liquidity-deposit payout sender is not the authenticated Liquidity Deposit."
+        },
+        {
+          "name": "InvalidDepositAmounts",
+          "value": "276",
+          "description": "Liquidity-deposit target amounts must be positive."
+        },
+        {
+          "name": "SwapPathTooLong",
+          "value": "278",
+          "description": "Routed swap path exceeds the accepted depth."
+        },
+        {
+          "name": "InvalidDepositAsset",
+          "value": "291",
+          "description": "Liquidity-deposit asset does not match the vault asset side."
+        },
+        {
+          "name": "InvalidOperatorSender",
+          "value": "296",
+          "description": "Reset-gas sender is not the deterministic Operator contract."
+        },
+        {
+          "name": "UnsupportedOperation",
+          "value": "65535",
+          "description": "Incoming internal message opcode is unsupported."
+        }
+      ],
+      "description": "DeDust Native Vault v2 exit-code catalog."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 25
+    },
+    {
+      "body_ty_idx": 39
+    },
+    {
+      "body_ty_idx": 40
+    },
+    {
+      "body_ty_idx": 41
+    },
+    {
+      "body_ty_idx": 42
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 43
+    },
+    {
+      "body_ty_idx": 44
+    },
+    {
+      "body_ty_idx": 47
+    },
+    {
+      "body_ty_idx": 48
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 51
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 82320,
+      "name": "get_version",
+      "parameters": [],
+      "return_ty_idx": 50,
+      "description": "Return the DeDust vault version stored as a 16-bit field."
+    },
+    {
+      "tvm_method_id": 89995,
+      "name": "get_factory_addr",
+      "parameters": [],
+      "return_ty_idx": 7,
+      "description": "Return the authenticated Factory address stored in Native Vault state."
+    },
+    {
+      "tvm_method_id": 89352,
+      "name": "get_asset",
+      "parameters": [],
+      "return_ty_idx": 2,
+      "description": "Return the raw DeDust asset slice; live code returns the four-bit native tag."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidFactorySender",
+      "description": "Factory message sender is not the stored Factory.",
+      "err_code": 259
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAssetOrPayload",
+      "description": "Asset tag, user payload, or proof shape is invalid for this Vault.",
+      "err_code": 261
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InsufficientValue",
+      "description": "Attached value cannot cover the required downstream fee budget.",
+      "err_code": 263
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidPoolSender",
+      "description": "Pool payout sender is not the authenticated Pool.",
+      "err_code": 265
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidLiquidityDepositSender",
+      "description": "Liquidity-deposit payout sender is not the authenticated Liquidity Deposit.",
+      "err_code": 272
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidDepositAmounts",
+      "description": "Liquidity-deposit target amounts must be positive.",
+      "err_code": 276
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.SwapPathTooLong",
+      "description": "Routed swap path exceeds the accepted depth.",
+      "err_code": 278
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidDepositAsset",
+      "description": "Liquidity-deposit asset does not match the vault asset side.",
+      "err_code": 291
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidOperatorSender",
+      "description": "Reset-gas sender is not the deterministic Operator contract.",
+      "err_code": 296
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnsupportedOperation",
+      "description": "Incoming internal message opcode is unsupported.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

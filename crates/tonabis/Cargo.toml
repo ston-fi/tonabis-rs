@@ -1,0 +1,27 @@
+[package]
+name = "tonabis"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Umbrella crate re-exporting the tonabis contract and core crates"
+readme = "README.md"
+
+[features]
+default = []
+dedust = ["dep:tonabis_dedust"]
+moon = ["dep:tonabis_moon"]
+stonks = ["dep:tonabis_stonks"]
+swap_coffee = ["dep:tonabis_swap_coffee"]
+tonco = ["dep:tonabis_tonco"]
+all = ["dedust", "moon", "stonks", "swap_coffee", "tonco"]
+
+[dependencies]
+tonabis_core.workspace = true
+tonabis_dedust = { workspace = true, optional = true }
+tonabis_moon = { workspace = true, optional = true }
+tonabis_stonks = { workspace = true, optional = true }
+tonabis_swap_coffee = { workspace = true, optional = true }
+tonabis_tonco = { workspace = true, optional = true }

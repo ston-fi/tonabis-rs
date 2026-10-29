@@ -1,0 +1,23 @@
+//! Coffee contract families, shared typed values and sender proofs.
+pub mod cross_dex;
+pub mod cross_dex_bidask;
+pub mod cross_dex_legacy;
+pub mod factory;
+pub mod init;
+pub mod liquidity_depository;
+pub mod lp_wallet;
+pub mod mev;
+pub mod mev_protector;
+pub mod mev_protector_legacy;
+pub mod pool_constant_product;
+pub mod pool_creator;
+pub mod pool_curve_fi_stable;
+pub mod staking;
+pub mod staking_item;
+pub mod staking_master;
+pub mod staking_vault;
+pub mod vault_extra;
+pub mod vault_jetton;
+pub mod vault_native;
+pub mod vault_proof;
+mod wire;

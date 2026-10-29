@@ -1,0 +1,23 @@
+[package]
+name = "tonabis_swap_coffee"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Revision-specific swap.coffee smart contract wrappers and TON wire codecs"
+readme = "README.md"
+
+[dependencies]
+tonabis_core.workspace = true
+fastnum.workspace = true
+ton.workspace = true
+
+[dev-dependencies]
+num-bigint.workspace = true
+anyhow.workspace = true
+hex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio-test.workspace = true

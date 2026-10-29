@@ -1,0 +1,1185 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustVaultJettonV1",
+  "author": "DeDust",
+  "version": "1.0",
+  "description": "DeDust Jetton Vault V1 is the legacy token vault that receives jettons and routes swaps, liquidity deposits, and payouts in DeDust v1.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1TransferNotification"
+    },
+    {
+      "kind": "remaining"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1PayOutFromPool"
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1PayOutFromDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1UpgradeChildCode"
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1TakeWalletAddress"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 7
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 21
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1DestroyNonReady"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1SwapExternal"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1SwapStepParams"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustVaultJettonV1SwapKind"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1GivenIn"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1GivenOut"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 27,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 135,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 28,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 136,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 1
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1SwapStep"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 30
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 31
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1SwapParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 33
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1CreateLiquidityDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1PoolParams"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustVaultJettonV1PoolType"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1VolatilePool"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1StablePool"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 38,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 138,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 39,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": null,
+          "stack_type_id": 139,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 1
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustVaultJettonV1Asset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1NativeAsset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1JettonAsset"
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    },
+    {
+      "kind": "bitsN",
+      "n": 256
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 42,
+          "prefix_num": 0,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 140,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 43,
+          "prefix_num": 1,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 141,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1CreateLiquidityDepositParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 47
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1JettonTransfer"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1ProvideWalletAddress"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1Storage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1ProofData"
+    },
+    {
+      "kind": "uintN",
+      "n": 8
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 53
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1SwapForwardPayload"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1DepositLiquidityForwardPayload"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustVaultJettonV1BouncedProvideWalletAddress"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1Storage",
+      "ty_idx": 52,
+      "fields": [
+        {
+          "name": "cachedProof",
+          "ty_idx": 55,
+          "description": "Cached proof data ref containing Factory address, contract type, and the vaulted asset."
+        },
+        {
+          "name": "blankCode",
+          "ty_idx": 3,
+          "description": "Blank code cell used with `cachedProof` for deterministic StateInit derivation."
+        },
+        {
+          "name": "isReady",
+          "ty_idx": 5,
+          "description": "Readiness bit returned by `is_ready`; false before the Jetton wallet address is synced."
+        },
+        {
+          "name": "jettonMinterAddr",
+          "ty_idx": 7,
+          "description": "Jetton minter address for the vaulted asset."
+        },
+        {
+          "name": "jettonWalletAddr",
+          "ty_idx": 15,
+          "description": "Vault-owned Jetton wallet address, or `addr_none` before readiness sync completes."
+        },
+        {
+          "name": "version",
+          "ty_idx": 19,
+          "description": "Vault code/storage version returned by `get_version`."
+        }
+      ],
+      "description": "Runtime storage loaded by the v1 Jetton Vault root data cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1ProofData",
+      "ty_idx": 53,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "Factory address that deterministically owns this vault."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 54,
+          "description": "DeDust contract type tag; v1 Vault proofs use `1`."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 41,
+          "description": "Asset parameter committed to the vault proof."
+        }
+      ],
+      "description": "DeDust proof data stored by the vault and used for child-address authentication."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1NativeAsset",
+      "ty_idx": 42,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 4
+      },
+      "fields": [],
+      "description": "Native GRAM asset tag used by common DeDust pool parameters."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1JettonAsset",
+      "ty_idx": 43,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 4
+      },
+      "fields": [
+        {
+          "name": "workchainId",
+          "ty_idx": 44,
+          "description": "Jetton master workchain id encoded as signed 8-bit integer."
+        },
+        {
+          "name": "address",
+          "ty_idx": 45,
+          "description": "Jetton master address hash encoded without the standard address tag."
+        }
+      ],
+      "description": "Jetton asset tag used by this Jetton Vault family."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustVaultJettonV1Asset",
+      "ty_idx": 41,
+      "target_ty_idx": 46,
+      "description": "Asset variants accepted by v1 DeDust vault and pool payloads."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1VolatilePool",
+      "ty_idx": 38,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Volatile pool type tag used in PoolParams."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1StablePool",
+      "ty_idx": 39,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Stable pool type tag used in PoolParams."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustVaultJettonV1PoolType",
+      "ty_idx": 37,
+      "target_ty_idx": 40,
+      "description": "Pool type variants encoded as one bit in DeDust pool parameters."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1PoolParams",
+      "ty_idx": 36,
+      "fields": [
+        {
+          "name": "poolType",
+          "ty_idx": 37,
+          "description": "Pool curve type, volatile or stable."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 41,
+          "description": "First sorted pool asset."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 41,
+          "description": "Second sorted pool asset."
+        }
+      ],
+      "description": "Pool identity tuple used by Jetton forward payloads and Factory routing."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1GivenIn",
+      "ty_idx": 27,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Swap kind tag for exact-in swaps."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1GivenOut",
+      "ty_idx": 28,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 1
+      },
+      "fields": [],
+      "description": "Swap kind tag reserved for exact-out swaps."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustVaultJettonV1SwapKind",
+      "ty_idx": 26,
+      "target_ty_idx": 29,
+      "description": "One-bit swap direction encoded inside a swap step."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1SwapStepParams",
+      "ty_idx": 25,
+      "fields": [
+        {
+          "name": "kind",
+          "ty_idx": 26,
+          "description": "Swap kind selector."
+        },
+        {
+          "name": "limit",
+          "ty_idx": 6,
+          "description": "Minimum output for exact-in swaps, or limit value for the step."
+        },
+        {
+          "name": "next",
+          "ty_idx": 32,
+          "description": "Optional next step for multi-hop swaps."
+        }
+      ],
+      "description": "Per-step swap parameters embedded after the Pool address."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1SwapStep",
+      "ty_idx": 30,
+      "fields": [
+        {
+          "name": "poolAddr",
+          "ty_idx": 7,
+          "description": "Pool responsible for this swap step."
+        },
+        {
+          "name": "params",
+          "ty_idx": 25,
+          "description": "Step kind, limit, and optional next-hop reference."
+        }
+      ],
+      "description": "Swap step routed by the Jetton Vault to a Pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1SwapParams",
+      "ty_idx": 33,
+      "fields": [
+        {
+          "name": "deadline",
+          "ty_idx": 9,
+          "description": "Unix timestamp deadline, or zero when disabled."
+        },
+        {
+          "name": "recipientAddr",
+          "ty_idx": 15,
+          "description": "Optional final recipient; `addr_none` means the default sender/owner path."
+        },
+        {
+          "name": "referralAddr",
+          "ty_idx": 15,
+          "description": "Optional referral address."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 16,
+          "description": "Optional payload sent on successful fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 16,
+          "description": "Optional payload sent on rejection."
+        }
+      ],
+      "description": "Whole-swap options stored in a required referenced cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1TransferNotification",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 1935855772,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the Jetton internal transfer."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Received Jetton amount in base units."
+        },
+        {
+          "name": "sender",
+          "ty_idx": 7,
+          "description": "Original Jetton sender owner address."
+        },
+        {
+          "name": "forwardPayload",
+          "ty_idx": 13,
+          "description": "Raw TEP-74 `Either Cell ^Cell` tail containing a DeDust forward payload."
+        }
+      ],
+      "description": "Jetton transfer notification accepted from the vault-owned Jetton wallet."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1SwapForwardPayload",
+      "ty_idx": 56,
+      "prefix": {
+        "prefix_num": 3818968194,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "step",
+          "ty_idx": 30,
+          "description": "First swap step, stored inline after the opcode."
+        },
+        {
+          "name": "swapParams",
+          "ty_idx": 34,
+          "description": "Required referenced whole-swap parameter cell."
+        }
+      ],
+      "description": "User Jetton forward payload for swapping the transferred Jetton amount."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1DepositLiquidityForwardPayload",
+      "ty_idx": 57,
+      "prefix": {
+        "prefix_num": 1088489686,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "poolParams",
+          "ty_idx": 36,
+          "description": "Pool parameters used to derive or create the Liquidity Deposit contract."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum acceptable LP amount."
+        },
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Required target balance for pool asset0 after deposit accounting."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Required target balance for pool asset1 after deposit accounting."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 16,
+          "description": "Optional payload forwarded on successful deposit fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 16,
+          "description": "Optional payload forwarded on deposit rejection."
+        }
+      ],
+      "description": "User Jetton forward payload for depositing the transferred Jetton amount as liquidity."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1PayOutFromPool",
+      "ty_idx": 14,
+      "prefix": {
+        "prefix_num": 2907617013,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the outgoing Jetton transfer."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Pool proof reference checked before payout."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Jetton amount released by the vault."
+        },
+        {
+          "name": "recipientAddr",
+          "ty_idx": 15,
+          "description": "Final recipient address for the outgoing Jetton transfer."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 16,
+          "description": "Optional forward payload attached to the outgoing Jetton transfer."
+        }
+      ],
+      "description": "Pool-authorized payout callback accepted by the Jetton Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1PayOutFromDeposit",
+      "ty_idx": 17,
+      "prefix": {
+        "prefix_num": 1795913855,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into the outgoing Jetton transfer."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Liquidity Deposit proof reference checked before payout."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Jetton amount released by the vault."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 16,
+          "description": "Optional forward payload attached to the outgoing Jetton transfer."
+        }
+      ],
+      "description": "Liquidity Deposit-authorized payout callback accepted by the Jetton Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1UpgradeChildCode",
+      "ty_idx": 18,
+      "prefix": {
+        "prefix_num": 444,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the factory upgrade request."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 19,
+          "description": "Monotonic replacement code version."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "Replacement contract code cell."
+        }
+      ],
+      "description": "Factory-authorized request to install a newer child code cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1TakeWalletAddress",
+      "ty_idx": 20,
+      "prefix": {
+        "prefix_num": 3513996288,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from `provide_wallet_address`."
+        },
+        {
+          "name": "walletAddress",
+          "ty_idx": 7,
+          "description": "Vault-owned Jetton wallet address to persist."
+        },
+        {
+          "name": "includeAddress",
+          "ty_idx": 5,
+          "description": "Whether a referenced owner address is present."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 22,
+          "description": "Optional owner-address ref; the v1 code parses and ignores it when present."
+        }
+      ],
+      "description": "Jetton wallet-discovery response accepted from the Jetton minter."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1DestroyNonReady",
+      "ty_idx": 23,
+      "prefix": {
+        "prefix_num": 2640660523,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "tail",
+          "ty_idx": 13,
+          "description": "Body tail ignored by the v1 handler."
+        }
+      ],
+      "description": "Factory-authorized request to destroy a non-ready Jetton Vault."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1SwapExternal",
+      "ty_idx": 24,
+      "prefix": {
+        "prefix_num": 1643009069,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the Jetton transfer notification."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Vault proof reference proving the sender vault."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Jetton amount routed into the Pool."
+        },
+        {
+          "name": "senderAddr",
+          "ty_idx": 7,
+          "description": "Original user sender address from the Jetton transfer notification."
+        },
+        {
+          "name": "current",
+          "ty_idx": 25,
+          "description": "Current step parameters forwarded to the Pool."
+        },
+        {
+          "name": "swapParams",
+          "ty_idx": 34,
+          "description": "Required referenced whole-swap parameter cell."
+        }
+      ],
+      "description": "Vault-to-Pool swap routing message constructed after a Jetton transfer notification."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1CreateLiquidityDeposit",
+      "ty_idx": 35,
+      "prefix": {
+        "prefix_num": 4031694118,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the Jetton transfer notification."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 3,
+          "description": "Raw Vault proof reference proving the sender vault."
+        },
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "Original user sender address from the Jetton transfer notification."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 36,
+          "description": "Pool parameters used by the Factory to address the Liquidity Deposit contract."
+        },
+        {
+          "name": "depositParams",
+          "ty_idx": 48,
+          "description": "Referenced deposit amount and target-balance cell."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 16,
+          "description": "Optional payload forwarded on successful fulfillment."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 16,
+          "description": "Optional payload forwarded on rejection."
+        }
+      ],
+      "description": "Vault-to-Factory request constructed after a Jetton liquidity deposit payload."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1CreateLiquidityDepositParams",
+      "ty_idx": 47,
+      "fields": [
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Target balance for pool asset0."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Target balance for pool asset1."
+        },
+        {
+          "name": "depositAsset",
+          "ty_idx": 41,
+          "description": "Deposit asset; Jetton Vault sends its stored Jetton asset tag."
+        },
+        {
+          "name": "depositAmount",
+          "ty_idx": 6,
+          "description": "Jetton amount deposited through this vault."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum acceptable LP amount."
+        }
+      ],
+      "description": "Referenced amount cell inside `create_liquidity_deposit`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1JettonTransfer",
+      "ty_idx": 49,
+      "prefix": {
+        "prefix_num": 260734629,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied from the callback or Jetton notification."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Jetton amount transferred by the vault-owned wallet."
+        },
+        {
+          "name": "destination",
+          "ty_idx": 15,
+          "description": "Recipient of the Jetton transfer."
+        },
+        {
+          "name": "responseDestination",
+          "ty_idx": 15,
+          "description": "Address receiving Jetton excesses; payout paths mirror `destination`."
+        },
+        {
+          "name": "customPayload",
+          "ty_idx": 16,
+          "description": "Optional custom payload; payout paths store `null`."
+        },
+        {
+          "name": "forwardTonAmount",
+          "ty_idx": 6,
+          "description": "Forward GRAM amount attached to the recipient notification."
+        },
+        {
+          "name": "forwardPayload",
+          "ty_idx": 13,
+          "description": "Raw TEP-74 `Either Cell ^Cell` forward-payload tail."
+        }
+      ],
+      "description": "Jetton transfer request body sent by the vault to its owned Jetton wallet."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1ProvideWalletAddress",
+      "ty_idx": 50,
+      "prefix": {
+        "prefix_num": 745978227,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id copied into `take_wallet_address`."
+        },
+        {
+          "name": "ownerAddress",
+          "ty_idx": 7,
+          "description": "Owner address whose Jetton wallet is requested; v1 uses the vault address."
+        },
+        {
+          "name": "includeAddress",
+          "ty_idx": 5,
+          "description": "Whether the response must include the owner address by reference."
+        }
+      ],
+      "description": "Jetton master wallet-discovery request emitted while syncing the vault wallet."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustVaultJettonV1BouncedProvideWalletAddress",
+      "ty_idx": 58,
+      "prefix": {
+        "prefix_num": 4294967295,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "originalOpcode",
+          "ty_idx": 9,
+          "description": "Original bounced opcode; v1 only reacts to `provide_wallet_address`."
+        },
+        {
+          "name": "tail",
+          "ty_idx": 13,
+          "description": "Remaining bounced body bits/refs are ignored."
+        }
+      ],
+      "description": "Bounced body prefix accepted before checking bounced `provide_wallet_address`."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 51,
+      "encoded_as_ty_idx": 19,
+      "members": [
+        {
+          "name": "InvalidJettonMinterSender",
+          "value": "257",
+          "description": "Wallet-discovery response sender is not the stored Jetton minter."
+        },
+        {
+          "name": "InvalidFactorySender",
+          "value": "259",
+          "description": "Factory message sender is not the stored Factory."
+        },
+        {
+          "name": "InvalidAssetOrPayload",
+          "value": "261",
+          "description": "Asset tag, forward payload, or proof shape is invalid for this Vault."
+        },
+        {
+          "name": "InvalidPoolSender",
+          "value": "265",
+          "description": "Pool payout sender is not the authenticated Pool."
+        },
+        {
+          "name": "InvalidLiquidityDepositSender",
+          "value": "272",
+          "description": "Liquidity-deposit payout sender is not the authenticated Liquidity Deposit."
+        },
+        {
+          "name": "VaultNotReady",
+          "value": "273",
+          "description": "Vault is not ready for code upgrade."
+        },
+        {
+          "name": "InvalidReadinessState",
+          "value": "274",
+          "description": "Vault readiness state does not match the requested operation."
+        },
+        {
+          "name": "UnsupportedOperation",
+          "value": "65535",
+          "description": "Incoming internal opcode is unsupported."
+        }
+      ],
+      "description": "DeDust Jetton Vault v1 exit-code catalog."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 14
+    },
+    {
+      "body_ty_idx": 17
+    },
+    {
+      "body_ty_idx": 18
+    },
+    {
+      "body_ty_idx": 20
+    },
+    {
+      "body_ty_idx": 23
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 24
+    },
+    {
+      "body_ty_idx": 35
+    },
+    {
+      "body_ty_idx": 49
+    },
+    {
+      "body_ty_idx": 50
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 52
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 82320,
+      "name": "get_version",
+      "parameters": [],
+      "return_ty_idx": 19,
+      "description": "Return the DeDust vault version stored as a 16-bit field."
+    },
+    {
+      "tvm_method_id": 66908,
+      "name": "is_ready",
+      "parameters": [],
+      "return_ty_idx": 5,
+      "description": "Return whether the Jetton wallet address has been synced and stored."
+    },
+    {
+      "tvm_method_id": 89995,
+      "name": "get_factory_addr",
+      "parameters": [],
+      "return_ty_idx": 7,
+      "description": "Return the authenticated Factory address stored in Jetton Vault state."
+    },
+    {
+      "tvm_method_id": 69014,
+      "name": "get_wallet_addr",
+      "parameters": [],
+      "return_ty_idx": 15,
+      "description": "Return the vault-owned Jetton wallet address, or `addr_none` before readiness sync."
+    },
+    {
+      "tvm_method_id": 89352,
+      "name": "get_asset",
+      "parameters": [],
+      "return_ty_idx": 2,
+      "description": "Return the vaulted asset slice."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidJettonMinterSender",
+      "description": "Wallet-discovery response sender is not the stored Jetton minter.",
+      "err_code": 257
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidFactorySender",
+      "description": "Factory message sender is not the stored Factory.",
+      "err_code": 259
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAssetOrPayload",
+      "description": "Asset tag, forward payload, or proof shape is invalid for this Vault.",
+      "err_code": 261
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidPoolSender",
+      "description": "Pool payout sender is not the authenticated Pool.",
+      "err_code": 265
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidLiquidityDepositSender",
+      "description": "Liquidity-deposit payout sender is not the authenticated Liquidity Deposit.",
+      "err_code": 272
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.VaultNotReady",
+      "description": "Vault is not ready for code upgrade.",
+      "err_code": 273
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidReadinessState",
+      "description": "Vault readiness state does not match the requested operation.",
+      "err_code": 274
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnsupportedOperation",
+      "description": "Incoming internal opcode is unsupported.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

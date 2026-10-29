@@ -1,0 +1,47 @@
+{
+  "v1-callback-b39f": {
+    "boc_base64": "te6ccgEBAgEAZQABGbOfcX4AAAAAAAAABcABAKVHatwMAAAAAAAAAAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ+gg==",
+    "sha256": "0c44852bf6c4a4fda8a4186e89c4b206aeb12df71c171b42b3e794d1f90a3eff",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-callback-bidask": {
+    "boc_base64": "te6ccgEBAgEAZwABHW7dZfAAAAAAAAAAAiBNLAEApUdq3AwAAAAAAAAACYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABD6C",
+    "sha256": "ad5924267894bf10a73eef510403954d3fce35c7b45274c9d7718424d034b461",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-callback-classic": {
+    "boc_base64": "te6ccgEBAgEAZQABGUdPhs8AAAAAAAAAA8ABAKVHatwMAAAAAAAAAAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ+gg==",
+    "sha256": "3b7ccc8c028a4cfe57a35e936acf9fdbdc3ddaa2ee68afdd90b63702a55e288d",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-callback-coffee": {
+    "boc_base64": "te6ccgEBAgEAZAABGMD/7jYAAAAAAAAABAEApUdq3AwAAAAAAAAACYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABD6C",
+    "sha256": "4da5f62c593ec0d627c3a2a31c235783f06560e88476954d92f2001729a658ce",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-callback-context": {
+    "boc_base64": "te6ccgEBAQEAVQAApUdq3AwAAAAAAAAACYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABD6C",
+    "sha256": "c25ff2bd8b63064a4c35e56d646809197ee7050163fbcac09f618a198781e931",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-callback-pton": {
+    "boc_base64": "te6ccgEBAgEAZgABGwHzg10AAAAAAAAAARYzAQClR2rcDAAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEPoI=",
+    "sha256": "c03490045b1c69a872dd653ac51232982a5ae397c9839eaa4b46ae911f6ebd71",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-synthetic-actions": {
+    "boc_base64": "te6ccgEBBAEATAACCg7DyG0BAQICCg7DyG0DAwIAbEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQGEgAAAAAAAAAAAAAAAAAq83vAQAA",
+    "sha256": "b8a3f0ca1c073ca7deab384dd38ccd192247c6e00cbb366fec888dfd027ac37c",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-synthetic-execute": {
+    "boc_base64": "te6ccgECCgEAAS8AAojKwdYHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQYBASD///8RAAAABwAAAAAAAAPoAgIKDsPIbQEDBAIKDsPIbQMFBABsQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAYSAAAAAAAAAAAAAAAAACrze8BAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEHAiF1VpAijJLb4gAAAAAAAAAKIAkIAFAAAAAAAAAD6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAgRIjNE",
+    "sha256": "60b424d554a5e154f30be3b5ea095862a321ea5a40d9809c495acb7e10bb404c",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  },
+  "v1-synthetic-revoke": {
+    "boc_base64": "te6ccgEBBAEAjAABiFvrDGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3AQIhdVaQIoyS2+IAAAAAAAAACiADAgBQAAAAAAAAA+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAAIESIzRA==",
+    "sha256": "964061b3f2afeaac1e76a9af2e5eb6eb51f41c95d0f45ce3f51dd6f9886eb98c",
+    "origin": "Original literal Tolk encoder tools/reference/dedust/replay/x1000_v1_wires.test.tolk; synthetic signatures, no executable cells."
+  }
+}

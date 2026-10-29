@@ -1,0 +1,944 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "DedustLiquidityDepositV2",
+  "author": "DeDust",
+  "version": "2.0",
+  "description": "DeDust Liquidity Deposit V2 is a temporary helper that holds a user's assets until a DeDust v2 liquidity position is minted or cancelled.",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositInstall"
+    },
+    {
+      "kind": "uintN",
+      "n": 16
+    },
+    {
+      "kind": "remaining"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustDepositAsset"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "DedustAsset"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustAssetNative"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustAssetJetton"
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    },
+    {
+      "kind": "bitsN",
+      "n": 256
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 17,
+          "prefix_num": 0,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 130,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 18,
+          "prefix_num": 1,
+          "prefix_len": 4,
+          "is_prefix_implicit": null,
+          "stack_type_id": 131,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustFulfillDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolProof"
+    },
+    {
+      "kind": "uintN",
+      "n": 8
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPoolParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 23
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustRejectDeposit"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustCancelDeposit"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustDepositLiquidityAll"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositProof"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositProofParams"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 32
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 31
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustDepositLiquidityAllAssets"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 35
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustPayOutFromDeposit"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Errors"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2Storage"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2StorageDetails"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 40
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2AddressReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2PoolParamsReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2TargetBalancesReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2BalancesReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2ProcessingReply"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "DedustLiquidityDepositV2MinLpAmountReply"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2Storage",
+      "ty_idx": 39,
+      "fields": [
+        {
+          "name": "proof",
+          "ty_idx": 34,
+          "description": "Proof authenticating this deterministic Liquidity Deposit address."
+        },
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "Factory address stored separately and returned by `get_factory_addr`."
+        },
+        {
+          "name": "proofCode",
+          "ty_idx": 3,
+          "description": "Code cell used with the proof to authenticate deterministic DeDust child addresses."
+        },
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "User address that owns this pending liquidity deposit."
+        },
+        {
+          "name": "asset0Balance",
+          "ty_idx": 6,
+          "description": "Current asset0 balance held by this deposit."
+        },
+        {
+          "name": "asset1Balance",
+          "ty_idx": 6,
+          "description": "Current asset1 balance held by this deposit."
+        },
+        {
+          "name": "isProcessing",
+          "ty_idx": 5,
+          "description": "True while the deposit is actively processing the liquidity operation."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum LP amount accepted by the user."
+        },
+        {
+          "name": "details",
+          "ty_idx": 41,
+          "description": "Referenced tail with optional payloads, pool params, and current balances."
+        }
+      ],
+      "description": "Runtime storage written by the installed Liquidity Deposit code after the Factory install message."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2StorageDetails",
+      "ty_idx": 40,
+      "fields": [
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 28,
+          "description": "Optional payload sent after successful liquidity provisioning."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 28,
+          "description": "Optional payload sent after rejected liquidity provisioning."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 25,
+          "description": "Target pool identity bound into this deposit."
+        },
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 6,
+          "description": "Target asset0 amount selected by the user."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 6,
+          "description": "Target asset1 amount selected by the user."
+        }
+      ],
+      "description": "Referenced Liquidity Deposit runtime tail cell."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustAssetNative",
+      "ty_idx": 17,
+      "prefix": {
+        "prefix_num": 0,
+        "prefix_len": 4
+      },
+      "fields": [],
+      "description": "Native GRAM asset tag used by DeDust asset and pool parameter cells."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustAssetJetton",
+      "ty_idx": 18,
+      "prefix": {
+        "prefix_num": 1,
+        "prefix_len": 4
+      },
+      "fields": [
+        {
+          "name": "workchainId",
+          "ty_idx": 19,
+          "description": "Workchain id from the Jetton master address."
+        },
+        {
+          "name": "address",
+          "ty_idx": 20,
+          "description": "Jetton master address hash bits."
+        }
+      ],
+      "description": "Jetton asset tag used by DeDust asset and pool parameter cells."
+    },
+    {
+      "kind": "alias",
+      "name": "DedustAsset",
+      "ty_idx": 16,
+      "target_ty_idx": 21,
+      "description": "DeDust asset cell variants proven by SDK, Toncenter TL-B, and trace bodies for this contract."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolParams",
+      "ty_idx": 25,
+      "fields": [
+        {
+          "name": "isStable",
+          "ty_idx": 5,
+          "description": "False for volatile pools, true for stable pools."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 16,
+          "description": "First pool asset in canonical DeDust order."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 16,
+          "description": "Second pool asset in canonical DeDust order."
+        }
+      ],
+      "description": "Pool identity embedded in proof and liquidity messages."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositProofParams",
+      "ty_idx": 32,
+      "fields": [
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "User address that owns the pending liquidity deposit."
+        },
+        {
+          "name": "poolParams",
+          "ty_idx": 25,
+          "description": "Target pool parameters bound into the deposit address proof."
+        }
+      ],
+      "description": "Referenced params proving the Liquidity Deposit address owner and target pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositProof",
+      "ty_idx": 31,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "Factory address that installed or derived the proven contract."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 24,
+          "description": "DedustContractType tag; `0x03` means Liquidity Deposit."
+        },
+        {
+          "name": "params",
+          "ty_idx": 33,
+          "description": "Referenced owner/pool parameters for the Liquidity Deposit proof."
+        }
+      ],
+      "description": "Generic DeDust proof specialized to Liquidity Deposit params."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPoolProof",
+      "ty_idx": 23,
+      "fields": [
+        {
+          "name": "factoryAddr",
+          "ty_idx": 7,
+          "description": "Factory address that installed or derived the proven pool."
+        },
+        {
+          "name": "contractType",
+          "ty_idx": 24,
+          "description": "DedustContractType tag; `0x02` means Pool."
+        },
+        {
+          "name": "params",
+          "ty_idx": 25,
+          "description": "Pool parameters carried inline in the pool proof."
+        }
+      ],
+      "description": "Generic DeDust proof specialized to Pool params."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositInstall",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 2604311546,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id selected by the Factory."
+        },
+        {
+          "name": "blankCode",
+          "ty_idx": 3,
+          "description": "Blank contract code installed before the versioned Liquidity Deposit code."
+        },
+        {
+          "name": "codeVersion",
+          "ty_idx": 13,
+          "description": "Version number for the Liquidity Deposit code cell."
+        },
+        {
+          "name": "code",
+          "ty_idx": 3,
+          "description": "Versioned Liquidity Deposit code installed by the Factory."
+        },
+        {
+          "name": "extraParams",
+          "ty_idx": 14,
+          "description": "Raw inline extra install params tail; Toncenter TL-B names this `extra_params:Cell`."
+        }
+      ],
+      "description": "Blank-installer deployment body received by the address before Liquidity Deposit code is installed."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustDepositAsset",
+      "ty_idx": 15,
+      "prefix": {
+        "prefix_num": 1411649509,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id propagated from the Factory flow."
+        },
+        {
+          "name": "asset",
+          "ty_idx": 16,
+          "description": "Asset that was deposited into this Liquidity Deposit."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Deposited amount in basic asset units."
+        }
+      ],
+      "description": "Factory-originated notice that one side of the pending deposit was received."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustFulfillDeposit",
+      "ty_idx": 22,
+      "prefix": {
+        "prefix_num": 2867302998,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id propagated through the liquidity operation."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 26,
+          "description": "Proof that the callback came from the target pool."
+        },
+        {
+          "name": "asset0Deposit",
+          "ty_idx": 6,
+          "description": "Amount of asset0 consumed by the pool."
+        },
+        {
+          "name": "asset1Deposit",
+          "ty_idx": 6,
+          "description": "Amount of asset1 consumed by the pool."
+        }
+      ],
+      "description": "Pool-originated success callback after all pending liquidity was accepted."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustRejectDeposit",
+      "ty_idx": 27,
+      "prefix": {
+        "prefix_num": 3785583828,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id propagated through the liquidity operation."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 26,
+          "description": "Proof that the callback came from the target pool."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 28,
+          "description": "Optional payload forwarded with returned funds."
+        }
+      ],
+      "description": "Pool-originated rejection callback when pending liquidity cannot be accepted."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustCancelDeposit",
+      "ty_idx": 29,
+      "prefix": {
+        "prefix_num": 376237550,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id selected by the user."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 28,
+          "description": "Optional payload attached to returned funds."
+        }
+      ],
+      "description": "User-originated cancellation request documented by DeDust docs and SDK."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustDepositLiquidityAllAssets",
+      "ty_idx": 35,
+      "fields": [
+        {
+          "name": "asset0",
+          "ty_idx": 16,
+          "description": "First pool asset."
+        },
+        {
+          "name": "asset0Amount",
+          "ty_idx": 6,
+          "description": "Amount of asset0 supplied to the pool."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 16,
+          "description": "Second pool asset."
+        },
+        {
+          "name": "asset1Amount",
+          "ty_idx": 6,
+          "description": "Amount of asset1 supplied to the pool."
+        }
+      ],
+      "description": "Referenced asset/amount pair sent from Liquidity Deposit to Pool."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustDepositLiquidityAll",
+      "ty_idx": 30,
+      "prefix": {
+        "prefix_num": 3043726744,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id propagated through the liquidity operation."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 34,
+          "description": "Proof that this sender is the canonical Liquidity Deposit for owner and pool."
+        },
+        {
+          "name": "ownerAddr",
+          "ty_idx": 7,
+          "description": "User address that owns the pending deposit."
+        },
+        {
+          "name": "minLpAmount",
+          "ty_idx": 6,
+          "description": "Minimum LP amount accepted by the user; zero disables the minimum."
+        },
+        {
+          "name": "assets",
+          "ty_idx": 36,
+          "description": "Referenced asset and amount bundle."
+        },
+        {
+          "name": "fulfillPayload",
+          "ty_idx": 28,
+          "description": "Optional payload for successful liquidity provisioning."
+        },
+        {
+          "name": "rejectPayload",
+          "ty_idx": 28,
+          "description": "Optional payload for rejected liquidity provisioning."
+        }
+      ],
+      "description": "Liquidity Deposit to Pool message that attempts to mint LP tokens with all stored balances."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustPayOutFromDeposit",
+      "ty_idx": 37,
+      "prefix": {
+        "prefix_num": 1795913855,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11,
+          "description": "Query id propagated through the liquidity operation."
+        },
+        {
+          "name": "proof",
+          "ty_idx": 34,
+          "description": "Proof that this sender is the canonical Liquidity Deposit for owner and pool."
+        },
+        {
+          "name": "amount",
+          "ty_idx": 6,
+          "description": "Amount returned through the receiving vault."
+        },
+        {
+          "name": "payload",
+          "ty_idx": 28,
+          "description": "Optional payload forwarded with the returned asset payout."
+        }
+      ],
+      "description": "Liquidity Deposit to Vault payout request for returning unconsumed funds."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2AddressReply",
+      "ty_idx": 42,
+      "fields": [
+        {
+          "name": "addr",
+          "ty_idx": 7,
+          "description": "Internal address returned by the getter."
+        }
+      ],
+      "description": "Owner address getter result."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2PoolParamsReply",
+      "ty_idx": 43,
+      "fields": [
+        {
+          "name": "isStable",
+          "ty_idx": 5,
+          "description": "False for volatile pools, true for stable pools."
+        },
+        {
+          "name": "asset0",
+          "ty_idx": 2,
+          "description": "First pool asset returned as a DeDust asset slice."
+        },
+        {
+          "name": "asset1",
+          "ty_idx": 2,
+          "description": "Second pool asset returned as a DeDust asset slice."
+        }
+      ],
+      "description": "Pool params getter result; assets are returned as raw stack slices."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2TargetBalancesReply",
+      "ty_idx": 44,
+      "fields": [
+        {
+          "name": "asset0TargetBalance",
+          "ty_idx": 1,
+          "description": "Target asset0 amount selected by the user."
+        },
+        {
+          "name": "asset1TargetBalance",
+          "ty_idx": 1,
+          "description": "Target asset1 amount selected by the user."
+        }
+      ],
+      "description": "Pair of target balances returned by `get_target_balances`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2BalancesReply",
+      "ty_idx": 45,
+      "fields": [
+        {
+          "name": "asset0Balance",
+          "ty_idx": 1,
+          "description": "Current asset0 balance in the deposit contract."
+        },
+        {
+          "name": "asset1Balance",
+          "ty_idx": 1,
+          "description": "Current asset1 balance in the deposit contract."
+        }
+      ],
+      "description": "Pair of currently held balances returned by `get_balances`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2ProcessingReply",
+      "ty_idx": 46,
+      "fields": [
+        {
+          "name": "status",
+          "ty_idx": 5,
+          "description": "True while the deposit is in the processing stage."
+        }
+      ],
+      "description": "Boolean status returned by `is_processing`."
+    },
+    {
+      "kind": "struct",
+      "name": "DedustLiquidityDepositV2MinLpAmountReply",
+      "ty_idx": 47,
+      "fields": [
+        {
+          "name": "minLpAmount",
+          "ty_idx": 1,
+          "description": "Minimum LP amount accepted by the user."
+        }
+      ],
+      "description": "Minimum LP amount getter result."
+    },
+    {
+      "kind": "enum",
+      "name": "Errors",
+      "ty_idx": 38,
+      "encoded_as_ty_idx": 13,
+      "members": [
+        {
+          "name": "InvalidOwnerSender",
+          "value": "257",
+          "description": "Cancellation sender is not the stored deposit owner."
+        },
+        {
+          "name": "InvalidFactorySender",
+          "value": "259",
+          "description": "Asset-deposit sender is not the Factory."
+        },
+        {
+          "name": "InvalidAssetOrProof",
+          "value": "261",
+          "description": "Asset tag or proof shape is invalid for this Liquidity Deposit."
+        },
+        {
+          "name": "InvalidPoolSender",
+          "value": "265",
+          "description": "Pool callback sender is not the authenticated Pool."
+        },
+        {
+          "name": "InvalidProcessingState",
+          "value": "276",
+          "description": "Deposit lifecycle state is invalid for the requested operation."
+        },
+        {
+          "name": "UnsupportedOperation",
+          "value": "65535",
+          "description": "Incoming internal message opcode is unsupported."
+        }
+      ],
+      "description": "DeDust Liquidity Deposit v2 exit-code catalog."
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 15
+    },
+    {
+      "body_ty_idx": 22
+    },
+    {
+      "body_ty_idx": 27
+    },
+    {
+      "body_ty_idx": 29
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [
+    {
+      "body_ty_idx": 30
+    },
+    {
+      "body_ty_idx": 37
+    }
+  ],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 39
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 89995,
+      "name": "get_factory_addr",
+      "parameters": [],
+      "return_ty_idx": 42,
+      "description": "Returns the Factory address stored by the installed Liquidity Deposit code."
+    },
+    {
+      "tvm_method_id": 95132,
+      "name": "get_owner_addr",
+      "parameters": [],
+      "return_ty_idx": 42,
+      "description": "Returns the user address that owns this pending deposit."
+    },
+    {
+      "tvm_method_id": 84365,
+      "name": "get_pool_addr",
+      "parameters": [],
+      "return_ty_idx": 42,
+      "description": "Returns the target pool address for this pending deposit."
+    },
+    {
+      "tvm_method_id": 106125,
+      "name": "get_pool_params",
+      "parameters": [],
+      "return_ty_idx": 43,
+      "description": "Returns pool type and assets for this pending deposit."
+    },
+    {
+      "tvm_method_id": 84232,
+      "name": "get_target_balances",
+      "parameters": [],
+      "return_ty_idx": 44,
+      "description": "Returns user-selected target balances for the pool assets."
+    },
+    {
+      "tvm_method_id": 87878,
+      "name": "get_balances",
+      "parameters": [],
+      "return_ty_idx": 45,
+      "description": "Returns currently accumulated balances for the pool assets."
+    },
+    {
+      "tvm_method_id": 108752,
+      "name": "is_processing",
+      "parameters": [],
+      "return_ty_idx": 46,
+      "description": "Returns whether this deposit is actively processing the liquidity operation."
+    },
+    {
+      "tvm_method_id": 85296,
+      "name": "get_min_lp_amount",
+      "parameters": [],
+      "return_ty_idx": 47,
+      "description": "Returns the minimum LP amount configured for this pending deposit."
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidOwnerSender",
+      "description": "Cancellation sender is not the stored deposit owner.",
+      "err_code": 257
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidFactorySender",
+      "description": "Asset-deposit sender is not the Factory.",
+      "err_code": 259
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidAssetOrProof",
+      "description": "Asset tag or proof shape is invalid for this Liquidity Deposit.",
+      "err_code": 261
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidPoolSender",
+      "description": "Pool callback sender is not the authenticated Pool.",
+      "err_code": 265
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.InvalidProcessingState",
+      "description": "Deposit lifecycle state is invalid for the requested operation.",
+      "err_code": 276
+    },
+    {
+      "kind": "enum_member",
+      "name": "Errors.UnsupportedOperation",
+      "description": "Incoming internal message opcode is unsupported.",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.5.0"
+}

@@ -1,0 +1,301 @@
+{
+  "classic/common/method_results": {
+    "VersionedCode": "DedustClassicVersionedCode",
+    "NullableVersionedCode": "DedustClassicNullableVersionedCode"
+  },
+  "classic/common": {
+    "OperatorCode": "DedustClassicOperatorCode",
+    "PoolParameters": "DedustClassicPoolParameters",
+    "DepositParameters": "DedustClassicDepositParameters",
+    "NativeVaultParameters": "DedustClassicNativeVaultParameters",
+    "JettonVaultParameters": "DedustClassicJettonVaultParameters",
+    "OperatorParameters": "DedustClassicOperatorParameters",
+    "OperatorProof": "DedustClassicOperatorProof"
+  },
+  "classic/factory_v1/method_results": {
+    "GetOwnershipResult": "DedustFactoryV1GetOwnershipResult"
+  },
+  "classic/factory_v1/storage": {
+    "Errors": "DedustFactoryV1Errors"
+  },
+  "classic/factory_v2/method_results": {
+    "GetOwnershipResult": "DedustFactoryV2GetOwnershipResult"
+  },
+  "classic/factory_v2/storage": {
+    "Errors": "DedustFactoryV2Errors"
+  },
+  "classic/liquidity_deposit_v1/method_results": {
+    "GetPoolParamsResult": "DedustLiquidityDepositV1GetPoolParamsResult",
+    "GetTargetBalancesResult": "DedustLiquidityDepositV1GetTargetBalancesResult",
+    "GetBalancesResult": "DedustLiquidityDepositV1GetBalancesResult"
+  },
+  "classic/liquidity_deposit_v1/msgs": {
+    "DedustLiquidityDepositInstallMsg": "DedustLiquidityDepositV1InstallMsg",
+    "DedustDepositAssetMsg": "DedustLiquidityDepositV1DepositAssetMsg",
+    "DedustFulfillDepositMsg": "DedustLiquidityDepositV1FulfillDepositMsg",
+    "DedustRejectDepositMsg": "DedustLiquidityDepositV1RejectDepositMsg",
+    "DedustCancelDepositMsg": "DedustLiquidityDepositV1CancelDepositMsg",
+    "DedustDepositLiquidityAllMsg": "DedustLiquidityDepositV1DepositLiquidityAllMsg",
+    "DedustPayOutFromDepositMsg": "DedustLiquidityDepositV1PayOutFromDepositMsg"
+  },
+  "classic/liquidity_deposit_v1/storage": {
+    "DedustPoolParams": "DedustLiquidityDepositV1PoolParams",
+    "DedustLiquidityDepositProofParams": "DedustLiquidityDepositV1ProofParams",
+    "DedustLiquidityDepositProof": "DedustLiquidityDepositV1Proof",
+    "DedustPoolProof": "DedustLiquidityDepositV1PoolProof",
+    "DedustDepositLiquidityAllAssets": "DedustLiquidityDepositV1DepositLiquidityAllAssets",
+    "Errors": "DedustLiquidityDepositV1Errors"
+  },
+  "classic/liquidity_deposit_v2/method_results": {
+    "GetPoolParamsResult": "DedustLiquidityDepositV2GetPoolParamsResult",
+    "GetTargetBalancesResult": "DedustLiquidityDepositV2GetTargetBalancesResult",
+    "GetBalancesResult": "DedustLiquidityDepositV2GetBalancesResult"
+  },
+  "classic/liquidity_deposit_v2/msgs": {
+    "DedustLiquidityDepositInstallMsg": "DedustLiquidityDepositV2InstallMsg",
+    "DedustDepositAssetMsg": "DedustLiquidityDepositV2DepositAssetMsg",
+    "DedustFulfillDepositMsg": "DedustLiquidityDepositV2FulfillDepositMsg",
+    "DedustRejectDepositMsg": "DedustLiquidityDepositV2RejectDepositMsg",
+    "DedustCancelDepositMsg": "DedustLiquidityDepositV2CancelDepositMsg",
+    "DedustDepositLiquidityAllMsg": "DedustLiquidityDepositV2DepositLiquidityAllMsg",
+    "DedustPayOutFromDepositMsg": "DedustLiquidityDepositV2PayOutFromDepositMsg"
+  },
+  "classic/liquidity_deposit_v2/storage": {
+    "DedustPoolParams": "DedustLiquidityDepositV2PoolParams",
+    "DedustLiquidityDepositProofParams": "DedustLiquidityDepositV2ProofParams",
+    "DedustLiquidityDepositProof": "DedustLiquidityDepositV2Proof",
+    "DedustPoolProof": "DedustLiquidityDepositV2PoolProof",
+    "DedustDepositLiquidityAllAssets": "DedustLiquidityDepositV2DepositLiquidityAllAssets",
+    "Errors": "DedustLiquidityDepositV2Errors"
+  },
+  "classic/lp_wallet/method_results": {
+    "WalletData": "DedustClassicLpWalletWalletData"
+  },
+  "classic/lp_wallet/msgs": {
+    "BurnMsg": "DedustClassicLpWalletBurnMsg",
+    "TransferMsg": "DedustClassicLpWalletTransferMsg",
+    "InternalTransferMsg": "DedustClassicLpWalletInternalTransferMsg",
+    "ExcessMsg": "DedustClassicLpWalletExcessMsg",
+    "TransferNotificationMsg": "DedustClassicLpWalletTransferNotificationMsg"
+  },
+  "classic/operator_pool/msgs": {
+    "ConfigureSwapActivationMsg": "DedustOperatorPoolConfigureSwapActivationMsg"
+  },
+  "classic/pool_v1/method_results": {
+    "GetTradeFeeResult": "DedustPoolV1GetTradeFeeResult",
+    "GetReservesResult": "DedustPoolV1GetReservesResult",
+    "GetProtocolFeesResult": "DedustPoolV1GetProtocolFeesResult",
+    "GetAssetsResult": "DedustPoolV1GetAssetsResult",
+    "EstimateSwapOutResult": "DedustPoolV1EstimateSwapOutResult",
+    "EstimateDepositOutResult": "DedustPoolV1EstimateDepositOutResult",
+    "GetJettonDataResult": "DedustPoolV1GetJettonDataResult",
+    "GetDecimalsResult": "DedustPoolV1GetDecimalsResult"
+  },
+  "classic/pool_v1/storage": {
+    "Errors": "DedustPoolV1Errors"
+  },
+  "classic/pool_v2/method_results": {
+    "GetTradeFeeResult": "DedustPoolV2GetTradeFeeResult",
+    "GetReservesResult": "DedustPoolV2GetReservesResult",
+    "GetProtocolFeesResult": "DedustPoolV2GetProtocolFeesResult",
+    "GetAssetsResult": "DedustPoolV2GetAssetsResult",
+    "EstimateSwapOutResult": "DedustPoolV2EstimateSwapOutResult",
+    "EstimateDepositOutResult": "DedustPoolV2EstimateDepositOutResult",
+    "GetJettonDataResult": "DedustPoolV2GetJettonDataResult",
+    "GetQuoteProvidersResult": "DedustPoolV2GetQuoteProvidersResult",
+    "GetDecimalsResult": "DedustPoolV2GetDecimalsResult",
+    "GetScalingFactorsResult": "DedustPoolV2GetScalingFactorsResult"
+  },
+  "classic/pool_v2/storage": {
+    "Errors": "DedustPoolV2Errors"
+  },
+  "classic/vault_jetton_v1/storage": {
+    "Errors": "DedustVaultJettonV1Errors"
+  },
+  "classic/vault_jetton_v2/storage": {
+    "DedustCreateLiquidityDepositParams": "DedustVaultJettonV2CreateLiquidityDepositParams",
+    "Errors": "DedustVaultJettonV2Errors"
+  },
+  "classic/vault_native_v1/storage": {
+    "Errors": "DedustVaultNativeV1Errors"
+  },
+  "classic/vault_native_v2/storage": {
+    "DedustPoolParams": "DedustVaultNativeV2PoolParams",
+    "DedustCreateLiquidityDepositParams": "DedustVaultNativeV2CreateLiquidityDepositParams",
+    "Errors": "DedustVaultNativeV2Errors"
+  },
+  "cpmm_v2/deployment": {
+    "Revision": "DedustV2CpmmRevision"
+  },
+  "cpmm_v2/deposit/method_results": {
+    "DepositData": "DedustV2CpmmDepositDataResult"
+  },
+  "cpmm_v2/deposit/msgs": {
+    "CreditMsg": "DedustV2CpmmDepositCreditMsg",
+    "RefundMsg": "DedustV2CpmmDepositRefundMsg"
+  },
+  "cpmm_v2/pool/method_results": {
+    "GetPoolDataResult": "DedustV2CpmmPoolGetPoolDataResult",
+    "GetLiquidityAmountsResult": "DedustV2CpmmPoolGetLiquidityAmountsResult"
+  },
+  "cpmm_v2/pool/msgs": {
+    "PayloadMsg": "DedustV2CpmmPoolPayloadMsg",
+    "JettonPayloadMsg": "DedustV2CpmmPoolJettonPayloadMsg"
+  },
+  "cpmm_v2/pool/storage": {
+    "Errors": "DedustV2CpmmPoolErrors"
+  },
+  "cpmm_v2/position/method_results": {
+    "PositionData": "DedustV2CpmmPositionDataResult",
+    "AvailableFees": "DedustV2CpmmPositionAvailableFees"
+  },
+  "cpmm_v2/position/msgs": {
+    "ProvidePositionStateMsg": "DedustV2CpmmPositionProvidePositionStateMsg",
+    "StateReplyMsg": "DedustV2CpmmPositionStateReplyMsg",
+    "DepositNotificationMsg": "DedustV2CpmmPositionDepositNotificationMsg"
+  },
+  "custom_wallet/v1/msgs": {
+    "DelegationEnvelopeMsg": "DedustX1000WalletV1DelegationEnvelopeMsg",
+    "DelegatedKey": "DedustX1000WalletV1DelegatedKey",
+    "Authorization": "DedustX1000WalletV1Authorization",
+    "SignedCommandMsg": "DedustX1000WalletV1SignedCommandMsg",
+    "ExecuteMsg": "DedustX1000WalletV1ExecuteMsg",
+    "RevokeKeyMsg": "DedustX1000WalletV1RevokeKeyMsg",
+    "PruneExpiredKeysMsg": "DedustX1000WalletV1PruneExpiredKeysMsg",
+    "SendActions": "DedustX1000WalletV1SendActions",
+    "SendAction": "DedustX1000WalletV1SendAction",
+    "Callback01f3835dMsg": "DedustX1000WalletV1Callback01f3835dMsg",
+    "Callback6edd65f0Msg": "DedustX1000WalletV1Callback6edd65f0Msg",
+    "Callback474f86cfMsg": "DedustX1000WalletV1Callback474f86cfMsg",
+    "CallbackC0ffee36Msg": "DedustX1000WalletV1CallbackC0ffee36Msg",
+    "CallbackB39f717eMsg": "DedustX1000WalletV1CallbackB39f717eMsg",
+    "Callback476adc0cMsg": "DedustX1000WalletV1Callback476adc0cMsg"
+  },
+  "custom_wallet/v2/msgs": {
+    "CallbackPayloadMsg": "DedustX1000WalletV2CallbackPayloadMsg",
+    "JettonNotificationMsg": "DedustX1000WalletV2JettonNotificationMsg",
+    "JettonExcessesMsg": "DedustX1000WalletV2JettonExcessesMsg",
+    "ClassicNativePayoutMsg": "DedustX1000WalletV2ClassicNativePayoutMsg",
+    "CoffeePayoutMsg": "DedustX1000WalletV2CoffeePayoutMsg",
+    "PtonTransferMsg": "DedustX1000WalletV2PtonTransferMsg",
+    "BidaskLegacyNotificationMsg": "DedustX1000WalletV2BidaskLegacyNotificationMsg",
+    "BidaskFlaggedNotificationMsg": "DedustX1000WalletV2BidaskFlaggedNotificationMsg",
+    "BidaskNotificationMsg": "DedustX1000WalletV2BidaskNotificationMsg",
+    "MoonClmmNativeResultMsg": "DedustX1000WalletV2MoonClmmNativeResultMsg",
+    "MoonClmmNativeRefundMsg": "DedustX1000WalletV2MoonClmmNativeRefundMsg",
+    "MoonClmmJettonResultPayloadMsg": "DedustX1000WalletV2MoonClmmJettonResultPayloadMsg",
+    "SignedPayloadMsg": "DedustX1000WalletV2SignedPayloadMsg",
+    "Action": "DedustX1000WalletV2Action",
+    "BodyReference": "DedustX1000WalletV2BodyReference"
+  },
+  "custom_wallet/v2/storage": {
+    "RuntimeState": "DedustX1000WalletV2RuntimeState",
+    "ExecutionEntry": "DedustX1000WalletV2ExecutionEntry",
+    "PendingContinuation": "DedustX1000WalletV2PendingContinuation",
+    "AddressPair": "DedustX1000WalletV2AddressPair",
+    "Address": "DedustX1000WalletV2Address",
+    "AddressAndWord": "DedustX1000WalletV2AddressAndWord",
+    "CoinAndPair": "DedustX1000WalletV2CoinAndPair",
+    "CoinAndTwoPairs": "DedustX1000WalletV2CoinAndTwoPairs",
+    "CoinAndPairAndAddress": "DedustX1000WalletV2CoinAndPairAndAddress",
+    "CoinAndPairAndWord": "DedustX1000WalletV2CoinAndPairAndWord",
+    "WordAndPairAndAddress": "DedustX1000WalletV2WordAndPairAndAddress",
+    "Context": "DedustX1000WalletV2Context",
+    "ContextRecord": "DedustX1000WalletV2ContextRecord"
+  },
+  "operator/v2/method_results": {
+    "GetOperatorDataResult": "DedustOperatorV2GetOperatorDataResult"
+  },
+  "signature_ref": {
+    "SignatureRef": "DedustSignatureRef"
+  },
+  "uranus/deployment": {
+    "Revision": "DedustUranusRevision"
+  },
+  "uranus/factory_v3/msgs": {
+    "DedustUranusDeployMemeMsg": "DedustUranusFactoryV3DeployMemeMsg",
+    "DedustUranusDeployCustomizedMemeMsg": "DedustUranusFactoryV3DeployCustomizedMemeMsg",
+    "DedustUranusInitMemeMsg": "DedustUranusFactoryV3InitMemeMsg"
+  },
+  "uranus/factory_v3/storage": {
+    "DedustUranusMemeMetadata": "DedustUranusFactoryV3MemeMetadata",
+    "DedustUranusPartnerConfig": "DedustUranusFactoryV3PartnerConfig",
+    "DedustUranusReferrerConfig": "DedustUranusFactoryV3ReferrerConfig",
+    "Errors": "DedustUranusFactoryV3Errors"
+  },
+  "uranus/meme_v2/method_results": {
+    "GetMemeDataResult": "DedustUranusMemeV2GetMemeDataResult",
+    "GetJettonDataResult": "DedustUranusMemeV2GetJettonDataResult"
+  },
+  "uranus/meme_v3/method_results": {
+    "GetMemeDataResult": "DedustUranusMemeV3GetMemeDataResult",
+    "GetBondingCurveDataResult": "DedustUranusMemeV3GetBondingCurveDataResult",
+    "GetPartnerDataResult": "DedustUranusMemeV3GetPartnerDataResult",
+    "GetJettonDataResult": "DedustUranusMemeV3GetJettonDataResult"
+  },
+  "uranus/meme_v3/msgs": {
+    "DedustUranusInitMemeMsg": "DedustUranusMemeV3InitMemeMsg",
+    "DedustUranusBuyMsg": "DedustUranusMemeV3BuyMsg",
+    "DedustUranusSellMsg": "DedustUranusMemeV3SellMsg",
+    "DedustUranusBurnNotificationMsg": "DedustUranusMemeV3BurnNotificationMsg",
+    "DedustUranusProvideWalletAddressMsg": "DedustUranusMemeV3ProvideWalletAddressMsg",
+    "DedustUranusClaimCreatorFeeMsg": "DedustUranusMemeV3ClaimCreatorFeeMsg",
+    "DedustUranusClaimPartnerFeeMsg": "DedustUranusMemeV3ClaimPartnerFeeMsg",
+    "DedustUranusOpcodeF14b54f3Msg": "DedustUranusMemeV3OpcodeF14b54f3Msg",
+    "DedustUranusExcessesMsg": "DedustUranusMemeV3ExcessesMsg",
+    "DedustUranusCpmmInitResultMsg": "DedustUranusMemeV3CpmmInitResultMsg",
+    "DedustUranusBuyEventMsg": "DedustUranusMemeV3BuyEventMsg",
+    "DedustUranusSellEventMsg": "DedustUranusMemeV3SellEventMsg",
+    "DedustUranusOpcode66c8ad72Msg": "DedustUranusMemeV3Opcode66c8ad72Msg",
+    "DedustUranusTakeWalletAddressMsg": "DedustUranusMemeV3TakeWalletAddressMsg"
+  },
+  "uranus/meme_v3/storage": {
+    "DedustUranusMemeMetadata": "DedustUranusMemeV3Metadata",
+    "DedustUranusPartnerConfig": "DedustUranusMemeV3PartnerConfig",
+    "DedustUranusReferrerConfig": "DedustUranusMemeV3ReferrerConfig",
+    "DedustUranusMemeConfig": "DedustUranusMemeV3Config",
+    "DedustUranusBondingCurve": "DedustUranusMemeV3BondingCurve",
+    "DedustUranusTradeFees": "DedustUranusMemeV3TradeFees",
+    "Errors": "DedustUranusMemeV3Errors",
+    "DedustUranusMigrationConfig": "DedustUranusMemeV3MigrationConfig"
+  },
+  "uranus/wallet_msgs": {
+    "RestoredOperation": "DedustUranusWalletRestoredOperation"
+  },
+  "uranus/wallet_v2/method_results": {
+    "GetWalletDataResult": "DedustUranusMemeWalletV2GetWalletDataResult"
+  },
+  "uranus/wallet_v2/msgs": {
+    "DedustUranusJettonTransferMsg": "DedustUranusMemeWalletV2JettonTransferMsg",
+    "DedustUranusJettonInternalTransferMsg": "DedustUranusMemeWalletV2JettonInternalTransferMsg",
+    "DedustUranusJettonBurnMsg": "DedustUranusMemeWalletV2JettonBurnMsg",
+    "DedustUranusSellTokensMsg": "DedustUranusMemeWalletV2SellTokensMsg",
+    "DedustUranusSellMsg": "DedustUranusMemeWalletV2SellMsg",
+    "DedustUranusBurnNotificationMsg": "DedustUranusMemeWalletV2BurnNotificationMsg",
+    "DedustUranusTransferNotificationMsg": "DedustUranusMemeWalletV2TransferNotificationMsg",
+    "DedustUranusExcessesMsg": "DedustUranusMemeWalletV2ExcessesMsg"
+  },
+  "uranus/wallet_v2/storage": {
+    "DedustUranusPartnerConfig": "DedustUranusMemeWalletV2PartnerConfig",
+    "DedustUranusReferrerConfig": "DedustUranusMemeWalletV2ReferrerConfig",
+    "Errors": "DedustUranusMemeWalletV2Errors"
+  },
+  "uranus/wallet_v3/method_results": {
+    "GetWalletDataResult": "DedustUranusMemeWalletV3GetWalletDataResult"
+  },
+  "uranus/wallet_v3/msgs": {
+    "DedustUranusJettonTransferMsg": "DedustUranusMemeWalletV3JettonTransferMsg",
+    "DedustUranusJettonInternalTransferMsg": "DedustUranusMemeWalletV3JettonInternalTransferMsg",
+    "DedustUranusJettonBurnMsg": "DedustUranusMemeWalletV3JettonBurnMsg",
+    "DedustUranusSellTokensMsg": "DedustUranusMemeWalletV3SellTokensMsg",
+    "DedustUranusSellMsg": "DedustUranusMemeWalletV3SellMsg",
+    "DedustUranusBurnNotificationMsg": "DedustUranusMemeWalletV3BurnNotificationMsg",
+    "DedustUranusTransferNotificationMsg": "DedustUranusMemeWalletV3TransferNotificationMsg",
+    "DedustUranusExcessesMsg": "DedustUranusMemeWalletV3ExcessesMsg"
+  },
+  "uranus/wallet_v3/storage": {
+    "DedustUranusPartnerConfig": "DedustUranusMemeWalletV3PartnerConfig",
+    "DedustUranusReferrerConfig": "DedustUranusMemeWalletV3ReferrerConfig",
+    "Errors": "DedustUranusMemeWalletV3Errors"
+  }
+}

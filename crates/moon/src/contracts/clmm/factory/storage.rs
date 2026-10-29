@@ -1,0 +1,16 @@
+//! Generated Moon wire records. See tools/reference/moon/README.md.
+use ton::ton_core::TLB;
+use ton::ton_core::cell::TonCell;
+use ton::ton_core::types::TonAddress;
+use ton::ton_core::types::tlb_core::TLBRef;
+use ton::ton_core::types::tlb_core::adapters::InternalAddress;
+
+#[derive(Debug, Clone, PartialEq, TLB)]
+pub struct MoonClmmFactoryStorage {
+    #[tlb(adapter = "InternalAddress")]
+    pub admin: TonAddress,
+    pub lp_fee: u8,
+    pub protocol_fee: u8,
+    pub pool_code: TLBRef<TonCell>,
+    pub pool_payload_code: TLBRef<TonCell>,
+}

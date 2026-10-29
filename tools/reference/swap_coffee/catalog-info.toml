@@ -1,0 +1,309 @@
+[project]
+name = "coffee"
+category = "TON DEX contracts"
+description = "Coffee Swap DEX, staking, CrossDex, and MEV Protector contracts"
+
+[sources]
+coffee_dex = "https://github.com/swapcoffee/dex"
+coffee_docs = "https://github.com/swapcoffee/documentation"
+
+[[links]]
+kind = "docs"
+title = "Coffee DEX docs"
+url = "https://docs.swap.coffee/technical-guides/dex"
+
+[[links]]
+kind = "source"
+title = "Coffee DEX source"
+url = "https://github.com/swapcoffee/dex"
+
+[[links]]
+kind = "source"
+title = "Coffee docs source"
+url = "https://github.com/swapcoffee/documentation"
+
+[[links]]
+kind = "audit"
+title = "Trail of Bits audit"
+url = "https://github.com/trailofbits/publications/blob/master/reviews/2025-07-swapcoffee-tondex-securityreview.pdf"
+
+[contracts.CoffeeFactory]
+display_name = "Coffee Swap Factory"
+types = "factory/types/coffee_factory.types.tolk"
+hashes = ["9a09f156e0aa9c01246c9a27e2ee3859efdef1191e7782652600efa86ed689d0"]
+known_addresses = ["EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"]
+
+[[contracts.CoffeeFactory.links]]
+kind = "source"
+title = "Coffee Factory source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/factory.fc"
+
+[contracts.CoffeeFactory.instances.mainnet]
+address = "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"
+network = "mainnet"
+
+[contracts.CoffeeInit]
+display_name = "Coffee Swap Init"
+types = "init/types/coffee_init.types.tolk"
+hashes = ["3297d9a5883d6eff2715ee51fed15b7b687e7ae84276795e147bc7b27f5c9bbf"]
+known_addresses = []
+
+[[contracts.CoffeeInit.links]]
+kind = "source"
+title = "Coffee Init source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/init.fc"
+
+[contracts.CoffeeVaultNative]
+display_name = "Coffee Swap Native Vault"
+types = "vault_native/types/coffee_vault_native.types.tolk"
+hashes = ["d143135bc56a2f2b031c58ebc89bb747dfe31f9df98326117c1b547037897895"]
+known_addresses = ["EQDbLqT_zhxpERj0EnXG2iqr1g71ODb_Xoc74R8RzUSElKGD"]
+
+[[contracts.CoffeeVaultNative.links]]
+kind = "source"
+title = "Coffee Native Vault source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/vault_native.fc"
+
+[contracts.CoffeeVaultNative.instances.ton]
+address = "EQDbLqT_zhxpERj0EnXG2iqr1g71ODb_Xoc74R8RzUSElKGD"
+network = "mainnet"
+
+[contracts.CoffeeVaultJetton]
+display_name = "Coffee Swap Jetton Vault"
+types = "vault_jetton/types/coffee_vault_jetton.types.tolk"
+hashes = [
+  "a9f8efcf61d32ecacb87fb3a57cd15a97464abf9b120074a72d9c98c55f92bdf",
+  "01be8cfa5a62c758fbd7e5602b598cdcbbd1f6bd050397f8b4b959c016e71244",
+]
+known_addresses = ["EQDp1qV-qwZ8Fzhi-4k7vRz3BtZWv3OS8aMTuRSauZYxF3fw"]
+
+[[contracts.CoffeeVaultJetton.links]]
+kind = "source"
+title = "Coffee Jetton Vault source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/vault_jetton.fc"
+
+[contracts.CoffeeVaultJetton.instances.ces]
+address = "EQDp1qV-qwZ8Fzhi-4k7vRz3BtZWv3OS8aMTuRSauZYxF3fw"
+jetton_minter_hash = "a5d12e31be87867851a28d3ce271203c8fa1a28ae826256e73c506d94d49edad"
+factory = "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"
+network = "mainnet"
+
+[contracts.CoffeeVaultExtra]
+display_name = "Coffee Swap Extra Vault"
+types = "vault_extra/types/coffee_vault_extra.types.tolk"
+hashes = ["ab11a31f0417ded5a87029e5d4dccf5c978d7b41c232d261e43d352f868ade8e"]
+known_addresses = []
+
+[[contracts.CoffeeVaultExtra.links]]
+kind = "source"
+title = "Coffee Extra Vault source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/vault_extra.fc"
+
+[contracts.CoffeePoolConstantProduct]
+display_name = "Coffee Swap Pool Constant Product"
+types = "pool_constant_product/types/coffee_pool_constant_product.types.tolk"
+hashes = [
+  "d667b9575de99534409827a5fa918ec54d1dba42862884ca58afdf0596d50cec",
+  "d236d360e53464a3a47837743602a9b04b501a329bbc20c356c24cfd355378cd",
+]
+known_addresses = ["EQA5NdnaYUsyg0E7MZuIRdvdCFfstdBr7CQoppfvhqqGkYnJ"]
+
+[[contracts.CoffeePoolConstantProduct.links]]
+kind = "source"
+title = "Coffee Constant Product source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/pool_constant_product.fc"
+
+[contracts.CoffeePoolConstantProduct.instances.ton_ces]
+address = "EQA5NdnaYUsyg0E7MZuIRdvdCFfstdBr7CQoppfvhqqGkYnJ"
+factory = "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"
+network = "mainnet"
+
+[contracts.CoffeePoolCurveFiStable]
+display_name = "Coffee Swap Pool Curve.fi Stable"
+types = "pool_curve_fi_stable/types/coffee_pool_curve_fi_stable.types.tolk"
+hashes = [
+  "52c980dd856c6cd9fc0e8f3bf9ac455f1ca384805f759c442f3b8bb0bcbfd995",
+  "5da7430c2fd4196297a2321db8bfc70871f5980fe488997e045cc1ded763e23c",
+]
+known_addresses = ["EQA7fZK6kuU_6qfrJFqzMZ7hqEJwKvrzT6Xu24eu0xRDp4uv"]
+
+[[contracts.CoffeePoolCurveFiStable.links]]
+kind = "source"
+title = "Coffee Stable Pool source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/pool_curve_fi_stable.fc"
+
+[contracts.CoffeePoolCurveFiStable.instances.ton_bmton]
+address = "EQA7fZK6kuU_6qfrJFqzMZ7hqEJwKvrzT6Xu24eu0xRDp4uv"
+factory = "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"
+network = "mainnet"
+
+[contracts.CoffeePoolCreator]
+display_name = "Coffee Swap Pool Creator"
+types = "pool_creator/types/coffee_pool_creator.types.tolk"
+hashes = ["abe90e85e916317f142d0467aebc7675784f49d2a9d62790ccafd485b4f55556"]
+known_addresses = []
+
+[[contracts.CoffeePoolCreator.links]]
+kind = "source"
+title = "Coffee Pool Creator source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/pool_creator.fc"
+
+[contracts.CoffeePoolCreator.instances.factory_deploy_ton_ces]
+address = "EQAXXrMo1FT7-u9atE42HjVVsZNUlsD7HlGIUPxdcX9wWZQo"
+factory = "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"
+owner = "EQDyfVQ27nmIv9bTSh2Eu5GAHp5I5IzJAQFzC6XoF2FGSR2q"
+block_seqno = 76139044
+network = "mainnet"
+
+[contracts.CoffeeLiquidityDepository]
+display_name = "Coffee Swap Liquidity Depository"
+types = "liquidity_depository/types/coffee_liquidity_depository.types.tolk"
+hashes = ["3680c3688d65602168abc10052c45377ca81455cdb8279ffacd80a5c11d6d2a3"]
+known_addresses = []
+
+[[contracts.CoffeeLiquidityDepository.links]]
+kind = "source"
+title = "Coffee Depository source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/liquidity_depository.fc"
+
+[contracts.CoffeeLiquidityDepository.instances.factory_deploy_ton_ces]
+address = "EQCwicSGbYVdcRhml1DRJuzcea15nAVUIHECeGma7yHcQdXo"
+factory = "EQAsf2sDPfoo-0IjnRA7l_gJBB9jyo4zqfCG_1IFCCI_Qbef"
+owner = "EQDab58m3EIA3aKloIR86s2u4n7VDhuG1G8pdPKsEsBWpMqf"
+block_seqno = 76139487
+network = "mainnet"
+
+[contracts.JettonWalletCoffeeLp]
+display_name = "Coffee Swap LP Jetton Wallet"
+types = "lp_wallet/types/jetton_wallet_coffee_lp.types.tolk"
+hashes = [
+  "e5ce6005c0b710d9b2cae507dcaf195df8ace3d6869c7d90b17a7bf5a1bbf858",
+  "d7c38fa994a8282657209f93ebc5dfe908a5f06d2e41f0c085e917bc4f54a2b3",
+]
+known_addresses = [
+  "EQCqz8MB5IT4u0PsNCM2CvozKPjat8IMLfPqT3tFUAdGd1qW",
+  "EQASySS__bN_7fgV2JEfYFaSxHQPgATJoUJLSKtDd4Gjg0x5",
+]
+
+[[contracts.JettonWalletCoffeeLp.links]]
+kind = "source"
+title = "Coffee LP Wallet source"
+url = "https://github.com/swapcoffee/dex/blob/4d3c1ca6d2898919ec5a8f410caf5f08033917d4/contracts/lp_wallet.fc"
+
+[contracts.JettonWalletCoffeeLp.instances.ton_ces_owner]
+address = "EQCqz8MB5IT4u0PsNCM2CvozKPjat8IMLfPqT3tFUAdGd1qW"
+owner = "EQCz79ULW8EogUnE-8vw2AmqYAQbAX3PcdlHV_VQ75zkKjrF"
+network = "mainnet"
+
+[contracts.JettonWalletCoffeeLp.instances.legacy_wallet]
+address = "EQASySS__bN_7fgV2JEfYFaSxHQPgATJoUJLSKtDd4Gjg0x5"
+owner = "EQBe8MlKiJ7cMXR5HKZ2rmLro-zDEjjMhQijmC8LYaVlx85C"
+master = "EQB0AeMyqqi44eIzuZmR75bGVZDcTwzq46TUNa60oydhhyFf"
+block_seqno = 47561702
+network = "mainnet"
+
+[contracts.CoffeeStakingMaster]
+display_name = "Coffee Swap Staking Master"
+types = "staking_master/types/coffee_staking_master.types.tolk"
+hashes = [
+  "f627c60142e8c2911a4ef99a0830c47ec7e0071b3599e575a483fbbc0c2c6df7",
+  "0c6a5bad8fb179c3573f71203cc718b64e9954a1266edc6fa377437956f2645f",
+]
+known_addresses = [
+  "EQCMtrnKhK82Yw6xHrLm_rJLkMYxeYIilhdmn6BnVGZ1PnBM",
+  "EQC2cl16I9QG7SAIpTcjbl9gfQhOqe_uv8pTvzFWtJHIzC8f",
+]
+
+[contracts.CoffeeStakingMaster.instances.ces]
+address = "EQCMtrnKhK82Yw6xHrLm_rJLkMYxeYIilhdmn6BnVGZ1PnBM"
+network = "mainnet"
+
+[contracts.CoffeeStakingMaster.instances.xrock]
+address = "EQC2cl16I9QG7SAIpTcjbl9gfQhOqe_uv8pTvzFWtJHIzC8f"
+network = "mainnet"
+
+[contracts.CoffeeStakingVault]
+display_name = "Coffee Swap Staking Vault"
+types = "staking_vault/types/coffee_staking_vault.types.tolk"
+hashes = ["99849bc5316110d1fbfd46ec823d07e17765a737c02b9ccb7fd1de3972a2a0e1"]
+known_addresses = ["EQAp-QUzk31pYQWIO5gelCfRrkEe71sI6rg_SvicSV0n31rf"]
+
+[contracts.CoffeeStakingVault.instances.ces]
+address = "EQAp-QUzk31pYQWIO5gelCfRrkEe71sI6rg_SvicSV0n31rf"
+master = "EQCMtrnKhK82Yw6xHrLm_rJLkMYxeYIilhdmn6BnVGZ1PnBM"
+network = "mainnet"
+
+[contracts.CoffeeStakingItem]
+display_name = "Coffee Swap Staking Item"
+types = "staking_item/types/coffee_staking_item.types.tolk"
+hashes = ["36f19ed73839bf6aaa3b00dfb0ca14ce3c954428a1f4969972c80550be9ab2a2"]
+known_addresses = ["EQBBM8rkdB10WgKwVmXfM_8jX-unQQQqamLQixNfHp1uKqWY"]
+
+[contracts.CoffeeStakingItem.instances.ces_position_0]
+address = "EQBBM8rkdB10WgKwVmXfM_8jX-unQQQqamLQixNfHp1uKqWY"
+master = "EQCMtrnKhK82Yw6xHrLm_rJLkMYxeYIilhdmn6BnVGZ1PnBM"
+network = "mainnet"
+
+[contracts.CoffeeCrossDex]
+display_name = "Coffee CrossDex"
+types = "cross_dex/types/coffee_cross_dex.types.tolk"
+hashes = ["d564938fd0b2a18d39b5c7b0f9453418536885b3fa52533b66795e7f372322a9"]
+known_addresses = ["EQA9Jk48tAGwHcfRz8IyRw0YWj66Y9kz5zhhf5lCuSlMTlKm"]
+
+[contracts.CoffeeCrossDex.instances.mainnet]
+address = "EQA9Jk48tAGwHcfRz8IyRw0YWj66Y9kz5zhhf5lCuSlMTlKm"
+network = "mainnet"
+
+[contracts.CoffeeCrossDexLegacy]
+display_name = "Coffee CrossDex Legacy"
+types = "cross_dex_legacy/types/coffee_cross_dex_legacy.types.tolk"
+hashes = ["fea9c6a1ef5eab2c5ca94d6bef1e33994c5786abeb5264760e150da33bfb3677"]
+known_addresses = ["EQA9Jk48tAGwHcfRz8IyRw0YWj66Y9kz5zhhf5lCuSlMTlKm"]
+
+[contracts.CoffeeCrossDexLegacy.instances.mainnet]
+address = "EQA9Jk48tAGwHcfRz8IyRw0YWj66Y9kz5zhhf5lCuSlMTlKm"
+code_hash = "fea9c6a1ef5eab2c5ca94d6bef1e33994c5786abeb5264760e150da33bfb3677"
+block_seqno = 48441113
+state = "historical; upgraded at masterchain block 48441114"
+network = "mainnet"
+
+[contracts.CoffeeCrossDexBidask]
+display_name = "Coffee CrossDex Bidask"
+types = "cross_dex_bidask/types/coffee_cross_dex_bidask.types.tolk"
+hashes = ["a63cbf47d55370fe2baebb4bf284bd401e717db4a0ab0e49f4b3b3cc7c0f5652"]
+known_addresses = ["EQCde_kCc5MIx_yoao6Pv3BsUbpSi4yxMtPSVOrgepmCTCDs"]
+
+[contracts.CoffeeCrossDexBidask.instances.mainnet]
+address = "EQCde_kCc5MIx_yoao6Pv3BsUbpSi4yxMtPSVOrgepmCTCDs"
+code_hash = "a63cbf47d55370fe2baebb4bf284bd401e717db4a0ab0e49f4b3b3cc7c0f5652"
+block_seqno = 50935347
+state = "active"
+network = "mainnet"
+
+[contracts.CoffeeMevProtector]
+display_name = "Coffee MEV Protector"
+types = "mev_protector/types/coffee_mev_protector.types.tolk"
+hashes = ["c8b1c7fe7401cb7c54ffba407816255ea268b806c47fa707fc82d22239e7dddd"]
+known_addresses = [
+  "EQAFXT5Ps3f27Cdla8NhNd9OzIvsDKxh2NPYzRx9NG1ILOFv",
+  "EQA-DPojxodVPAbhpXDH5eCrbE4n13zhwEYMCZ2vwq19WojJ",
+]
+
+[contracts.CoffeeMevProtector.instances.ton]
+address = "EQAFXT5Ps3f27Cdla8NhNd9OzIvsDKxh2NPYzRx9NG1ILOFv"
+network = "mainnet"
+
+[contracts.CoffeeMevProtector.instances.trace]
+address = "EQA-DPojxodVPAbhpXDH5eCrbE4n13zhwEYMCZ2vwq19WojJ"
+network = "mainnet"
+
+[contracts.CoffeeMevProtectorLegacy]
+display_name = "Coffee Swap MEV Protector Legacy"
+types = "mev_protector/types/coffee_mev_protector_legacy.types.tolk"
+hashes = ["58fbc2dba2684d38b80bfce3dc5a9ffce00af9b464c7b4dc21cf57e3aae11f1c"]
+known_addresses = ["EQCtOvKAjx29tqdz7aRtvcB9X3pvzMdZIStY6SaaXOPnBtys"]
+
+[contracts.CoffeeMevProtectorLegacy.instances.original]
+address = "EQCtOvKAjx29tqdz7aRtvcB9X3pvzMdZIStY6SaaXOPnBtys"
+block_seqno = 46383851
+network = "mainnet"
