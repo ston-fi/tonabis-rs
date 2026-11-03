@@ -2,8 +2,9 @@
 
 Read the workspace AGENTS.md, this crate's README, `docs/specs/stonks.md` and
 `tools/reference/stonks/{README.md,bindings.json}` at the repository root. This
-crate owns contract bindings only, with eight wrappers and 26 callable getters.
+crate owns contract bindings only, with nine wrappers and 30 callable getters.
 STON v8/v10/v11 share a getter wrapper; DeDust v7 and v12 have separate wrappers.
+Jetton-quoted v12 has a separate anypair wrapper with opaque `TonCell` storage.
 No feature flags, math bridge, runtime ownership or hidden dependencies.
 
 ## Ownership and extension
@@ -32,9 +33,13 @@ No feature flags, math bridge, runtime ownership or hidden dependencies.
 
 ## Invariants and common mistakes
 
-Eight-field bonding results and twelve-field v12 results are incompatible exact
-stack shapes. v12 fee fields are CPMM base fee, total presale tax, destination
-creator share, recipient; never follow the guide's reversed first two labels.
+Eight-, twelve- and thirteen-field bonding results have distinct exact stack
+shapes. Both TON-quoted and anypair variants report version12. v12 fee fields
+follow the guide: additional creator presale tax, reported CPMM/total presale fee,
+destination creator share and recipient. Do not restore the old swapped names.
+Anypair quote amounts are jetton base units; do not infer TON from an absent
+quote master or reuse the TON minter storage without evidence. The guide does
+not establish its factory, persistent layout or destination DEX.
 Numeric selectors 82057, 68631, 95602, 71772, 74038 and 84724 retain their identities.
 STON-only methods belong only to the STON minter.
 

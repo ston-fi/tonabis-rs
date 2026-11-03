@@ -13,6 +13,8 @@ pub enum StonksGeneration {
     DeDustV7,
     /// DeDust target, current factory's version12.
     DeDustV12,
+    /// Jetton-quoted anypair variant; shares version12 with the TON-quoted DeDust minter.
+    AnypairV12,
 }
 
 impl StonksGeneration {
@@ -24,6 +26,7 @@ impl StonksGeneration {
             Self::StonV11 => 11,
             Self::DeDustV7 => 7,
             Self::DeDustV12 => 12,
+            Self::AnypairV12 => 12,
         }
     }
 }

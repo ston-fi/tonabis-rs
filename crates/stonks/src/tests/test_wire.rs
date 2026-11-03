@@ -65,8 +65,8 @@ fn test_bonding_stack_generation_lengths() -> anyhow::Result<()> {
         crate::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetBondingDataResult::from_stack(
             &mut stack.clone(),
         )?;
-    assert_eq!(parsed.cpmm_fee_bps, 100);
-    assert_eq!(parsed.presale_tax_bps, 140);
+    assert_eq!(parsed.presale_tax_bps, 100);
+    assert_eq!(parsed.cpmm_fee_bps, 140);
     assert!(
         crate::contracts::ston_minter::method_results::StonksStonMinterGetBondingDataResult::from_stack(&mut stack)
             .is_err()

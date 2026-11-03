@@ -32,7 +32,7 @@ impl StonksDedustMinterV12Contract {
     /// Read the complete generation-specific extended stack at numeric selector 82057.
     #[ton_method(id = 82057)]
     pub async fn get_extended_data(&self) -> TonResult<StonksDedustMinterV12GetExtendedDataResult>;
-    /// Read CPMM fee, total presale tax, creator share and recipient in that order.
+    /// Read additional presale tax, total fee, destination creator share and recipient.
     #[ton_method(id = 71772)]
     pub async fn get_fee_data(&self) -> TonResult<StonksDedustMinterV12GetFeeDataResult>;
 }

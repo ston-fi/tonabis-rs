@@ -2,6 +2,13 @@
   "scope": "Ordinary fields, getters, StateInit and address-ordering APIs across all five protocols; historical DeDust X1000 records are the explicit raw-field exception.",
   "methods": [
     {
+      "file": "crates/stonks/src/contracts/anypair_minter_v12.rs",
+      "method": "get_wallet_address",
+      "arguments": "&self, owner_address: Option<TonAddress>",
+      "result": "Option<TonAddress>",
+      "selector": "get_wallet_address"
+    },
+    {
       "file": "crates/dedust/src/contracts/classic/factory_v1.rs",
       "method": "get_liquidity_deposit_address",
       "arguments": "&self, owner_address: TonAddress, is_stable: bool, asset0: DedustClassicAsset, asset1: DedustClassicAsset,",

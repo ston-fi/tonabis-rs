@@ -57,7 +57,7 @@ No protocol features, aliases, math bridges or runtime ownership are introduced.
 |---|---:|---|
 | `tonabis_dedust` | 23 wrappers | [DeDust](dedust.md) |
 | `tonabis_moon` | 18 / 54 | [Moon](moon.md) |
-| `tonabis_stonks` | 8 / 26 | [STONks](stonks.md) |
+| `tonabis_stonks` | 9 / 30 | [STONks](stonks.md) |
 | `tonabis_swap_coffee` | 26 / 60 | [swap.coffee](swap_coffee.md) |
 | `tonabis_tonco` | 17 / 66 | [TONCO](tonco.md) |
 

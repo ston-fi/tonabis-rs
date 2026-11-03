@@ -1017,13 +1017,54 @@
       "result": "crate::contracts::dedust_minter_v12::method_results::StonksDedustMinterV12GetFeeDataResult",
       "recording_test": "test_dedust_minter_v12_get_fee_data",
       "fixture_row": 3
+    },
+    {
+      "wrapper": "anypair_minter_v12::StonksAnypairMinterV12Contract",
+      "method": "get_bonding_data",
+      "selector": 119688,
+      "arguments": [],
+      "result": "crate::contracts::anypair_minter_v12::method_results::StonksAnypairMinterV12GetBondingDataResult",
+      "recording_test": null,
+      "fixture_row": null,
+      "evidence": "documentation_extensions.anypair_v12"
+    },
+    {
+      "wrapper": "anypair_minter_v12::StonksAnypairMinterV12Contract",
+      "method": "get_jetton_data",
+      "selector": 106029,
+      "arguments": [],
+      "result": "crate::contracts::ston_minter::method_results::StonksStonMinterGetJettonDataResult",
+      "recording_test": null,
+      "fixture_row": null,
+      "evidence": "documentation_extensions.anypair_v12"
+    },
+    {
+      "wrapper": "anypair_minter_v12::StonksAnypairMinterV12Contract",
+      "method": "get_version",
+      "selector": 82320,
+      "arguments": [],
+      "result": "u32",
+      "recording_test": null,
+      "fixture_row": null,
+      "evidence": "documentation_extensions.anypair_v12"
+    },
+    {
+      "wrapper": "anypair_minter_v12::StonksAnypairMinterV12Contract",
+      "method": "get_wallet_address",
+      "selector": 103289,
+      "arguments": ["Slice(NullableAddress<Option<TonAddress>>)"],
+      "result": "Option<TonAddress>",
+      "recording_test": null,
+      "fixture_row": null,
+      "consumer_signature": "(owner_address: Option<TonAddress>) -> TonResult<Option<TonAddress>>",
+      "evidence": "documentation_extensions.anypair_v12"
     }
   ],
   "counts": {
     "source_wrapper_declarations": 7,
-    "destination_wrappers": 8,
+    "destination_wrappers": 9,
     "source_async_declarations": 21,
-    "destination_callable_getters": 26
+    "destination_callable_getters": 30
   },
   "shared_ownership": {
     "shared_minter_storage": "ston_minter::storage::StonksVirtualMinterStorage",
@@ -1832,6 +1873,31 @@
     ]
   },
   "generated_files": [],
+  "documentation_extensions": {
+    "anypair_v12": {
+      "guide": "https://gist.github.com/Doggetti/7ef4bd7fecbc0319d5f162f8a8e9f14c",
+      "guide_revision": "9c41f73faae374b44f83bbc28dd48c3bec96ac92",
+      "bonding_arity": 13,
+      "observed_version": 12,
+      "observed_code_hash": "132dd8d7e204c42a5ed89455bbad956f0358fa7105a9a4a9ff8b9a4a4a47a1d7",
+      "observed_addresses": [
+        "EQDA_zvA0LH9qu8pcXhLlECCQwajySticdjXT6poLgApjEVa",
+        "EQBGWKNVOUuS8EYAqOsW6CbXE5D7fcyFXdV3hj5zenm0WEHR"
+      ],
+      "public_symbols": [
+        "anypair_minter_v12::StonksAnypairMinterV12Contract",
+        "anypair_minter_v12::method_results::StonksAnypairMinterV12GetBondingDataResult"
+      ],
+      "storage": "Opaque TonCell; the guide does not specify its layout",
+      "limits": "ABI agreement is not code authentication. Destination DEX and absent quote-master semantics are undocumented. No new test files added by user request."
+    },
+    "v12_fee_names": {
+      "first_added_field": "presale_tax_bps: additional creator presale component",
+      "second_added_field": "cpmm_fee_bps: total presale fee including 40 protocol basis points",
+      "observed_values": [100, 140],
+      "wire_order": "Unchanged; earlier Rust names were swapped"
+    }
+  },
   "public_address_api": {
     "policy": "Required identities use TonAddress/InternalAddress; nullable encoded identities use Option<TonAddress>/NullableAddress. Ordinary structured nullable fields derive FromTVMStack with NullableInternalAddress (Cell/Slice only, rejecting TVM NULL). Explicit optional nullable stacks retain Option<Option<TonAddress>> and protocol NULL behavior. Scalar normalization and Maybe/reference layouts are unchanged.",
     "inventory": "tools/reference/integration/tonaddress-api.json",
