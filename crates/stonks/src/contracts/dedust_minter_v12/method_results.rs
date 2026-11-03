@@ -23,10 +23,10 @@ pub struct StonksDedustMinterV12GetBondingDataResult {
     pub tokens_sold: U256,
     /// Zero or one, as returned by this getter.
     pub presale_open: bool,
-    /// Post-graduation pool base fee (first added numeric field).
-    pub cpmm_fee_bps: u16,
-    /// Total presale TON tax, including 40 protocol bps (second added field).
+    /// Additional creator presale fee, excluding the 40 protocol basis points.
     pub presale_tax_bps: u16,
+    /// Reported CPMM fee; also the total presale fee including 40 protocol bps.
+    pub cpmm_fee_bps: u16,
     /// Creator share of post-graduation pool fees, denominator 10000.
     pub creator_fee_bps: u16,
     /// Creator recipient; wire address retained.
@@ -38,10 +38,10 @@ pub struct StonksDedustMinterV12GetBondingDataResult {
 #[derive(Debug, Clone, PartialEq, FromTVMStack)]
 #[from_tvm_stack(ensure_empty = true)]
 pub struct StonksDedustMinterV12GetFeeDataResult {
-    /// Destination CPMM base fee.
-    pub cpmm_fee_bps: u16,
-    /// Total presale fee, including base 40 bps.
+    /// Additional creator presale fee, excluding the 40 protocol basis points.
     pub presale_tax_bps: u16,
+    /// Reported CPMM fee; also the total presale fee including 40 protocol bps.
+    pub cpmm_fee_bps: u16,
     /// Creator share of destination CPMM fees.
     pub creator_fee_bps: u16,
     /// Creator wallet.
@@ -74,10 +74,10 @@ pub struct StonksDedustMinterV12GetExtendedDataResult {
     pub creator_fee_bps: u16,
     /// Source-defined launch completion flag.
     pub migration_completed: bool,
-    /// Destination pool base fee.
-    pub cpmm_fee_bps: u16,
-    /// Total presale fee.
+    /// Additional creator presale fee, excluding the 40 protocol basis points.
     pub presale_tax_bps: u16,
+    /// Reported CPMM fee; also the total presale fee including 40 protocol bps.
+    pub cpmm_fee_bps: u16,
     /// Creator recipient.
     #[from_tvm_stack(adapter = NullableInternalAddress)]
     pub dev_wallet: Option<TonAddress>,

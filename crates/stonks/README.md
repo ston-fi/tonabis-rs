@@ -12,17 +12,18 @@ Uses the public `ton` types directly. The workspace lockfile validates TON 0.4.1
 | `ston_minter` | `StonksStonMinterContract` | STON v8/v10/v11; eight-field bonding, standard Jetton getters and selectors 82057, 68631, 95602 |
 | `dedust_minter_v7` | `StonksDedustMinterV7Contract` | DeDust v7; eight-field bonding, standard getters, selector 82057, migration continuations |
 | `dedust_minter_v12` | `StonksDedustMinterV12Contract` | DeDust v12; twelve-field bonding, standard getters, thirteen-field 82057 and fee selector 71772 |
+| `anypair_minter_v12` | `StonksAnypairMinterV12Contract` | Jetton-quoted v12; thirteen-field bonding with quote master and standard Jetton/version/wallet getters; opaque storage |
 | `ston_wallet` | `StonksStonWalletContract` | STON presale storage/context, standard getter and selector 74038 |
 | `dedust_wallet` | `StonksDedustWalletContract` | DeDust v7/v12 presale storage/context, standard getter and selector 84724 |
 | `custom_wallet` | `StonksCustomWalletContract` | Separate tax wallet; accounting, two-address context, transfer/bounce bodies and tax/wallet getters |
 
 Each primary module owns its wrapper and inherent methods. Persistent records
 live in `storage`, structured getter records in `method_results`, messages and
-dispatch in `msgs`. There are 26 callable getters across eight wrappers.
-`generation::StonksGeneration` names the five observed target/version identities; it
+dispatch in `msgs`. There are 30 callable getters across nine wrappers.
+`generation::StonksGeneration` names the six observed family/version identities; it
 does not detect or authenticate a contract.
 
-Shared records have one owner. All minters use
+Shared records have one owner. TON-quoted minters use
 `ston_minter::storage::StonksVirtualMinterStorage`, including its `initial_state` API.
 Eight-field bonding and standard Jetton results live in
 `ston_minter::method_results`. The standard wallet result lives in
@@ -101,8 +102,20 @@ Variable, anycast and external addresses are rejected in ordinary fields.
 Structured results enforce exact stack arity. `get_version` returns `u32` and
 `get_wallet_address` takes and returns `Option<TonAddress>`, keeping absence
 separate from a present internal-zero address.
-The v12 fee order is CPMM base fee, total presale tax, destination creator share,
-creator recipient; the independently recorded values are 100, 140, 5000, address.
+The v12 fee order is additional creator presale tax, reported CPMM/total presale
+fee, destination creator share, creator recipient. Recorded values 100, 140,
+5000, address mean a 100-bps creator component plus 40 protocol bps, not a
+100-bps total fee. The public fields follow the integration guide's names:
+`presale_tax_bps` first and `cpmm_fee_bps` second.
+
+The [anypair integration guide](https://gist.github.com/Doggetti/7ef4bd7fecbc0319d5f162f8a8e9f14c)
+adds `quote_master` as the thirteenth bonding field. Quote reserves, migration
+target and fees use that jetton's base units; TON funds execution separately.
+Both variants report version 12, so version alone cannot select their ABI.
+The anypair wrapper keeps storage as `TonCell`: the guide does not specify its
+persistent layout, factory identity, destination DEX or numeric extended getters.
+No TON-storage schema or DEX identity is inferred from a successful getter decode.
+The meaning of an absent quote master is not specified and remains caller policy.
 
 ## Evidence and maintenance
 

@@ -7,35 +7,45 @@ retries or code authentication.
 ## Supported identities and capabilities
 
 STON v8/v10/v11 and DeDust v7 expose eight bonding fields. DeDust v12 exposes
-twelve. `generation::StonksGeneration` enumerates these exact identities without runtime
-authentication or a version-threshold heuristic. The crate README lists all eight
-wrappers and all 26 callable getters, including shared methods on each minter.
+twelve. Jetton-quoted anypair v12 exposes thirteen fields, including quoteMaster.
+`generation::StonksGeneration` enumerates these identities without runtime
+authentication or a version-threshold heuristic. The crate README lists all nine
+wrappers and all 30 callable getters, including shared methods on each minter.
 STON-specific selectors are exposed only on the STON minter wrapper.
 
 | Selector | Wrappers | Result |
 |---|---|---|
 | `get_factory_data` | STON / DeDust factories | Four fields; third is router address / config cell respectively |
-| `get_bonding_data` | STON / DeDust v7 / v12 minters | Eight / eight / twelve fields |
-| `get_jetton_data` | All three minters | Five-field Jetton result |
-| `get_version` | All three minters | Direct u32 |
-| `get_wallet_address` | All three minters | Option<TonAddress> result/owner; one nullable-address Slice argument |
+| `get_bonding_data` | STON / DeDust v7 / TON v12 / anypair v12 minters | Eight / eight / twelve / thirteen fields |
+| `get_jetton_data` | All four minters | Five-field Jetton result |
+| `get_version` | All four minters | Direct u32; both v12 variants return 12 |
+| `get_wallet_address` | All four minters | Option<TonAddress> result/owner; one nullable-address Slice argument |
 | 82057 | STON / DeDust v7 / v12 minters | Ten / ten / thirteen fields |
 | 68631 | STON minter | Twelve-field STON routing/bonding result |
 | 95602 | STON minter | Controller and router addresses |
-| 71772 | DeDust v12 minter | CPMM base fee, total presale fee, creator share, creator recipient |
+| 71772 | DeDust v12 minter | Additional presale creator fee, total fee, destination creator share, recipient |
 | `get_wallet_data` | STON / DeDust / tax wallets | Four-field results; tax balance retains its source signed type |
 | 74038 / 84724 | STON / DeDust wallets | Different seven-field extended results |
 | `get_tax` | Tax wallet | Buy and sell per-mille rates |
 
 The v12 added bonding fields follow the same fee order as 71772. Pinned
-independent observations contain 100, 140, 5000, recipient. The upstream guide's
-reversed first two labels are not followed. This library exposes on-chain values,
-without deriving curves or local prices.
+observations contain 100, 140, 5000, recipient: the first is the additional
+creator presale component, the second includes 40 protocol bps. Earlier bindings
+swapped their names; `presale_tax_bps` now names the first and `cpmm_fee_bps`
+the second, matching the integration documentation. On-chain positions are
+unchanged. This library exposes values without deriving curves or local prices.
+
+The [anypair guide](https://gist.github.com/Doggetti/7ef4bd7fecbc0319d5f162f8a8e9f14c),
+revision `9c41f73faae374b44f83bbc28dd48c3bec96ac92`, defines the thirteen-field
+getter and quote-jetton denomination. Its nullable quote master remains
+`Option<TonAddress>`; absent-master behavior is undocumented. The destination
+DEX, persistent storage and numeric extended getters are not inferred. The
+wrapper therefore uses `TonCell` storage and only documented standard getters.
 
 ## Canonical ownership and construction
 
 Primary modules own wrappers and one inherent block. Storage lives in `storage`,
-messages/dispatch in `msgs`, structured results in `method_results`. All minters
+messages/dispatch in `msgs`, structured results in `method_results`. TON-quoted minters
 share `ston_minter::storage::StonksVirtualMinterStorage`; they do not duplicate its root
 type. Its `initial_state(code, factory, content, wallet_code)` serializes full
 supply 100000000000000000 and an absent bonding state. Standard/eight-field
@@ -123,7 +133,7 @@ shared burn record exposes `owner` and `response_address`.
 
 ## User-facing address signatures
 
-All three minter get_wallet_address methods take and return Option<TonAddress>.
+All four minter get_wallet_address methods take and return Option<TonAddress>.
 The owner is a nullable-address Slice, with None encoded as addr_none and
 Some(internal zero) encoded internally. Results map NULL/addr_none to None and
 retain Some(internal zero). Handwritten bodies validate int8 workchains before

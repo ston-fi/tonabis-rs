@@ -47,7 +47,7 @@ The remaining protocol libraries retain legacy and auxiliary contract generation
 
 | Protocol | Wrappers / callable getters | Scope and specification |
 |---|---:|---|
-| [STONks](crates/stonks/README.md) | 8 / 26 | Separate STON and DeDust factories/minters/presale wallets, plus the tax wallet; [specification](docs/specs/stonks.md) |
+| [STONks](crates/stonks/README.md) | 9 / 30 | STON/DeDust factories, TON/jetton-quoted presale minters, presale and tax wallets; [specification](docs/specs/stonks.md) |
 | [swap.coffee](crates/swap_coffee/README.md) | 26 / 60 | Factory/init, pools, vaults, LP/depository, staking, CrossDex and MEV including deployment/legacy forms; [specification](docs/specs/swap_coffee.md) |
 | [TONCO](crates/tonco/README.md) | 17 / 66 | V1/V2 pools/routers/factories/orders/accounts/NFTs, farming and native minter/wallets; [specification](docs/specs/tonco.md) |
 

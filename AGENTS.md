@@ -31,8 +31,8 @@ lists all canonical modules/types; the ownership manifest maps all 23 APIs.
   Native TON codecs replace legacy strict tail/stack helpers. See its README and
   AGENTS.md for protocol exceptions, canonical paths and generation ownership.
 
-- `crates/stonks` (`tonabis_stonks`): eight wrappers / 26 callable getters for
-  STON and DeDust presale factories/minters/wallets and the distinct tax wallet.
+- `crates/stonks` (`tonabis_stonks`): nine wrappers / 30 callable getters for
+  STON/DeDust factories, TON/jetton-quoted minters, presale and tax wallets.
   Read its crate guide and [specification](docs/specs/stonks.md).
 - `crates/swap_coffee` (`tonabis_swap_coffee`): 26 wrappers / 60 callable getters,
   including deployment variants, staking, current/legacy/BidAsk-facing CrossDex

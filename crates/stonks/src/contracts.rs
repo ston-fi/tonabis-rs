@@ -1,4 +1,5 @@
 //! Generation-specific STONks contracts and canonical shared records.
+pub mod anypair_minter_v12;
 pub mod custom_wallet;
 pub mod dedust_factory;
 pub mod dedust_minter_v12;

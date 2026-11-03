@@ -313,7 +313,7 @@ fn test_dedust_minter_v12_get_fee_data() -> anyhow::Result<()> {
     let wrapper = contracts::dedust_minter_v12::StonksDedustMinterV12Contract::new(&client, &address, None);
     let result = tokio_test::block_on(wrapper.get_fee_data())?;
     assert_eq!(
-        (result.cpmm_fee_bps, result.presale_tax_bps, result.creator_fee_bps),
+        (result.presale_tax_bps, result.cpmm_fee_bps, result.creator_fee_bps),
         (100, 140, 5000)
     );
     Ok(())

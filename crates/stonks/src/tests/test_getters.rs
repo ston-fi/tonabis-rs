@@ -65,8 +65,8 @@ fn test_getter_dedust_v12_feedata() -> anyhow::Result<()> {
     let original = stack(3)?;
     let decoded = StonksDedustMinterV12GetFeeDataResult::from_stack(&mut original.clone())?;
     let _ = &decoded;
-    assert_eq!(decoded.cpmm_fee_bps, 100);
-    assert_eq!(decoded.presale_tax_bps, 140);
+    assert_eq!(decoded.presale_tax_bps, 100);
+    assert_eq!(decoded.cpmm_fee_bps, 140);
     let mut extra = original.clone();
     extra.push_tiny_int(9);
     assert!(StonksDedustMinterV12GetFeeDataResult::from_stack(&mut extra).is_err());
@@ -81,7 +81,7 @@ fn test_getter_dedust_v12_extendedbondingdata() -> anyhow::Result<()> {
         )?;
     let _ = &decoded;
     assert_eq!(decoded.creator_fee_bps, 5000);
-    assert_eq!(decoded.presale_tax_bps, 140);
+    assert_eq!(decoded.cpmm_fee_bps, 140);
     let mut extra = original.clone();
     extra.push_tiny_int(9);
     assert!(
